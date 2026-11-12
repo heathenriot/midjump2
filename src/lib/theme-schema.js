@@ -536,8 +536,6 @@ export const PHONE = [
   ["domain", "relatedNameColor", "color", "#1A1A18", "Related domain name colour"],
   ["domain", "relatedExtColor", "color", "#807E78", "Colour of .com / .si"],
   ["domain", "relatedChevronColor", "color", "#9A9892", "Colour of the little arrow at the end of each row"],
-  ["domain", "backLinkSize", "size", "11px", "'Back to portfolio' text size"],
-  ["domain", "backLinkGap", "size", "56px", "Space above 'Back to portfolio'"],
   ["domain", "bottomSpace", "size", "30px", "Space under the last element"],
 
   // ---------- contact

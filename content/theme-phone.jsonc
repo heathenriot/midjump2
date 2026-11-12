@@ -275,8 +275,6 @@
     "relatedNameColor": "#1A1A18",                             // Related domain name colour
     "relatedExtColor": "#807E78",                              // Colour of .com / .si
     "relatedChevronColor": "#9A9892",                          // Colour of the little arrow at the end of each row
-    "backLinkSize": "11px",                                    // 'Back to portfolio' text size
-    "backLinkGap": "56px",                                     // Space above 'Back to portfolio'
     "bottomSpace": "30px"                                      // Space under the last element
   },
 

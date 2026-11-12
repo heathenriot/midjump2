@@ -21,7 +21,6 @@ for (const d of domains) {
 const trim = (s, n) => (s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…");
 const firstSentences = (s, n) => { const m = s.match(/^.*?[.!?](\s|$)/); return trim((m ? m[0] : s).trim(), n); };
 const chev = `<svg viewBox="0 0 10 10"><path d="M2 3.5 L5 6.5 L8 3.5" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>`;
-const backSvg = `<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M6.5 2 L3.5 5 L6.5 8" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>`;
 export const domainPage = (d) => {
   const fx = (i) => d.logoFx[i] || {};
   const slides = d.logos.map((l, i) => { const f = fx(i); return `<div class="dm-slide"><img src="${l}" alt="${esc(d.name)} logo concept ${i + 1}" style="--cy:${f.y || "0%"};--cs:${f.scale || 1};--my:${f.my || f.y || "0%"};--ms:${f.mscale || f.scale || 1}"${i ? ' loading="lazy"' : ""} decoding="async"></div>`; }).join("");
@@ -51,9 +50,8 @@ export const domainPage = (d) => {
 </div></section></div>
 <div class="dm-aboutwrap"><section class="dm-row dm-about" aria-labelledby="about-h"><h2 id="about-h" class="dm-label">About the domain</h2><div class="dm-paras">${d.overview.map((p) => `<p class="dm-para">${esc(p)}</p>`).join("")}</div></section></div>
 <section class="dm-moresec" aria-labelledby="more-h">
-<div class="dm-morehead"><a href="/domains" class="dm-back dm-back-top">${backSvg}Back to portfolio</a><h2 id="more-h"><a href="/domains?c=${cat0}" class="dm-more">More from the collection<span class="dm-more-arrow" aria-hidden="true">${chev}</span></a></h2></div>
+<div class="dm-morehead"><h2 id="more-h"><a href="/domains?c=${cat0}" class="dm-more">More from the collection<span class="dm-more-arrow" aria-hidden="true">${chev}</span></a></h2></div>
 <div class="dm-relgrid">${rel}</div>
-<a href="/domains" class="dm-back dm-back-end">${backSvg}Back to portfolio</a>
 </section>
 </div>`;
   return layout({ title: `${d.name} | Premium Domain | Midjump`, description: desc, urlPath: `/domains/${d.slug}`, body, active: "/domains" });
