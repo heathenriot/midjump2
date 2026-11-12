@@ -37,7 +37,7 @@ export const domainPage = (d) => {
 <div class="dm-acqwrap"><section class="dm-row dm-acq" aria-labelledby="acq-h"><h2 id="acq-h" class="dm-label">Available for acquisition</h2>
 <div class="c-wrap"><form class="dm-form mj-form" data-key="${site.formKey}" data-domain="${esc(d.name)}">
 <input class="mj-hp" type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
-<p class="dm-sent">${esc(d.name)} can be purchased securely via Atom.com, or you can contact Midjump directly to arrange a transaction through Escrow.com.</p>
+<p class="dm-sent"><span class="d-only">${esc(d.name)} can be purchased securely via Atom.com, or you can contact Midjump directly to arrange a transaction through Escrow.com.</span><span class="m-only">Purchase securely via Atom.com, or contact Midjump to arrange a direct transaction through Escrow.com.</span></p>
 <div class="dm-fields">
 <label class="mj-field"><input class="mj-input" type="text" name="name" autocomplete="name" placeholder="Name" aria-label="Name" required></label>
 <label class="mj-field"><input class="mj-input" type="email" name="email" autocomplete="email" placeholder="Email" aria-label="Email" required></label>
