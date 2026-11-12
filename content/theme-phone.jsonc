@@ -154,10 +154,10 @@
     "faqListGap": "22px",                                      // Space between that label and the first question
     "faqSideMargin": "12px",                                   // Space left and right of the questions
     "faqItemGap": "16px",                                      // Space between questions
-    "faqQuestionSize": "11.5px",                               // Question text size
+    "faqQuestionSize": "10.5px",                               // Question text size
     "faqQuestionColor": "#1E1E1C",                             // Question colour
     "faqOpenFill": "#E4E4DB",                                  // Background of the open question
-    "faqAnswerSize": "14px",                                   // Answer text size
+    "faqAnswerSize": "13px",                                   // Answer text size
     "faqAnswerLineHeight": 1.6,                                // Answer line spacing
     "faqAnswerColor": "#1E1E1C",                               // Answer colour
     "bottomSpace": "72px"                                      // Smallest space under the last question
@@ -230,7 +230,7 @@
     "acquisitionBorder": { "style": "solid", "width": "1px", "color": "rgba(30,29,28,.25)" }, // Acquisition card outline   [style: solid / dotted / dashed / none]
     "acquisitionRadius": "3px",                                // Acquisition card corner roundness
     "acquisitionPaddingTop": "34px",                           // Space inside the card, above its label
-    "acquisitionPaddingBottom": "36px",                        // Space inside the card, under the buttons
+    "acquisitionPaddingBottom": "26px",                        // Space inside the card, under the buttons
     "acquisitionPaddingX": "20px",                             // Space inside the card, left and right
     "acquisitionGap": "20px",                                  // Space between the label, sentence and form
     "acquisitionTextSize": "14px",                             // Text size of the sentence above the form
