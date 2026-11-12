@@ -34,8 +34,8 @@
     "text": "#1A1A18",                                         // Main dark text colour (titles, names)
     "bodyText": "#1E1E1C",                                     // Paragraph text colour
     "mutedText": "#9A9892",                                    // Grey used for .com / .si endings and small numbers
-    "accent": "#254F99",                                       // Blue used on hover and the nav underline
-    "accentDark": "#192C60"                                    // Dark navy used for nav links and arrows
+    "accent": "#253A79",                                       // Blue used on hover and the nav underline
+    "accentDark": "#253A79"                                    // Dark navy used for nav links and arrows
   },
 
   // ──────────────────────────────────────────────────────────────────────
@@ -77,9 +77,9 @@
     "linkCase": "uppercase",                                   // uppercase = CAPITALS, none = as typed   [choose: uppercase / none / capitalize]
     "linkGap": "32px",                                         // Space between the links
     "linkBottomSpace": "19px",                                 // Space under the links (moves them up/down)
-    "linkColor": "#192C60",                                    // Link colour
-    "linkHoverColor": "#254F99",                               // Link colour on hover
-    "underlineColor": "#254F99",                               // Colour of the sliding underline
+    "linkColor": "#253A79",                                    // Link colour
+    "linkHoverColor": "#3A4E8C",                               // Link colour on hover
+    "underlineColor": "#253A79",                               // Colour of the sliding underline
     "underlineThickness": "2px",                               // Thickness of the sliding underline
     "sideLinkSize": "12.5px",                                  // Floating side menu: text size
     "sideLinkGap": "10px",                                     // Floating side menu: space between links
@@ -189,8 +189,8 @@
     "tabSize": "11px",                                         // Tab text size
     "tabSpacing": ".12em",                                     // Space between letters of tabs
     "tabColor": "#76756F",                                     // Tab colour
-    "tabActiveColor": "#254F99",                               // Selected tab colour
-    "tabHoverColor": "#254F99",                                // Tab colour on hover
+    "tabActiveColor": "#253A79",                               // Selected tab colour
+    "tabHoverColor": "#253A79",                                // Tab colour on hover
     "tabCountColor": "#ABAAA3",                                // Colour of the little numbers next to tabs
     "gridLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // The dotted lines between gallery cells   [style: solid / dotted / dashed / none]
     "cellPadding": "14px",                                     // Space inside each cell, around the logo
@@ -238,8 +238,8 @@
     "arrowScale": 1,                                           // Size of the arrow icon itself (1 = normal)
     "arrowGap": "16px",                                        // Space between the two arrows
     "arrowY": "0px",                                           // Move arrows down (+) or up (-)
-    "arrowColor": "#192C60",                                   // Arrow colour
-    "arrowHoverColor": "#254F99",                              // Arrow colour on hover
+    "arrowColor": "#253A79",                                   // Arrow colour
+    "arrowHoverColor": "#3A4E8C",                              // Arrow colour on hover
     "arrowDisabledColor": "#BDBDB2",                           // Arrow colour when it can't be used
     "acquisitionBackground": "#ECEBE5",                        // Background of the 'Available for acquisition' block
     "acquisitionPaddingTop": "42px",                           // Space above its label
@@ -258,12 +258,12 @@
     "buttonSpacing": "12px",                                   // Space between the two buttons
     "buttonRadius": "5px",                                     // Button corner roundness
     "buttonTextSize": "15px",                                  // Button text size
-    "atomFill": "#254F99",                                     // 'View on Atom.com' button colour
-    "atomHoverFill": "#192C60",                                // 'View on Atom.com' colour on hover
+    "atomFill": "#253A79",                                     // 'View on Atom.com' button colour
+    "atomHoverFill": "#3A4E8C",                                // 'View on Atom.com' colour on hover
     "atomTextColor": "#F3F2EE",                                // 'View on Atom.com' text colour
-    "sendFill": "#DFDFD4",                                     // 'Send inquiry' button colour
-    "sendHoverFill": "#E3E3D9",                                // 'Send inquiry' colour on hover
-    "sendTextColor": "#1E1E1C",                                // 'Send inquiry' text colour
+    "sendFill": "#536FB0",                                     // 'Send inquiry' button colour
+    "sendHoverFill": "#44609E",                                // 'Send inquiry' colour on hover
+    "sendTextColor": "#F3F2EE",                                // 'Send inquiry' text colour
     "aboutPaddingTop": "42px",                                 // Space above 'About the domain'
     "aboutPaddingBottom": "40px",                              // Space under the overview
     "aboutLabelGap": "20px",                                   // Space between that label and the text
@@ -277,7 +277,7 @@
     "moreSize": "10.5px",                                      // 'More from the collection' / 'Back to portfolio' text size
     "moreSpacing": ".11em",                                    // Their letter spacing
     "moreColor": "#3A3938",                                    // Their colour
-    "moreHoverColor": "#254F99",                               // Their colour on hover
+    "moreHoverColor": "#3A4E8C",                               // Their colour on hover
     "moreArrowColor": "#9A9892",                               // Colour of the little arrow next to 'More from the collection'
     "relatedLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // Lines around the 3 related domains   [style: solid / dotted / dashed / none]
     "relatedCellPadding": "14px",                              // Space inside each related cell
@@ -321,9 +321,9 @@
     "buttonPaddingX": "26px",                                  // Button width (space left and right of the text)
     "buttonRadius": "5px",                                     // Button corner roundness
     "buttonTextSize": "15px",                                  // Button text size
-    "buttonTextColor": "#1E1E1C",                              // Button text colour
-    "buttonFill": "#DFDFD4",                                   // Button colour
-    "buttonHoverFill": "#E3E3D9",                              // Button colour on hover
+    "buttonTextColor": "#F3F2EE",                              // Button text colour
+    "buttonFill": "#536FB0",                                   // Button colour
+    "buttonHoverFill": "#44609E",                              // Button colour on hover
     "successTitleSize": "24px",                                // 'Message received' size
     "errorColor": "#8A2C1F"                                    // Colour of the error message
   }

@@ -248,8 +248,8 @@
     "atomFill": "#253A79",                                     // 'View on Atom.com' button colour
     "atomHoverFill": "#3A4E8C",                                // 'View on Atom.com' colour while pressed
     "atomTextColor": "#F3F2EE",                                // 'View on Atom.com' text colour
-    "sendFill": "#7B88B0",                                     // 'Send inquiry' button colour
-    "sendHoverFill": "#606D92",                                // 'Send inquiry' colour while pressed
+    "sendFill": "#536FB0",                                     // 'Send inquiry' button colour
+    "sendHoverFill": "#44609E",                                // 'Send inquiry' colour while pressed
     "sendTextColor": "#F3F2EE",                                // 'Send inquiry' text colour
     "aboutSideMargin": "20px",                                 // Space left and right of the overview
     "aboutLine": { "style": "solid", "width": "1px", "color": "#E6E6E1" }, // Line above 'About the domain'   [style: solid / dotted / dashed / none]
@@ -305,8 +305,8 @@
     "buttonRadius": "5px",                                     // Button corner roundness
     "buttonTextSize": "15px",                                  // Button text size
     "buttonTextColor": "#F3F2EE",                              // Button text colour
-    "buttonFill": "#253A79",                                   // Button colour
-    "buttonPressedFill": "#44568C",                            // Button colour while pressed
+    "buttonFill": "#536FB0",                                   // Button colour
+    "buttonPressedFill": "#44609E",                            // Button colour while pressed
     "successTitleSize": "22px",                                // 'Message received' size
     "successTextSize": "15px",                                 // 'Thank you' text size
     "errorColor": "#8A2C1F"                                    // Colour of the error message
