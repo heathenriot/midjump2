@@ -134,4 +134,71 @@
     });
     $(".mj-again").addEventListener("click", function () { wrap.classList.remove("is-sent"); });
   }
+
+  /* landing: marquee (cruises, follows a drag, keeps a throw's momentum, wraps seamlessly) */
+  $$(".mq-vp").forEach(function (vp) {
+    var secs = +vp.getAttribute("data-secs") || 45, st = null;
+    var init = function () {
+      if (st) return st;
+      var track = vp.firstElementChild;
+      if (!track.getBoundingClientRect().width) return null;
+      var m = new DOMMatrixReadOnly(getComputedStyle(track).transform);
+      st = { x: -m.m41, vel: 0, half: track.getBoundingClientRect().width / 2, dir: 1, dragging: false, captured: false, moved: 0, id: null, lastX: 0, lastT: 0, prev: performance.now(), factor: 1 };
+      var still = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+      st.cruise = still ? 0 : st.half / secs;
+      st.vel = still ? 0 : st.cruise;
+      track.style.animation = "none";
+      var frame = function (now) {
+        var dt = Math.min((now - st.prev) / 1000, 0.05);
+        st.prev = now;
+        if (!st.dragging) {
+          var want = st.dir * st.cruise * st.factor;
+          if (Math.abs(st.vel) > st.cruise * 1.05) st.vel *= 0.94; else st.vel += (want - st.vel) * Math.min(1, dt * 2.5);
+          st.x += st.vel * dt;
+        }
+        st.x = ((st.x % st.half) + st.half) % st.half;
+        track.style.transform = "translate3d(" + (-st.x) + "px,0,0)";
+        requestAnimationFrame(frame);
+      };
+      requestAnimationFrame(frame);
+      return st;
+    };
+    vp.addEventListener("pointerenter", function () { var s = init(); if (s) s.factor = 0.8; });
+    vp.addEventListener("pointerleave", function () { if (st) st.factor = 1; });
+    vp.addEventListener("pointerdown", function (e) {
+      var s = init(); if (!s) return;
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      s.dragging = true; s.captured = false; s.moved = 0; s.vel = 0; s.id = e.pointerId; s.lastX = e.clientX; s.lastT = performance.now();
+    });
+    vp.addEventListener("pointermove", function (ev) {
+      if (!st || !st.dragging || ev.pointerId !== st.id) return;
+      var dx = ev.clientX - st.lastX, now = performance.now();
+      st.x -= dx; st.moved += Math.abs(dx);
+      if (now - st.lastT > 0) st.vel = (-dx / (now - st.lastT)) * 1000;
+      st.lastX = ev.clientX; st.lastT = now;
+      if (!st.captured && st.moved > 5) { st.captured = true; try { vp.setPointerCapture(st.id); } catch (_) {} vp.classList.add("is-dragging"); }
+    });
+    var up = function (ev) {
+      if (!st || !st.dragging || (ev && ev.pointerId !== st.id)) return;
+      st.dragging = false; vp.classList.remove("is-dragging");
+      if (st.vel !== 0) st.dir = st.vel < 0 ? -1 : 1;
+      if (st.moved > 5) {
+        var stop = function (c) { c.preventDefault(); c.stopPropagation(); vp.removeEventListener("click", stop, true); };
+        vp.addEventListener("click", stop, true);
+        setTimeout(function () { vp.removeEventListener("click", stop, true); }, 400);
+      }
+    };
+    vp.addEventListener("pointerup", up); vp.addEventListener("pointercancel", up);
+    vp.addEventListener("dragstart", function (d) { d.preventDefault(); });
+  });
+
+  /* landing (phone): FAQ accordion, one open at a time */
+  var faqs = $$(".faq");
+  faqs.forEach(function (f) {
+    $(".faq-q", f).addEventListener("click", function () {
+      var open = !f.classList.contains("is-open");
+      faqs.forEach(function (o) { o.classList.remove("is-open"); $(".faq-q", o).setAttribute("aria-expanded", "false"); });
+      if (open) { f.classList.add("is-open"); $(".faq-q", f).setAttribute("aria-expanded", "true"); }
+    });
+  });
 })();

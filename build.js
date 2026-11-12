@@ -125,6 +125,52 @@ const contact = () => {
   return layout({ title: "Contact Midjump | Portfolio Inquiries", description: "Inquire about acquiring a Midjump domain, or ask for portfolio details. Purchases are secured through Escrow.com.", urlPath: "/contact", body, active: "/contact" });
 };
 
+
+/* ---------- landing ---------- */
+const MQ = [["anthropize", 0.63], ["enforcing", 0.53], ["nephele", 0.44], ["reinforcing", 0.64], ["guardrailed", 0.65], ["triaged", 0.45], ["crossmodality", 0.77], ["modulated", 0.60]];
+const FAQ_D = [
+  ["01", "How does the purchase process work?", "Purchases are completed through Atom.com's escrow service, which handles both payment and domain transfer. For multi-domain acquisitions or custom arrangements, transactions can be facilitated through Escrow.com."],
+  ["02", "Are the logo concepts included?", "Each domain is presented with custom logo concepts, which are available to buyers on request."],
+  ["03", "Do you offer payment plans?", "Payment plans are available for select domains and are facilitated through Atom.com. Contact Midjump with the domain of interest and your preferred payment timeline."],
+];
+const FAQ_M = [
+  ["01", "How does purchasing work?", "Payment and domain transfer are handled through Atom.com's escrow service. Multi-domain or custom deals can go through Escrow.com."],
+  ["02", "Are logo concepts included?", "Each domain comes with custom logo concepts, available to buyers on request."],
+  ["03", "Are payment plans available?", "For select domains, through Atom.com. Contact Midjump with the domain and your preferred timeline."],
+];
+const mqItems = (kind) => [0, 1].map((copy) => MQ.map(([slug, ink]) => {
+  const d = domains.find((x) => x.slug === slug);
+  const slot = kind === "d" ? ` style="width:${(220 * ink + 66).toFixed(1)}px"` : "";
+  return `<a href="/domains/${slug}" class="mq-item"${slot}${copy ? ' aria-hidden="true" tabindex="-1"' : ""}><span class="mq-logo"><img src="/assets/svg/m_${d.atomName === "CrossModality" ? "CrossModality" : d.atomName}.svg" alt="" loading="lazy" decoding="async"></span><span class="mq-name">${esc(d.base)}<span class="mq-ext">${esc(d.ext)}</span></span></a>`;
+}).join("")).join("");
+const arrow = `<svg viewBox="0 0 242.333 242.333" aria-hidden="true"><path d="M162 38 L78 121.2 L162 204.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>`;
+const landing = () => {
+  const body = `
+<div class="c-frame d-only l-d">
+<section class="l-hero"><h1 class="mj-fade" style="text-align:center">Digital Identities.<br>Built for distinction.</h1>
+<p class="mj-fade mj-d1" style="text-align:center">Midjump is a collection of signature domain names,<br>curated for startups, enterprises, and emerging ventures.</p>
+<div class="mj-fade mj-d2 l-cta" style="justify-content:center"><a href="/domains" class="mj-hero-btn">Explore the portfolio${arrow}</a></div></section>
+<section class="l-band" aria-labelledby="mq-label-d"><h2 id="mq-label-d" class="mj-row-label" style="padding-bottom:44px">Selected domains</h2>
+<p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
+<div class="mq"><div class="mq-vp" data-secs="45"><div class="mq-track">${mqItems("d")}</div></div></div></section>
+<section class="l-qa" aria-labelledby="qa-label-d"><h2 id="qa-label-d" class="mj-row-label">Acquiring a domain</h2>
+<dl>${FAQ_D.map(([n, q, a]) => `<div><dt><span class="n" aria-hidden="true">${n}</span><span>${esc(q)}</span></dt><dd>${esc(a)}</dd></div>`).join("")}</dl>
+<div class="l-end" aria-hidden="true"></div></section>
+</div>
+<div class="m-only l-m">
+<section class="l-hero"><h1 class="mj-fade">Digital<br>Identities.<br>Built for<br>distinction.</h1>
+<p class="mj-fade mj-d1">Midjump is a collection of signature domain names, curated for startups, enterprises, and emerging ventures.</p>
+<a href="/domains" class="mj-cta mj-fade mj-d2"><span>Explore the portfolio</span>${arrow}</a></section>
+<section class="l-band" aria-labelledby="mq-label-m"><h2 id="mq-label-m" class="row-label" style="padding-bottom:31px">Selected domains</h2>
+<p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
+<div class="mq-vp" data-secs="20"><div class="mq-track">${mqItems("m")}</div></div></section>
+<section class="l-qa" aria-labelledby="qa-label-m"><h2 id="qa-label-m" class="row-label">Acquiring a domain</h2>
+<div class="faq-list">${FAQ_M.map(([n, q, a], i) => `<div class="faq${i ? "" : " is-open"}"><button type="button" class="faq-q" aria-expanded="${i ? "false" : "true"}"><span class="faq-qt"><span class="faq-n" aria-hidden="true">${n}</span><span>${esc(q)}</span></span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-ai"><p>${esc(a)}</p></div></div></div>`).join("")}</div>
+<div class="l-end" aria-hidden="true"></div></section>
+</div>`;
+  return layout({ title: "Midjump | Digital Identities. Built for distinction.", description: "Midjump is a collection of signature domain names, curated for startups, enterprises, and emerging ventures.", urlPath: "/", body, active: "" });
+};
+
 /* ---------- output ---------- */
 fs.rmSync(dist, { recursive: true, force: true });
 copyDir(path.join(root, "src/assets"), path.join(dist, "assets"));
@@ -132,5 +178,5 @@ fs.copyFileSync(path.join(root, "src/styles/site.css"), path.join(dist, "assets/
 fs.copyFileSync(path.join(root, "src/js/site.js"), path.join(dist, "assets/site.js"));
 write("domains/index.html", gallery());
 write("contact/index.html", contact());
-write("index.html", `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Midjump (rebuild in progress)</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#F3F2EE;color:#1A1A18;font:300 16px/1.6 system-ui,sans-serif}</style></head><body><p>Midjump, rebuild in progress. <a href="/domains">Domain collection</a></p></body></html>`);
+write("index.html", landing());
 console.log("built", fs.readdirSync(dist).length, "entries");
