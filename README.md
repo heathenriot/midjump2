@@ -14,12 +14,12 @@ midjump2/
 │   ├── landing.json         home page words, scrolling strip, FAQ
 │   ├── contact.json         contact page words
 │   ├── gallery.json         collection page words + category tabs
-│   ├── domains/<name>/      one folder per domain: domain.json + its logo files
-│   └── _new-domain-template/  copy this to start a new domain
-├── public/                ← site logo, Escrow logo, fonts (rarely changes)
+│   ├── domains/             one file per domain (+ _template.json to copy)
+│   └── svg/                 every logo, all together
 ├── src/                   ← 🔒 code. Leave alone unless you know what you're doing
 │   ├── lib/                 data.js (reads + checks content), layout.js (header/footer), util.js
 │   ├── pages/               landing.js, gallery.js, contact.js, domain.js (one per page type)
+│   ├── fonts/               site fonts
 │   ├── styles/site.css      all styling
 │   └── js/site.js           all behaviour (menus, filter, carousel, forms)
 ├── build.js               ← the build script (short; ties it together)

@@ -15,12 +15,12 @@ const TIERS = ["A", "B", "C"];
 const CATS = galleryText.categories;
 
 const dir = path.join(root, "content/domains");
-const folders = fs.readdirSync(dir, { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name).sort();
+const svgDir = path.join(root, "content/svg");
+const folders = fs.readdirSync(dir).filter((f) => f.endsWith(".json") && !f.startsWith("_")).map((f) => f.slice(0, -5)).sort();
 
 export const domains = folders.map((slug) => {
-  const where = `content/domains/${slug}/domain.json`;
-  const file = path.join(dir, slug, "domain.json");
-  if (!fs.existsSync(file)) { bad(`The folder "${slug}" has no domain.json file inside it. Add one (copy another domain's) or delete the folder.`); return null; }
+  const where = `content/domains/${slug}.json`;
+  const file = path.join(dir, slug + ".json");
   let j;
   try { j = JSON.parse(fs.readFileSync(file, "utf8")); }
   catch (e) { bad(`${where} can't be read: ${e.message}. Usually a missing comma or quote mark near that spot.`); return null; }
@@ -28,11 +28,11 @@ export const domains = folders.map((slug) => {
   for (const k of ["name", "atomName", "categories", "tier", "galleryLogo", "logos", "overview", "gallery", "desktopOrder", "phoneOrder"])
     if (j[k] === undefined || j[k] === "") bad(`${where} is missing "${k}".`);
   if (!j.name || !/^[a-z0-9-]+\.[a-z]+$/i.test(j.name)) bad(`${where}: "name" should look like Example.com (got "${j.name}").`);
-  if (j.name && j.name.toLowerCase().split(".")[0].replace(/[^a-z0-9]/g, "") !== slug.replace(/[^a-z0-9]/g, "")) bad(`${where}: the folder name "${slug}" should be the domain name in lowercase without the extension (e.g. "${(j.name || "").split(".")[0].toLowerCase()}").`);
+  if (j.name && j.name.toLowerCase().split(".")[0].replace(/[^a-z0-9]/g, "") !== slug.replace(/[^a-z0-9]/g, "")) bad(`${where}: the file name "${slug}.json" should be the domain name in lowercase without the extension (e.g. "${(j.name || "").split(".")[0].toLowerCase()}").`);
   for (const c of j.categories || []) if (!CATS.includes(c)) bad(`${where}: category "${c}" isn't one of: ${CATS.join(", ")}. Check the spelling and capital letters.`);
   if (!TIERS.includes(j.tier)) bad(`${where}: "tier" must be "A", "B" or "C" (got "${j.tier}").`);
   const need = [j.galleryLogo, ...(j.logos || []), j.marqueeLogo].filter(Boolean);
-  for (const f of need) if (!fs.existsSync(path.join(dir, slug, f))) bad(`${where} mentions the logo "${f}" but that file isn't in the folder content/domains/${slug}/. Upload it there, or fix the spelling in domain.json (capital letters matter).`);
+  for (const f of need) if (!fs.existsSync(path.join(svgDir, f))) bad(`${where} mentions the logo "${f}" but that file isn't in the folder content/svg/. Upload it there, or fix the spelling in domain.json (capital letters matter).`);
   if (Array.isArray(j.logos) && j.logos.length === 0) bad(`${where}: "logos" is empty. Every domain needs at least one logo.`);
   if (!Array.isArray(j.overview) || !j.overview.length) bad(`${where}: "overview" needs at least one paragraph.`);
 
@@ -43,8 +43,7 @@ export const domains = folders.map((slug) => {
     categories: j.categories || [], tier: j.tier, overview: j.overview || [],
     galleryLogo: url(j.galleryLogo), logos: (j.logos || []).map(url), marqueeLogo: j.marqueeLogo,
     desk: j.gallery?.desktop, phone: j.gallery?.phone, logoFx: j.carouselTweaks || [],
-    desktopOrder: j.desktopOrder, phoneOrder: j.phoneOrder, _dir: path.join(dir, slug),
-    _files: [...new Set(need)],
+    desktopOrder: j.desktopOrder, phoneOrder: j.phoneOrder,
   };
 }).filter(Boolean);
 
@@ -57,8 +56,8 @@ seen(domains, "phoneOrder", "phoneOrder number");
 // landing page scroller / contact references
 for (const m of landingText.scrollerDomains) {
   const d = domains.find((x) => x.slug === m.domain);
-  if (!d) bad(`content/landing.json lists "${m.domain}" in the scrolling strip, but there's no domain folder with that name.`);
-  else if (!d.marqueeLogo) bad(`"${m.domain}" is in the home-page scrolling strip, so content/domains/${m.domain}/domain.json needs a "marqueeLogo" (a logo file in that folder).`);
+  if (!d) bad(`content/landing.json lists "${m.domain}" in the scrolling strip, but there's no domain file with that name.`);
+  else if (!d.marqueeLogo) bad(`"${m.domain}" is in the home-page scrolling strip, so content/domains/${m.domain}.json needs a "marqueeLogo" (a logo file in that folder).`);
 }
 
 if (problems.length) {

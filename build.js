@@ -11,10 +11,9 @@ import { domainPage, picks } from "./src/pages/domain.js";
 
 fs.rmSync(dist, { recursive: true, force: true });
 
-// shared files (fonts, site logo) -> /assets
-copyDir(path.join(root, "public"), path.join(dist, "assets"));
-// each domain's logos -> /assets/svg
-for (const d of domains) for (const f of d._files) { fs.mkdirSync(path.join(dist, "assets/svg"), { recursive: true }); fs.copyFileSync(path.join(d._dir, f), path.join(dist, "assets/svg", f)); }
+// fonts and all logos -> /assets
+copyDir(path.join(root, "src/fonts"), path.join(dist, "assets/fonts"));
+copyDir(path.join(root, "content/svg"), path.join(dist, "assets/svg"));
 fs.copyFileSync(path.join(root, "src/styles/site.css"), path.join(dist, "assets/site.css"));
 fs.copyFileSync(path.join(root, "src/js/site.js"), path.join(dist, "assets/site.js"));
 
