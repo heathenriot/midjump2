@@ -99,11 +99,38 @@ const gallery = () => {
   return layout({ title: "Domain Collection | Midjump", description: "Premium, brandable domain names for AI, cloud, security, data and ventures, each presented with custom logo concepts.", urlPath: "/domains", body, active: "/domains" });
 };
 
+
+/* ---------- contact ---------- */
+const contact = () => {
+  const body = `
+<div class="c-frame">
+<section class="c-title d-only"><h1 class="mj-fade">Portfolio Inquiries</h1></section>
+<section class="mj-title m-only"><h1 class="mj-fade">Portfolio Inquiries</h1></section>
+<section class="c-form" aria-label="Contact form"><div class="c-inner">
+<p class="c-intro">For acquisition inquiries or portfolio details, please use the form below and specify the domains of interest.</p>
+<div class="c-wrap">
+<form class="mj-form" id="mj-contact" data-key="13657328-3220-44e4-b42f-0f0e138bd0b6">
+<input class="mj-hp" type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label class="mj-field"><input class="mj-input" type="text" name="firstName" placeholder="First name" aria-label="First name" autocomplete="given-name" required></label>
+<label class="mj-field"><input class="mj-input" type="text" name="lastName" placeholder="Last name" aria-label="Last name" autocomplete="family-name" required></label>
+<label class="mj-field"><input class="mj-input" type="email" name="email" placeholder="Email address" aria-label="Email address" autocomplete="email" required></label>
+<label class="mj-field"><textarea class="mj-input" name="message" rows="4" placeholder="Enter your message" aria-label="Message" required></textarea></label>
+<div class="c-actions"><button type="submit" class="mj-send"><span>Send inquiry</span><svg class="mj-chev" viewBox="0 0 242.333 242.333" aria-hidden="true"><path d="M80 38 L164 121.2 L80 204.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+<p class="mj-err" role="alert" hidden>Something went wrong. Please email hello@midjump.com instead.</p>
+</form>
+<div class="mj-note" role="status" aria-live="polite"><p class="t">Message received.</p><p class="s">Thank you for your inquiry.</p><button type="button" class="mj-again">Send another</button></div>
+</div>
+</div></section>
+</div>`;
+  return layout({ title: "Contact Midjump | Portfolio Inquiries", description: "Inquire about acquiring a Midjump domain, or ask for portfolio details. Purchases are secured through Escrow.com.", urlPath: "/contact", body, active: "/contact" });
+};
+
 /* ---------- output ---------- */
 fs.rmSync(dist, { recursive: true, force: true });
 copyDir(path.join(root, "src/assets"), path.join(dist, "assets"));
 fs.copyFileSync(path.join(root, "src/styles/site.css"), path.join(dist, "assets/site.css"));
 fs.copyFileSync(path.join(root, "src/js/site.js"), path.join(dist, "assets/site.js"));
 write("domains/index.html", gallery());
+write("contact/index.html", contact());
 write("index.html", `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Midjump (rebuild in progress)</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#F3F2EE;color:#1A1A18;font:300 16px/1.6 system-ui,sans-serif}</style></head><body><p>Midjump, rebuild in progress. <a href="/domains">Domain collection</a></p></body></html>`);
 console.log("built", fs.readdirSync(dist).length, "entries");

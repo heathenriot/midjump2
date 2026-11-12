@@ -109,4 +109,29 @@
     var h = $(".mj-header");
     if (h && h.scrollIntoView) h.scrollIntoView({ behavior: "smooth", block: "start" }); else window.scrollTo(0, 0);
   });
+
+  /* contact form (Web3Forms; the access key is a public client key by design) */
+  var cf = $("#mj-contact");
+  if (cf) {
+    var wrap = $(".c-wrap"), err = $(".mj-err"), sendBtn = $(".mj-send", cf);
+    var dom = "";
+    try { var d = new URLSearchParams(location.search).get("domain"); if (d && /^[\w.-]{1,80}$/.test(d)) dom = d; } catch (e) {}
+    var msg = cf.elements.message;
+    if (dom && msg && !msg.value) msg.value = "I'm interested in " + dom + ".\n\n";
+    cf.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = {}; new FormData(cf).forEach(function (v, k) { data[k] = v; });
+      if (data.botcheck) return;
+      delete data.botcheck;
+      data.access_key = cf.getAttribute("data-key");
+      data.subject = "Inquiry: Contact Page" + (dom ? " (" + dom + ")" : "");
+      data.from_name = "Midjump \u2014 Contact Form";
+      err.hidden = true; sendBtn.disabled = true;
+      fetch("https://api.web3forms.com/submit", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); wrap.classList.add("is-sent"); cf.reset(); })
+        .catch(function () { err.hidden = false; })
+        .then(function () { sendBtn.disabled = false; });
+    });
+    $(".mj-again").addEventListener("click", function () { wrap.classList.remove("is-sent"); });
+  }
 })();
