@@ -6,20 +6,7 @@
     "Ventures"
   ],
   "tier": "A",
-  "desktopOrder": 12,
-  "phoneOrder": 9,
   "galleryLogo": "FlexiToken.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.07,
-      "y": "0%"
-    },
-    "phone": {
-      "scale": 0.95,
-      "y": "2.5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "FlexiToken.svg"
   ],

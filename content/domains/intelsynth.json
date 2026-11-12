@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 37,
-  "phoneOrder": 43,
   "galleryLogo": "Intelsynth.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.99,
-      "y": "1%"
-    },
-    "phone": {
-      "scale": 0.95,
-      "y": "3%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Intelsynth.svg",
     "Intelsynth1.svg"

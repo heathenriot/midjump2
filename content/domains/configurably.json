@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 41,
-  "phoneOrder": 38,
   "galleryLogo": "Configurably.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1,
-      "y": "-3%"
-    },
-    "phone": {
-      "scale": 0.91,
-      "y": "0%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Configurably.svg"
   ],

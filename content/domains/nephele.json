@@ -6,20 +6,7 @@
     "Cloud"
   ],
   "tier": "A",
-  "desktopOrder": 7,
-  "phoneOrder": 5,
   "galleryLogo": "m_Nephele.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.05,
-      "y": "2%"
-    },
-    "phone": {
-      "scale": 0.89,
-      "y": "4%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "m_Nephele.svg",
     "Nephele.svg",
@@ -48,6 +35,5 @@
   "overview": [
     "Derived from the Greek cloud goddess, the name Nephele carries a mythological heritage that extends into scientific research, celestial nomenclature, and modern computing terminology.",
     "Its natural association with the cloud positions Nephele.ai for companies developing distributed computing systems, large-scale AI architectures, and the infrastructure supporting them."
-  ],
-  "marqueeLogo": "m_Nephele.svg"
+  ]
 }

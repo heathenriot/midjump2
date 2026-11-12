@@ -5,20 +5,7 @@
     "Cloud"
   ],
   "tier": "B",
-  "desktopOrder": 45,
-  "phoneOrder": 32,
   "galleryLogo": "CloudAider1.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.9,
-      "y": "-3%"
-    },
-    "phone": {
-      "scale": 0.83,
-      "y": "1%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "CloudAider1.svg",
     "CloudAider2.svg",

@@ -5,20 +5,7 @@
     "Ventures"
   ],
   "tier": "C",
-  "desktopOrder": 29,
-  "phoneOrder": 40,
   "galleryLogo": "Reinventional.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.97,
-      "y": "-0.1%"
-    },
-    "phone": {
-      "scale": 0.9,
-      "y": "4%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Reinventional.svg"
   ],

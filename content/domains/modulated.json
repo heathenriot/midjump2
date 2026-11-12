@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 14,
-  "phoneOrder": 11,
   "galleryLogo": "Modulated.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.08,
-      "y": "2%"
-    },
-    "phone": {
-      "scale": 0.95,
-      "y": "4.5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Modulated.svg",
     "Modulated1.svg"
@@ -41,6 +28,5 @@
   "overview": [
     "From wireless communications to neural computation, modulation enables the controlled variation of signals and system behavior, underpinning advances in adaptive hardware and AI.",
     "Modulated.si is a precise identity for companies developing signal processing technologies, intelligent sensing systems, and adaptive computational architectures."
-  ],
-  "marqueeLogo": "m_Modulated.svg"
+  ]
 }

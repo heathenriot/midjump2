@@ -11,9 +11,12 @@ midjump2/
 ├── HOW-TO.md              ← click-by-click recipes (add domain, replace logo, edit text)
 ├── content/               ← ✏️ EVERYTHING YOU EDIT
 │   ├── site.json            email, year, menu, footer wording
-│   ├── landing.json         home page words, scrolling strip, FAQ
+│   ├── landing.json         home page words, FAQ
 │   ├── contact.json         contact page words
 │   ├── gallery.json         collection page words + category tabs
+│   ├── gallery-desktop.json  order + logo size/position, desktop gallery
+│   ├── gallery-phone.json    same for the 2-column phone gallery
+│   ├── marquee.json          order + size/position of the home-page strip
 │   ├── domains/             one file per domain (+ _template.json to copy)
 │   └── svg/                 every logo, all together
 ├── src/                   ← 🔒 code. Leave alone unless you know what you're doing

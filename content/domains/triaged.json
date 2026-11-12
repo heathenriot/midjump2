@@ -7,20 +7,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 10,
-  "phoneOrder": 16,
   "galleryLogo": "Triaged.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.95,
-      "y": "4%"
-    },
-    "phone": {
-      "scale": 0.95,
-      "y": "5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Triaged.svg",
     "Triaged1.svg"
@@ -42,6 +29,5 @@
   "overview": [
     "The increasing complexity of digital environments and AI-driven systems is generating growing volumes of operational signals. Ensuring their effective triage is critical to maintaining operational resilience.",
     "Triaged.si is a fitting identity for companies developing triage technologies, autonomous security operations, and AI-powered workflow orchestration."
-  ],
-  "marqueeLogo": "m_Triaged.svg"
+  ]
 }

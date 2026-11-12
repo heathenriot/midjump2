@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 20,
-  "phoneOrder": 19,
   "galleryLogo": "Taxonomic.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.05,
-      "y": "2.5%"
-    },
-    "phone": {
-      "scale": 0.95,
-      "y": "4.5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Taxonomic.svg",
     "Taxonomic1.svg"

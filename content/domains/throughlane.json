@@ -7,20 +7,7 @@
     "Ventures"
   ],
   "tier": "B",
-  "desktopOrder": 40,
-  "phoneOrder": 39,
   "galleryLogo": "Throughlane.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.97,
-      "y": "-0.5%"
-    },
-    "phone": {
-      "scale": 0.92,
-      "y": "0%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Throughlane.svg"
   ],

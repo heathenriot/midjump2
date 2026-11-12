@@ -1,0 +1,13 @@
+{
+  "_help": "The scrolling strip on the home page. The order of the lines is the order in the strip. logo = file in content/svg. width = how much room the logo takes on desktop. For desktop and phone separately: scale = logo size (1 = normal), x = move right (+) / left (-), y = move down (+) / up (-), in percent.",
+  "order": [
+    {"domain": "anthropize", "logo": "m_Anthropize.svg", "width": 0.63, "desktop": {"scale": 1, "x": "0%", "y": "0%"}, "phone": {"scale": 1, "x": "0%", "y": "0%"}},
+    {"domain": "enforcing", "logo": "m_Enforcing.svg", "width": 0.53, "desktop": {"scale": 1, "x": "0%", "y": "0%"}, "phone": {"scale": 1, "x": "0%", "y": "0%"}},
+    {"domain": "nephele", "logo": "m_Nephele.svg", "width": 0.44, "desktop": {"scale": 1, "x": "0%", "y": "0%"}, "phone": {"scale": 1, "x": "0%", "y": "0%"}},
+    {"domain": "reinforcing", "logo": "m_Reinforcing.svg", "width": 0.64, "desktop": {"scale": 1, "x": "0%", "y": "0%"}, "phone": {"scale": 1, "x": "0%", "y": "0%"}},
+    {"domain": "guardrailed", "logo": "m_Guardrailed.svg", "width": 0.65, "desktop": {"scale": 1, "x": "0%", "y": "0%"}, "phone": {"scale": 1, "x": "0%", "y": "0%"}},
+    {"domain": "triaged", "logo": "m_Triaged.svg", "width": 0.45, "desktop": {"scale": 1, "x": "0%", "y": "0%"}, "phone": {"scale": 1, "x": "0%", "y": "0%"}},
+    {"domain": "crossmodality", "logo": "m_CrossModality.svg", "width": 0.77, "desktop": {"scale": 1, "x": "0%", "y": "0%"}, "phone": {"scale": 1, "x": "0%", "y": "0%"}},
+    {"domain": "modulated", "logo": "m_Modulated.svg", "width": 0.6, "desktop": {"scale": 1, "x": "0%", "y": "0%"}, "phone": {"scale": 1, "x": "0%", "y": "0%"}}
+  ]
+}

@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 32,
-  "phoneOrder": 27,
   "galleryLogo": "Distributional.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1,
-      "y": "2.5%"
-    },
-    "phone": {
-      "scale": 0.93,
-      "y": "4.5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Distributional.svg",
     "Distributional1.svg"

@@ -6,20 +6,7 @@
     "Ventures"
   ],
   "tier": "C",
-  "desktopOrder": 36,
-  "phoneOrder": 42,
   "galleryLogo": "Sektoral.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.98,
-      "y": "3%"
-    },
-    "phone": {
-      "scale": 0.93,
-      "y": "5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Sektoral.svg",
     "Sektoral1.svg"

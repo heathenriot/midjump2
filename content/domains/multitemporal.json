@@ -5,20 +5,7 @@
     "Data"
   ],
   "tier": "B",
-  "desktopOrder": 15,
-  "phoneOrder": 25,
   "galleryLogo": "Multitemporal.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.98,
-      "y": "2%"
-    },
-    "phone": {
-      "scale": 0.94,
-      "y": "2%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Multitemporal.svg",
     "Multitemporal1.svg"

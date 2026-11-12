@@ -5,20 +5,7 @@
     "AI"
   ],
   "tier": "A",
-  "desktopOrder": 6,
-  "phoneOrder": 4,
   "galleryLogo": "CoTaught.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.96,
-      "y": "3%"
-    },
-    "phone": {
-      "scale": 0.88,
-      "y": "4%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "CoTaught.svg",
     "CoTaught1.svg"

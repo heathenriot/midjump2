@@ -5,20 +5,7 @@
     "Ventures"
   ],
   "tier": "C",
-  "desktopOrder": 46,
-  "phoneOrder": 47,
   "galleryLogo": "DEXtreasury.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.05,
-      "y": "1%"
-    },
-    "phone": {
-      "scale": 1,
-      "y": "4%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "DEXtreasury.svg"
   ],

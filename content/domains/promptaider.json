@@ -5,20 +5,7 @@
     "AI"
   ],
   "tier": "B",
-  "desktopOrder": 23,
-  "phoneOrder": 26,
   "galleryLogo": "PromptAider.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.07,
-      "y": "-2%"
-    },
-    "phone": {
-      "scale": 0.98,
-      "y": "2%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "PromptAider.svg"
   ],

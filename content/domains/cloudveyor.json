@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "B",
-  "desktopOrder": 17,
-  "phoneOrder": 18,
   "galleryLogo": "Cloudveyor.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.92,
-      "y": "2%"
-    },
-    "phone": {
-      "scale": 0.92,
-      "y": "-0.5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Cloudveyor.svg"
   ],

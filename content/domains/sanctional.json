@@ -6,20 +6,7 @@
     "Security"
   ],
   "tier": "C",
-  "desktopOrder": 42,
-  "phoneOrder": 44,
   "galleryLogo": "Sanctional.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1,
-      "y": "1%"
-    },
-    "phone": {
-      "scale": 1,
-      "y": "2%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Sanctional.svg",
     "Sanctional1.svg"

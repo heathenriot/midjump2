@@ -5,20 +5,7 @@
     "Ventures"
   ],
   "tier": "A",
-  "desktopOrder": 13,
-  "phoneOrder": 14,
   "galleryLogo": "BroughtIn.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.09,
-      "y": "1%"
-    },
-    "phone": {
-      "scale": 1.05,
-      "y": "1%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "BroughtIn.svg"
   ],

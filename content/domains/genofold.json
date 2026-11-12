@@ -5,20 +5,7 @@
     "Ventures"
   ],
   "tier": "C",
-  "desktopOrder": 44,
-  "phoneOrder": 46,
   "galleryLogo": "GenoFold.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.96,
-      "y": "1%"
-    },
-    "phone": {
-      "scale": 0.86,
-      "y": "4%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "GenoFold1.svg",
     "GenoFold2.svg"

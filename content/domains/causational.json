@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 49,
-  "phoneOrder": 49,
   "galleryLogo": "Causational.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1,
-      "y": "1.5%"
-    },
-    "phone": {
-      "scale": 0.95,
-      "y": "3%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Causational.svg",
     "Causational1.svg"

@@ -6,20 +6,7 @@
     "Ventures"
   ],
   "tier": "C",
-  "desktopOrder": 26,
-  "phoneOrder": 24,
   "galleryLogo": "Quadrants.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1,
-      "y": "2%"
-    },
-    "phone": {
-      "scale": 0.92,
-      "y": "4.5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Quadrants.svg",
     "Quadrants1.svg"

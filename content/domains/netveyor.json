@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 48,
-  "phoneOrder": 48,
   "galleryLogo": "Netveyor1.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.84,
-      "y": "2%"
-    },
-    "phone": {
-      "scale": 0.83,
-      "y": "3%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Netveyor1.svg",
     "Netveyor.svg"

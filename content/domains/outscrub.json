@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 27,
-  "phoneOrder": 33,
   "galleryLogo": "Outscrub.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.98,
-      "y": "1.5%"
-    },
-    "phone": {
-      "scale": 0.89,
-      "y": "6%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Outscrub.svg",
     "Outscrub1.svg"

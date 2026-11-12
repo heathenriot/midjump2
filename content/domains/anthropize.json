@@ -5,20 +5,7 @@
     "AI"
   ],
   "tier": "A",
-  "desktopOrder": 5,
-  "phoneOrder": 7,
   "galleryLogo": "Anthropize1.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.88,
-      "y": "-3%"
-    },
-    "phone": {
-      "scale": 0.85,
-      "y": "-2.5%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Anthropize1.svg",
     "Anthropize2.svg"
@@ -40,6 +27,5 @@
   "overview": [
     "Rooted in the Greek *anthropos*, anthropize conveys the act of shaping systems, environments, and intelligence around human context.",
     "The name lends a natural identity to companies developing human-centered AI, embodied robotics, human world models, and affective computing, fields in which imbuing intelligent technologies with anthropic qualities is becoming a central design principle."
-  ],
-  "marqueeLogo": "m_Anthropize.svg"
+  ]
 }

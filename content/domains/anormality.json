@@ -6,20 +6,7 @@
     "Data"
   ],
   "tier": "C",
-  "desktopOrder": 47,
-  "phoneOrder": 34,
   "galleryLogo": "Anormality.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.01,
-      "y": "1%"
-    },
-    "phone": {
-      "scale": 1.01,
-      "y": "2%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "Anormality.svg",
     "Anormality1.svg"

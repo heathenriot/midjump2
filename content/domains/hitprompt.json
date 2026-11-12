@@ -5,20 +5,7 @@
     "AI"
   ],
   "tier": "B",
-  "desktopOrder": 28,
-  "phoneOrder": 17,
   "galleryLogo": "HitPrompt1.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 1.07,
-      "y": "-1%"
-    },
-    "phone": {
-      "scale": 0.96,
-      "y": "2%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "HitPrompt1.svg",
     "HitPrompt2.svg",

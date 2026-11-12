@@ -6,20 +6,7 @@
     "Security"
   ],
   "tier": "C",
-  "desktopOrder": 39,
-  "phoneOrder": 41,
   "galleryLogo": "AgenticAider1.svg",
-  "gallery": {
-    "desktop": {
-      "scale": 0.88,
-      "y": "-2.5%"
-    },
-    "phone": {
-      "scale": 0.84,
-      "y": "0%",
-      "x": "0%"
-    }
-  },
   "logos": [
     "AgenticAider1.svg",
     "AgenticAider.svg"
