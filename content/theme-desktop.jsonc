@@ -150,15 +150,20 @@
     "marqueeExtColor": "#9A9892",                              // Colour of .com / .si
     "faqPaddingTop": "62px",                                   // Space above 'ACQUIRING A DOMAIN'
     "faqListGap": "36px",                                      // Space between that label and the first question
-    "faqRule": { "style": "dotted", "width": "1px", "color": "#C6C6B7" }, // Lines between the questions   [style: solid / dotted / dashed / none]
-    "faqRowPaddingY": "22px",                                  // Space above and below each question
-    "faqNumberWidth": "46px",                                  // Width of the 01 02 03 column (answers line up with the questions)
+    "faqRule": { "style": "none", "width": "1px", "color": "#C6C6B7" }, // Lines between the questions (off by default)   [style: solid / dotted / dashed / none]
+    "faqOpenFill": "#ECEBE5",                                  // Background of the open question and its answer
+    "faqSidePadding": "20px",                                  // Space left of the numbers and right of the + / − icons
+    "faqAnswerBottom": "26px",                                 // Space under an open answer
+    "faqRowPaddingY": "14px",                                  // Space above and below each question
+    "faqNumberWidth": "30px",                                  // Width of the 01 02 03 column (answers line up with the questions)
     "faqWidth": "602px",                                       // Width of the question list
     "faqQuestionSize": "12px",                                 // Question text size
     "faqQuestionSpacing": ".07em",                             // Space between letters of questions
-    "faqOpenColor": "#253A79",                                 // Colour of the open question, its number, icon and side bar
+    "faqOpenColor": "#253A79",                                 // Colour of the open question and its − icon
+    "faqOpenNumberColor": "#1A1A18",                           // Colour of the number on the open question
     "faqIconSize": "28px",                                     // Size of the round + / − icon
-    "faqIconRingColor": "#C6C6B7",                             // Colour of the icon ring when closed
+    "faqIconOpenFill": "#F3F2EE",                              // Fill of the round icon when open
+    "faqIconOpenBorder": "#ECEBE5",                            // Border of the round icon when open
     "faqQuestionColor": "#1E1E1C",                             // Question colour
     "faqNumberColor": "#9A9892",                               // Colour of 01 02 03
     "faqAnswerSize": "15px",                                   // Answer text size

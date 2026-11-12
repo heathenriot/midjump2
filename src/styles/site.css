@@ -235,26 +235,24 @@ textarea.mj-input{height:var(--p-contact-textarea-height)}
 .l-d .mq-item:hover .mq-ext,.l-d .mq-item:focus-visible .mq-ext{color:var(--t-colors-text)}
 .l-d .l-qa{flex:1 0 auto;display:flex;flex-direction:column;padding-top:var(--t-landing-faq-padding-top)}
 .l-d .faq-list{width:var(--t-landing-faq-width);max-width:calc(100% - 48px);margin:var(--t-landing-faq-list-gap) auto 0;border-top:var(--t-landing-faq-rule)}
-.l-d .faq{position:relative;border-bottom:var(--t-landing-faq-rule)}
-.l-d .faq::before{content:'';position:absolute;left:-20px;top:-1px;bottom:-1px;width:2px;background:var(--t-landing-faq-open-color);transform:scaleY(0);transform-origin:top;transition:transform .5s cubic-bezier(.4,0,.2,1)}
-.l-d .faq.is-open::before{transform:scaleY(1)}
-.l-d .faq-q{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:var(--t-landing-faq-number-width) 1fr auto;align-items:center;padding:var(--t-landing-faq-row-padding-y) 0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.l-d .faq{border-bottom:var(--t-landing-faq-rule);border-radius:4px;transition:background-color .45s ease}
+.l-d .faq.is-open{background:var(--t-landing-faq-open-fill)}
+.l-d .faq-q{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:var(--t-landing-faq-number-width) 1fr auto;align-items:center;padding:var(--t-landing-faq-row-padding-y) var(--t-landing-faq-side-padding);cursor:pointer;-webkit-tap-highlight-color:transparent}
 .l-d .faq-q:focus-visible{outline:2px solid var(--t-colors-accent);outline-offset:4px}
 .l-d .faq-n{font-family:var(--t-fonts-heading);font-size:12px;font-weight:400;letter-spacing:.08em;color:var(--t-landing-faq-number-color);transition:color .4s ease}
-.l-d .faq-qt{font-size:var(--t-landing-faq-question-size);font-weight:500;letter-spacing:var(--t-landing-faq-question-spacing);text-transform:uppercase;line-height:1.4;color:var(--t-landing-faq-question-color);transition:color .4s ease,transform .4s ease}
-.l-d .faq-q:hover .faq-qt,.l-d .faq-q:focus-visible .faq-qt{color:var(--t-colors-accent);transform:translateX(3px)}
-.l-d .faq.is-open .faq-n,.l-d .faq.is-open .faq-qt{color:var(--t-landing-faq-open-color)}
-.l-d .faq-ic{position:relative;flex:none;box-sizing:border-box;width:var(--t-landing-faq-icon-size);height:var(--t-landing-faq-icon-size);border:1px solid var(--t-landing-faq-icon-ring-color);border-radius:50%;transition:background-color .45s ease,border-color .45s ease}
+.l-d .faq-qt{font-size:var(--t-landing-faq-question-size);font-weight:500;letter-spacing:var(--t-landing-faq-question-spacing);text-transform:uppercase;line-height:1.4;color:var(--t-landing-faq-question-color);transition:color .4s ease}
+.l-d .faq.is-open .faq-qt{color:var(--t-landing-faq-open-color)}
+.l-d .faq.is-open .faq-n{color:var(--t-landing-faq-open-number-color)}
+.l-d .faq-ic{position:relative;box-sizing:border-box;width:var(--t-landing-faq-icon-size);height:var(--t-landing-faq-icon-size);border:1px solid transparent;border-radius:50%;transition:background-color .45s ease,border-color .45s ease}
 .l-d .faq-ic::before,.l-d .faq-ic::after{content:'';position:absolute;left:50%;top:50%;width:10px;height:1px;margin:-.5px 0 0 -5px;background:var(--t-landing-faq-question-color);transition:transform .45s ease,background-color .45s ease}
 .l-d .faq-ic::after{transform:rotate(90deg)}
-.l-d .faq-q:hover .faq-ic{border-color:var(--t-colors-accent)}
-.l-d .faq.is-open .faq-ic{background:var(--t-landing-faq-open-color);border-color:var(--t-landing-faq-open-color)}
-.l-d .faq.is-open .faq-ic::before,.l-d .faq.is-open .faq-ic::after{background:var(--t-colors-page)}
+.l-d .faq.is-open .faq-ic{background:var(--t-landing-faq-icon-open-fill);border-color:var(--t-landing-faq-icon-open-border)}
+.l-d .faq.is-open .faq-ic::before,.l-d .faq.is-open .faq-ic::after{background:var(--t-landing-faq-open-color)}
 .l-d .faq.is-open .faq-ic::after{transform:rotate(0)}
 .l-d .faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.4,0,.2,1)}
 .l-d .faq.is-open .faq-a{grid-template-rows:1fr;transition:grid-template-rows .65s cubic-bezier(.4,0,.2,1)}
 .l-d .faq-ai{overflow:hidden;min-height:0}
-.l-d .faq-ai p{margin:0;max-width:var(--t-landing-faq-answer-max-width);padding:0 0 calc(var(--t-landing-faq-row-padding-y) + 4px) var(--t-landing-faq-number-width);font-size:var(--t-landing-faq-answer-size);font-weight:300;line-height:var(--t-landing-faq-answer-line-height);color:var(--t-landing-faq-answer-color);opacity:0;transform:translateY(-6px);transition:opacity .25s ease,transform .25s ease}
+.l-d .faq-ai p{margin:0;max-width:var(--t-landing-faq-answer-max-width);padding:2px var(--t-landing-faq-side-padding) var(--t-landing-faq-answer-bottom) calc(var(--t-landing-faq-side-padding) + var(--t-landing-faq-number-width));font-size:var(--t-landing-faq-answer-size);font-weight:300;line-height:var(--t-landing-faq-answer-line-height);color:var(--t-landing-faq-answer-color);opacity:0;transform:translateY(-6px);transition:opacity .25s ease,transform .25s ease}
 .l-d .faq.is-open .faq-ai p{opacity:1;transform:none;transition:opacity .5s ease .18s,transform .5s ease .18s}
 .l-d .l-end{flex:1 0 auto;min-height:var(--t-landing-bottom-space)}
 /* phone */
@@ -298,7 +296,7 @@ textarea.mj-input{height:var(--p-contact-textarea-height)}
 .faq.is-open .faq-ai p{opacity:1;transition:opacity .45s ease .15s}
 .l-m .l-end{flex:1 0 auto;min-height:var(--p-landing-bottom-space)}
 }
-@media (prefers-reduced-motion:reduce){.mq-track{animation:none !important}.mj-hero-btn,.mj-cta,.faq,.faq-a,.faq-ic,.faq-ic::before,.faq-ic::after,.faq-ai p,.faq::before,.faq-qt,.faq-n{transition:none !important}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none !important}.mj-hero-btn,.mj-cta,.faq,.faq-a,.faq-ic,.faq-ic::before,.faq-ic::after,.faq-ai p,.faq-qt,.faq-n{transition:none !important}}
 @media (prefers-reduced-motion:reduce){.mq-hint{display:block;margin:-34px 0 24px;text-align:center;font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--t-colors-muted-text)}.l-m .mq-hint{margin:-20px 0 14px}}
 
 /* ===== domain page ===== */
