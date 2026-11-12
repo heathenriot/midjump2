@@ -196,7 +196,7 @@
     "cellPadding": "14px",                                     // Space inside each cell, around the logo
     "cellHover": "#FAF9F6",                                    // Cell background on hover
     "logoAreaPadding": "6% 12% 3%",                            // Space around the logo inside the cell: top, left+right, bottom
-    "masterLogoScale": 1,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
+    "masterLogoScale": 1.04,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
     "masterLogoX": "0%",                                       // MASTER: move ALL gallery logos right (+) or left (-)
     "masterLogoY": "0%",                                       // MASTER: move ALL gallery logos down (+) or up (-)
     "nameSize": "15px",                                        // Domain name text size
@@ -225,7 +225,7 @@
     "viewerBackground": "#F3F2EE",                             // Background behind the logo viewer
     "viewerPaddingTop": "16px",                                // Space above the viewer
     "viewerPaddingBottom": "24px",                             // Space under the viewer arrows
-    "viewerHeight": "280px",                                   // Height of the viewer
+    "viewerHeight": "256px",                                   // Height of the viewer
     "viewerMaxWidth": "560px",                                 // Width of the viewer
     "firstLogoWidth": "360px",                                 // Widest the FIRST logo can be
     "firstLogoHeight": "230px",                                // Height of the FIRST logo

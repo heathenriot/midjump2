@@ -197,7 +197,7 @@ export const DESKTOP = [
   ["domain", "viewerBackground", "color", "#F3F2EE", "Background behind the logo viewer"],
   ["domain", "viewerPaddingTop", "size", "16px", "Space above the viewer"],
   ["domain", "viewerPaddingBottom", "size", "24px", "Space under the viewer arrows"],
-  ["domain", "viewerHeight", "size", "280px", "Height of the viewer"],
+  ["domain", "viewerHeight", "size", "256px", "Height of the viewer"],
   ["domain", "viewerMaxWidth", "size", "560px", "Width of the viewer"],
   ["domain", "firstLogoWidth", "size", "360px", "Widest the FIRST logo can be"],
   ["domain", "firstLogoHeight", "size", "230px", "Height of the FIRST logo"],
