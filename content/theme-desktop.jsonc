@@ -189,7 +189,7 @@
     "tabSize": "11px",                                         // Tab text size
     "tabSpacing": ".12em",                                     // Space between letters of tabs
     "tabColor": "#76756F",                                     // Tab colour
-    "tabActiveColor": "#1A1A18",                               // Selected tab colour
+    "tabActiveColor": "#254F99",                               // Selected tab colour
     "tabHoverColor": "#254F99",                                // Tab colour on hover
     "tabCountColor": "#ABAAA3",                                // Colour of the little numbers next to tabs
     "gridLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // The dotted lines between gallery cells   [style: solid / dotted / dashed / none]
@@ -249,7 +249,6 @@
     "fieldGap": "6px",                                         // Space between the form fields
     "fieldWidth": "505px",                                     // Width of the form fields
     "fieldLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // Line under each field   [style: solid / dotted / dashed / none]
-    "fieldFocusColor": "#254F99",                              // Line colour while typing in a field
     "inputSize": "14px",                                       // Text size inside fields
     "inputPaddingY": "10px",                                   // Height of fields (space above and below the text)
     "inputColor": "#1E1E1C",                                   // Text colour inside fields
@@ -312,7 +311,6 @@
     "introGap": "36px",                                        // Space between intro and the form
     "fieldGap": "15px",                                        // Space between fields
     "fieldLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // Line under each field   [style: solid / dotted / dashed / none]
-    "fieldFocusColor": "#254F99",                              // Line colour while typing in a field
     "inputSize": "15px",                                       // Text size inside fields
     "inputPaddingTop": "10px",                                 // Space above the text in a field
     "inputPaddingBottom": "16px",                              // Space under the text in a field

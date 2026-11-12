@@ -45,7 +45,7 @@
   // The top bar with the logo and the burger menu.
   // ──────────────────────────────────────────────────────────────────────
   "header": {
-    "height": "89px",                                          // Height of the top bar
+    "height": "87.5px",                                          // Height of the top bar
     "sidePadding": "20px",                                     // Space left of the logo and right of the burger
     "logoHeight": "50px",                                      // Logo size
     "logoX": "0px",                                            // Move logo right (+) or left (-)
@@ -179,7 +179,7 @@
     "cellPadding": "10px",                                     // Space inside each cell, around the logo
     "cellPressedFill": "#FAF9F6",                              // Cell background while pressed
     "logoAreaPadding": "6% 10% 3%",                            // Space around the logo inside the cell: top, left+right, bottom
-    "masterLogoScale": 1.05,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
+    "masterLogoScale": 1.08,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
     "masterLogoX": "0%",                                       // MASTER: move ALL gallery logos right (+) or left (-)
     "masterLogoY": "0%",                                       // MASTER: move ALL gallery logos down (+) or up (-)
     "nameSize": "13.5px",                                      // Domain name text size
@@ -238,7 +238,6 @@
     "labelSize": "12px",                                       // Size of the 'AVAILABLE FOR ACQUISITION' / 'ABOUT THE DOMAIN' labels
     "labelSpacing": ".14em",                                   // Their letter spacing
     "fieldLine": { "style": "solid", "width": "1px", "color": "#C3C3B3" }, // Line under each field   [style: solid / dotted / dashed / none]
-    "fieldFocusColor": "#254F99",                              // Line colour while typing
     "inputSize": "16px",                                       // Text size inside fields
     "inputColor": "#1E1E1C",                                   // Text colour inside fields
     "placeholderColor": "#6A6962",                             // Colour of the hint text ('Name', 'Email', 'Message')
@@ -294,7 +293,6 @@
     "introGap": "26px",                                        // Space between intro and form
     "fieldGap": "15px",                                        // Space between fields
     "fieldLine": { "style": "solid", "width": "1px", "color": "#C3C3B3" }, // Line under each field   [style: solid / dotted / dashed / none]
-    "fieldFocusColor": "#254F99",                              // Line colour while typing
     "inputSize": "16px",                                       // Text size inside fields
     "inputPaddingTop": "10px",                                 // Space above the text in a field
     "inputPaddingBottom": "14px",                              // Space under the text in a field
