@@ -178,11 +178,11 @@
   // Per-domain logo size/position lives in content/gallery-desktop.json. The 'master' settings here move/scale ALL gallery logos together.
   // ──────────────────────────────────────────────────────────────────────
   "gallery": {
-    "titleSize": "44px",                                       // Page title size ('Domain Collection')
+    "titleSize": "38px",                                       // Page title size ('Domain Collection')
     "titleWeight": 600,                                        // Page title boldness
     "titleColor": "#1A1A18",                                   // Page title colour
-    "titlePaddingTop": "40px",                                 // Space above the title
-    "titlePaddingBottom": "34px",                              // Space under the title
+    "titlePaddingTop": "44px",                                 // Space above the title
+    "titlePaddingBottom": "38px",                              // Space under the title
     "tabsPaddingTop": "15px",                                  // Space above the filter tabs
     "tabsPaddingBottom": "14px",                               // Space under the filter tabs
     "tabsGap": "30px",                                         // Space between tabs
@@ -212,12 +212,12 @@
   // Every individual domain page.
   // ──────────────────────────────────────────────────────────────────────
   "domain": {
-    "nameSize": "48px",                                        // Domain name size at the top
+    "nameSize": "42px",                                        // Domain name size at the top
     "nameWeight": 600,                                         // Domain name boldness
     "nameColor": "#1A1A18",                                    // Domain name colour
     "extColor": "#9A9892",                                     // Colour of .com / .si
-    "namePaddingTop": "30px",                                  // Space above the domain name
-    "namePaddingBottom": "24px",                               // Space under the category line
+    "namePaddingTop": "35px",                                  // Space above the domain name
+    "namePaddingBottom": "27px",                               // Space under the category line
     "categorySize": "11px",                                    // Category line text size (AI · DATA)
     "categorySpacing": ".12em",                                // Category line letter spacing
     "categoryColor": "#76756F",                                // Category line colour
@@ -297,11 +297,11 @@
   // The inquiry form page.
   // ──────────────────────────────────────────────────────────────────────
   "contact": {
-    "titleSize": "44px",                                       // Page title size
+    "titleSize": "38px",                                       // Page title size
     "titleWeight": 600,                                        // Page title boldness
     "titleColor": "#1A1A18",                                   // Page title colour
-    "titlePaddingTop": "32px",                                 // Space above the title
-    "titlePaddingBottom": "26px",                              // Space under the title
+    "titlePaddingTop": "38px",                                 // Space above the title
+    "titlePaddingBottom": "28px",                              // Space under the title
     "formPaddingTop": "44px",                                  // Space between title line and the intro text
     "formWidth": "505px",                                      // Width of the intro text and form
     "introSize": "16.5px",                                     // Intro text size

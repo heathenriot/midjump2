@@ -155,11 +155,11 @@ export const DESKTOP = [
   ["landing", "bottomSpace", "size", "66px", "Smallest space under the last answer"],
 
   // ---------- gallery
-  ["gallery", "titleSize", "size", "44px", "Page title size ('Domain Collection')"],
+  ["gallery", "titleSize", "size", "38px", "Page title size ('Domain Collection')"],
   ["gallery", "titleWeight", "num", 600, "Page title boldness"],
   ["gallery", "titleColor", "color", "#1A1A18", "Page title colour"],
-  ["gallery", "titlePaddingTop", "size", "40px", "Space above the title"],
-  ["gallery", "titlePaddingBottom", "size", "34px", "Space under the title"],
+  ["gallery", "titlePaddingTop", "size", "44px", "Space above the title"],
+  ["gallery", "titlePaddingBottom", "size", "38px", "Space under the title"],
   ["gallery", "tabsPaddingTop", "size", "15px", "Space above the filter tabs"],
   ["gallery", "tabsPaddingBottom", "size", "14px", "Space under the filter tabs"],
   ["gallery", "tabsGap", "size", "30px", "Space between tabs"],
@@ -184,12 +184,12 @@ export const DESKTOP = [
   ["gallery", "dimmedNameOpacity", "num", 0.28, "How faded non-matching names get when filtering"],
 
   // ---------- domain page
-  ["domain", "nameSize", "size", "48px", "Domain name size at the top"],
+  ["domain", "nameSize", "size", "42px", "Domain name size at the top"],
   ["domain", "nameWeight", "num", 600, "Domain name boldness"],
   ["domain", "nameColor", "color", "#1A1A18", "Domain name colour"],
   ["domain", "extColor", "color", "#9A9892", "Colour of .com / .si"],
-  ["domain", "namePaddingTop", "size", "30px", "Space above the domain name"],
-  ["domain", "namePaddingBottom", "size", "24px", "Space under the category line"],
+  ["domain", "namePaddingTop", "size", "35px", "Space above the domain name"],
+  ["domain", "namePaddingBottom", "size", "27px", "Space under the category line"],
   ["domain", "categorySize", "size", "11px", "Category line text size (AI · DATA)"],
   ["domain", "categorySpacing", "size", ".12em", "Category line letter spacing"],
   ["domain", "categoryColor", "color", "#76756F", "Category line colour"],
@@ -264,11 +264,11 @@ export const DESKTOP = [
   ["domain", "relatedExtColor", "color", "#9A9892", "Colour of .com / .si"],
 
   // ---------- contact
-  ["contact", "titleSize", "size", "44px", "Page title size"],
+  ["contact", "titleSize", "size", "38px", "Page title size"],
   ["contact", "titleWeight", "num", 600, "Page title boldness"],
   ["contact", "titleColor", "color", "#1A1A18", "Page title colour"],
-  ["contact", "titlePaddingTop", "size", "32px", "Space above the title"],
-  ["contact", "titlePaddingBottom", "size", "26px", "Space under the title"],
+  ["contact", "titlePaddingTop", "size", "38px", "Space above the title"],
+  ["contact", "titlePaddingBottom", "size", "28px", "Space under the title"],
   ["contact", "formPaddingTop", "size", "44px", "Space between title line and the intro text"],
   ["contact", "formWidth", "size", "505px", "Width of the intro text and form"],
   ["contact", "introSize", "size", "16.5px", "Intro text size"],
@@ -358,9 +358,9 @@ export const PHONE = [
   ["footer", "copyrightColor", "color", "#848078", "© line colour"],
 
   // ---------- page title band (gallery + contact)
-  ["pageTitle", "paddingY", "size", "30px", "Space above and below the title"],
+  ["pageTitle", "paddingY", "size", "32px", "Space above and below the title"],
   ["pageTitle", "paddingX", "size", "20px", "Space left and right of the title"],
-  ["pageTitle", "size", "size", "25px", "Title size"],
+  ["pageTitle", "size", "size", "23px", "Title size"],
   ["pageTitle", "weight", "num", 600, "Title boldness"],
   ["pageTitle", "lineHeight", "num", 1.2, "Title line spacing"],
   ["pageTitle", "color", "color", "#1E1E1C", "Title colour"],
@@ -453,11 +453,11 @@ export const PHONE = [
   ["gallery", "backToTopColor", "color", "#8E8C85", "'Back to top' colour"],
 
   // ---------- domain
-  ["domain", "namePaddingTop", "size", "28px", "Space above the domain name"],
-  ["domain", "namePaddingBottom", "size", "20px", "Space under the category line"],
+  ["domain", "namePaddingTop", "size", "30px", "Space above the domain name"],
+  ["domain", "namePaddingBottom", "size", "22px", "Space under the category line"],
   ["domain", "namePaddingX", "size", "40px", "Space left and right of the name"],
   ["domain", "nameLine", "line", L("solid", ".5px", "rgba(113,112,112,.09)"), "Hairline under the name band"],
-  ["domain", "nameSize", "size", "25px", "Domain name size"],
+  ["domain", "nameSize", "size", "23px", "Domain name size"],
   ["domain", "nameWeight", "num", 600, "Domain name boldness"],
   ["domain", "nameColor", "color", "#1E1E1C", "Domain name colour"],
   ["domain", "extColor", "color", "#1E1E1C", "Colour of .com / .si"],

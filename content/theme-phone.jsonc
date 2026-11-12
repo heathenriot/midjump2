@@ -86,9 +86,9 @@
   // The tinted band with the page title on the Gallery and Contact pages.
   // ──────────────────────────────────────────────────────────────────────
   "pageTitle": {
-    "paddingY": "30px",                                        // Space above and below the title
+    "paddingY": "32px",                                        // Space above and below the title
     "paddingX": "20px",                                        // Space left and right of the title
-    "size": "25px",                                            // Title size
+    "size": "23px",                                            // Title size
     "weight": 600,                                             // Title boldness
     "lineHeight": 1.2,                                         // Title line spacing
     "color": "#1E1E1C",                                        // Title colour
@@ -196,11 +196,11 @@
   // Every individual domain page on the phone.
   // ──────────────────────────────────────────────────────────────────────
   "domain": {
-    "namePaddingTop": "28px",                                  // Space above the domain name
-    "namePaddingBottom": "20px",                               // Space under the category line
+    "namePaddingTop": "30px",                                  // Space above the domain name
+    "namePaddingBottom": "22px",                               // Space under the category line
     "namePaddingX": "40px",                                    // Space left and right of the name
     "nameLine": { "style": "solid", "width": ".5px", "color": "rgba(113,112,112,.09)" }, // Hairline under the name band   [style: solid / dotted / dashed / none]
-    "nameSize": "25px",                                        // Domain name size
+    "nameSize": "23px",                                        // Domain name size
     "nameWeight": 600,                                         // Domain name boldness
     "nameColor": "#1E1E1C",                                    // Domain name colour
     "extColor": "#1E1E1C",                                     // Colour of .com / .si
