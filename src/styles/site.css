@@ -221,7 +221,8 @@ textarea.mj-input{height:var(--p-contact-textarea-height)}
 .l-d .l-cta{margin-top:var(--t-landing-button-gap);display:flex}
 .mj-hero-btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;width:var(--t-landing-button-width);padding:var(--t-landing-button-padding-y) 8.5px;font-size:var(--t-landing-button-text-size);font-weight:300;line-height:1.2;color:var(--t-landing-button-text-color);background:var(--t-landing-button-fill);border:1px solid var(--t-landing-button-border-color);border-radius:var(--t-landing-button-radius);transition:background-color .4s ease,color .2s ease,border-color .4s ease}
 .mj-hero-btn:hover,.mj-hero-btn:focus-visible{border-color:var(--t-landing-button-hover-border-color)}
-.mj-hero-btn svg{position:relative;top:.5px;width:13px;height:13px;flex-shrink:0;transform:scaleX(-1);transition:transform .5s ease}
+.mj-hero-btn:hover svg,.mj-hero-btn:focus-visible svg{color:var(--t-landing-button-hover-chevron-color)}
+.mj-hero-btn svg{position:relative;top:.5px;width:13px;height:13px;flex-shrink:0;transform:scaleX(-1);transition:transform .5s ease,color .5s ease}
 .mj-hero-btn svg path{stroke-width:20}
 .mj-hero-btn:hover svg{transform:scaleX(-1) translateX(-4px)}
 .l-d .l-band{flex:none;padding:var(--t-landing-marquee-padding-top) 0 var(--t-landing-marquee-padding-bottom);background:var(--t-landing-marquee-background);border-bottom:var(--t-frame-section-divider)}

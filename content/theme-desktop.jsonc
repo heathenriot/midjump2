@@ -134,6 +134,7 @@
     "buttonFill": "#ECEBE5",                                   // Button background
     "buttonBorderColor": "#B3B2A8",                            // Button outline colour
     "buttonHoverBorderColor": "#ECEBE5",                       // Button outline colour on hover
+    "buttonHoverChevronColor": "#253A79",                      // Colour of the button arrow on hover
     "buttonRadius": "4px",                                     // Button corner roundness
     "marqueeBackground": "#ECEBE5",                            // Background of the scrolling-logos band
     "marqueePaddingTop": "30px",                               // Space above 'SELECTED DOMAINS'
@@ -227,7 +228,7 @@
     "viewerBackground": "#F3F2EE",                             // Background behind the logo viewer
     "viewerPaddingTop": "16px",                                // Space above the viewer
     "viewerPaddingBottom": "24px",                             // Space under the viewer arrows
-    "viewerHeight": "251px",                                   // Height of the viewer
+    "viewerHeight": "229px",                                   // Height of the viewer
     "viewerMaxWidth": "560px",                                 // Width of the viewer
     "firstLogoWidth": "360px",                                 // Widest the FIRST logo can be
     "firstLogoHeight": "230px",                                // Height of the FIRST logo
