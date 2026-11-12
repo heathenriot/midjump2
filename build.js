@@ -240,4 +240,5 @@ for (const d of domains) write(`domains/${d.slug}/index.html`, domainPage(d));
 write("index.html", landing());
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${["/", "/domains", "/contact", ...domains.map((d) => "/domains/" + d.slug)].map((u) => `<url><loc>${SITE}${u}</loc></url>`).join("\n")}\n</urlset>\n`);
 write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
+if (process.env.SHOW_PICKS) for (const d of domains) console.log(`| ${d.name} | ${d.categories.join(" · ")} | ${picks[d.slug].map((r) => r.name).join(", ")} |`);
 console.log("built", fs.readdirSync(dist).length, "entries");
