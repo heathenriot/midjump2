@@ -1,0 +1,45 @@
+{
+  "name": "Quadrants.si",
+  "atomName": "Quadrants",
+  "categories": [
+    "Data",
+    "Ventures"
+  ],
+  "tier": "C",
+  "desktopOrder": 26,
+  "phoneOrder": 24,
+  "galleryLogo": "Quadrants.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1,
+      "y": "2%"
+    },
+    "phone": {
+      "scale": 0.92,
+      "y": "4.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Quadrants.svg",
+    "Quadrants1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "6.5%",
+      "mscale": 1,
+      "my": "4%"
+    },
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "Across mathematics, analytics, and strategic decision-making, quadrants provide a framework for organizing information, mapping relationships, and interpreting complex data through structured divisions.",
+    "Quadrants.si is a versatile identity for companies developing analytical technologies, business intelligence platforms, and systems built around spatial or comparative insights."
+  ]
+}

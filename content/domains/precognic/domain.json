@@ -1,0 +1,45 @@
+{
+  "name": "Precognic.com",
+  "atomName": "Precognic",
+  "categories": [
+    "AI",
+    "Data"
+  ],
+  "tier": "B",
+  "desktopOrder": 25,
+  "phoneOrder": 29,
+  "galleryLogo": "Precognic.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.98,
+      "y": "2%"
+    },
+    "phone": {
+      "scale": 0.95,
+      "y": "2%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Precognic.svg",
+    "Precognic1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.95,
+      "y": "7%",
+      "mscale": 0.9,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "09%",
+      "mscale": 1,
+      "my": "7%"
+    }
+  ],
+  "overview": [
+    "As prediction evolves from forecasting to actionable intelligence, enterprises can anticipate operational risks and systemic outcomes with greater precision, transforming uncertainty into a strategic advantage.",
+    "Precognic.com conveys a distinctive identity for companies developing predictive systems and platforms built around foresight and adaptive decision-making, enabling more informed and responsive operations."
+  ]
+}

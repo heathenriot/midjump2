@@ -1,0 +1,44 @@
+{
+  "name": "CrossTemporal.com",
+  "atomName": "CrossTemporal",
+  "categories": [
+    "Data"
+  ],
+  "tier": "B",
+  "desktopOrder": 38,
+  "phoneOrder": 37,
+  "galleryLogo": "CrossTemporal.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1,
+      "y": "2%"
+    },
+    "phone": {
+      "scale": 0.9,
+      "y": "5.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "CrossTemporal.svg",
+    "CrossTemporal1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.88,
+      "y": "6%",
+      "mscale": 0.88,
+      "my": "4%"
+    },
+    {
+      "scale": 0.88,
+      "y": "3.5%",
+      "mscale": 0.88,
+      "my": "4.5%"
+    }
+  ],
+  "overview": [
+    "Cross-temporal methods, used across AI, computer vision, and predictive modeling, connect and analyze information across different points in time, enabling the recognition of evolving patterns, temporal relationships, and changes in complex systems.",
+    "CrossTemporal.com is an identity for companies developing temporal intelligence technologies, multimodal AI systems, and computational platforms built around time-dependent data."
+  ]
+}

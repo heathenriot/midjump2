@@ -1,0 +1,45 @@
+{
+  "name": "OutScrub.com",
+  "atomName": "Outscrub",
+  "categories": [
+    "Security",
+    "Data"
+  ],
+  "tier": "C",
+  "desktopOrder": 27,
+  "phoneOrder": 33,
+  "galleryLogo": "Outscrub.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.98,
+      "y": "1.5%"
+    },
+    "phone": {
+      "scale": 0.89,
+      "y": "6%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Outscrub.svg",
+    "Outscrub1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "7%"
+    }
+  ],
+  "overview": [
+    "As digital threats and data complexity outpace traditional filtering processes, automated scrubbing plays a critical role in removing unwanted information, malicious content, and security risks across modern computing environments.",
+    "Outscrub.com offers a focused identity for technologies built around intelligent filtering, cleansing, and threat mitigation, with applications spanning data infrastructure, cybersecurity, and automated system maintenance."
+  ]
+}

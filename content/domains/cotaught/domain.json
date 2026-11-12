@@ -1,0 +1,44 @@
+{
+  "name": "CoTaught.com",
+  "atomName": "CoTaught",
+  "categories": [
+    "AI"
+  ],
+  "tier": "A",
+  "desktopOrder": 6,
+  "phoneOrder": 4,
+  "galleryLogo": "CoTaught.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.96,
+      "y": "3%"
+    },
+    "phone": {
+      "scale": 0.88,
+      "y": "4%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "CoTaught.svg",
+    "CoTaught1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "2.5%"
+    },
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "Co-taught describes knowledge developed through shared instruction, where human expertise and machine learning converge to shape the behavior of intelligent systems.",
+    "CoTaught.com provides an identity for companies developing collaborative learning platforms, human-in-the-loop AI, and embodied systems trained through demonstration and feedback."
+  ]
+}

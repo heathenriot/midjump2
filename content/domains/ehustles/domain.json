@@ -1,0 +1,37 @@
+{
+  "name": "eHustles.com",
+  "atomName": "eHustles",
+  "categories": [
+    "Ventures"
+  ],
+  "tier": "B",
+  "desktopOrder": 43,
+  "phoneOrder": 45,
+  "galleryLogo": "eHustles.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.84,
+      "y": "5%"
+    },
+    "phone": {
+      "scale": 0.82,
+      "y": "4%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "eHustles.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "5%",
+      "mscale": 0.9,
+      "my": "3%"
+    }
+  ],
+  "overview": [
+    "Independent work has evolved beyond the traditional gig economy, with digital platforms expanding access to freelance opportunities and flexible employment as individuals increasingly monetize their skills through side hustles.",
+    "eHustles.com is a defining identity for platforms connecting independent talent with earning opportunities across freelancing, the creator economy, and digital marketplaces."
+  ]
+}

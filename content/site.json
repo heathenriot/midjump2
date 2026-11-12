@@ -1,0 +1,13 @@
+{
+  "_help": "Site-wide text. Edit the words between the quote marks. Keep the quote marks and commas.",
+  "url": "https://midjump.com",
+  "year": 2026,
+  "email": "hello@midjump.com",
+  "formKey": "13657328-3220-44e4-b42f-0f0e138bd0b6",
+  "menu": [
+    { "link": "/domains", "label": "Domain Portfolio" },
+    { "link": "/contact", "label": "Contact" }
+  ],
+  "footerTagDesktop": ["Curated digital identities,", "secured through"],
+  "footerTagPhone": ["Curated digital identities", "Secured through"]
+}

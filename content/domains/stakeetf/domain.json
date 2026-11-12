@@ -1,0 +1,37 @@
+{
+  "name": "StakeETF.com",
+  "atomName": "StakeETF",
+  "categories": [
+    "Ventures"
+  ],
+  "tier": "C",
+  "desktopOrder": 31,
+  "phoneOrder": 36,
+  "galleryLogo": "StakeETF.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.06,
+      "y": "0.5%"
+    },
+    "phone": {
+      "scale": 0.95,
+      "y": "5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "StakeETF.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "4%",
+      "mscale": 0.82,
+      "my": "4%"
+    }
+  ],
+  "overview": [
+    "As digital assets mature into regulated investment vehicles, institutional demand is shifting from price exposure toward sustainable yield generation. Staking ETFs combine crypto liquidity with network rewards, transforming digital assets into productive, yield-bearing capital.",
+    "StakeETF.com defines the category for regulated staking infrastructure, positioning platforms that elevate decentralized staking rewards into an institutional-grade asset class for issuers, allocators, and fiduciary platforms."
+  ]
+}

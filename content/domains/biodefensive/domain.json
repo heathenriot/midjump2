@@ -1,0 +1,45 @@
+{
+  "name": "BioDefensive.com",
+  "atomName": "BioDefensive",
+  "categories": [
+    "Security",
+    "Ventures"
+  ],
+  "tier": "B",
+  "desktopOrder": 11,
+  "phoneOrder": 15,
+  "galleryLogo": "BioDefensive.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.02,
+      "y": "1.5%"
+    },
+    "phone": {
+      "scale": 0.98,
+      "y": "3.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "BioDefensive.svg",
+    "BioDefensive1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "7%"
+    }
+  ],
+  "overview": [
+    "As biological risks become increasingly interconnected across healthcare, agriculture, and national security, effective defense depends on early detection, continuous monitoring, and coordinated response.",
+    "BioDefensive.com establishes a direct identity for technologies dedicated to biological protection, spanning biosecurity, threat intelligence, and systems designed to anticipate and contain emerging biological risks."
+  ]
+}

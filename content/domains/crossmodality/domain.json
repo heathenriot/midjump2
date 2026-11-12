@@ -1,0 +1,46 @@
+{
+  "name": "CrossModality.com",
+  "atomName": "CrossModality",
+  "categories": [
+    "AI",
+    "Data"
+  ],
+  "tier": "A",
+  "desktopOrder": 3,
+  "phoneOrder": 2,
+  "galleryLogo": "CrossModality.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.05,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 0.91,
+      "y": "3%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "CrossModality.svg",
+    "CrossModality1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.88,
+      "y": "6.5%",
+      "mscale": 0.85,
+      "my": "4%"
+    },
+    {
+      "scale": 0.85,
+      "y": "5%",
+      "mscale": 0.85,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "Cross-modality describes how intelligent systems relate, translate, and integrate information across vision, language, audio, and real-world sensory inputs. Across AI, robotics, and advanced sensing, it underpins the shift from single-task models to architectures capable of reasoning across these modalities.",
+    "The term offers a defining identity for companies developing foundation models, embodied AI, medical imaging technologies, and multimodal perception."
+  ],
+  "marqueeLogo": "m_CrossModality.svg"
+}

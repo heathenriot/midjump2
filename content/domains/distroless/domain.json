@@ -1,0 +1,45 @@
+{
+  "name": "Distroless.com",
+  "atomName": "Distroless",
+  "categories": [
+    "Cloud",
+    "Security"
+  ],
+  "tier": "B",
+  "desktopOrder": 30,
+  "phoneOrder": 23,
+  "galleryLogo": "Distroless.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.95,
+      "y": "-1%"
+    },
+    "phone": {
+      "scale": 0.93,
+      "y": "2%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Distroless.svg",
+    "Distroless1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 0.95,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "Distroless architecture strips production containers to their essential runtime components, removing unnecessary shells, package managers, and system utilities to reduce attack surface and software overhead.",
+    "Distroless.com provides a natural identity for platforms building minimal container infrastructure, automated vulnerability remediation, and secure software supply chains for hardened production environments."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "DetectionLayer.com",
+  "atomName": "DetectionLayer",
+  "categories": [
+    "AI",
+    "Security"
+  ],
+  "tier": "B",
+  "desktopOrder": 9,
+  "phoneOrder": 6,
+  "galleryLogo": "DetectionLayer.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.03,
+      "y": "3%"
+    },
+    "phone": {
+      "scale": 0.93,
+      "y": "4%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "DetectionLayer.svg",
+    "DetectionLayer1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.85,
+      "y": "6.5%",
+      "mscale": 0.85,
+      "my": "4%"
+    },
+    {
+      "scale": 0.9,
+      "y": "2.5%",
+      "mscale": 0.9,
+      "my": "3.5%"
+    }
+  ],
+  "overview": [
+    "The growing complexity of digital systems has made threat and anomaly detection fundamental to maintaining their integrity. Detection layers enable the underlying infrastructure to identify potential risks and initiate appropriate responses.",
+    "DetectionLayer.com offers a direct identity for cybersecurity platforms, AI observability technologies, and intelligent monitoring systems where continuous detection is essential to secure and reliable operation."
+  ]
+}

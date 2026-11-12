@@ -1,0 +1,38 @@
+{
+  "name": "FlexiToken.com",
+  "atomName": "FlexiToken",
+  "categories": [
+    "AI",
+    "Ventures"
+  ],
+  "tier": "A",
+  "desktopOrder": 12,
+  "phoneOrder": 9,
+  "galleryLogo": "FlexiToken.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.07,
+      "y": "0%"
+    },
+    "phone": {
+      "scale": 0.95,
+      "y": "2.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "FlexiToken.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.95,
+      "y": "0%",
+      "mscale": 0.95,
+      "my": "0%"
+    }
+  ],
+  "overview": [
+    "Tokenization is evolving from static ownership to adaptive digital infrastructure. As programmable assets become increasingly sophisticated, flexible token models enable value, permissions, and identity to evolve alongside changing context.",
+    "FlexiToken.com anchors the identity for adaptive token infrastructure, aligning with platforms building tokenized assets, dynamic utility protocols, and decentralized finance frameworks."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Configurably.com",
+  "atomName": "Configurably",
+  "categories": [
+    "Cloud",
+    "Data"
+  ],
+  "tier": "C",
+  "desktopOrder": 41,
+  "phoneOrder": 38,
+  "galleryLogo": "Configurably.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1,
+      "y": "-3%"
+    },
+    "phone": {
+      "scale": 0.91,
+      "y": "0%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Configurably.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.95,
+      "y": "5%",
+      "mscale": 0.9,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "Modern software increasingly demands flexibility by design, allowing systems to adapt to changing requirements through configuration rather than redevelopment.",
+    "Configurably.com aligns naturally with platforms built around adaptable architectures, dynamic configuration, and customizable software environments across enterprise and intelligent systems."
+  ]
+}

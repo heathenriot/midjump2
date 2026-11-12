@@ -1,0 +1,45 @@
+{
+  "name": "Distributional.si",
+  "atomName": "Distributional",
+  "categories": [
+    "AI",
+    "Data"
+  ],
+  "tier": "C",
+  "desktopOrder": 32,
+  "phoneOrder": 27,
+  "galleryLogo": "Distributional.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1,
+      "y": "2.5%"
+    },
+    "phone": {
+      "scale": 0.93,
+      "y": "4.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Distributional.svg",
+    "Distributional1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "7.5%",
+      "mscale": 0.9,
+      "my": "4.5%"
+    },
+    {
+      "scale": 0.89,
+      "y": "5.5%",
+      "mscale": 0.89,
+      "my": "5.5%"
+    }
+  ],
+  "overview": [
+    "Across statistics and artificial intelligence, distributional methods examine the distributions of outcomes and their underlying probabilities, enabling the modeling of uncertainty, complex patterns, and the behavior of intelligent systems.",
+    "Distributional.si is a distinctive identity for companies advancing probabilistic AI, machine learning research, and computational technologies built around statistical inference."
+  ]
+}

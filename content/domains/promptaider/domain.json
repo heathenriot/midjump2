@@ -1,0 +1,37 @@
+{
+  "name": "PromptAider.com",
+  "atomName": "PromptAider",
+  "categories": [
+    "AI"
+  ],
+  "tier": "B",
+  "desktopOrder": 23,
+  "phoneOrder": 26,
+  "galleryLogo": "PromptAider.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.07,
+      "y": "-2%"
+    },
+    "phone": {
+      "scale": 0.98,
+      "y": "2%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "PromptAider.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "0%",
+      "mscale": 1,
+      "my": "0%"
+    }
+  ],
+  "overview": [
+    "As AI becomes increasingly integrated into everyday applications and workflows, effective prompting plays a central role in how users communicate intent and achieve reliable results.",
+    "PromptAider.com aligns naturally with platforms simplifying prompt optimization and management, helping individuals and organizations interact more effectively with artificial intelligence."
+  ]
+}

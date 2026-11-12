@@ -1,0 +1,7 @@
+{
+  "_help": "Text on the Domain Collection page. 'categories' are the filter tabs; every domain's categories must use these exact names.",
+  "title": "Domain Collection | Midjump",
+  "description": "Premium, brandable domain names for AI, cloud, security, data and ventures, each presented with custom logo concepts.",
+  "heading": "Domain Collection",
+  "categories": ["AI", "Cloud", "Security", "Data", "Ventures"]
+}

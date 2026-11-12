@@ -1,0 +1,45 @@
+{
+  "name": "Webveyor.com",
+  "atomName": "Webveyor",
+  "categories": [
+    "Cloud",
+    "Data"
+  ],
+  "tier": "A",
+  "desktopOrder": 22,
+  "phoneOrder": 22,
+  "galleryLogo": "Webveyor.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.08,
+      "y": "-1%"
+    },
+    "phone": {
+      "scale": 1.03,
+      "y": "2.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Webveyor.svg",
+    "Webveyor1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "6.5%",
+      "mscale": 1,
+      "my": "4%"
+    },
+    {
+      "scale": 0.85,
+      "y": "5%",
+      "mscale": 0.9,
+      "my": "5.5%"
+    }
+  ],
+  "overview": [
+    "As web infrastructure grows more distributed, efficient delivery depends on how seamlessly data, content, and services move across networks",
+    "Webveyor.com represents the continuous flow of digital resources, offering a versatile identity for platforms coordinating web delivery, intelligent routing, and the infrastructure connecting online systems."
+  ]
+}

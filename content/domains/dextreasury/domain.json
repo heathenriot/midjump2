@@ -1,0 +1,37 @@
+{
+  "name": "DEXtreasury.com",
+  "atomName": "DEXtreasury",
+  "categories": [
+    "Ventures"
+  ],
+  "tier": "C",
+  "desktopOrder": 46,
+  "phoneOrder": 47,
+  "galleryLogo": "DEXtreasury.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.05,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 1,
+      "y": "4%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "DEXtreasury.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "9%",
+      "mscale": 0.8,
+      "my": "6%"
+    }
+  ],
+  "overview": [
+    "Decentralized finance introduces new demands for treasury management, where liquidity, asset custody, and governance must operate across interconnected protocols and on-chain markets.",
+    "DEXTreasury.com provides a direct identity for platforms managing decentralized exchange treasuries, liquidity operations, and digital asset governance across the DeFi ecosystem."
+  ]
+}

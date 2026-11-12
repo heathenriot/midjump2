@@ -1,0 +1,44 @@
+{
+  "name": "CoTrained.com",
+  "atomName": "CoTrained",
+  "categories": [
+    "AI"
+  ],
+  "tier": "B",
+  "desktopOrder": 16,
+  "phoneOrder": 20,
+  "galleryLogo": "CoTrained.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 0.94,
+      "y": "4%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "CoTrained.svg",
+    "CoTrained1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "As AI systems become increasingly specialized, collaborative training enables co-trained models to learn across complementary datasets and modalities, developing more integrated capabilities.",
+    "CoTrained.com provides a definitive identity for platforms advancing joint AI training and multimodal learning, with applications spanning foundation models, embodied intelligence, and autonomous systems."
+  ]
+}

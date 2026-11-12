@@ -1,0 +1,38 @@
+{
+  "name": "CloudIndexing.com",
+  "atomName": "CloudIndexing",
+  "categories": [
+    "Cloud",
+    "Data"
+  ],
+  "tier": "B",
+  "desktopOrder": 35,
+  "phoneOrder": 31,
+  "galleryLogo": "CloudIndexing.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.9,
+      "y": "-2%"
+    },
+    "phone": {
+      "scale": 0.87,
+      "y": "1%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "CloudIndexing.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "4%",
+      "mscale": 0.9,
+      "my": "0%"
+    }
+  ],
+  "overview": [
+    "As enterprise data becomes increasingly fragmented across cloud services and regions, the challenge has shifted from storage to discovery. Without a unified index of distributed assets, critical information remains invisible to the security, compliance, and AI systems that depend on it.",
+    "CloudIndexing.com is a defining identity for the unified discovery layer, with applications spanning cross-cloud search, semantic indexing, and real-time information retrieval at scale."
+  ]
+}

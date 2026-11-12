@@ -1,0 +1,45 @@
+{
+  "name": "AgenticAider.com",
+  "atomName": "AgenticAider",
+  "categories": [
+    "AI",
+    "Security"
+  ],
+  "tier": "C",
+  "desktopOrder": 39,
+  "phoneOrder": 41,
+  "galleryLogo": "AgenticAider1.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.88,
+      "y": "-2.5%"
+    },
+    "phone": {
+      "scale": 0.84,
+      "y": "0%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "AgenticAider1.svg",
+    "AgenticAider.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.95,
+      "y": "5%",
+      "mscale": 0.82,
+      "my": "4%"
+    },
+    {
+      "scale": 0.95,
+      "y": "10%",
+      "mscale": 0.85,
+      "my": "10%"
+    }
+  ],
+  "overview": [
+    "Autonomous AI agents are moving beyond isolated tasks into complex workflows, creating new demands for coordination, oversight, and operational reliability.",
+    "AgenticAider.com aligns with platforms supporting the deployment and management of agentic systems, spanning agent orchestration, runtime governance, and secure automation across enterprise environments."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Replaceably.com",
+  "atomName": "Replaceably",
+  "categories": [
+    "AI",
+    "Cloud",
+    "Ventures"
+  ],
+  "tier": "B",
+  "desktopOrder": 24,
+  "phoneOrder": 13,
+  "galleryLogo": "Replaceably.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.01,
+      "y": "-3%"
+    },
+    "phone": {
+      "scale": 0.95,
+      "y": "1%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Replaceably.svg",
+    "Replaceably1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "6%",
+      "mscale": 1,
+      "my": "2.5%"
+    },
+    {
+      "scale": 1,
+      "y": "9%",
+      "mscale": 1,
+      "my": "9%"
+    }
+  ],
+  "overview": [
+    "As AI models, agentic workflows, and infrastructure services evolve, composable architectures allow individual capabilities to be upgraded or replaced without rebuilding entire systems.",
+    "Replaceably.com conveys the principle of replaceable components, aligning with platforms developing modular AI infrastructure, interoperable software, and systems designed for continuous adaptation."
+  ]
+}

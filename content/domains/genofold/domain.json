@@ -1,0 +1,44 @@
+{
+  "name": "GenoFold.com",
+  "atomName": "GenoFold",
+  "categories": [
+    "Ventures"
+  ],
+  "tier": "C",
+  "desktopOrder": 44,
+  "phoneOrder": 46,
+  "galleryLogo": "GenoFold.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.96,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 0.86,
+      "y": "4%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "GenoFold1.svg",
+    "GenoFold2.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "Advances in computational protein folding have transformed structural biology, while genome folding has emerged as a critical dimension of understanding gene expression, cellular regulation, and disease.",
+    "GenoFold.com is a defining identity for companies developing AI-driven models of genome architecture, with applications across structural genomics, precision medicine, and therapeutic discovery."
+  ]
+}

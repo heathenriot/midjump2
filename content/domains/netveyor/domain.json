@@ -1,0 +1,45 @@
+{
+  "name": "Netveyor.com",
+  "atomName": "Netveyor",
+  "categories": [
+    "Cloud",
+    "Data"
+  ],
+  "tier": "C",
+  "desktopOrder": 48,
+  "phoneOrder": 48,
+  "galleryLogo": "Netveyor1.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.84,
+      "y": "2%"
+    },
+    "phone": {
+      "scale": 0.83,
+      "y": "3%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Netveyor1.svg",
+    "Netveyor.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "6%",
+      "mscale": 0.9,
+      "my": "1%"
+    },
+    {
+      "scale": 1,
+      "y": "8%",
+      "mscale": 1,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "Modern digital infrastructure depends on the reliable movement of data across increasingly complex and distributed networks.",
+    "Netveyor.com evokes the continuous flow of network traffic, aligning with platforms developing intelligent routing, traffic orchestration, and resilient connectivity infrastructure."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Guardrailed.com",
+  "atomName": "Guardrailed",
+  "categories": [
+    "AI",
+    "Security",
+    "Data"
+  ],
+  "tier": "A",
+  "desktopOrder": 18,
+  "phoneOrder": 10,
+  "galleryLogo": "Guardrailed.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.99,
+      "y": "-1.5%"
+    },
+    "phone": {
+      "scale": 0.93,
+      "y": "3%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Guardrailed.svg",
+    "Guardrailed1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "5%",
+      "mscale": 0.9,
+      "my": "5%"
+    },
+    {
+      "scale": 0.9,
+      "y": "5%",
+      "mscale": 0.9,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "As digital systems become both autonomous and mission-critical, controlled execution demands governance embedded directly into their architecture rather than applied after deployment.",
+    "Guardrailed.com is a defining identity for companies engineering guardrailed systems, with applications across security policy enforcement, runtime safeguards, and platforms requiring verifiable operations in regulated environments."
+  ],
+  "marqueeLogo": "m_Guardrailed.svg"
+}

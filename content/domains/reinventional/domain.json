@@ -1,0 +1,37 @@
+{
+  "name": "Reinventional.com",
+  "atomName": "Reinventional",
+  "categories": [
+    "Ventures"
+  ],
+  "tier": "C",
+  "desktopOrder": 29,
+  "phoneOrder": 40,
+  "galleryLogo": "Reinventional.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.97,
+      "y": "-0.1%"
+    },
+    "phone": {
+      "scale": 0.9,
+      "y": "4%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Reinventional.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.95,
+      "y": "5%",
+      "mscale": 0.85,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "For enduring organizations, reinvention is becoming a continuous organizational discipline rather than a response to change.",
+    "Reinventional.com embodies this philosophy, creating a distinctive identity for strategy firms, transformation platforms, innovation studios, and advisory practices advancing enterprise reinvention."
+  ]
+}

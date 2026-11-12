@@ -1,0 +1,45 @@
+{
+  "name": "Anormality.com",
+  "atomName": "Anormality",
+  "categories": [
+    "Security",
+    "Data"
+  ],
+  "tier": "C",
+  "desktopOrder": 47,
+  "phoneOrder": 34,
+  "galleryLogo": "Anormality.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.01,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 1.01,
+      "y": "2%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Anormality.svg",
+    "Anormality1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "10%",
+      "mscale": 1,
+      "my": "7%"
+    }
+  ],
+  "overview": [
+    "Across AI, cloud infrastructure, and autonomous systems, detecting abnormal behavior is essential to identifying emerging risks before they escalate into operational failures.",
+    "Anormality.com aligns with platforms built around anomaly detection, behavioral analytics, and intelligent monitoring, enabling earlier identification of unusual patterns and potential threats."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Enforcing.si",
+  "atomName": "Enforcing",
+  "categories": [
+    "AI",
+    "Cloud",
+    "Security",
+    "Data"
+  ],
+  "tier": "A",
+  "desktopOrder": 2,
+  "phoneOrder": 3,
+  "galleryLogo": "Enforcing.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.03,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 0.95,
+      "y": "4.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Enforcing.svg",
+    "Enforcing1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "5.5%",
+      "mscale": 1,
+      "my": "3.5%"
+    },
+    {
+      "scale": 1,
+      "y": "3.5%",
+      "mscale": 1,
+      "my": "4.5%"
+    }
+  ],
+  "overview": [
+    "Across modern digital infrastructure, enforcing policies and permissions is essential to maintaining control over system behavior and access. From autonomous AI agents to enterprise networks, enforcement mechanisms translate defined rules into operational controls.",
+    "Enforcing.si is a defining identity for companies developing policy enforcement technologies, AI security platforms, and infrastructure governing interconnected systems."
+  ],
+  "marqueeLogo": "m_Enforcing.svg"
+}

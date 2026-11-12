@@ -1,0 +1,45 @@
+{
+  "name": "Sektoral.com",
+  "atomName": "Sektoral",
+  "categories": [
+    "Data",
+    "Ventures"
+  ],
+  "tier": "C",
+  "desktopOrder": 36,
+  "phoneOrder": 42,
+  "galleryLogo": "Sektoral.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.98,
+      "y": "3%"
+    },
+    "phone": {
+      "scale": 0.93,
+      "y": "5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Sektoral.svg",
+    "Sektoral1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 0.95,
+      "my": "6%"
+    },
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "7%"
+    }
+  ],
+  "overview": [
+    "Enterprise operations span increasingly specialized industries, each defined by distinct data, workflows, and market dynamics. Sector-level intelligence enables technology to address these environments with greater context and precision.",
+    "Sektoral.com aligns with companies developing sectoral intelligence and domain-specific systems, with applications across vertical AI, enterprise analytics, and cross-sector data operations."
+  ]
+}

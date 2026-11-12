@@ -1,0 +1,38 @@
+{
+  "name": "Cloudveyor.com",
+  "atomName": "Cloudveyor",
+  "categories": [
+    "Cloud",
+    "Data"
+  ],
+  "tier": "B",
+  "desktopOrder": 17,
+  "phoneOrder": 18,
+  "galleryLogo": "Cloudveyor.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.92,
+      "y": "2%"
+    },
+    "phone": {
+      "scale": 0.92,
+      "y": "-0.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Cloudveyor.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "4%",
+      "mscale": 0.9,
+      "my": "0%"
+    }
+  ],
+  "overview": [
+    "Moving workloads and data reliably between fragmented cloud environments is essential to maintaining responsive, distributed operations.",
+    "Cloudveyor.com evokes the continuous movement of cloud resources, aligning with platforms developing cross-cloud orchestration, workload migration, and data mobility infrastructure."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "HitPrompt.com",
+  "atomName": "HitPrompt",
+  "categories": [
+    "AI"
+  ],
+  "tier": "B",
+  "desktopOrder": 28,
+  "phoneOrder": 17,
+  "galleryLogo": "HitPrompt1.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.07,
+      "y": "-1%"
+    },
+    "phone": {
+      "scale": 0.96,
+      "y": "2%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "HitPrompt1.svg",
+    "HitPrompt2.svg",
+    "HitPrompt3.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "The prompt has become a primary interface between human intent and artificial intelligence, shaping how models generate content and execute tasks.",
+    "HitPrompt.com offers a distinctive identity for platforms built around AI interaction, prompt creation, intelligent workflows, and accessible AI tools."
+  ]
+}

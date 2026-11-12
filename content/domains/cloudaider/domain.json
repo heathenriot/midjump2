@@ -1,0 +1,51 @@
+{
+  "name": "CloudAider.com",
+  "atomName": "CloudAider",
+  "categories": [
+    "Cloud"
+  ],
+  "tier": "B",
+  "desktopOrder": 45,
+  "phoneOrder": 32,
+  "galleryLogo": "CloudAider1.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.9,
+      "y": "-3%"
+    },
+    "phone": {
+      "scale": 0.83,
+      "y": "1%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "CloudAider1.svg",
+    "CloudAider2.svg",
+    "CloudAider3.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "5%",
+      "mscale": 0.85,
+      "my": "5%"
+    },
+    {
+      "scale": 0.9,
+      "y": "5%",
+      "mscale": 0.85,
+      "my": "5%"
+    },
+    {
+      "scale": 0.9,
+      "y": "5%",
+      "mscale": 0.85,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "As enterprise infrastructure becomes increasingly distributed, managing cloud operations demands greater visibility, coordination, and control across workloads and services.",
+    "CloudAider.com offers a natural identity for platforms simplifying cloud management, automating infrastructure operations, and improving resilience across multicloud environments."
+  ]
+}

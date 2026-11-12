@@ -1,0 +1,37 @@
+{
+  "name": "BroughtIn.com",
+  "atomName": "BroughtIn",
+  "categories": [
+    "Ventures"
+  ],
+  "tier": "A",
+  "desktopOrder": 13,
+  "phoneOrder": 14,
+  "galleryLogo": "BroughtIn.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1.09,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 1.05,
+      "y": "1%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "BroughtIn.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1.07,
+      "y": "5%",
+      "mscale": 1.09,
+      "my": "2%"
+    }
+  ],
+  "overview": [
+    "Bringing the right people and expertise into an organization is fundamental to how businesses grow and adapt. From talent acquisition to strategic partnerships, the value lies in turning external resources into lasting organizational capabilities.",
+    "BroughtIn.com offers a direct, recognizable identity for platforms connecting organizations with talent, expertise, and business opportunities."
+  ]
+}

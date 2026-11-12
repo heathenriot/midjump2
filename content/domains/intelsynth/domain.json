@@ -1,0 +1,45 @@
+{
+  "name": "Intelsynth.com",
+  "atomName": "Intelsynth",
+  "categories": [
+    "AI",
+    "Data"
+  ],
+  "tier": "C",
+  "desktopOrder": 37,
+  "phoneOrder": 43,
+  "galleryLogo": "Intelsynth.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.99,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 0.95,
+      "y": "3%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Intelsynth.svg",
+    "Intelsynth1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "6%",
+      "mscale": 0.9,
+      "my": "3%"
+    },
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "7%"
+    }
+  ],
+  "overview": [
+    "As information increasingly fragments across enterprise systems and specialized domains, the ability to synthesize disparate signals into coherent insights becomes essential to informed decision-making.",
+    "Intelsynth.com provides a direct identity for intelligence synthesis platforms transforming distributed data into actionable intelligence."
+  ]
+}

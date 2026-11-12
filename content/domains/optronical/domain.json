@@ -1,0 +1,45 @@
+{
+  "name": "Optronical.com",
+  "atomName": "Optronical",
+  "categories": [
+    "AI",
+    "Ventures"
+  ],
+  "tier": "A",
+  "desktopOrder": 1,
+  "phoneOrder": 1,
+  "galleryLogo": "Optronical.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.94,
+      "y": "4%"
+    },
+    "phone": {
+      "scale": 0.94,
+      "y": "3%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Optronical.svg",
+    "Optronical1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "7%",
+      "mscale": 1,
+      "my": "7%"
+    }
+  ],
+  "overview": [
+    "As machine perception becomes essential across autonomous and defense applications, electro-optical sensing enables systems to observe and interpret the physical world with precision and autonomy.",
+    "Optronical.com provides the identity for enterprises engineering multispectral vision systems, edge AI technologies, and advanced signal processing architectures for next-generation sensing hardware."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Asynchronic.com",
+  "atomName": "Asynchronic",
+  "categories": [
+    "AI",
+    "Cloud"
+  ],
+  "tier": "B",
+  "desktopOrder": 33,
+  "phoneOrder": 28,
+  "galleryLogo": "Asynchronic.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 0.88,
+      "y": "-3%"
+    },
+    "phone": {
+      "scale": 0.83,
+      "y": "0.5%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Asynchronic.svg",
+    "Asynchronic1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 0.9,
+      "y": "5%",
+      "mscale": 0.82,
+      "my": "2.5%"
+    },
+    {
+      "scale": 1,
+      "y": "5%",
+      "mscale": 1,
+      "my": "5%"
+    }
+  ],
+  "overview": [
+    "As intelligent systems become increasingly distributed, non-blocking execution enables independent processes to coordinate efficiently across concurrent workloads.",
+    "Asynchronic.com reflects the principles of asynchronous computing, aligning with platforms developing distributed orchestration, autonomous agent coordination, and scalable computing infrastructure."
+  ]
+}

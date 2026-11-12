@@ -1,0 +1,45 @@
+{
+  "name": "Sanctional.com",
+  "atomName": "Sanctional",
+  "categories": [
+    "AI",
+    "Security"
+  ],
+  "tier": "C",
+  "desktopOrder": 42,
+  "phoneOrder": 44,
+  "galleryLogo": "Sanctional.svg",
+  "gallery": {
+    "desktop": {
+      "scale": 1,
+      "y": "1%"
+    },
+    "phone": {
+      "scale": 1,
+      "y": "2%",
+      "x": "0%"
+    }
+  },
+  "logos": [
+    "Sanctional.svg",
+    "Sanctional1.svg"
+  ],
+  "carouselTweaks": [
+    {
+      "scale": 1,
+      "y": "8%",
+      "mscale": 1,
+      "my": "5%"
+    },
+    {
+      "scale": 1,
+      "y": "9%",
+      "mscale": 1,
+      "my": "7%"
+    }
+  ],
+  "overview": [
+    "As autonomous systems gain greater operational authority, governance is shifting from passive oversight into active control. Ensuring AI agents and enterprise software operate within sanctioned boundaries is becoming essential for secure, accountable execution.",
+    "Sanctional.com provides an authoritative identity for policy enforcement infrastructure, aligning with platforms built around agent authorization, compliance automation, access controls, and trusted execution."
+  ]
+}
