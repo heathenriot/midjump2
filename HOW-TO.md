@@ -37,6 +37,9 @@ Only two folders: `domains` (the details) and `svg` (the pictures).
 
 Different file name? Then also open that domain's file in `content/domains` (pencil icon) and change the name under `"galleryLogo"` and `"logos"`.
 
+## Change the browser-tab icon (favicon)
+The icon files are `favicon.ico`, `favicon-32.png` and `apple-touch-icon.png` in `content/svg`. To change them, upload new files with exactly those names (the .ico should be 48x48 or 32x32, the .png files square).
+
 ## Add a logo concept to an existing domain
 1. Upload the new `.svg` into `content/svg`.
 2. Open the domain's file in `content/domains` → pencil icon. In `"logos"` add the file name at the end (comma after the one before it).

@@ -69,7 +69,7 @@
     "height": "100px",                                         // Height of the top bar
     "logoHeight": "98px",                                      // Size of the midjump logo (bigger number = bigger logo)
     "logoX": "0px",                                            // Move logo right (+) or left (-). Example: 10px or -10px
-    "logoY": "15px",                                           // Move logo down (+) or up (-)
+    "logoY": "14px",                                           // Move logo down (+) or up (-)
     "font": "Finlandica Text",                                 // Font of the links   [choose: Finlandica Text / Questrial / Plus Jakarta Sans]
     "linkSize": "13.5px",                                      // Link text size
     "linkWeight": 500,                                         // Link boldness (300 / 400 / 500)
@@ -278,6 +278,7 @@
     "relatedLogoX": "0%",                                      // MASTER: move the 3 related logos right (+) or left (-)
     "relatedLogoY": "0%",                                      // MASTER: move the 3 related logos down (+) or up (-)
     "relatedNameSize": "15px",                                 // Related domain name text size
+    "relatedNamePadding": "9px 1px 17px",                      // Space around the related domain name: top, sides, bottom (more top = name lower, more bottom = name higher)
     "relatedNameColor": "#1A1A18",                             // Related domain name colour
     "relatedExtColor": "#9A9892"                               // Colour of .com / .si
   },

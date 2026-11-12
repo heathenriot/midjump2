@@ -46,6 +46,9 @@ ${noindex ? '<meta name="robots" content="noindex">' : ""}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${site.url}${urlPath}">
 ${ogImage ? `<meta property="og:image" content="${site.url}${ogImage}"><meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
 <meta name="theme-color" content="#F3F2EE">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/svg/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/svg/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/FinlandicaText-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 ${extraHead}

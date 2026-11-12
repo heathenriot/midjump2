@@ -17,9 +17,9 @@ const num = (i) => String(i + 1).padStart(2, "0");
 export const landing = () => {
   const body = `
 <div class="c-frame d-only l-d">
-<section class="l-hero"><h1 class="mj-fade" style="text-align:center">${br(T.headlineDesktop)}</h1>
-<p class="mj-fade mj-d1" style="text-align:center">${br(T.introDesktop)}</p>
-<div class="mj-fade mj-d2 l-cta" style="justify-content:center"><a href="/domains" class="mj-hero-btn">${esc(T.buttonLabel)}${arrow}</a></div></section>
+<section class="l-hero"><h1 class="mj-fade">${br(T.headlineDesktop)}</h1>
+<p class="mj-fade mj-d1">${br(T.introDesktop)}</p>
+<div class="mj-fade mj-d2 l-cta"><a href="/domains" class="mj-hero-btn">${esc(T.buttonLabel)}${arrow}</a></div></section>
 <section class="l-band" aria-labelledby="mq-label-d"><h2 id="mq-label-d" class="mj-row-label">${esc(T.scrollerLabel)}</h2>
 <p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
 <div class="mq"><div class="mq-vp" data-secs="${theme.desktop.landing.marqueeSeconds}"><div class="mq-track">${mqItems("d")}</div></div></div></section>
