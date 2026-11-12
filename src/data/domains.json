@@ -20,6 +20,20 @@
    "x": "0%"
   },
   "order2col": 0,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Optronical.com – Premium Domain by Midjump",
   "overview": [
    "As machine perception becomes essential across autonomous and defense applications, electro-optical sensing enables systems to observe and interpret the physical world with precision and autonomy.",
@@ -52,6 +66,20 @@
    "x": "0%"
   },
   "order2col": 2,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5.5%",
+    "mscale": 1,
+    "my": "3.5%"
+   },
+   {
+    "scale": 1,
+    "y": "3.5%",
+    "mscale": 1,
+    "my": "4.5%"
+   }
+  ],
   "seoDescription": "Enforcing.si – Premium Domain by Midjump",
   "overview": [
    "Across modern digital infrastructure, enforcing policies and permissions is essential to maintaining control over system behavior and access. From autonomous AI agents to enterprise networks, enforcement mechanisms translate defined rules into operational controls.",
@@ -86,6 +114,20 @@
    "x": "0%"
   },
   "order2col": 1,
+  "logoFx": [
+   {
+    "scale": 0.88,
+    "y": "6.5%",
+    "mscale": 0.85,
+    "my": "4%"
+   },
+   {
+    "scale": 0.85,
+    "y": "5%",
+    "mscale": 0.85,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "CrossModality.com – Premium Domain by Midjump",
   "overview": [
    "Cross-modality describes how intelligent systems relate, translate, and integrate information across vision, language, audio, and real-world sensory inputs. Across AI, robotics, and advanced sensing, it underpins the shift from single-task models to architectures capable of reasoning across these modalities.",
@@ -118,6 +160,20 @@
    "x": "0%"
   },
   "order2col": 7,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "4%",
+    "mscale": 1,
+    "my": "2.5%"
+   },
+   {
+    "scale": 1,
+    "y": "2.5%",
+    "mscale": 1,
+    "my": "3.5%"
+   }
+  ],
   "seoDescription": "Reinforcing.si – Premium Domain by Midjump",
   "overview": [
    "Advances in artificial intelligence increasingly involve reinforcing learned behaviors while improving reasoning capabilities and optimizing action policies through feedback-driven training across language models and robotics.",
@@ -149,6 +205,20 @@
    "x": "0%"
   },
   "order2col": 6,
+  "logoFx": [
+   {
+    "scale": 0.85,
+    "y": "6%",
+    "mscale": 0.85,
+    "my": "0%"
+   },
+   {
+    "scale": 0.85,
+    "y": "6%",
+    "mscale": 0.85,
+    "my": "0%"
+   }
+  ],
   "seoDescription": "Anthropize.com – Premium Domain by Midjump",
   "overview": [
    "Rooted in the Greek *anthropos*, anthropize conveys the act of shaping systems, environments, and intelligence around human context.",
@@ -180,6 +250,20 @@
    "x": "0%"
   },
   "order2col": 3,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "2.5%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "CoTaught.com – Premium Domain by Midjump",
   "overview": [
    "Co-taught describes knowledge developed through shared instruction, where human expertise and machine learning converge to shape the behavior of intelligent systems.",
@@ -212,6 +296,26 @@
    "x": "0%"
   },
   "order2col": 4,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "7.5%",
+    "mscale": 1,
+    "my": "4.5%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 0.75,
+    "y": "3%",
+    "mscale": 0.75,
+    "my": "2.5%"
+   }
+  ],
   "seoDescription": "Nephele.ai – Premium Domain by Midjump",
   "overview": [
    "Derived from the Greek cloud goddess, the name Nephele carries a mythological heritage that extends into scientific research, celestial nomenclature, and modern computing terminology.",
@@ -244,6 +348,20 @@
    "x": "0%"
   },
   "order2col": 20,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Deductional.com – Premium Domain by Midjump",
   "overview": [
    "As AI systems take on increasingly complex decisions, the ability to reason from established facts, rules, and constraints becomes essential to producing explainable and verifiable conclusions.",
@@ -276,6 +394,20 @@
    "x": "0%"
   },
   "order2col": 5,
+  "logoFx": [
+   {
+    "scale": 0.85,
+    "y": "6.5%",
+    "mscale": 0.85,
+    "my": "4%"
+   },
+   {
+    "scale": 0.9,
+    "y": "2.5%",
+    "mscale": 0.9,
+    "my": "3.5%"
+   }
+  ],
   "seoDescription": "DetectionLayer.com – Premium Domain by Midjump",
   "overview": [
    "The growing complexity of digital systems has made threat and anomaly detection fundamental to maintaining their integrity. Detection layers enable the underlying infrastructure to identify potential risks and initiate appropriate responses.",
@@ -308,6 +440,20 @@
    "x": "0%"
   },
   "order2col": 15,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "6.5%",
+    "mscale": 1,
+    "my": "4%"
+   },
+   {
+    "scale": 1,
+    "y": "4%",
+    "mscale": 1,
+    "my": "4.5%"
+   }
+  ],
   "seoDescription": "Triaged.si – Premium Domain by Midjump",
   "overview": [
    "The increasing complexity of digital environments and AI-driven systems is generating growing volumes of operational signals. Ensuring their effective triage is critical to maintaining operational resilience.",
@@ -341,6 +487,20 @@
    "x": "0%"
   },
   "order2col": 14,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "BioDefensive.com – Premium Domain by Midjump",
   "overview": [
    "As biological risks become increasingly interconnected across healthcare, agriculture, and national security, effective defense depends on early detection, continuous monitoring, and coordinated response.",
@@ -372,6 +532,14 @@
    "x": "0%"
   },
   "order2col": 8,
+  "logoFx": [
+   {
+    "scale": 0.95,
+    "y": "0%",
+    "mscale": 0.95,
+    "my": "0%"
+   }
+  ],
   "seoDescription": "FlexiToken.com – Premium Domain by Midjump",
   "overview": [
    "Tokenization is evolving from static ownership to adaptive digital infrastructure. As programmable assets become increasingly sophisticated, flexible token models enable value, permissions, and identity to evolve alongside changing context.",
@@ -403,6 +571,14 @@
    "x": "0%"
   },
   "order2col": 13,
+  "logoFx": [
+   {
+    "scale": 1.07,
+    "y": "5%",
+    "mscale": 1.09,
+    "my": "2%"
+   }
+  ],
   "seoDescription": "BroughtIn.com – Premium Domain by Midjump",
   "overview": [
    "Bringing the right people and expertise into an organization is fundamental to how businesses grow and adapt. From talent acquisition to strategic partnerships, the value lies in turning external resources into lasting organizational capabilities.",
@@ -434,6 +610,20 @@
    "x": "0%"
   },
   "order2col": 10,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "6.5%",
+    "mscale": 1,
+    "my": "4%"
+   },
+   {
+    "scale": 1,
+    "y": "5.5%",
+    "mscale": 1,
+    "my": "5.5%"
+   }
+  ],
   "seoDescription": "Modulated.si – Premium Domain by Midjump",
   "overview": [
    "From wireless communications to neural computation, modulation enables the controlled variation of signals and system behavior, underpinning advances in adaptive hardware and AI.",
@@ -466,6 +656,20 @@
    "x": "0%"
   },
   "order2col": 24,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "2.5%"
+   },
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Multitemporal.com – Premium Domain by Midjump",
   "overview": [
    "Multi-temporal analysis reveals how environments evolve across time. As satellite, aerial, and sensor observations become increasingly frequent, AI is transforming repeated observation into persistent intelligence about change.",
@@ -497,6 +701,20 @@
    "x": "0%"
   },
   "order2col": 19,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "CoTrained.com – Premium Domain by Midjump",
   "overview": [
    "As AI systems become increasingly specialized, collaborative training enables co-trained models to learn across complementary datasets and modalities, developing more integrated capabilities.",
@@ -527,6 +745,14 @@
    "x": "0%"
   },
   "order2col": 17,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "4%",
+    "mscale": 0.9,
+    "my": "0%"
+   }
+  ],
   "seoDescription": "Cloudveyor.com – Premium Domain by Midjump",
   "overview": [
    "Moving workloads and data reliably between fragmented cloud environments is essential to maintaining responsive, distributed operations.",
@@ -559,6 +785,20 @@
    "x": "0%"
   },
   "order2col": 9,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "5%",
+    "mscale": 0.9,
+    "my": "5%"
+   },
+   {
+    "scale": 0.9,
+    "y": "5%",
+    "mscale": 0.9,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Guardrailed.com – Premium Domain by Midjump",
   "overview": [
    "As digital systems become both autonomous and mission-critical, controlled execution demands governance embedded directly into their architecture rather than applied after deployment.",
@@ -592,6 +832,20 @@
    "x": "0%"
   },
   "order2col": 29,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "3.5%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Descriptional.com – Premium Domain by Midjump",
   "overview": [
    "Across generative AI and autonomous systems, structured descriptions help intelligent systems interpret context, generate outputs, and guide actions.",
@@ -624,6 +878,20 @@
    "x": "0%"
   },
   "order2col": 18,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "4%"
+   },
+   {
+    "scale": 1,
+    "y": "4.5%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Taxonomic.si – Premium Domain by Midjump",
   "overview": [
    "From artificial intelligence and machine learning to bioinformatics and cybersecurity, taxonomic systems organize information into structured hierarchies, enabling the categorization of complex data and the representation of relationships between concepts.",
@@ -656,6 +924,20 @@
    "x": "0%"
   },
   "order2col": 11,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Encodably.com – Premium Domain by Midjump",
   "overview": [
    "From robotics telemetry to high-volume data pipelines, encoding transforms complex information into structured, machine-readable formats, enabling reliable communication and processing across digital systems.",
@@ -688,6 +970,20 @@
    "x": "0%"
   },
   "order2col": 21,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "6.5%",
+    "mscale": 1,
+    "my": "4%"
+   },
+   {
+    "scale": 0.85,
+    "y": "5%",
+    "mscale": 0.9,
+    "my": "5.5%"
+   }
+  ],
   "seoDescription": "Webveyor.com – Premium Domain by Midjump",
   "overview": [
    "As web infrastructure grows more distributed, efficient delivery depends on how seamlessly data, content, and services move across networks",
@@ -719,6 +1015,14 @@
    "x": "0%"
   },
   "order2col": 25,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "0%",
+    "mscale": 1,
+    "my": "0%"
+   }
+  ],
   "seoDescription": "PromptAider.com – Premium Domain by Midjump",
   "overview": [
    "As AI becomes increasingly integrated into everyday applications and workflows, effective prompting plays a central role in how users communicate intent and achieve reliable results.",
@@ -750,6 +1054,20 @@
    "x": "0%"
   },
   "order2col": 12,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "6%",
+    "mscale": 1,
+    "my": "2.5%"
+   },
+   {
+    "scale": 1,
+    "y": "9%",
+    "mscale": 1,
+    "my": "9%"
+   }
+  ],
   "seoDescription": "Replaceably.com – Premium Domain by Midjump",
   "overview": [
    "As AI models, agentic workflows, and infrastructure services evolve, composable architectures allow individual capabilities to be upgraded or replaced without rebuilding entire systems.",
@@ -783,6 +1101,20 @@
    "x": "0%"
   },
   "order2col": 28,
+  "logoFx": [
+   {
+    "scale": 0.95,
+    "y": "7%",
+    "mscale": 0.9,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "09%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Precognic.com – Premium Domain by Midjump",
   "overview": [
    "As prediction evolves from forecasting to actionable intelligence, enterprises can anticipate operational risks and systemic outcomes with greater precision, transforming uncertainty into a strategic advantage.",
@@ -815,6 +1147,20 @@
    "x": "0%"
   },
   "order2col": 23,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "6.5%",
+    "mscale": 1,
+    "my": "4%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Quadrants.si – Premium Domain by Midjump",
   "overview": [
    "Across mathematics, analytics, and strategic decision-making, quadrants provide a framework for organizing information, mapping relationships, and interpreting complex data through structured divisions.",
@@ -847,6 +1193,20 @@
    "x": "0%"
   },
   "order2col": 32,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Outscrub.com – Premium Domain by Midjump",
   "overview": [
    "As digital threats and data complexity outpace traditional filtering processes, automated scrubbing plays a critical role in removing unwanted information, malicious content, and security risks across modern computing environments.",
@@ -880,6 +1240,26 @@
    "x": "0%"
   },
   "order2col": 16,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "HitPrompt.com – Premium Domain by Midjump",
   "overview": [
    "The prompt has become a primary interface between human intent and artificial intelligence, shaping how models generate content and execute tasks.",
@@ -910,6 +1290,14 @@
    "x": "0%"
   },
   "order2col": 39,
+  "logoFx": [
+   {
+    "scale": 0.95,
+    "y": "5%",
+    "mscale": 0.85,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Reinventional.com – Premium Domain by Midjump",
   "overview": [
    "For enduring organizations, reinvention is becoming a continuous organizational discipline rather than a response to change.",
@@ -941,6 +1329,20 @@
    "x": "0%"
   },
   "order2col": 22,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 0.95,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Distroless.com – Premium Domain by Midjump",
   "overview": [
    "Distroless architecture strips production containers to their essential runtime components, removing unnecessary shells, package managers, and system utilities to reduce attack surface and software overhead.",
@@ -972,6 +1374,14 @@
    "x": "0%"
   },
   "order2col": 35,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "4%",
+    "mscale": 0.82,
+    "my": "4%"
+   }
+  ],
   "seoDescription": "StakeETF.com – Premium Domain by Midjump",
   "overview": [
    "As digital assets mature into regulated investment vehicles, institutional demand is shifting from price exposure toward sustainable yield generation. Staking ETFs combine crypto liquidity with network rewards, transforming digital assets into productive, yield-bearing capital.",
@@ -1003,6 +1413,20 @@
    "x": "0%"
   },
   "order2col": 26,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "7.5%",
+    "mscale": 0.9,
+    "my": "4.5%"
+   },
+   {
+    "scale": 0.89,
+    "y": "5.5%",
+    "mscale": 0.89,
+    "my": "5.5%"
+   }
+  ],
   "seoDescription": "Distributional.si – Premium Domain by Midjump",
   "overview": [
    "Across statistics and artificial intelligence, distributional methods examine the distributions of outcomes and their underlying probabilities, enabling the modeling of uncertainty, complex patterns, and the behavior of intelligent systems.",
@@ -1035,6 +1459,20 @@
    "x": "0%"
   },
   "order2col": 27,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "5%",
+    "mscale": 0.82,
+    "my": "2.5%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Asynchronic.com – Premium Domain by Midjump",
   "overview": [
    "As intelligent systems become increasingly distributed, non-blocking execution enables independent processes to coordinate efficiently across concurrent workloads.",
@@ -1067,6 +1505,20 @@
    "x": "0%"
   },
   "order2col": 34,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 0.9,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "10%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Prognostical.com – Premium Domain by Midjump",
   "overview": [
    "Prognostic intelligence enables systems to anticipate failures, assess operational health, and forecast emerging risks by transforming real-time data into actionable insights.",
@@ -1098,6 +1550,14 @@
    "x": "0%"
   },
   "order2col": 30,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "4%",
+    "mscale": 0.9,
+    "my": "0%"
+   }
+  ],
   "seoDescription": "CloudIndexing.com – Premium Domain by Midjump",
   "overview": [
    "As enterprise data becomes increasingly fragmented across cloud services and regions, the challenge has shifted from storage to discovery. Without a unified index of distributed assets, critical information remains invisible to the security, compliance, and AI systems that depend on it.",
@@ -1130,6 +1590,20 @@
    "x": "0%"
   },
   "order2col": 41,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 0.95,
+    "my": "6%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Sektoral.com – Premium Domain by Midjump",
   "overview": [
    "Enterprise operations span increasingly specialized industries, each defined by distinct data, workflows, and market dynamics. Sector-level intelligence enables technology to address these environments with greater context and precision.",
@@ -1162,6 +1636,20 @@
    "x": "0%"
   },
   "order2col": 42,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "6%",
+    "mscale": 0.9,
+    "my": "3%"
+   },
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Intelsynth.com – Premium Domain by Midjump",
   "overview": [
    "As information increasingly fragments across enterprise systems and specialized domains, the ability to synthesize disparate signals into coherent insights becomes essential to informed decision-making.",
@@ -1194,6 +1682,20 @@
    "x": "0%"
   },
   "order2col": 36,
+  "logoFx": [
+   {
+    "scale": 0.88,
+    "y": "6%",
+    "mscale": 0.88,
+    "my": "4%"
+   },
+   {
+    "scale": 0.88,
+    "y": "3.5%",
+    "mscale": 0.88,
+    "my": "4.5%"
+   }
+  ],
   "seoDescription": "CrossTemporal.com – Premium Domain by Midjump",
   "overview": [
    "Cross-temporal methods, used across AI, computer vision, and predictive modeling, connect and analyze information across different points in time, enabling the recognition of evolving patterns, temporal relationships, and changes in complex systems.",
@@ -1225,6 +1727,20 @@
    "x": "0%"
   },
   "order2col": 40,
+  "logoFx": [
+   {
+    "scale": 0.95,
+    "y": "5%",
+    "mscale": 0.82,
+    "my": "4%"
+   },
+   {
+    "scale": 0.95,
+    "y": "10%",
+    "mscale": 0.85,
+    "my": "10%"
+   }
+  ],
   "seoDescription": "AgenticAider.com – Premium Domain by Midjump",
   "overview": [
    "Autonomous AI agents are moving beyond isolated tasks into complex workflows, creating new demands for coordination, oversight, and operational reliability.",
@@ -1256,6 +1772,14 @@
    "x": "0%"
   },
   "order2col": 38,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "5%",
+    "mscale": 0.85,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Throughlane.com – Premium Domain by Midjump",
   "overview": [
    "Across modern digital infrastructure, efficient routing and workload prioritization enable critical operations to move through complex systems with greater speed, reliability, and predictability.",
@@ -1288,6 +1812,14 @@
    "x": "0%"
   },
   "order2col": 37,
+  "logoFx": [
+   {
+    "scale": 0.95,
+    "y": "5%",
+    "mscale": 0.9,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Configurably.com – Premium Domain by Midjump",
   "overview": [
    "Modern software increasingly demands flexibility by design, allowing systems to adapt to changing requirements through configuration rather than redevelopment.",
@@ -1320,6 +1852,20 @@
    "x": "0%"
   },
   "order2col": 43,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "8%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "9%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Sanctional.com – Premium Domain by Midjump",
   "overview": [
    "As autonomous systems gain greater operational authority, governance is shifting from passive oversight into active control. Ensuring AI agents and enterprise software operate within sanctioned boundaries is becoming essential for secure, accountable execution.",
@@ -1351,6 +1897,14 @@
    "x": "0%"
   },
   "order2col": 44,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "5%",
+    "mscale": 0.9,
+    "my": "3%"
+   }
+  ],
   "seoDescription": "eHustles.com – Premium Domain by Midjump",
   "overview": [
    "Independent work has evolved beyond the traditional gig economy, with digital platforms expanding access to freelance opportunities and flexible employment as individuals increasingly monetize their skills through side hustles.",
@@ -1382,6 +1936,20 @@
    "x": "0%"
   },
   "order2col": 45,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "GenoFold.com – Premium Domain by Midjump",
   "overview": [
    "Advances in computational protein folding have transformed structural biology, while genome folding has emerged as a critical dimension of understanding gene expression, cellular regulation, and disease.",
@@ -1414,6 +1982,26 @@
    "x": "0%"
   },
   "order2col": 31,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "5%",
+    "mscale": 0.85,
+    "my": "5%"
+   },
+   {
+    "scale": 0.9,
+    "y": "5%",
+    "mscale": 0.85,
+    "my": "5%"
+   },
+   {
+    "scale": 0.9,
+    "y": "5%",
+    "mscale": 0.85,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "CloudAider.com – Premium Domain by Midjump",
   "overview": [
    "As enterprise infrastructure becomes increasingly distributed, managing cloud operations demands greater visibility, coordination, and control across workloads and services.",
@@ -1444,6 +2032,14 @@
    "x": "0%"
   },
   "order2col": 46,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "9%",
+    "mscale": 0.8,
+    "my": "6%"
+   }
+  ],
   "seoDescription": "DEXtreasury.com – Premium Domain by Midjump",
   "overview": [
    "Decentralized finance introduces new demands for treasury management, where liquidity, asset custody, and governance must operate across interconnected protocols and on-chain markets.",
@@ -1475,6 +2071,20 @@
    "x": "0%"
   },
   "order2col": 33,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "7%",
+    "mscale": 1,
+    "my": "5%"
+   },
+   {
+    "scale": 1,
+    "y": "10%",
+    "mscale": 1,
+    "my": "7%"
+   }
+  ],
   "seoDescription": "Anormality.com – Premium Domain by Midjump",
   "overview": [
    "Across AI, cloud infrastructure, and autonomous systems, detecting abnormal behavior is essential to identifying emerging risks before they escalate into operational failures.",
@@ -1507,6 +2117,20 @@
    "x": "0%"
   },
   "order2col": 47,
+  "logoFx": [
+   {
+    "scale": 0.9,
+    "y": "6%",
+    "mscale": 0.9,
+    "my": "1%"
+   },
+   {
+    "scale": 1,
+    "y": "8%",
+    "mscale": 1,
+    "my": "5%"
+   }
+  ],
   "seoDescription": "Netveyor.com – Premium Domain by Midjump",
   "overview": [
    "Modern digital infrastructure depends on the reliable movement of data across increasingly complex and distributed networks.",
@@ -1539,6 +2163,20 @@
    "x": "0%"
   },
   "order2col": 48,
+  "logoFx": [
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "0%"
+   },
+   {
+    "scale": 1,
+    "y": "5%",
+    "mscale": 1,
+    "my": "0%"
+   }
+  ],
   "seoDescription": "Causational.com – Premium Domain by Midjump",
   "overview": [
    "As computational systems become capable of modeling increasingly complex environments, understanding cause and effect enables them to reason about why events occur and how different actions may alter their outcomes.",

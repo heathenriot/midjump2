@@ -12,6 +12,7 @@ for (const m of src.matchAll(/\{\s*name:\s*"([^"]+)",\s*slug:\s*"([^"]+)",\s*log
   portfolio.push({ name: m[1], slug: m[2], logo: m[3], scale: +m[4], y: m[5], mscale: +m[6], my: m[7], mx: m[8] });
 
 const g2 = await import(pathToFileURL(path.join(dir, "gallery2col.js")));
+const cl = (await import(pathToFileURL(path.join(dir, "carouselLogos.js")))).CAROUSEL_LOGOS;
 const html = fs.readFileSync(board, "utf8");
 const gm = html.match(/var groups = (\{[\s\S]*?\n    \});/);
 const groups = Function("return " + gm[1])();
@@ -33,6 +34,7 @@ for (const p of portfolio) {
     desk: { scale: p.scale, y: p.y },
     phone: p2 ? { scale: p2.scale, y: p2.y, x: p2.x } : { scale: p.mscale, y: p.my, x: p.mx },
     order2col: g2.ORDER_2COL.indexOf(p.slug),
+    logoFx: mod.logos.map((l) => cl[l] || {}),
     seoDescription: mod.seoDescription, overview: mod.overview,
     categories: Object.keys(groups).filter((k) => groups[k].includes(p.name)),
     tier: tierOf(p.name),

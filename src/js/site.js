@@ -110,30 +110,70 @@
     if (h && h.scrollIntoView) h.scrollIntoView({ behavior: "smooth", block: "start" }); else window.scrollTo(0, 0);
   });
 
-  /* contact form (Web3Forms; the access key is a public client key by design) */
-  var cf = $("#mj-contact");
-  if (cf) {
-    var wrap = $(".c-wrap"), err = $(".mj-err"), sendBtn = $(".mj-send", cf);
+  /* forms (Web3Forms; the access key is a public client key by design): contact page + domain inquiries */
+  $$("form[data-key]").forEach(function (cf) {
+    var wrap = cf.closest(".c-wrap"), err = $(".mj-err", cf), sendBtn = $(".mj-send", cf);
     var dom = "";
     try { var d = new URLSearchParams(location.search).get("domain"); if (d && /^[\w.-]{1,80}$/.test(d)) dom = d; } catch (e) {}
+    var fixed = cf.getAttribute("data-domain") || "";
     var msg = cf.elements.message;
-    if (dom && msg && !msg.value) msg.value = "I'm interested in " + dom + ".\n\n";
+    if (dom && !fixed && msg && !msg.value) msg.value = "I'm interested in " + dom + ".\n\n";
     cf.addEventListener("submit", function (e) {
       e.preventDefault();
       var data = {}; new FormData(cf).forEach(function (v, k) { data[k] = v; });
       if (data.botcheck) return;
       delete data.botcheck;
+      var sub = fixed || dom;
       data.access_key = cf.getAttribute("data-key");
-      data.subject = "Inquiry: Contact Page" + (dom ? " (" + dom + ")" : "");
-      data.from_name = "Midjump \u2014 Contact Form";
+      data.subject = (fixed ? "Inquiry" : "Inquiry: Contact Page") + (sub ? " (" + sub + ")" : "");
+      data.from_name = "Midjump \u2014 " + (fixed ? "Domain Inquiry" : "Contact Form");
+      if (fixed) data.domain = fixed;
       err.hidden = true; sendBtn.disabled = true;
       fetch("https://api.web3forms.com/submit", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) })
         .then(function (r) { if (!r.ok) throw new Error(r.status); wrap.classList.add("is-sent"); cf.reset(); })
         .catch(function () { err.hidden = false; })
         .then(function () { sendBtn.disabled = false; });
     });
-    $(".mj-again").addEventListener("click", function () { wrap.classList.remove("is-sent"); });
-  }
+    $(".mj-again", wrap).addEventListener("click", function () { wrap.classList.remove("is-sent"); });
+  });
+
+  /* domain page: logo concept carousel (drag, arrows) */
+  $$(".dm-viewer").forEach(function (v) {
+    var track = $(".dm-track", v), n = track.children.length, sel = 0, g = null, dx = 0;
+    var prev = $(".dm-prev"), next = $(".dm-next");
+    var show = function () {
+      track.style.transform = "translateX(-" + (sel * 100) + "%)";
+      if (prev) prev.disabled = sel === 0;
+      if (next) next.disabled = sel === n - 1;
+    };
+    if (prev) prev.addEventListener("click", function () { sel = Math.max(0, sel - 1); show(); });
+    if (next) next.addEventListener("click", function () { sel = Math.min(n - 1, sel + 1); show(); });
+    show();
+    if (n < 2) return;
+    v.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      g = { id: e.pointerId, x: e.clientX, y: e.clientY, axis: null, w: v.clientWidth || 1 };
+      if (e.pointerType === "mouse" && v.setPointerCapture) v.setPointerCapture(e.pointerId);
+    });
+    v.addEventListener("pointermove", function (e) {
+      if (!g || e.pointerId !== g.id) return;
+      var x = e.clientX - g.x, y = e.clientY - g.y;
+      if (g.axis === null) { if (Math.abs(x) < 6 && Math.abs(y) < 6) return; g.axis = Math.abs(x) > Math.abs(y) ? "h" : "v"; }
+      if (g.axis !== "h") return;
+      if ((sel === 0 && x > 0) || (sel === n - 1 && x < 0)) x = x * 0.35;
+      dx = Math.max(-g.w, Math.min(g.w, x));
+      v.classList.add("is-dragging");
+      track.style.transform = "translateX(calc(-" + (sel * 100) + "% + " + dx + "px))";
+    });
+    var end = function (e) {
+      if (!g || e.pointerId !== g.id) return;
+      var th = Math.min(70, g.w * 0.18);
+      if (g.axis === "h" && Math.abs(dx) >= th) sel = dx < 0 ? Math.min(n - 1, sel + 1) : Math.max(0, sel - 1);
+      g = null; dx = 0; v.classList.remove("is-dragging"); show();
+    };
+    v.addEventListener("pointerup", end);
+    v.addEventListener("pointercancel", function () { g = null; dx = 0; v.classList.remove("is-dragging"); show(); });
+  });
 
   /* landing: marquee (cruises, follows a drag, keeps a throw's momentum, wraps seamlessly) */
   $$(".mq-vp").forEach(function (vp) {
