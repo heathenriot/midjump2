@@ -1,0 +1,1553 @@
+[
+ {
+  "name": "Optronical.com",
+  "base": "Optronical",
+  "ext": ".com",
+  "slug": "optronical",
+  "atomName": "Optronical",
+  "logos": [
+   "/assets/svg/Optronical.svg",
+   "/assets/svg/Optronical1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Optronical.svg",
+  "desk": {
+   "scale": 0.94,
+   "y": "4%"
+  },
+  "phone": {
+   "scale": 0.94,
+   "y": "3%",
+   "x": "0%"
+  },
+  "order2col": 0,
+  "seoDescription": "Optronical.com – Premium Domain by Midjump",
+  "overview": [
+   "As machine perception becomes essential across autonomous and defense applications, electro-optical sensing enables systems to observe and interpret the physical world with precision and autonomy.",
+   "Optronical.com provides the identity for enterprises engineering multispectral vision systems, edge AI technologies, and advanced signal processing architectures for next-generation sensing hardware."
+  ],
+  "categories": [
+   "AI",
+   "Ventures"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "Enforcing.si",
+  "base": "Enforcing",
+  "ext": ".si",
+  "slug": "enforcing",
+  "atomName": "Enforcing",
+  "logos": [
+   "/assets/svg/Enforcing.svg",
+   "/assets/svg/Enforcing1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Enforcing.svg",
+  "desk": {
+   "scale": 1.03,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "4.5%",
+   "x": "0%"
+  },
+  "order2col": 2,
+  "seoDescription": "Enforcing.si – Premium Domain by Midjump",
+  "overview": [
+   "Across modern digital infrastructure, enforcing policies and permissions is essential to maintaining control over system behavior and access. From autonomous AI agents to enterprise networks, enforcement mechanisms translate defined rules into operational controls.",
+   "Enforcing.si is a defining identity for companies developing policy enforcement technologies, AI security platforms, and infrastructure governing interconnected systems."
+  ],
+  "categories": [
+   "AI",
+   "Cloud",
+   "Security",
+   "Data"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "CrossModality.com",
+  "base": "CrossModality",
+  "ext": ".com",
+  "slug": "crossmodality",
+  "atomName": "CrossModality",
+  "logos": [
+   "/assets/svg/CrossModality.svg",
+   "/assets/svg/CrossModality1.svg"
+  ],
+  "galleryLogo": "/assets/svg/CrossModality.svg",
+  "desk": {
+   "scale": 1.05,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 0.91,
+   "y": "3%",
+   "x": "0%"
+  },
+  "order2col": 1,
+  "seoDescription": "CrossModality.com – Premium Domain by Midjump",
+  "overview": [
+   "Cross-modality describes how intelligent systems relate, translate, and integrate information across vision, language, audio, and real-world sensory inputs. Across AI, robotics, and advanced sensing, it underpins the shift from single-task models to architectures capable of reasoning across these modalities.",
+   "The term offers a defining identity for companies developing foundation models, embodied AI, medical imaging technologies, and multimodal perception."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "Reinforcing.si",
+  "base": "Reinforcing",
+  "ext": ".si",
+  "slug": "reinforcing",
+  "atomName": "Reinforcing",
+  "logos": [
+   "/assets/svg/Reinforcing.svg",
+   "/assets/svg/Reinforcing1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Reinforcing.svg",
+  "desk": {
+   "scale": 1.05,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "4.5%",
+   "x": "0%"
+  },
+  "order2col": 7,
+  "seoDescription": "Reinforcing.si – Premium Domain by Midjump",
+  "overview": [
+   "Advances in artificial intelligence increasingly involve reinforcing learned behaviors while improving reasoning capabilities and optimizing action policies through feedback-driven training across language models and robotics.",
+   "Reinforcing.si is an authoritative identity for companies advancing reinforcement learning, frontier AI research, and the training of intelligent agents and robotic systems."
+  ],
+  "categories": [
+   "AI"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "Anthropize.com",
+  "base": "Anthropize",
+  "ext": ".com",
+  "slug": "anthropize",
+  "atomName": "Anthropize",
+  "logos": [
+   "/assets/svg/Anthropize1.svg",
+   "/assets/svg/Anthropize2.svg"
+  ],
+  "galleryLogo": "/assets/svg/Anthropize1.svg",
+  "desk": {
+   "scale": 0.88,
+   "y": "-3%"
+  },
+  "phone": {
+   "scale": 0.85,
+   "y": "-2.5%",
+   "x": "0%"
+  },
+  "order2col": 6,
+  "seoDescription": "Anthropize.com – Premium Domain by Midjump",
+  "overview": [
+   "Rooted in the Greek *anthropos*, anthropize conveys the act of shaping systems, environments, and intelligence around human context.",
+   "The name lends a natural identity to companies developing human-centered AI, embodied robotics, human world models, and affective computing, fields in which imbuing intelligent technologies with anthropic qualities is becoming a central design principle."
+  ],
+  "categories": [
+   "AI"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "CoTaught.com",
+  "base": "CoTaught",
+  "ext": ".com",
+  "slug": "cotaught",
+  "atomName": "CoTaught",
+  "logos": [
+   "/assets/svg/CoTaught.svg",
+   "/assets/svg/CoTaught1.svg"
+  ],
+  "galleryLogo": "/assets/svg/CoTaught.svg",
+  "desk": {
+   "scale": 0.96,
+   "y": "3%"
+  },
+  "phone": {
+   "scale": 0.88,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 3,
+  "seoDescription": "CoTaught.com – Premium Domain by Midjump",
+  "overview": [
+   "Co-taught describes knowledge developed through shared instruction, where human expertise and machine learning converge to shape the behavior of intelligent systems.",
+   "CoTaught.com provides an identity for companies developing collaborative learning platforms, human-in-the-loop AI, and embodied systems trained through demonstration and feedback."
+  ],
+  "categories": [
+   "AI"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "Nephele.ai",
+  "base": "Nephele",
+  "ext": ".ai",
+  "slug": "nephele",
+  "atomName": "Nephele",
+  "logos": [
+   "/assets/svg/m_Nephele.svg",
+   "/assets/svg/Nephele.svg",
+   "/assets/svg/Nephele1.svg"
+  ],
+  "galleryLogo": "/assets/svg/m_Nephele.svg",
+  "desk": {
+   "scale": 1.05,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.89,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 4,
+  "seoDescription": "Nephele.ai – Premium Domain by Midjump",
+  "overview": [
+   "Derived from the Greek cloud goddess, the name Nephele carries a mythological heritage that extends into scientific research, celestial nomenclature, and modern computing terminology.",
+   "Its natural association with the cloud positions Nephele.ai for companies developing distributed computing systems, large-scale AI architectures, and the infrastructure supporting them."
+  ],
+  "categories": [
+   "AI",
+   "Cloud"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "Deductional.com",
+  "base": "Deductional",
+  "ext": ".com",
+  "slug": "deductional",
+  "atomName": "Deductional",
+  "logos": [
+   "/assets/svg/Deductional.svg",
+   "/assets/svg/Deductional1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Deductional.svg",
+  "desk": {
+   "scale": 0.97,
+   "y": "4.5%"
+  },
+  "phone": {
+   "scale": 0.97,
+   "y": "3%",
+   "x": "0%"
+  },
+  "order2col": 20,
+  "seoDescription": "Deductional.com – Premium Domain by Midjump",
+  "overview": [
+   "As AI systems take on increasingly complex decisions, the ability to reason from established facts, rules, and constraints becomes essential to producing explainable and verifiable conclusions.",
+   "Deductional.com captures the principles of deductive reasoning, offering a distinctive identity for technologies built around logical inference, rigorous evaluation, and trustworthy machine intelligence."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "DetectionLayer.com",
+  "base": "DetectionLayer",
+  "ext": ".com",
+  "slug": "detectionlayer",
+  "atomName": "DetectionLayer",
+  "logos": [
+   "/assets/svg/DetectionLayer.svg",
+   "/assets/svg/DetectionLayer1.svg"
+  ],
+  "galleryLogo": "/assets/svg/DetectionLayer.svg",
+  "desk": {
+   "scale": 1.03,
+   "y": "3%"
+  },
+  "phone": {
+   "scale": 0.93,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 5,
+  "seoDescription": "DetectionLayer.com – Premium Domain by Midjump",
+  "overview": [
+   "The growing complexity of digital systems has made threat and anomaly detection fundamental to maintaining their integrity. Detection layers enable the underlying infrastructure to identify potential risks and initiate appropriate responses.",
+   "DetectionLayer.com offers a direct identity for cybersecurity platforms, AI observability technologies, and intelligent monitoring systems where continuous detection is essential to secure and reliable operation."
+  ],
+  "categories": [
+   "AI",
+   "Security"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Triaged.si",
+  "base": "Triaged",
+  "ext": ".si",
+  "slug": "triaged",
+  "atomName": "Triaged",
+  "logos": [
+   "/assets/svg/Triaged.svg",
+   "/assets/svg/Triaged1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Triaged.svg",
+  "desk": {
+   "scale": 0.95,
+   "y": "4%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "5%",
+   "x": "0%"
+  },
+  "order2col": 15,
+  "seoDescription": "Triaged.si – Premium Domain by Midjump",
+  "overview": [
+   "The increasing complexity of digital environments and AI-driven systems is generating growing volumes of operational signals. Ensuring their effective triage is critical to maintaining operational resilience.",
+   "Triaged.si is a fitting identity for companies developing triage technologies, autonomous security operations, and AI-powered workflow orchestration."
+  ],
+  "categories": [
+   "AI",
+   "Security",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "BioDefensive.com",
+  "base": "BioDefensive",
+  "ext": ".com",
+  "slug": "biodefensive",
+  "atomName": "BioDefensive",
+  "logos": [
+   "/assets/svg/BioDefensive.svg",
+   "/assets/svg/BioDefensive1.svg"
+  ],
+  "galleryLogo": "/assets/svg/BioDefensive.svg",
+  "desk": {
+   "scale": 1.02,
+   "y": "1.5%"
+  },
+  "phone": {
+   "scale": 0.98,
+   "y": "3.5%",
+   "x": "0%"
+  },
+  "order2col": 14,
+  "seoDescription": "BioDefensive.com – Premium Domain by Midjump",
+  "overview": [
+   "As biological risks become increasingly interconnected across healthcare, agriculture, and national security, effective defense depends on early detection, continuous monitoring, and coordinated response.",
+   "BioDefensive.com establishes a direct identity for technologies dedicated to biological protection, spanning biosecurity, threat intelligence, and systems designed to anticipate and contain emerging biological risks."
+  ],
+  "categories": [
+   "Security",
+   "Ventures"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "FlexiToken.com",
+  "base": "FlexiToken",
+  "ext": ".com",
+  "slug": "flexitoken",
+  "atomName": "FlexiToken",
+  "logos": [
+   "/assets/svg/FlexiToken.svg"
+  ],
+  "galleryLogo": "/assets/svg/FlexiToken.svg",
+  "desk": {
+   "scale": 1.07,
+   "y": "0%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "2.5%",
+   "x": "0%"
+  },
+  "order2col": 8,
+  "seoDescription": "FlexiToken.com – Premium Domain by Midjump",
+  "overview": [
+   "Tokenization is evolving from static ownership to adaptive digital infrastructure. As programmable assets become increasingly sophisticated, flexible token models enable value, permissions, and identity to evolve alongside changing context.",
+   "FlexiToken.com anchors the identity for adaptive token infrastructure, aligning with platforms building tokenized assets, dynamic utility protocols, and decentralized finance frameworks."
+  ],
+  "categories": [
+   "AI",
+   "Ventures"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "BroughtIn.com",
+  "base": "BroughtIn",
+  "ext": ".com",
+  "slug": "broughtin",
+  "atomName": "BroughtIn",
+  "logos": [
+   "/assets/svg/BroughtIn.svg"
+  ],
+  "galleryLogo": "/assets/svg/BroughtIn.svg",
+  "desk": {
+   "scale": 1.09,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 1.05,
+   "y": "1%",
+   "x": "0%"
+  },
+  "order2col": 13,
+  "seoDescription": "BroughtIn.com – Premium Domain by Midjump",
+  "overview": [
+   "Bringing the right people and expertise into an organization is fundamental to how businesses grow and adapt. From talent acquisition to strategic partnerships, the value lies in turning external resources into lasting organizational capabilities.",
+   "BroughtIn.com offers a direct, recognizable identity for platforms connecting organizations with talent, expertise, and business opportunities."
+  ],
+  "categories": [
+   "Ventures"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "Modulated.si",
+  "base": "Modulated",
+  "ext": ".si",
+  "slug": "modulated",
+  "atomName": "Modulated",
+  "logos": [
+   "/assets/svg/Modulated.svg",
+   "/assets/svg/Modulated1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Modulated.svg",
+  "desk": {
+   "scale": 1.08,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "4.5%",
+   "x": "0%"
+  },
+  "order2col": 10,
+  "seoDescription": "Modulated.si – Premium Domain by Midjump",
+  "overview": [
+   "From wireless communications to neural computation, modulation enables the controlled variation of signals and system behavior, underpinning advances in adaptive hardware and AI.",
+   "Modulated.si is a precise identity for companies developing signal processing technologies, intelligent sensing systems, and adaptive computational architectures."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Multitemporal.com",
+  "base": "Multitemporal",
+  "ext": ".com",
+  "slug": "multitemporal",
+  "atomName": "Multitemporal",
+  "logos": [
+   "/assets/svg/Multitemporal.svg",
+   "/assets/svg/Multitemporal1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Multitemporal.svg",
+  "desk": {
+   "scale": 0.98,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.94,
+   "y": "2%",
+   "x": "0%"
+  },
+  "order2col": 24,
+  "seoDescription": "Multitemporal.com – Premium Domain by Midjump",
+  "overview": [
+   "Multi-temporal analysis reveals how environments evolve across time. As satellite, aerial, and sensor observations become increasingly frequent, AI is transforming repeated observation into persistent intelligence about change.",
+   "Multitemporal.com provides a definitive identity for platforms built around Earth observation, temporal modeling, and AI-powered change detection across geospatial and autonomous systems."
+  ],
+  "categories": [
+   "Data"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "CoTrained.com",
+  "base": "CoTrained",
+  "ext": ".com",
+  "slug": "cotrained",
+  "atomName": "CoTrained",
+  "logos": [
+   "/assets/svg/CoTrained.svg",
+   "/assets/svg/CoTrained1.svg"
+  ],
+  "galleryLogo": "/assets/svg/CoTrained.svg",
+  "desk": {
+   "scale": 1,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 0.94,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 19,
+  "seoDescription": "CoTrained.com – Premium Domain by Midjump",
+  "overview": [
+   "As AI systems become increasingly specialized, collaborative training enables co-trained models to learn across complementary datasets and modalities, developing more integrated capabilities.",
+   "CoTrained.com provides a definitive identity for platforms advancing joint AI training and multimodal learning, with applications spanning foundation models, embodied intelligence, and autonomous systems."
+  ],
+  "categories": [
+   "AI"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Cloudveyor.com",
+  "base": "Cloudveyor",
+  "ext": ".com",
+  "slug": "cloudveyor",
+  "atomName": "Cloudveyor",
+  "logos": [
+   "/assets/svg/Cloudveyor.svg"
+  ],
+  "galleryLogo": "/assets/svg/Cloudveyor.svg",
+  "desk": {
+   "scale": 0.92,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.92,
+   "y": "-0.5%",
+   "x": "0%"
+  },
+  "order2col": 17,
+  "seoDescription": "Cloudveyor.com – Premium Domain by Midjump",
+  "overview": [
+   "Moving workloads and data reliably between fragmented cloud environments is essential to maintaining responsive, distributed operations.",
+   "Cloudveyor.com evokes the continuous movement of cloud resources, aligning with platforms developing cross-cloud orchestration, workload migration, and data mobility infrastructure."
+  ],
+  "categories": [
+   "Cloud",
+   "Data"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Guardrailed.com",
+  "base": "Guardrailed",
+  "ext": ".com",
+  "slug": "guardrailed",
+  "atomName": "Guardrailed",
+  "logos": [
+   "/assets/svg/Guardrailed.svg",
+   "/assets/svg/Guardrailed1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Guardrailed.svg",
+  "desk": {
+   "scale": 0.99,
+   "y": "-1.5%"
+  },
+  "phone": {
+   "scale": 0.93,
+   "y": "3%",
+   "x": "0%"
+  },
+  "order2col": 9,
+  "seoDescription": "Guardrailed.com – Premium Domain by Midjump",
+  "overview": [
+   "As digital systems become both autonomous and mission-critical, controlled execution demands governance embedded directly into their architecture rather than applied after deployment.",
+   "Guardrailed.com is a defining identity for companies engineering guardrailed systems, with applications across security policy enforcement, runtime safeguards, and platforms requiring verifiable operations in regulated environments."
+  ],
+  "categories": [
+   "AI",
+   "Security",
+   "Data"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "Descriptional.com",
+  "base": "Descriptional",
+  "ext": ".com",
+  "slug": "descriptional",
+  "atomName": "Descriptional",
+  "logos": [
+   "/assets/svg/Descriptional.svg",
+   "/assets/svg/Descriptional1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Descriptional.svg",
+  "desk": {
+   "scale": 0.97,
+   "y": "3%"
+  },
+  "phone": {
+   "scale": 0.94,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 29,
+  "seoDescription": "Descriptional.com – Premium Domain by Midjump",
+  "overview": [
+   "Across generative AI and autonomous systems, structured descriptions help intelligent systems interpret context, generate outputs, and guide actions.",
+   "Descriptional.com provides a defining identity for platforms translating descriptive information into machine-readable context, connecting natural-language interaction with intelligent system behavior."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Taxonomic.si",
+  "base": "Taxonomic",
+  "ext": ".si",
+  "slug": "taxonomic",
+  "atomName": "Taxonomic",
+  "logos": [
+   "/assets/svg/Taxonomic.svg",
+   "/assets/svg/Taxonomic1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Taxonomic.svg",
+  "desk": {
+   "scale": 1.05,
+   "y": "2.5%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "4.5%",
+   "x": "0%"
+  },
+  "order2col": 18,
+  "seoDescription": "Taxonomic.si – Premium Domain by Midjump",
+  "overview": [
+   "From artificial intelligence and machine learning to bioinformatics and cybersecurity, taxonomic systems organize information into structured hierarchies, enabling the categorization of complex data and the representation of relationships between concepts.",
+   "Taxonomic.si is a natural identity for companies developing intelligent classification technologies, knowledge organization platforms, and computational systems built around structured information."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Encodably.com",
+  "base": "Encodably",
+  "ext": ".com",
+  "slug": "encodably",
+  "atomName": "Encodably",
+  "logos": [
+   "/assets/svg/Encodably.svg",
+   "/assets/svg/Encodably1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Encodably.svg",
+  "desk": {
+   "scale": 1,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 0.94,
+   "y": "2.5%",
+   "x": "0%"
+  },
+  "order2col": 11,
+  "seoDescription": "Encodably.com – Premium Domain by Midjump",
+  "overview": [
+   "From robotics telemetry to high-volume data pipelines, encoding transforms complex information into structured, machine-readable formats, enabling reliable communication and processing across digital systems.",
+   "Encodably.com offers a versatile identity for technologies built around the encoding, interpretation, and exchange of information across modern computing environments."
+  ],
+  "categories": [
+   "Cloud",
+   "Data"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "Webveyor.com",
+  "base": "Webveyor",
+  "ext": ".com",
+  "slug": "webveyor",
+  "atomName": "Webveyor",
+  "logos": [
+   "/assets/svg/Webveyor.svg",
+   "/assets/svg/Webveyor1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Webveyor.svg",
+  "desk": {
+   "scale": 1.08,
+   "y": "-1%"
+  },
+  "phone": {
+   "scale": 1.03,
+   "y": "2.5%",
+   "x": "0%"
+  },
+  "order2col": 21,
+  "seoDescription": "Webveyor.com – Premium Domain by Midjump",
+  "overview": [
+   "As web infrastructure grows more distributed, efficient delivery depends on how seamlessly data, content, and services move across networks",
+   "Webveyor.com represents the continuous flow of digital resources, offering a versatile identity for platforms coordinating web delivery, intelligent routing, and the infrastructure connecting online systems."
+  ],
+  "categories": [
+   "Cloud",
+   "Data"
+  ],
+  "tier": "A"
+ },
+ {
+  "name": "PromptAider.com",
+  "base": "PromptAider",
+  "ext": ".com",
+  "slug": "promptaider",
+  "atomName": "PromptAider",
+  "logos": [
+   "/assets/svg/PromptAider.svg"
+  ],
+  "galleryLogo": "/assets/svg/PromptAider.svg",
+  "desk": {
+   "scale": 1.07,
+   "y": "-2%"
+  },
+  "phone": {
+   "scale": 0.98,
+   "y": "2%",
+   "x": "0%"
+  },
+  "order2col": 25,
+  "seoDescription": "PromptAider.com – Premium Domain by Midjump",
+  "overview": [
+   "As AI becomes increasingly integrated into everyday applications and workflows, effective prompting plays a central role in how users communicate intent and achieve reliable results.",
+   "PromptAider.com aligns naturally with platforms simplifying prompt optimization and management, helping individuals and organizations interact more effectively with artificial intelligence."
+  ],
+  "categories": [
+   "AI"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Replaceably.com",
+  "base": "Replaceably",
+  "ext": ".com",
+  "slug": "replaceably",
+  "atomName": "Replaceably",
+  "logos": [
+   "/assets/svg/Replaceably.svg",
+   "/assets/svg/Replaceably1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Replaceably.svg",
+  "desk": {
+   "scale": 1.01,
+   "y": "-3%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "1%",
+   "x": "0%"
+  },
+  "order2col": 12,
+  "seoDescription": "Replaceably.com – Premium Domain by Midjump",
+  "overview": [
+   "As AI models, agentic workflows, and infrastructure services evolve, composable architectures allow individual capabilities to be upgraded or replaced without rebuilding entire systems.",
+   "Replaceably.com conveys the principle of replaceable components, aligning with platforms developing modular AI infrastructure, interoperable software, and systems designed for continuous adaptation."
+  ],
+  "categories": [
+   "AI",
+   "Cloud",
+   "Ventures"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Precognic.com",
+  "base": "Precognic",
+  "ext": ".com",
+  "slug": "precognic",
+  "atomName": "Precognic",
+  "logos": [
+   "/assets/svg/Precognic.svg",
+   "/assets/svg/Precognic1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Precognic.svg",
+  "desk": {
+   "scale": 0.98,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "2%",
+   "x": "0%"
+  },
+  "order2col": 28,
+  "seoDescription": "Precognic.com – Premium Domain by Midjump",
+  "overview": [
+   "As prediction evolves from forecasting to actionable intelligence, enterprises can anticipate operational risks and systemic outcomes with greater precision, transforming uncertainty into a strategic advantage.",
+   "Precognic.com conveys a distinctive identity for companies developing predictive systems and platforms built around foresight and adaptive decision-making, enabling more informed and responsive operations."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Quadrants.si",
+  "base": "Quadrants",
+  "ext": ".si",
+  "slug": "quadrants",
+  "atomName": "Quadrants",
+  "logos": [
+   "/assets/svg/Quadrants.svg",
+   "/assets/svg/Quadrants1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Quadrants.svg",
+  "desk": {
+   "scale": 1,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.92,
+   "y": "4.5%",
+   "x": "0%"
+  },
+  "order2col": 23,
+  "seoDescription": "Quadrants.si – Premium Domain by Midjump",
+  "overview": [
+   "Across mathematics, analytics, and strategic decision-making, quadrants provide a framework for organizing information, mapping relationships, and interpreting complex data through structured divisions.",
+   "Quadrants.si is a versatile identity for companies developing analytical technologies, business intelligence platforms, and systems built around spatial or comparative insights."
+  ],
+  "categories": [
+   "Data",
+   "Ventures"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "OutScrub.com",
+  "base": "OutScrub",
+  "ext": ".com",
+  "slug": "outscrub",
+  "atomName": "Outscrub",
+  "logos": [
+   "/assets/svg/Outscrub.svg",
+   "/assets/svg/Outscrub1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Outscrub.svg",
+  "desk": {
+   "scale": 0.98,
+   "y": "1.5%"
+  },
+  "phone": {
+   "scale": 0.89,
+   "y": "6%",
+   "x": "0%"
+  },
+  "order2col": 32,
+  "seoDescription": "Outscrub.com – Premium Domain by Midjump",
+  "overview": [
+   "As digital threats and data complexity outpace traditional filtering processes, automated scrubbing plays a critical role in removing unwanted information, malicious content, and security risks across modern computing environments.",
+   "Outscrub.com offers a focused identity for technologies built around intelligent filtering, cleansing, and threat mitigation, with applications spanning data infrastructure, cybersecurity, and automated system maintenance."
+  ],
+  "categories": [
+   "Security",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "HitPrompt.com",
+  "base": "HitPrompt",
+  "ext": ".com",
+  "slug": "hitprompt",
+  "atomName": "HitPrompt",
+  "logos": [
+   "/assets/svg/HitPrompt1.svg",
+   "/assets/svg/HitPrompt2.svg",
+   "/assets/svg/HitPrompt3.svg"
+  ],
+  "galleryLogo": "/assets/svg/HitPrompt1.svg",
+  "desk": {
+   "scale": 1.07,
+   "y": "-1%"
+  },
+  "phone": {
+   "scale": 0.96,
+   "y": "2%",
+   "x": "0%"
+  },
+  "order2col": 16,
+  "seoDescription": "HitPrompt.com – Premium Domain by Midjump",
+  "overview": [
+   "The prompt has become a primary interface between human intent and artificial intelligence, shaping how models generate content and execute tasks.",
+   "HitPrompt.com offers a distinctive identity for platforms built around AI interaction, prompt creation, intelligent workflows, and accessible AI tools."
+  ],
+  "categories": [
+   "AI"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Reinventional.com",
+  "base": "Reinventional",
+  "ext": ".com",
+  "slug": "reinventional",
+  "atomName": "Reinventional",
+  "logos": [
+   "/assets/svg/Reinventional.svg"
+  ],
+  "galleryLogo": "/assets/svg/Reinventional.svg",
+  "desk": {
+   "scale": 0.97,
+   "y": "-0.1%"
+  },
+  "phone": {
+   "scale": 0.9,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 39,
+  "seoDescription": "Reinventional.com – Premium Domain by Midjump",
+  "overview": [
+   "For enduring organizations, reinvention is becoming a continuous organizational discipline rather than a response to change.",
+   "Reinventional.com embodies this philosophy, creating a distinctive identity for strategy firms, transformation platforms, innovation studios, and advisory practices advancing enterprise reinvention."
+  ],
+  "categories": [
+   "Ventures"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Distroless.com",
+  "base": "Distroless",
+  "ext": ".com",
+  "slug": "distroless",
+  "atomName": "Distroless",
+  "logos": [
+   "/assets/svg/Distroless.svg",
+   "/assets/svg/Distroless1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Distroless.svg",
+  "desk": {
+   "scale": 0.95,
+   "y": "-1%"
+  },
+  "phone": {
+   "scale": 0.93,
+   "y": "2%",
+   "x": "0%"
+  },
+  "order2col": 22,
+  "seoDescription": "Distroless.com – Premium Domain by Midjump",
+  "overview": [
+   "Distroless architecture strips production containers to their essential runtime components, removing unnecessary shells, package managers, and system utilities to reduce attack surface and software overhead.",
+   "Distroless.com provides a natural identity for platforms building minimal container infrastructure, automated vulnerability remediation, and secure software supply chains for hardened production environments."
+  ],
+  "categories": [
+   "Cloud",
+   "Security"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "StakeETF.com",
+  "base": "StakeETF",
+  "ext": ".com",
+  "slug": "stakeetf",
+  "atomName": "StakeETF",
+  "logos": [
+   "/assets/svg/StakeETF.svg"
+  ],
+  "galleryLogo": "/assets/svg/StakeETF.svg",
+  "desk": {
+   "scale": 1.06,
+   "y": "0.5%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "5%",
+   "x": "0%"
+  },
+  "order2col": 35,
+  "seoDescription": "StakeETF.com – Premium Domain by Midjump",
+  "overview": [
+   "As digital assets mature into regulated investment vehicles, institutional demand is shifting from price exposure toward sustainable yield generation. Staking ETFs combine crypto liquidity with network rewards, transforming digital assets into productive, yield-bearing capital.",
+   "StakeETF.com defines the category for regulated staking infrastructure, positioning platforms that elevate decentralized staking rewards into an institutional-grade asset class for issuers, allocators, and fiduciary platforms."
+  ],
+  "categories": [
+   "Ventures"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Distributional.si",
+  "base": "Distributional",
+  "ext": ".si",
+  "slug": "distributional",
+  "atomName": "Distributional",
+  "logos": [
+   "/assets/svg/Distributional.svg",
+   "/assets/svg/Distributional1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Distributional.svg",
+  "desk": {
+   "scale": 1,
+   "y": "2.5%"
+  },
+  "phone": {
+   "scale": 0.93,
+   "y": "4.5%",
+   "x": "0%"
+  },
+  "order2col": 26,
+  "seoDescription": "Distributional.si – Premium Domain by Midjump",
+  "overview": [
+   "Across statistics and artificial intelligence, distributional methods examine the distributions of outcomes and their underlying probabilities, enabling the modeling of uncertainty, complex patterns, and the behavior of intelligent systems.",
+   "Distributional.si is a distinctive identity for companies advancing probabilistic AI, machine learning research, and computational technologies built around statistical inference."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Asynchronic.com",
+  "base": "Asynchronic",
+  "ext": ".com",
+  "slug": "asynchronic",
+  "atomName": "Asynchronic",
+  "logos": [
+   "/assets/svg/Asynchronic.svg",
+   "/assets/svg/Asynchronic1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Asynchronic.svg",
+  "desk": {
+   "scale": 0.88,
+   "y": "-3%"
+  },
+  "phone": {
+   "scale": 0.83,
+   "y": "0.5%",
+   "x": "0%"
+  },
+  "order2col": 27,
+  "seoDescription": "Asynchronic.com – Premium Domain by Midjump",
+  "overview": [
+   "As intelligent systems become increasingly distributed, non-blocking execution enables independent processes to coordinate efficiently across concurrent workloads.",
+   "Asynchronic.com reflects the principles of asynchronous computing, aligning with platforms developing distributed orchestration, autonomous agent coordination, and scalable computing infrastructure."
+  ],
+  "categories": [
+   "AI",
+   "Cloud"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Prognostical.com",
+  "base": "Prognostical",
+  "ext": ".com",
+  "slug": "prognostical",
+  "atomName": "Prognostical",
+  "logos": [
+   "/assets/svg/Prognostical.svg",
+   "/assets/svg/Prognostical1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Prognostical.svg",
+  "desk": {
+   "scale": 0.98,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.98,
+   "y": "2%",
+   "x": "0%"
+  },
+  "order2col": 34,
+  "seoDescription": "Prognostical.com – Premium Domain by Midjump",
+  "overview": [
+   "Prognostic intelligence enables systems to anticipate failures, assess operational health, and forecast emerging risks by transforming real-time data into actionable insights.",
+   "Prognostical.com aligns with technologies built around predictive diagnostics, system health monitoring, and intelligent risk assessment across industrial, cloud, and autonomous environments."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "CloudIndexing.com",
+  "base": "CloudIndexing",
+  "ext": ".com",
+  "slug": "cloudindexing",
+  "atomName": "CloudIndexing",
+  "logos": [
+   "/assets/svg/CloudIndexing.svg"
+  ],
+  "galleryLogo": "/assets/svg/CloudIndexing.svg",
+  "desk": {
+   "scale": 0.9,
+   "y": "-2%"
+  },
+  "phone": {
+   "scale": 0.87,
+   "y": "1%",
+   "x": "0%"
+  },
+  "order2col": 30,
+  "seoDescription": "CloudIndexing.com – Premium Domain by Midjump",
+  "overview": [
+   "As enterprise data becomes increasingly fragmented across cloud services and regions, the challenge has shifted from storage to discovery. Without a unified index of distributed assets, critical information remains invisible to the security, compliance, and AI systems that depend on it.",
+   "CloudIndexing.com is a defining identity for the unified discovery layer, with applications spanning cross-cloud search, semantic indexing, and real-time information retrieval at scale."
+  ],
+  "categories": [
+   "Cloud",
+   "Data"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Sektoral.com",
+  "base": "Sektoral",
+  "ext": ".com",
+  "slug": "sektoral",
+  "atomName": "Sektoral",
+  "logos": [
+   "/assets/svg/Sektoral.svg",
+   "/assets/svg/Sektoral1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Sektoral.svg",
+  "desk": {
+   "scale": 0.98,
+   "y": "3%"
+  },
+  "phone": {
+   "scale": 0.93,
+   "y": "5%",
+   "x": "0%"
+  },
+  "order2col": 41,
+  "seoDescription": "Sektoral.com – Premium Domain by Midjump",
+  "overview": [
+   "Enterprise operations span increasingly specialized industries, each defined by distinct data, workflows, and market dynamics. Sector-level intelligence enables technology to address these environments with greater context and precision.",
+   "Sektoral.com aligns with companies developing sectoral intelligence and domain-specific systems, with applications across vertical AI, enterprise analytics, and cross-sector data operations."
+  ],
+  "categories": [
+   "Data",
+   "Ventures"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Intelsynth.com",
+  "base": "Intelsynth",
+  "ext": ".com",
+  "slug": "intelsynth",
+  "atomName": "Intelsynth",
+  "logos": [
+   "/assets/svg/Intelsynth.svg",
+   "/assets/svg/Intelsynth1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Intelsynth.svg",
+  "desk": {
+   "scale": 0.99,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "3%",
+   "x": "0%"
+  },
+  "order2col": 42,
+  "seoDescription": "Intelsynth.com – Premium Domain by Midjump",
+  "overview": [
+   "As information increasingly fragments across enterprise systems and specialized domains, the ability to synthesize disparate signals into coherent insights becomes essential to informed decision-making.",
+   "Intelsynth.com provides a direct identity for intelligence synthesis platforms transforming distributed data into actionable intelligence."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "CrossTemporal.com",
+  "base": "CrossTemporal",
+  "ext": ".com",
+  "slug": "crosstemporal",
+  "atomName": "CrossTemporal",
+  "logos": [
+   "/assets/svg/CrossTemporal.svg",
+   "/assets/svg/CrossTemporal1.svg"
+  ],
+  "galleryLogo": "/assets/svg/CrossTemporal.svg",
+  "desk": {
+   "scale": 1,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.9,
+   "y": "5.5%",
+   "x": "0%"
+  },
+  "order2col": 36,
+  "seoDescription": "CrossTemporal.com – Premium Domain by Midjump",
+  "overview": [
+   "Cross-temporal methods, used across AI, computer vision, and predictive modeling, connect and analyze information across different points in time, enabling the recognition of evolving patterns, temporal relationships, and changes in complex systems.",
+   "CrossTemporal.com is an identity for companies developing temporal intelligence technologies, multimodal AI systems, and computational platforms built around time-dependent data."
+  ],
+  "categories": [
+   "Data"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "AgenticAider.com",
+  "base": "AgenticAider",
+  "ext": ".com",
+  "slug": "agenticaider",
+  "atomName": "AgenticAider",
+  "logos": [
+   "/assets/svg/AgenticAider1.svg",
+   "/assets/svg/AgenticAider.svg"
+  ],
+  "galleryLogo": "/assets/svg/AgenticAider1.svg",
+  "desk": {
+   "scale": 0.88,
+   "y": "-2.5%"
+  },
+  "phone": {
+   "scale": 0.84,
+   "y": "0%",
+   "x": "0%"
+  },
+  "order2col": 40,
+  "seoDescription": "AgenticAider.com – Premium Domain by Midjump",
+  "overview": [
+   "Autonomous AI agents are moving beyond isolated tasks into complex workflows, creating new demands for coordination, oversight, and operational reliability.",
+   "AgenticAider.com aligns with platforms supporting the deployment and management of agentic systems, spanning agent orchestration, runtime governance, and secure automation across enterprise environments."
+  ],
+  "categories": [
+   "AI",
+   "Security"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Throughlane.com",
+  "base": "Throughlane",
+  "ext": ".com",
+  "slug": "throughlane",
+  "atomName": "Throughlane",
+  "logos": [
+   "/assets/svg/Throughlane.svg"
+  ],
+  "galleryLogo": "/assets/svg/Throughlane.svg",
+  "desk": {
+   "scale": 0.97,
+   "y": "-0.5%"
+  },
+  "phone": {
+   "scale": 0.92,
+   "y": "0%",
+   "x": "0%"
+  },
+  "order2col": 38,
+  "seoDescription": "Throughlane.com – Premium Domain by Midjump",
+  "overview": [
+   "Across modern digital infrastructure, efficient routing and workload prioritization enable critical operations to move through complex systems with greater speed, reliability, and predictability.",
+   "Throughlane.com describes a dedicated path for high-priority operations, aligning with platforms developing intelligent routing, traffic orchestration, and performance-critical computing infrastructure."
+  ],
+  "categories": [
+   "Cloud",
+   "Data",
+   "Ventures"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "Configurably.com",
+  "base": "Configurably",
+  "ext": ".com",
+  "slug": "configurably",
+  "atomName": "Configurably",
+  "logos": [
+   "/assets/svg/Configurably.svg"
+  ],
+  "galleryLogo": "/assets/svg/Configurably.svg",
+  "desk": {
+   "scale": 1,
+   "y": "-3%"
+  },
+  "phone": {
+   "scale": 0.91,
+   "y": "0%",
+   "x": "0%"
+  },
+  "order2col": 37,
+  "seoDescription": "Configurably.com – Premium Domain by Midjump",
+  "overview": [
+   "Modern software increasingly demands flexibility by design, allowing systems to adapt to changing requirements through configuration rather than redevelopment.",
+   "Configurably.com aligns naturally with platforms built around adaptable architectures, dynamic configuration, and customizable software environments across enterprise and intelligent systems."
+  ],
+  "categories": [
+   "Cloud",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Sanctional.com",
+  "base": "Sanctional",
+  "ext": ".com",
+  "slug": "sanctional",
+  "atomName": "Sanctional",
+  "logos": [
+   "/assets/svg/Sanctional.svg",
+   "/assets/svg/Sanctional1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Sanctional.svg",
+  "desk": {
+   "scale": 1,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 1,
+   "y": "2%",
+   "x": "0%"
+  },
+  "order2col": 43,
+  "seoDescription": "Sanctional.com – Premium Domain by Midjump",
+  "overview": [
+   "As autonomous systems gain greater operational authority, governance is shifting from passive oversight into active control. Ensuring AI agents and enterprise software operate within sanctioned boundaries is becoming essential for secure, accountable execution.",
+   "Sanctional.com provides an authoritative identity for policy enforcement infrastructure, aligning with platforms built around agent authorization, compliance automation, access controls, and trusted execution."
+  ],
+  "categories": [
+   "AI",
+   "Security"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "eHustles.com",
+  "base": "eHustles",
+  "ext": ".com",
+  "slug": "ehustles",
+  "atomName": "eHustles",
+  "logos": [
+   "/assets/svg/eHustles.svg"
+  ],
+  "galleryLogo": "/assets/svg/eHustles.svg",
+  "desk": {
+   "scale": 0.84,
+   "y": "5%"
+  },
+  "phone": {
+   "scale": 0.82,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 44,
+  "seoDescription": "eHustles.com – Premium Domain by Midjump",
+  "overview": [
+   "Independent work has evolved beyond the traditional gig economy, with digital platforms expanding access to freelance opportunities and flexible employment as individuals increasingly monetize their skills through side hustles.",
+   "eHustles.com is a defining identity for platforms connecting independent talent with earning opportunities across freelancing, the creator economy, and digital marketplaces."
+  ],
+  "categories": [
+   "Ventures"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "GenoFold.com",
+  "base": "GenoFold",
+  "ext": ".com",
+  "slug": "genofold",
+  "atomName": "GenoFold",
+  "logos": [
+   "/assets/svg/GenoFold1.svg",
+   "/assets/svg/GenoFold2.svg"
+  ],
+  "galleryLogo": "/assets/svg/GenoFold.svg",
+  "desk": {
+   "scale": 0.96,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 0.86,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 45,
+  "seoDescription": "GenoFold.com – Premium Domain by Midjump",
+  "overview": [
+   "Advances in computational protein folding have transformed structural biology, while genome folding has emerged as a critical dimension of understanding gene expression, cellular regulation, and disease.",
+   "GenoFold.com is a defining identity for companies developing AI-driven models of genome architecture, with applications across structural genomics, precision medicine, and therapeutic discovery."
+  ],
+  "categories": [
+   "Ventures"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "CloudAider.com",
+  "base": "CloudAider",
+  "ext": ".com",
+  "slug": "cloudaider",
+  "atomName": "CloudAider",
+  "logos": [
+   "/assets/svg/CloudAider1.svg",
+   "/assets/svg/CloudAider2.svg",
+   "/assets/svg/CloudAider3.svg"
+  ],
+  "galleryLogo": "/assets/svg/CloudAider1.svg",
+  "desk": {
+   "scale": 0.9,
+   "y": "-3%"
+  },
+  "phone": {
+   "scale": 0.83,
+   "y": "1%",
+   "x": "0%"
+  },
+  "order2col": 31,
+  "seoDescription": "CloudAider.com – Premium Domain by Midjump",
+  "overview": [
+   "As enterprise infrastructure becomes increasingly distributed, managing cloud operations demands greater visibility, coordination, and control across workloads and services.",
+   "CloudAider.com offers a natural identity for platforms simplifying cloud management, automating infrastructure operations, and improving resilience across multicloud environments."
+  ],
+  "categories": [
+   "Cloud"
+  ],
+  "tier": "B"
+ },
+ {
+  "name": "DEXtreasury.com",
+  "base": "DEXtreasury",
+  "ext": ".com",
+  "slug": "dextreasury",
+  "atomName": "DEXtreasury",
+  "logos": [
+   "/assets/svg/DEXtreasury.svg"
+  ],
+  "galleryLogo": "/assets/svg/DEXtreasury.svg",
+  "desk": {
+   "scale": 1.05,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 1,
+   "y": "4%",
+   "x": "0%"
+  },
+  "order2col": 46,
+  "seoDescription": "DEXtreasury.com – Premium Domain by Midjump",
+  "overview": [
+   "Decentralized finance introduces new demands for treasury management, where liquidity, asset custody, and governance must operate across interconnected protocols and on-chain markets.",
+   "DEXTreasury.com provides a direct identity for platforms managing decentralized exchange treasuries, liquidity operations, and digital asset governance across the DeFi ecosystem."
+  ],
+  "categories": [
+   "Ventures"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Anormality.com",
+  "base": "Anormality",
+  "ext": ".com",
+  "slug": "anormality",
+  "atomName": "Anormality",
+  "logos": [
+   "/assets/svg/Anormality.svg",
+   "/assets/svg/Anormality1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Anormality.svg",
+  "desk": {
+   "scale": 1.01,
+   "y": "1%"
+  },
+  "phone": {
+   "scale": 1.01,
+   "y": "2%",
+   "x": "0%"
+  },
+  "order2col": 33,
+  "seoDescription": "Anormality.com – Premium Domain by Midjump",
+  "overview": [
+   "Across AI, cloud infrastructure, and autonomous systems, detecting abnormal behavior is essential to identifying emerging risks before they escalate into operational failures.",
+   "Anormality.com aligns with platforms built around anomaly detection, behavioral analytics, and intelligent monitoring, enabling earlier identification of unusual patterns and potential threats."
+  ],
+  "categories": [
+   "Security",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Netveyor.com",
+  "base": "Netveyor",
+  "ext": ".com",
+  "slug": "netveyor",
+  "atomName": "Netveyor",
+  "logos": [
+   "/assets/svg/Netveyor1.svg",
+   "/assets/svg/Netveyor.svg"
+  ],
+  "galleryLogo": "/assets/svg/Netveyor1.svg",
+  "desk": {
+   "scale": 0.84,
+   "y": "2%"
+  },
+  "phone": {
+   "scale": 0.83,
+   "y": "3%",
+   "x": "0%"
+  },
+  "order2col": 47,
+  "seoDescription": "Netveyor.com – Premium Domain by Midjump",
+  "overview": [
+   "Modern digital infrastructure depends on the reliable movement of data across increasingly complex and distributed networks.",
+   "Netveyor.com evokes the continuous flow of network traffic, aligning with platforms developing intelligent routing, traffic orchestration, and resilient connectivity infrastructure."
+  ],
+  "categories": [
+   "Cloud",
+   "Data"
+  ],
+  "tier": "C"
+ },
+ {
+  "name": "Causational.com",
+  "base": "Causational",
+  "ext": ".com",
+  "slug": "causational",
+  "atomName": "Causational",
+  "logos": [
+   "/assets/svg/Causational.svg",
+   "/assets/svg/Causational1.svg"
+  ],
+  "galleryLogo": "/assets/svg/Causational.svg",
+  "desk": {
+   "scale": 1,
+   "y": "1.5%"
+  },
+  "phone": {
+   "scale": 0.95,
+   "y": "3%",
+   "x": "0%"
+  },
+  "order2col": 48,
+  "seoDescription": "Causational.com – Premium Domain by Midjump",
+  "overview": [
+   "As computational systems become capable of modeling increasingly complex environments, understanding cause and effect enables them to reason about why events occur and how different actions may alter their outcomes.",
+   "Causational.com provides a natural identity for platforms built around causal intelligence and decision modeling, extending across AI, scientific computing, and autonomous systems."
+  ],
+  "categories": [
+   "AI",
+   "Data"
+  ],
+  "tier": "C"
+ }
+]
