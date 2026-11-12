@@ -37,7 +37,9 @@
     "navy": "#253A79",                                         // Navy used on buttons, burger icon and menu
     "accent": "#254F99",                                       // Blue used for focus outlines and highlights
     "mutedText": "#807E78",                                    // Grey for .com / .si endings and small numbers
-    "labelText": "#3A3938"                                     // Colour of small capital labels
+    "labelText": "#3A3938",                                    // Colour of small capital labels
+    "selectionBackground": "#253A79",                          // Highlight colour when text is selected
+    "selectionText": "#F9F8F6"                                 // Text colour inside the selection highlight
   },
 
   // ──────────────────────────────────────────────────────────────────────

@@ -43,6 +43,8 @@ export const DESKTOP = [
   ["colors", "mutedText", "color", "#9A9892", "Grey used for .com / .si endings and small numbers"],
   ["colors", "accent", "color", "#253A79", "Blue used on hover and the nav underline"],
   ["colors", "accentDark", "color", "#253A79", "Dark navy used for nav links and arrows"],
+  ["colors", "selectionBackground", "color", "#253A79", "Highlight colour when text is selected"],
+  ["colors", "selectionText", "color", "#F9F8F6", "Text colour inside the selection highlight"],
 
   // ---------- labels
   ["labels", "size", "size", "12px", "Text size"],
@@ -197,7 +199,7 @@ export const DESKTOP = [
   ["domain", "viewerBackground", "color", "#F3F2EE", "Background behind the logo viewer"],
   ["domain", "viewerPaddingTop", "size", "16px", "Space above the viewer"],
   ["domain", "viewerPaddingBottom", "size", "24px", "Space under the viewer arrows"],
-  ["domain", "viewerHeight", "size", "256px", "Height of the viewer"],
+  ["domain", "viewerHeight", "size", "251px", "Height of the viewer"],
   ["domain", "viewerMaxWidth", "size", "560px", "Width of the viewer"],
   ["domain", "firstLogoWidth", "size", "360px", "Widest the FIRST logo can be"],
   ["domain", "firstLogoHeight", "size", "230px", "Height of the FIRST logo"],
@@ -325,6 +327,8 @@ export const PHONE = [
   ["colors", "accent", "color", "#254F99", "Blue used for focus outlines and highlights"],
   ["colors", "mutedText", "color", "#807E78", "Grey for .com / .si endings and small numbers"],
   ["colors", "labelText", "color", "#3A3938", "Colour of small capital labels"],
+  ["colors", "selectionBackground", "color", "#253A79", "Highlight colour when text is selected"],
+  ["colors", "selectionText", "color", "#F9F8F6", "Text colour inside the selection highlight"],
 
   // ---------- header
   ["header", "height", "size", "87.5px", "Height of the top bar"],

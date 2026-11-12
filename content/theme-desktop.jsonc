@@ -35,7 +35,9 @@
     "bodyText": "#1E1E1C",                                     // Paragraph text colour
     "mutedText": "#9A9892",                                    // Grey used for .com / .si endings and small numbers
     "accent": "#253A79",                                       // Blue used on hover and the nav underline
-    "accentDark": "#253A79"                                    // Dark navy used for nav links and arrows
+    "accentDark": "#253A79",                                   // Dark navy used for nav links and arrows
+    "selectionBackground": "#253A79",                          // Highlight colour when text is selected
+    "selectionText": "#F9F8F6"                                 // Text colour inside the selection highlight
   },
 
   // ──────────────────────────────────────────────────────────────────────
@@ -225,7 +227,7 @@
     "viewerBackground": "#F3F2EE",                             // Background behind the logo viewer
     "viewerPaddingTop": "16px",                                // Space above the viewer
     "viewerPaddingBottom": "24px",                             // Space under the viewer arrows
-    "viewerHeight": "256px",                                   // Height of the viewer
+    "viewerHeight": "251px",                                   // Height of the viewer
     "viewerMaxWidth": "560px",                                 // Width of the viewer
     "firstLogoWidth": "360px",                                 // Widest the FIRST logo can be
     "firstLogoHeight": "230px",                                // Height of the FIRST logo
