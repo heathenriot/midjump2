@@ -103,6 +103,7 @@
     "heroPaddingTop": "35px",                                  // Space above the headline
     "heroPaddingBottom": "50px",                               // Space under the button
     "heroPaddingX": "21px",                                    // Space left and right
+    "heroBackground": "#F3F2EE",                               // Background colour of the hero (headline) section
     "heroLine": { "style": "solid", "width": ".5px", "color": "rgba(113,112,112,.09)" }, // Hairline under the hero   [style: solid / dotted / dashed / none]
     "headlineSize": "46px",                                    // Headline size
     "headlineLineHeight": 1.2,                                 // Headline line spacing
@@ -124,7 +125,7 @@
     "marqueeLine": { "style": "solid", "width": ".5px", "color": "rgba(70,70,70,.10)" }, // Hairline under the band   [style: solid / dotted / dashed / none]
     "marqueePaddingTop": "27px",                               // Space above 'SELECTED DOMAINS'
     "marqueeLabelGap": "31px",                                 // Space between the label and the logos
-    "marqueePaddingBottom": "54px",                            // Space under the logos
+    "marqueePaddingBottom": "30px",                            // Space under the logos
     "marqueeSideInset": "25px",                                // Space left and right of the scrolling area
     "marqueeFade": "48px",                                     // Width of the soft fade at both ends
     "marqueeSeconds": 20,                                      // Seconds for one full scroll (bigger = slower)

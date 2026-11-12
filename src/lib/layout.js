@@ -13,7 +13,7 @@ export const header = (active) => `
 </header>
 <nav class="mj-side d-only" aria-label="Site" aria-hidden="true"><a href="/" aria-label="Midjump home"><img class="mj-side-mark" src="/assets/svg/logo.svg" alt=""></a>${NAV.map(([h, l]) => `<a href="${h}" class="mj-side-link"${h === active ? ' aria-current="page"' : ""}>${l}</a>`).join("")}</nav>
 <header class="mj-header m-only">
-<div class="mj-hcol"><a href="/" aria-label="Midjump home" style="line-height:0"><img class="mj-hlogo" src="/assets/svg/logo3.svg" alt="midjump"></a>
+<div class="mj-hcol"><a href="/" aria-label="Midjump home" style="line-height:0"><img class="mj-hlogo" src="/assets/svg/logo-phone.svg" alt="midjump"></a>
 <button type="button" class="mj-menu-btn" data-open="0" aria-expanded="false" aria-controls="mj-menu" aria-label="Open menu"><span class="bar bar1" aria-hidden="true"></span><span class="bar bar2" aria-hidden="true"></span><span class="bar bar3" aria-hidden="true"></span></button></div>
 <nav id="mj-menu" class="mj-menu" aria-label="Site">${NAV.map(([h, l]) => `<a href="${h}"${h === active ? ' aria-current="page"' : ""}>${l}</a>`).join("")}</nav>
 </header>`;
