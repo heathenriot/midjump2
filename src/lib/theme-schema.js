@@ -493,7 +493,7 @@ export const PHONE = [
   ["domain", "acquisitionPaddingBottom", "size", "36px", "Space inside the card, under the buttons"],
   ["domain", "acquisitionPaddingX", "size", "20px", "Space inside the card, left and right"],
   ["domain", "acquisitionGap", "size", "20px", "Space between the label, sentence and form"],
-  ["domain", "acquisitionTextSize", "size", "15px", "Text size of the sentence above the form"],
+  ["domain", "acquisitionTextSize", "size", "14px", "Text size of the sentence above the form"],
   ["domain", "acquisitionTextLineHeight", "num", 1.6, "Its line spacing"],
   ["domain", "acquisitionTextColor", "color", "#1E1E1C", "Its colour"],
   ["domain", "acquisitionBottomSpace", "size", "36px", "Space under the card"],

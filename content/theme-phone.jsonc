@@ -233,7 +233,7 @@
     "acquisitionPaddingBottom": "36px",                        // Space inside the card, under the buttons
     "acquisitionPaddingX": "20px",                             // Space inside the card, left and right
     "acquisitionGap": "20px",                                  // Space between the label, sentence and form
-    "acquisitionTextSize": "15px",                             // Text size of the sentence above the form
+    "acquisitionTextSize": "14px",                             // Text size of the sentence above the form
     "acquisitionTextLineHeight": 1.6,                          // Its line spacing
     "acquisitionTextColor": "#1E1E1C",                         // Its colour
     "acquisitionBottomSpace": "36px",                          // Space under the card
