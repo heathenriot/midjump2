@@ -23,13 +23,13 @@ export const footer = `
 <footer class="d-footer d-only">
 <div class="d-foot-l" aria-hidden="true"></div>
 <div class="d-foot-c"><div class="foot-mail"><a href="mailto:${site.email}" class="mj-email">${site.email}</a><i aria-hidden="true"></i></div>
-<div class="d-tag"><span style="color:#8D8A82">${site.footerTagDesktop[0]}</span><span style="color:#848078">${site.footerTagDesktop[1]} ${escrow}</span></div>
+<div class="d-tag"><span class="tg1">${site.footerTagDesktop[0]}</span><span class="tg2">${site.footerTagDesktop[1]} ${escrow}</span></div>
 <p class="copy">© ${site.year} Midjump</p></div>
 <div class="d-foot-r" aria-hidden="true"></div>
 </footer>
 <footer class="m-footer m-only">
 <div class="foot-mail"><a href="mailto:${site.email}" class="mj-email">${site.email}</a><i aria-hidden="true"></i></div>
-<div class="foot-tag"><span style="color:#8D8A82">${site.footerTagPhone[0]}</span><span style="color:#848078">${site.footerTagPhone[1]} ${escrow}</span></div>
+<div class="foot-tag"><span class="tg1">${site.footerTagPhone[0]}</span><span class="tg2">${site.footerTagPhone[1]} ${escrow}</span></div>
 <p class="copy">© ${site.year} Midjump</p>
 </footer>`;
 

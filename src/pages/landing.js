@@ -1,6 +1,7 @@
 // Home page (/). Its words live in content/landing.json.
 import { esc } from "../lib/util.js";
 import { marquee, landingText } from "../lib/data.js";
+import { theme } from "../lib/theme.js";
 import { layout } from "../lib/layout.js";
 
 const mqItems = (kind) => [0, 1].map((copy) => marquee.map(({ d, domain: slug, logo, width: ink, desktop, phone }) => {
@@ -19,9 +20,9 @@ export const landing = () => {
 <section class="l-hero"><h1 class="mj-fade" style="text-align:center">${br(T.headlineDesktop)}</h1>
 <p class="mj-fade mj-d1" style="text-align:center">${br(T.introDesktop)}</p>
 <div class="mj-fade mj-d2 l-cta" style="justify-content:center"><a href="/domains" class="mj-hero-btn">${esc(T.buttonLabel)}${arrow}</a></div></section>
-<section class="l-band" aria-labelledby="mq-label-d"><h2 id="mq-label-d" class="mj-row-label" style="padding-bottom:44px">${esc(T.scrollerLabel)}</h2>
+<section class="l-band" aria-labelledby="mq-label-d"><h2 id="mq-label-d" class="mj-row-label">${esc(T.scrollerLabel)}</h2>
 <p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
-<div class="mq"><div class="mq-vp" data-secs="45"><div class="mq-track">${mqItems("d")}</div></div></div></section>
+<div class="mq"><div class="mq-vp" data-secs="${theme.desktop.landing.marqueeSeconds}"><div class="mq-track">${mqItems("d")}</div></div></div></section>
 <section class="l-qa" aria-labelledby="qa-label-d"><h2 id="qa-label-d" class="mj-row-label">${esc(T.faqLabel)}</h2>
 <dl>${T.faqDesktop.map(({ q, a }, i) => { const n = num(i); return `<div><dt><span class="n" aria-hidden="true">${n}</span><span>${esc(q)}</span></dt><dd>${esc(a)}</dd></div>`; }).join("")}</dl>
 <div class="l-end" aria-hidden="true"></div></section>
@@ -30,9 +31,9 @@ export const landing = () => {
 <section class="l-hero"><h1 class="mj-fade">${br(T.headlinePhone)}</h1>
 <p class="mj-fade mj-d1">${br(T.introPhone)}</p>
 <a href="/domains" class="mj-cta mj-fade mj-d2"><span>${esc(T.buttonLabel)}</span>${arrow}</a></section>
-<section class="l-band" aria-labelledby="mq-label-m"><h2 id="mq-label-m" class="row-label" style="padding-bottom:31px">${esc(T.scrollerLabel)}</h2>
+<section class="l-band" aria-labelledby="mq-label-m"><h2 id="mq-label-m" class="row-label">${esc(T.scrollerLabel)}</h2>
 <p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
-<div class="mq-vp" data-secs="20"><div class="mq-track">${mqItems("m")}</div></div></section>
+<div class="mq-vp" data-secs="${theme.phone.landing.marqueeSeconds}"><div class="mq-track">${mqItems("m")}</div></div></section>
 <section class="l-qa" aria-labelledby="qa-label-m"><h2 id="qa-label-m" class="row-label">${esc(T.faqLabel)}</h2>
 <div class="faq-list">${T.faqPhone.map(({ q, a }, i) => { const n = num(i); return `<div class="faq${i ? "" : " is-open"}"><button type="button" class="faq-q" aria-expanded="${i ? "false" : "true"}"><span class="faq-qt"><span class="faq-n" aria-hidden="true">${n}</span><span>${esc(q)}</span></span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-ai"><p>${esc(a)}</p></div></div></div>`; }).join("")}</div>
 <div class="l-end" aria-hidden="true"></div></section>
