@@ -166,7 +166,7 @@
     "cellPadding": "10px",                                     // Space inside each cell, around the logo
     "cellPressedFill": "#FAF9F6",                              // Cell background while pressed
     "logoAreaPadding": "6% 10% 3%",                            // Space around the logo inside the cell: top, left+right, bottom
-    "masterLogoScale": 1,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
+    "masterLogoScale": 1.05,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
     "masterLogoX": "0%",                                       // MASTER: move ALL gallery logos right (+) or left (-)
     "masterLogoY": "0%",                                       // MASTER: move ALL gallery logos down (+) or up (-)
     "nameSize": "13.5px",                                      // Domain name text size
