@@ -150,16 +150,21 @@
     "marqueeExtColor": "#9A9892",                              // Colour of .com / .si
     "faqPaddingTop": "62px",                                   // Space above 'ACQUIRING A DOMAIN'
     "faqListGap": "36px",                                      // Space between that label and the first question
-    "faqItemGap": "34px",                                      // Space between questions
+    "faqRule": { "style": "dotted", "width": "1px", "color": "#C6C6B7" }, // Lines between the questions   [style: solid / dotted / dashed / none]
+    "faqRowPaddingY": "22px",                                  // Space above and below each question
+    "faqNumberWidth": "46px",                                  // Width of the 01 02 03 column (answers line up with the questions)
     "faqWidth": "602px",                                       // Width of the question list
     "faqQuestionSize": "12px",                                 // Question text size
-    "faqQuestionSpacing": ".05em",                             // Space between letters of questions
+    "faqQuestionSpacing": ".07em",                             // Space between letters of questions
+    "faqOpenColor": "#253A79",                                 // Colour of the open question, its number, icon and side bar
+    "faqIconSize": "28px",                                     // Size of the round + / − icon
+    "faqIconRingColor": "#C6C6B7",                             // Colour of the icon ring when closed
     "faqQuestionColor": "#1E1E1C",                             // Question colour
     "faqNumberColor": "#9A9892",                               // Colour of 01 02 03
     "faqAnswerSize": "15px",                                   // Answer text size
     "faqAnswerLineHeight": 1.55,                               // Answer line spacing
     "faqAnswerColor": "#1E1E1C",                               // Answer colour
-    "faqAnswerIndent": "30px",                                 // How far answers are indented
+    "faqAnswerMaxWidth": "500px",                              // Widest an answer paragraph gets
     "bottomSpace": "66px"                                      // Smallest space under the last answer
   },
 

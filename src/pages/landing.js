@@ -24,7 +24,7 @@ export const landing = () => {
 <p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
 <div class="mq"><div class="mq-vp" data-secs="${theme.desktop.landing.marqueeSeconds}"><div class="mq-track">${mqItems("d")}</div></div></div></section>
 <section class="l-qa" aria-labelledby="qa-label-d"><h2 id="qa-label-d" class="mj-row-label">${esc(T.faqLabel)}</h2>
-<dl>${T.faqDesktop.map(({ q, a }, i) => { const n = num(i); return `<div><dt><span class="n" aria-hidden="true">${n}</span><span>${esc(q)}</span></dt><dd>${esc(a)}</dd></div>`; }).join("")}</dl>
+<div class="faq-list">${T.faqDesktop.map(({ q, a }, i) => { const n = num(i); return `<div class="faq"><button type="button" class="faq-q" id="faq-d-q${i}" aria-expanded="false" aria-controls="faq-d-a${i}"><span class="faq-n" aria-hidden="true">${n}</span><span class="faq-qt">${esc(q)}</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-a" id="faq-d-a${i}" role="region" aria-labelledby="faq-d-q${i}"><div class="faq-ai"><p>${esc(a)}</p></div></div></div>`; }).join("")}</div>
 <div class="l-end" aria-hidden="true"></div></section>
 </div>
 <div class="m-only l-m">
