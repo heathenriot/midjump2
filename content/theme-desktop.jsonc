@@ -414,28 +414,49 @@
     "titleColor": "#1A1A18",                                   // Page title colour
     "titlePaddingTop": "40px",                                 // Space above the title
     "titlePaddingBottom": "32px",                              // Space under the title
-    "formPaddingTop": "44px",                                  // Space between title line and the intro text
+    "formPaddingTop": "44px",                                  // Space above the intro text (inside the form band)
+    "formPaddingBottom": "48px",                               // Space under the button (the form band ends there)
+    "formBackground": "#ECEBE5",                               // Colour of the band the form sits in (same as the acquisition card)
+    "formSheenColor": "#DDDDD2",                               // Colour of the soft radial shade across that band
+    "formSheenStrength": 0.45,                                 // Its strength (0 = none)
+    "formSheenSize": "132%",                                   // Its size
+    "formSheenX": "11%",                                       // Where its centre sits, left (0%) to right (100%)
+    "formSheenY": "71%",                                       // Where its centre sits, top (0%) to bottom (100%)
+    "formShadowColor": "#253A79",                              // Colour of the soft shadow the band casts above and below
+    "formShadowUp": 0.08,                                      // Strength of that shadow above the band
+    "formShadowDown": 0.08,                                    // Strength of that shadow below the band
+    "formShadowBlur": "25px",                                  // Softness of that shadow
+    "formShadowDistance": "3px",                               // How far it reaches up and down
+    "formShadowSpread": "-11px",                               // Pulls the shadow in from the sides (more negative = narrower)
     "formWidth": "505px",                                      // Width of the intro text and form
     "introSize": "16.5px",                                     // Intro text size
     "introWeight": 300,                                        // Intro boldness
     "introLineHeight": 1.55,                                   // Intro line spacing
     "introColor": "#1E1E1C",                                   // Intro colour
     "introGap": "36px",                                        // Space between intro and the form
-    "fieldGap": "15px",                                        // Space between fields
-    "fieldLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // Line under each field   [style: solid / dotted / dashed / none]
+    "fieldGap": "8px",                                         // Space between fields
+    "fieldBoxFill": 0.42,                                      // Fill of the field boxes: see-through white over the band (0 = band colour, 1 = white)
+    "fieldBoxBorder": { "style": "solid", "width": "0.5px", "color": "#D6D5CC" },// Outline of each field box   [style: solid / dotted / dashed / none]
+    "fieldBoxRadius": "5px",                                   // Field box corner roundness
+    "fieldBoxGlowColor": "#6D6C64",                            // Colour of the soft glow around the field boxes
+    "fieldBoxGlow": 0.06,                                      // Strength of that glow (0 = none)
+    "fieldBoxGlowBlur": "3px",                                 // Softness of that glow
+    "fieldBoxFocusColor": "#253A79",                           // Field box outline colour while typing
+    "fieldBoxFocusGlow": 0.05,                                 // Glow strength while typing
     "inputSize": "15px",                                       // Text size inside fields
-    "inputPaddingTop": "10px",                                 // Space above the text in a field
-    "inputPaddingBottom": "16px",                              // Space under the text in a field
+    "inputPaddingTop": "11px",                                 // Space above the text in a field
+    "inputPaddingBottom": "11px",                              // Space under the text in a field
+    "inputPaddingX": "14px",                                   // Space between the field box edge and the text
     "inputColor": "#1E1E1C",                                   // Text colour inside fields
-    "textareaHeight": "96px",                                  // Height of the message box
+    "textareaHeight": "110px",                                 // Height of the message box
     "buttonGap": "20px",                                       // Space between the fields and the button
     "buttonHeight": "40px",                                    // Button height
     "buttonPaddingX": "26px",                                  // Button width (space left and right of the text)
     "buttonRadius": "5px",                                     // Button corner roundness
     "buttonTextSize": "15px",                                  // Button text size
     "buttonTextColor": "#F3F2EE",                              // Button text colour
-    "buttonFill": "#536FB0",                                   // Button colour
-    "buttonHoverFill": "#44609E",                              // Button colour on hover
+    "buttonFill": "#253A79",                                   // Button colour (253A79 = same navy as 'View on Atom.com')
+    "buttonHoverFill": "#3A4E8C",                              // Button colour on hover
     "successTitleSize": "24px",                                // 'Message received' size
     "errorColor": "#8A2C1F"                                    // Colour of the error message
   }
