@@ -195,7 +195,8 @@
     "tabHoverColor": "#253A79",                                // Tab colour on hover
     "tabCountColor": "#9A9993",                                // Colour of the little numbers next to tabs
     "tabChevronColor": "#253A79",                              // Colour of the little arrow to the left of the selected tab
-    "tabChevronSize": "4.5px",                                 // Size of that arrow
+    "tabChevronSize": "5.25px",                                // Size of that arrow
+    "tabChevronY": "-0.5px",                                   // Moves that arrow up (-) or down (+)
     "tabChevronGap": "8px",                                    // Space between that arrow and the tab name
     "trayBackground": "#ECEBE5",                               // The grey tray behind the tabs and tiles
     "traySheenColor": "#D2D2C3",                               // Colour of the soft radial shade across the tray
@@ -207,7 +208,7 @@
     "trayBottomPadding": "40px",                               // Space under the last row of tiles
     "tileGap": "14px",                                         // Space between tiles
     "tileBackground": "#F8F8F4",                               // Tile colour (also the related tiles on domain pages)
-    "tileBorder": { "style": "solid", "width": "1px", "color": "#BDBDB4" }, // Tile outline   [style: solid / dotted / dashed / none]
+    "tileBorder": { "style": "solid", "width": "0.5px", "color": "#C6C6B7" }, // Tile outline   [style: solid / dotted / dashed / none]
     "tileRadius": "4px",                                       // Tile corner roundness
     "tileShadow": 0.015,                                       // Strength of the faint shadow under each tile (0 = flat)
     "tileHoverBackground": "#FAFAF8",                          // Tile colour on hover
