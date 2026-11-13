@@ -227,7 +227,7 @@
     "tabSpacing": ".12em",                                     // Space between letters of tabs
     "tabColor": "#555450",                                     // Tab colour
     "tabHoverColor": "#253A79",                                // Tab colour on hover
-    "tabCountColor": "#9A9993",                                // Colour of the little numbers next to tabs
+    "tabCountColor": "#6F6E6A",                                // Colour of the little numbers next to tabs
     "tabCountWeight": 300,                                     // Boldness of those numbers (300 = light, 400 = regular)
     "tabChevronColor": "#253A79",                              // Colour of the little arrow to the left of the selected tab
     "tabChevronSize": "5.25px",                                // Size of that arrow

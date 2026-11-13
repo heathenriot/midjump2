@@ -204,7 +204,7 @@ export const DESKTOP = [
   ["gallery", "tabSpacing", "size", ".12em", "Space between letters of tabs"],
   ["gallery", "tabColor", "color", "#555450", "Tab colour"],
   ["gallery", "tabHoverColor", "color", "#253A79", "Tab colour on hover"],
-  ["gallery", "tabCountColor", "color", "#9A9993", "Colour of the little numbers next to tabs"],
+  ["gallery", "tabCountColor", "color", "#6F6E6A", "Colour of the little numbers next to tabs"],
   ["gallery", "tabCountWeight", "num", 300, "Boldness of those numbers (300 = light, 400 = regular)"],
   ["gallery", "tabChevronColor", "color", "#253A79", "Colour of the little arrow to the left of the selected tab"],
   ["gallery", "tabChevronSize", "size", "5.25px", "Size of that arrow"],
