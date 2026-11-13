@@ -186,18 +186,33 @@
     "titleColor": "#1A1A18",                                   // Page title colour
     "titlePaddingTop": "40px",                                 // Space above the title
     "titlePaddingBottom": "32px",                              // Space under the title
-    "tabsPaddingTop": "15px",                                  // Space above the filter tabs
-    "tabsPaddingBottom": "14px",                               // Space under the filter tabs
+    "tabsPaddingTop": "25px",                                  // Space above the filter tabs
+    "tabsPaddingBottom": "25px",                               // Space between the filter tabs and the first row of tiles
     "tabsGap": "30px",                                         // Space between tabs
     "tabSize": "11px",                                         // Tab text size
     "tabSpacing": ".12em",                                     // Space between letters of tabs
-    "tabColor": "#76756F",                                     // Tab colour
+    "tabColor": "#555450",                                     // Tab colour
     "tabActiveColor": "#253A79",                               // Selected tab colour
     "tabHoverColor": "#253A79",                                // Tab colour on hover
-    "tabCountColor": "#ABAAA3",                                // Colour of the little numbers next to tabs
-    "gridLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // The dotted lines between gallery cells   [style: solid / dotted / dashed / none]
-    "cellPadding": "14px",                                     // Space inside each cell, around the logo
-    "cellHover": "#FAF9F6",                                    // Cell background on hover
+    "tabCountColor": "#9A9993",                                // Colour of the little numbers next to tabs
+    "tabCountActiveColor": "#536FB0",                          // Colour of the number next to the selected tab
+    "trayBackground": "#ECEBE5",                               // The grey tray behind the tabs and tiles (also behind the 3 related tiles on domain pages)
+    "traySheenColor": "#D2D2C3",                               // Colour of the soft radial shade across the tray
+    "traySheenStrength": 0.3,                                  // Its strength (0 = none)
+    "traySheenSize": "95%",                                    // Its size
+    "traySheenX": "23%",                                       // Where its centre sits, left (0%) to right (100%)
+    "traySheenY": "31%",                                       // Where its centre sits, top (0%) to bottom (100%)
+    "traySidePadding": "18px",                                 // Space between the tray edges and the tiles
+    "trayBottomPadding": "40px",                               // Space under the last row of tiles
+    "tileGap": "14px",                                         // Space between tiles
+    "tileBackground": "#F8F8F4",                               // Tile colour (also the related tiles on domain pages)
+    "tileBorder": { "style": "solid", "width": "1px", "color": "#BDBDB4" }, // Tile outline   [style: solid / dotted / dashed / none]
+    "tileRadius": "4px",                                       // Tile corner roundness
+    "tileShadow": 0.015,                                       // Strength of the faint shadow under each tile (0 = flat)
+    "tileHoverBackground": "#FAFAF8",                          // Tile colour on hover
+    "tileHoverBorderColor": "#667292",                         // Tile outline colour on hover
+    "tileHoverShadow": 0.05,                                   // Strength of the shadow under a tile on hover
+    "cellPadding": "14px",                                     // Space inside each tile, around the logo
     "logoAreaPadding": "6% 12% 3%",                            // Space around the logo inside the cell: top, left+right, bottom
     "masterLogoScale": 1.04,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
     "masterLogoX": "0%",                                       // MASTER: move ALL gallery logos right (+) or left (-)
@@ -282,9 +297,7 @@
     "moreColor": "#3A3938",                                    // Their colour
     "moreHoverColor": "#3A4E8C",                               // Their colour on hover
     "moreArrowColor": "#9A9892",                               // Colour of the little arrow next to 'More from the collection'
-    "relatedLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // Lines around the 3 related domains   [style: solid / dotted / dashed / none]
-    "relatedCellPadding": "14px",                              // Space inside each related cell
-    "relatedCellHover": "#FAF9F6",                             // Related cell background on hover
+    "relatedCellPadding": "14px",                              // Space inside each related tile (tile colours, outline and tray come from the gallery settings)
     "relatedTopTrim": "-26px",                                 // Less space above the related logos (negative = less; the empty space in the logo is cropped, logos keep their size)
     "relatedLogoAreaPadding": "6% 12% 3%",                     // Space around the logo in a related cell: top, left+right, bottom
     "relatedLogoScale": 1,                                     // MASTER: resize the 3 related logos (1 = as set in gallery-desktop.json)
