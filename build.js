@@ -15,6 +15,7 @@ fs.rmSync(dist, { recursive: true, force: true });
 // fonts and all logos -> /assets
 copyDir(path.join(root, "src/fonts"), path.join(dist, "assets/fonts"));
 copyDir(path.join(root, "content/svg"), path.join(dist, "assets/svg"));
+copyDir(path.join(root, "content/svg-small"), path.join(dist, "assets/svg-small"));   // small, pre-shrunk logo copies for the related tiles (sharper than shrinking the big ones in the browser)
 fs.writeFileSync(path.join(dist, "assets/site.css"), themeCss + "\n" + fs.readFileSync(path.join(root, "src/styles/site.css"), "utf8"));
 fs.copyFileSync(path.join(root, "content/svg/favicon.ico"), path.join(dist, "favicon.ico"));   // browsers ask for /favicon.ico at the site root
 fs.copyFileSync(path.join(root, "src/js/site.js"), path.join(dist, "assets/site.js"));

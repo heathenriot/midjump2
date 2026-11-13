@@ -2,6 +2,9 @@
 import { esc } from "../lib/util.js";
 import { domains, site } from "../lib/data.js";
 import { layout } from "../lib/layout.js";
+import fs from "node:fs";
+// related tiles use the small pre-shrunk copy in content/svg-small when there is one (big logos shrunk by the browser can look jagged)
+const smallLogo = (u) => { const b = u.split("/").pop().replace(/\.svg$/, ".png"); return fs.existsSync(new URL("../../content/svg-small/" + b, import.meta.url)) ? "/assets/svg-small/" + b : u; };
 
 /* ---------- domain pages ---------- */
 const hash = (s) => { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
@@ -24,7 +27,7 @@ const chev = `<svg viewBox="0 0 10 10"><path d="M2 3.5 L5 6.5 L8 3.5" fill="none
 export const domainPage = (d) => {
   const fx = (i) => d.logoFx[i] || {};
   const slides = d.logos.map((l, i) => { const f = fx(i); return `<div class="dm-slide"><img src="${l}" alt="${esc(d.name)} logo concept ${i + 1}" style="--cy:${f.y || "0%"};--cs:${f.scale || 1};--my:${f.my || f.y || "0%"};--ms:${f.mscale || f.scale || 1}"${i ? ' loading="lazy"' : ""} decoding="async"></div>`; }).join("");
-  const rel = picks[d.slug].map((r) => `<a href="/domains/${r.slug}" class="dm-rel"><span class="dm-rel-img"><img src="${r.galleryLogo}" alt="${esc(r.name)} logo" loading="lazy" decoding="async" style="--s:${r.desk.scale};--y:${r.desk.y}"></span><span class="dm-rel-name">${esc(r.base)}<span class="dm-rel-ext">${esc(r.ext)}</span></span></a>`).join("");
+  const rel = picks[d.slug].map((r) => `<a href="/domains/${r.slug}" class="dm-rel"><span class="dm-rel-img"><img src="${smallLogo(r.galleryLogo)}" alt="${esc(r.name)} logo" loading="lazy" decoding="async" style="--s:${r.desk.scale};--y:${r.desk.y}"></span><span class="dm-rel-name">${esc(r.base)}<span class="dm-rel-ext">${esc(r.ext)}</span></span></a>`).join("");
   const cat0 = d.categories[0].toLowerCase();
   const desc = trim(`${d.name} is available for acquisition. ${firstSentences(d.overview[1] || d.overview[0], 120)}`, 158);
   const body = `

@@ -323,14 +323,14 @@
     "atomFill": "#253A79",                                     // 'View on Atom.com' button colour
     "atomHoverFill": "#3A4E8C",                                // 'View on Atom.com' colour on hover
     "atomTextColor": "#F3F2EE",                                // 'View on Atom.com' text colour
-    "sendFill": "#CAC8BAC1",                                   // 'Send inquiry' button fill (the last 2 digits make it see-through)
+    "sendFill": "#D0CDBFC6",                                   // 'Send inquiry' button fill (the last 2 digits make it see-through)
     "sendHoverFill": "#3A4E8CCE",                              // 'Send inquiry' fill on hover
-    "sendTextColor": "#152860",                                // 'Send inquiry' text colour
+    "sendTextColor": "#1A1A18",                                // 'Send inquiry' text colour
     "sendHoverTextColor": "#E9E8E7",                           // 'Send inquiry' text colour on hover
-    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#253A79A7" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
-    "sendSheen": 0.14,                                         // Strength of the light gradient on 'Send inquiry' (same light direction as the buttons below)
-    "sendEdge": 0.26,                                          // Strength of the thin highlight along its lit edge
-    "sendGlowColor": "#8C8B84",                                // Colour of the soft shadow under 'Send inquiry' (on hover it takes the hover fill colour)
+    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#A4A291" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
+    "sendSheen": 0.13,                                         // Strength of the light gradient on 'Send inquiry' (same light direction as the buttons below)
+    "sendEdge": 0.23,                                          // Strength of the thin highlight along its lit edge
+    "sendGlowColor": "#253A79ED",                                // Colour of the soft shadow under 'Send inquiry' (on hover it takes the hover fill colour)
     "sendGlow": 0.055,                                         // Strength of that shadow
     "sendGlowBlur": "4px",                                     // Softness of that shadow
     "sendGlowY": "4px",                                        // How far below the button it sits
