@@ -73,7 +73,7 @@
     "logoX": "0px",                                            // Move logo right (+) or left (-). Example: 10px or -10px
     "logoY": "14px",                                           // Move logo down (+) or up (-)
     "font": "Finlandica Text",                                 // Font of the links   [choose: Finlandica Text / Questrial / Plus Jakarta Sans]
-    "linkSize": "13.5px",                                      // Link text size
+    "linkSize": "12.25px",                                     // Link text size
     "linkWeight": 500,                                         // Link boldness (300 / 400 / 500)
     "linkSpacing": ".05em",                                    // Space between letters of links
     "linkCase": "uppercase",                                   // uppercase = CAPITALS, none = as typed   [choose: uppercase / none / capitalize]
@@ -181,11 +181,11 @@
   // Per-domain logo size/position lives in content/gallery-desktop.json. The 'master' settings here move/scale ALL gallery logos together.
   // ──────────────────────────────────────────────────────────────────────
   "gallery": {
-    "titleSize": "38px",                                       // Page title size ('Domain Collection')
+    "titleSize": "35px",                                       // Page title size ('Domain Collection')
     "titleWeight": 600,                                        // Page title boldness
     "titleColor": "#1A1A18",                                   // Page title colour
-    "titlePaddingTop": "44px",                                 // Space above the title
-    "titlePaddingBottom": "38px",                              // Space under the title
+    "titlePaddingTop": "40px",                                 // Space above the title
+    "titlePaddingBottom": "32px",                              // Space under the title
     "tabsPaddingTop": "15px",                                  // Space above the filter tabs
     "tabsPaddingBottom": "14px",                               // Space under the filter tabs
     "tabsGap": "30px",                                         // Space between tabs
@@ -215,25 +215,22 @@
   // Every individual domain page.
   // ──────────────────────────────────────────────────────────────────────
   "domain": {
-    "nameSize": "42px",                                        // Domain name size at the top
+    "nameSize": "35px",                                        // Domain name size at the top
     "nameWeight": 600,                                         // Domain name boldness
     "nameColor": "#1A1A18",                                    // Domain name colour
     "extColor": "#9A9892",                                     // Colour of .com / .si
-    "namePaddingTop": "35px",                                  // Space above the domain name
-    "namePaddingBottom": "27px",                               // Space under the category line
-    "categorySize": "11px",                                    // Category line text size (AI · DATA)
-    "categorySpacing": ".12em",                                // Category line letter spacing
-    "categoryColor": "#76756F",                                // Category line colour
-    "categoryGap": "10px",                                     // Space between name and category line
-    "viewerBackground": "#F3F2EE",                             // Background behind the logo viewer
+    "namePaddingTop": "40px",                                  // Space above the domain name
+    "namePaddingBottom": "32px",                               // Space under the domain name
+    "viewerBackground": "#F6F5F2",                             // Background of the whole logo viewer band
     "viewerPaddingTop": "16px",                                // Space above the viewer
     "viewerPaddingBottom": "24px",                             // Space under the viewer arrows
-    "viewerHeight": "229px",                                   // Height of the viewer
+    "viewerHeight": "185px",                                   // Height of the viewer (logos keep their size; the empty space around them is cropped)
     "viewerMaxWidth": "560px",                                 // Width of the viewer
     "firstLogoWidth": "360px",                                 // Widest the FIRST logo can be
     "firstLogoHeight": "230px",                                // Height of the FIRST logo
     "otherLogoWidth": "440px",                                 // Widest the other logos can be
-    "logoScale": 1,                                            // MASTER: resize every logo in the viewer (1 = as set per domain)
+    "otherLogoHeight": "229px",                                // Height of the other logos
+    "logoScale": 1.01,                                         // MASTER: resize every logo in the viewer (1 = as set per domain)
     "logoX": "0%",                                             // MASTER: move every viewer logo right (+) or left (-)
     "logoY": "0%",                                             // MASTER: move every viewer logo down (+) or up (-)
     "viewerFadeWidth": "14%",                                  // Width of the soft fade at the viewer's edges
@@ -249,14 +246,15 @@
     "acquisitionPaddingBottom": "46px",                        // Space under its buttons
     "acquisitionTextSize": "16.5px",                           // Text size of the sentence above the form
     "acquisitionTextColor": "#1E1E1C",                         // Colour of that sentence
+    "brandWordColor": "#253A79",                               // Colour of the words Atom.com and Escrow.com in that sentence
     "fieldGap": "6px",                                         // Space between the form fields
     "fieldWidth": "505px",                                     // Width of the form fields
-    "fieldLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // Line under each field   [style: solid / dotted / dashed / none]
+    "fieldLine": { "style": "dotted", "width": "1px", "color": "#84837B" }, // Line under each field   [style: solid / dotted / dashed / none]
     "inputSize": "14px",                                       // Text size inside fields
     "inputPaddingY": "10px",                                   // Height of fields (space above and below the text)
     "inputColor": "#1E1E1C",                                   // Text colour inside fields
     "textareaHeight": "82px",                                  // Height of the message box
-    "buttonsGap": "20px",                                      // Space between the fields and the two buttons
+    "buttonsGap": "26px",                                      // Space between the fields and the two buttons
     "buttonHeight": "40px",                                    // Button height
     "buttonSpacing": "12px",                                   // Space between the two buttons
     "buttonRadius": "5px",                                     // Button corner roundness
@@ -276,6 +274,8 @@
     "aboutColor": "#1E1E1C",                                   // Overview colour
     "aboutWidth": "557px",                                     // Width of the overview text
     "aboutParagraphGap": "18px",                               // Space between overview paragraphs
+    "secondLabelGap": "22px",                                  // Extra space above the 'Ideal for' label, on top of the paragraph gap (also used on phones)
+    "aboutBackground": "#F5F5F1",                              // Background of the overview and the 'More from the collection' heading
     "moreHeadPaddingTop": "44px",                              // Space above 'More from the collection'
     "moreSize": "10.5px",                                      // 'More from the collection' / 'Back to portfolio' text size
     "moreSpacing": ".11em",                                    // Their letter spacing
@@ -285,6 +285,7 @@
     "relatedLine": { "style": "dotted", "width": "1px", "color": "#B3B2A8" }, // Lines around the 3 related domains   [style: solid / dotted / dashed / none]
     "relatedCellPadding": "14px",                              // Space inside each related cell
     "relatedCellHover": "#FAF9F6",                             // Related cell background on hover
+    "relatedTopTrim": "-26px",                                 // Less space above the related logos (negative = less; the empty space in the logo is cropped, logos keep their size)
     "relatedLogoAreaPadding": "6% 12% 3%",                     // Space around the logo in a related cell: top, left+right, bottom
     "relatedLogoScale": 1,                                     // MASTER: resize the 3 related logos (1 = as set in gallery-desktop.json)
     "relatedLogoX": "0%",                                      // MASTER: move the 3 related logos right (+) or left (-)
@@ -292,7 +293,30 @@
     "relatedNameSize": "15px",                                 // Related domain name text size
     "relatedNamePadding": "9px 1px 17px",                      // Space around the related domain name: top, sides, bottom (more top = name lower, more bottom = name higher)
     "relatedNameColor": "#1A1A18",                             // Related domain name colour
-    "relatedExtColor": "#9A9892"                               // Colour of .com / .si
+    "relatedExtColor": "#9A9892",                              // Colour of .com / .si
+    // depth: soft shadow, light and glow (a strength of 0 switches it off)
+    "cardShadowColor": "#253A79",                              // Colour of the soft shadow the acquisition card casts into the viewer and the overview
+    "cardShadowUp": 0.08,                                      // Strength of that shadow above the card (0 = none, 0.08 = 8%)
+    "cardShadowDown": 0.08,                                    // Strength of that shadow below the card
+    "cardShadowBlur": "25px",                                  // Softness of that shadow
+    "cardShadowDistance": "3px",                               // How far it reaches up and down
+    "cardShadowSpread": "-11px",                               // Pulls the shadow in from the sides (more negative = narrower)
+    "cardSheenColor": "#DDDDD2",                               // Colour of the soft radial light/shade across the acquisition card
+    "cardSheenStrength": 0.45,                                 // Its strength (0 = none)
+    "cardSheenSize": "132%",                                   // Its size
+    "cardSheenX": "11%",                                       // Where its centre sits, left (0%) to right (100%)
+    "cardSheenY": "71%",                                       // Where its centre sits, top (0%) to bottom (100%)
+    "buttonLightAngle": 180,                                   // Direction of the light on the buttons: 180 = from above, 225 = top right, 135 = top left (also the contact page button)
+    "buttonSheen": 0.12,                                       // Strength of the light gradient on the buttons (0 = flat; also the contact page button)
+    "buttonEdge": 0.18,                                        // Strength of the thin highlight along the lit edge of the buttons
+    "buttonGlow": 0.09,                                        // Strength of the soft glow under each button, in the button's own colour
+    "buttonGlowBlur": "4px",                                   // Softness of that glow
+    "buttonGlowY": "4px",                                      // How far below the button the glow sits
+    "buttonGlowHover": 0.08,                                   // Extra glow strength on hover
+    "viewerSpotlight": 0.21,                                   // Strength of the soft light behind the logo in the viewer (0 = none)
+    "viewerSpotlightWidth": "460px",                           // Width of that light
+    "viewerSpotlightHeight": "180px",                          // Height of that light
+    "viewerSpotlightY": "45%"                                  // Its height position, top (0%) to bottom (100%)
   },
 
   // ──────────────────────────────────────────────────────────────────────
@@ -300,11 +324,11 @@
   // The inquiry form page.
   // ──────────────────────────────────────────────────────────────────────
   "contact": {
-    "titleSize": "38px",                                       // Page title size
+    "titleSize": "35px",                                       // Page title size
     "titleWeight": 600,                                        // Page title boldness
     "titleColor": "#1A1A18",                                   // Page title colour
-    "titlePaddingTop": "38px",                                 // Space above the title
-    "titlePaddingBottom": "28px",                              // Space under the title
+    "titlePaddingTop": "40px",                                 // Space above the title
+    "titlePaddingBottom": "32px",                              // Space under the title
     "formPaddingTop": "44px",                                  // Space between title line and the intro text
     "formWidth": "505px",                                      // Width of the intro text and form
     "introSize": "16.5px",                                     // Intro text size

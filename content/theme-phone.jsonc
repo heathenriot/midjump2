@@ -199,16 +199,13 @@
   // ──────────────────────────────────────────────────────────────────────
   "domain": {
     "namePaddingTop": "30px",                                  // Space above the domain name
-    "namePaddingBottom": "22px",                               // Space under the category line
+    "namePaddingBottom": "22px",                               // Space under the domain name
     "namePaddingX": "40px",                                    // Space left and right of the name
     "nameLine": { "style": "solid", "width": ".5px", "color": "rgba(113,112,112,.09)" }, // Hairline under the name band   [style: solid / dotted / dashed / none]
     "nameSize": "23px",                                        // Domain name size
     "nameWeight": 600,                                         // Domain name boldness
     "nameColor": "#1E1E1C",                                    // Domain name colour
     "extColor": "#1E1E1C",                                     // Colour of .com / .si
-    "categorySize": "11.5px",                                  // Category line text size
-    "categoryColor": "#5A5954",                                // Category line colour
-    "categoryGap": "8px",                                      // Space between name and category line
     "viewerBackground": "#F8F7F4",                             // Background behind the logo viewer
     "viewerLine": { "style": "solid", "width": ".5px", "color": "rgba(70,70,70,.10)" }, // Hairline under the viewer   [style: solid / dotted / dashed / none]
     "viewerPaddingTop": "6px",                                 // Space above the viewer
@@ -236,6 +233,7 @@
     "acquisitionTextSize": "14px",                             // Text size of the sentence above the form
     "acquisitionTextLineHeight": 1.6,                          // Its line spacing
     "acquisitionTextColor": "#1E1E1C",                         // Its colour
+    "brandWordColor": "#253A79",                               // Colour of the words Atom.com and Escrow.com in that sentence
     "acquisitionBottomSpace": "36px",                          // Space under the card
     "labelSize": "12px",                                       // Size of the 'AVAILABLE FOR ACQUISITION' / 'ABOUT THE DOMAIN' labels
     "labelSpacing": ".14em",                                   // Their letter spacing

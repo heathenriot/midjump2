@@ -28,8 +28,8 @@ export const domainPage = (d) => {
   const cat0 = d.categories[0].toLowerCase();
   const desc = trim(`${d.name} is available for acquisition. ${firstSentences(d.overview[1] || d.overview[0], 120)}`, 158);
   const body = `
-<div class="c-frame">
-<section class="dm-name"><h1 class="mj-fade">${esc(d.base)}<span class="dm-ext">${esc(d.ext)}</span></h1><span class="k-lab dm-cats mj-fade mj-d1">${d.categories.join(" · ")}</span></section>
+<div class="c-frame dm-frame">
+<section class="dm-name"><h1 class="mj-fade">${esc(d.base)}<span class="dm-ext">${esc(d.ext)}</span></h1></section>
 <section class="dm-view${d.logos.length < 2 ? " dm-single" : ""}" aria-label="Logo concepts"><div class="dm-vin">
 <div class="mj-fade dm-viewer"><div class="dm-track">${slides}</div><div class="dm-fadeL" aria-hidden="true"></div><div class="dm-fadeR" aria-hidden="true"></div></div>
 <div class="dm-arrows"><button type="button" class="dm-arrow dm-prev" aria-label="Previous logo concept"><svg width="10" height="16" viewBox="0 0 10 16" aria-hidden="true"><path d="M8.5 1.5 2 8l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button><button type="button" class="dm-arrow dm-next" aria-label="Next logo concept"><svg width="10" height="16" viewBox="0 0 10 16" aria-hidden="true"><path d="M1.5 1.5 8 8l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
@@ -37,18 +37,18 @@ export const domainPage = (d) => {
 <div class="dm-acqwrap"><section class="dm-row dm-acq" aria-labelledby="acq-h"><h2 id="acq-h" class="dm-label">Available for acquisition</h2>
 <div class="c-wrap"><form class="dm-form mj-form" data-key="${site.formKey}" data-domain="${esc(d.name)}">
 <input class="mj-hp" type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
-<p class="dm-sent"><span class="d-only">${esc(d.name)} can be purchased securely via Atom.com, or you can contact Midjump directly to arrange a transaction through Escrow.com.</span><span class="m-only">Purchase securely via Atom.com, or contact Midjump to arrange a direct transaction through Escrow.com.</span></p>
+<p class="dm-sent"><span class="d-only">${esc(d.name)} can be purchased securely via <span class="dm-brand">Atom.com</span>, or you can contact Midjump directly to arrange a transaction through <span class="dm-brand">Escrow.com</span>.</span><span class="m-only">Purchase securely via <span class="dm-brand">Atom.com</span>, or contact Midjump to arrange a direct transaction through <span class="dm-brand">Escrow.com</span>.</span></p>
 <div class="dm-fields">
 <label class="mj-field"><input class="mj-input" type="text" name="name" autocomplete="name" placeholder="Name" aria-label="Name" required></label>
 <label class="mj-field"><input class="mj-input" type="email" name="email" autocomplete="email" placeholder="Email" aria-label="Email" required></label>
 <label class="mj-field"><textarea class="mj-input" name="message" rows="3" placeholder="Message" aria-label="Message" required></textarea></label>
-<div class="dm-btns"><a href="https://www.atom.com/name/${esc(d.atomName)}" class="dm-atom" rel="noopener" target="_blank"><span>View on Atom.com</span></a>
-<button type="submit" class="mj-send"><span>Send inquiry</span><svg class="mj-chev" viewBox="0 0 242.333 242.333" aria-hidden="true"><path d="M80 38 L164 121.2 L80 204.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+<div class="dm-btns"><a href="https://www.atom.com/name/${esc(d.atomName)}" class="dm-atom" rel="noopener" target="_blank"><span>View on Atom.com</span><svg class="mj-chev" viewBox="0 0 242.333 242.333" aria-hidden="true"><path d="M80 38 L164 121.2 L80 204.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+<button type="submit" class="mj-send"><span>Send inquiry</span></button></div>
 <p class="mj-err" role="alert" hidden>Something went wrong. Please email ${site.email} instead.</p>
 </div></form>
 <div class="mj-note" role="status" aria-live="polite"><p class="t">Message received.</p><p class="s">Thank you for your inquiry.</p><button type="button" class="mj-again">Send another</button></div>
 </div></section></div>
-<div class="dm-aboutwrap"><section class="dm-row dm-about" aria-labelledby="about-h"><h2 id="about-h" class="dm-label">About the domain</h2><div class="dm-paras">${d.overview.map((p) => `<p class="dm-para">${esc(p)}</p>`).join("")}</div></section></div>
+<div class="dm-aboutwrap"><section class="dm-row dm-about" aria-labelledby="about-h"><h2 id="about-h" class="dm-label">About the domain</h2><div class="dm-paras">${d.overview.map((p, i) => `${i === 1 ? '<h3 class="dm-label dm-label2">Ideal for</h3>' : ""}<p class="dm-para">${esc(p)}</p>`).join("")}</div></section></div>
 <section class="dm-moresec" aria-labelledby="more-h">
 <div class="dm-morehead"><h2 id="more-h"><a href="/domains?c=${cat0}" class="dm-more">More from the collection<span class="dm-more-arrow" aria-hidden="true">${chev}</span></a></h2></div>
 <div class="dm-relgrid">${rel}</div>
