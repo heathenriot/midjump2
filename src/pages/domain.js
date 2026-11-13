@@ -10,8 +10,8 @@ export const picks = {};
 for (const d of domains) {
   const pool = domains.filter((x) => x.slug !== d.slug && x.categories.some((c) => d.categories.includes(c)));
   const chosen = [];
-  for (const t of ["A", "B", "C"]) {
-    let cand = pool.filter((x) => x.tier === t && !chosen.includes(x));
+  for (const t of ["A", "B", "C", null]) {
+    let cand = pool.filter((x) => (t === null || x.tier === t) && !chosen.includes(x));
     if (!cand.length) cand = pool.filter((x) => !chosen.includes(x));
     cand.sort((a, b) => usage[a.slug] - usage[b.slug] || hash(d.slug + a.slug) - hash(d.slug + b.slug));
     if (cand[0]) { chosen.push(cand[0]); usage[cand[0].slug]++; }
@@ -37,7 +37,7 @@ export const domainPage = (d) => {
 <div class="dm-acqwrap"><section class="dm-row dm-acq" aria-labelledby="acq-h"><h2 id="acq-h" class="dm-label">Available for acquisition</h2>
 <div class="c-wrap"><form class="dm-form mj-form" data-key="${site.formKey}" data-domain="${esc(d.name)}">
 <input class="mj-hp" type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
-<p class="dm-sent"><span class="d-only">${esc(d.name)} can be purchased securely via <span class="dm-brand">Atom.com</span>, or you can contact Midjump directly to arrange a transaction through <span class="dm-brand">Escrow.com</span>.</span><span class="m-only">Purchase securely via <span class="dm-brand">Atom.com</span>, or contact Midjump to arrange a direct transaction through <span class="dm-brand">Escrow.com</span>.</span></p>
+<p class="dm-sent"><span class="d-only"><span class="dm-sname">${esc(d.name)}</span> can be purchased securely via <span class="dm-brand">Atom.com</span>, or you can contact Midjump directly to arrange a transaction through <span class="dm-brand">Escrow.com</span>.</span><span class="m-only">Purchase securely via <span class="dm-brand">Atom.com</span>, or contact Midjump to arrange a direct transaction through <span class="dm-brand">Escrow.com</span>.</span></p>
 <div class="dm-fields">
 <label class="mj-field"><input class="mj-input" type="text" name="name" autocomplete="name" placeholder="Name" aria-label="Name" required></label>
 <label class="mj-field"><input class="mj-input" type="email" name="email" autocomplete="email" placeholder="Email" aria-label="Email" required></label>

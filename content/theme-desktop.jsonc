@@ -192,11 +192,12 @@
     "tabSize": "11px",                                         // Tab text size
     "tabSpacing": ".12em",                                     // Space between letters of tabs
     "tabColor": "#555450",                                     // Tab colour
-    "tabActiveColor": "#253A79",                               // Selected tab colour
     "tabHoverColor": "#253A79",                                // Tab colour on hover
     "tabCountColor": "#9A9993",                                // Colour of the little numbers next to tabs
-    "tabCountActiveColor": "#536FB0",                          // Colour of the number next to the selected tab
-    "trayBackground": "#ECEBE5",                               // The grey tray behind the tabs and tiles (also behind the 3 related tiles on domain pages)
+    "tabChevronColor": "#253A79",                              // Colour of the little arrow to the left of the selected tab
+    "tabChevronSize": "4.5px",                                 // Size of that arrow
+    "tabChevronGap": "8px",                                    // Space between that arrow and the tab name
+    "trayBackground": "#ECEBE5",                               // The grey tray behind the tabs and tiles
     "traySheenColor": "#D2D2C3",                               // Colour of the soft radial shade across the tray
     "traySheenStrength": 0.3,                                  // Its strength (0 = none)
     "traySheenSize": "95%",                                    // Its size
@@ -262,11 +263,21 @@
     "acquisitionTextSize": "16.5px",                           // Text size of the sentence above the form
     "acquisitionTextColor": "#1E1E1C",                         // Colour of that sentence
     "brandWordColor": "#253A79",                               // Colour of the words Atom.com and Escrow.com in that sentence
-    "fieldGap": "6px",                                         // Space between the form fields
+    "acquisitionNameWeight": 500,                              // Boldness of the domain name in that sentence (400 = regular, 500 = medium)
+    "acquisitionNameColor": "#1A1A18",                         // Colour of the domain name in that sentence
+    "fieldGap": "8px",                                         // Space between the form fields
     "fieldWidth": "505px",                                     // Width of the form fields
-    "fieldLine": { "style": "dotted", "width": "1px", "color": "#84837B" }, // Line under each field   [style: solid / dotted / dashed / none]
+    "fieldBoxFill": 0.42,                                      // Fill of the field boxes: see-through white over the card (0 = card colour, 1 = white)
+    "fieldBoxBorder": { "style": "solid", "width": "0.5px", "color": "#D6D5CC" },// Outline of each field box   [style: solid / dotted / dashed / none]
+    "fieldBoxRadius": "5px",                                   // Field box corner roundness
+    "fieldBoxGlowColor": "#6D6C64",                            // Colour of the soft glow around the field boxes
+    "fieldBoxGlow": 0.06,                                      // Strength of that glow (0 = none)
+    "fieldBoxGlowBlur": "3px",                                 // Softness of that glow
+    "fieldBoxFocusColor": "#253A79",                           // Field box outline colour while typing
+    "fieldBoxFocusGlow": 0.05,                                 // Glow strength while typing
     "inputSize": "14px",                                       // Text size inside fields
     "inputPaddingY": "10px",                                   // Height of fields (space above and below the text)
+    "inputPaddingX": "14px",                                   // Space between the field box edge and the text
     "inputColor": "#1E1E1C",                                   // Text colour inside fields
     "textareaHeight": "82px",                                  // Height of the message box
     "buttonsGap": "26px",                                      // Space between the fields and the two buttons
@@ -277,9 +288,18 @@
     "atomFill": "#253A79",                                     // 'View on Atom.com' button colour
     "atomHoverFill": "#3A4E8C",                                // 'View on Atom.com' colour on hover
     "atomTextColor": "#F3F2EE",                                // 'View on Atom.com' text colour
-    "sendFill": "#536FB0",                                     // 'Send inquiry' button colour
-    "sendHoverFill": "#44609E",                                // 'Send inquiry' colour on hover
-    "sendTextColor": "#F3F2EE",                                // 'Send inquiry' text colour
+    "sendFill": "#CAC8BAC1",                                   // 'Send inquiry' button fill (the last 2 digits make it see-through)
+    "sendHoverFill": "#3A4E8CCE",                              // 'Send inquiry' fill on hover
+    "sendTextColor": "#152860",                                // 'Send inquiry' text colour
+    "sendHoverTextColor": "#E9E8E7",                           // 'Send inquiry' text colour on hover
+    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#253A79A7" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
+    "sendSheen": 0.14,                                         // Strength of the light gradient on 'Send inquiry' (same light direction as the buttons below)
+    "sendEdge": 0.26,                                          // Strength of the thin highlight along its lit edge
+    "sendGlowColor": "#8C8B84",                                // Colour of the soft shadow under 'Send inquiry' (on hover it takes the hover fill colour)
+    "sendGlow": 0.055,                                         // Strength of that shadow
+    "sendGlowBlur": "4px",                                     // Softness of that shadow
+    "sendGlowY": "4px",                                        // How far below the button it sits
+    "sendGlowHover": 0.08,                                     // Extra shadow strength on hover
     "aboutPaddingTop": "42px",                                 // Space above 'About the domain'
     "aboutPaddingBottom": "40px",                              // Space under the overview
     "aboutLabelGap": "20px",                                   // Space between that label and the text
@@ -292,19 +312,35 @@
     "secondLabelGap": "22px",                                  // Extra space above the 'Ideal for' label, on top of the paragraph gap (also used on phones)
     "aboutBackground": "#F5F5F1",                              // Background of the overview and the 'More from the collection' heading
     "moreHeadPaddingTop": "44px",                              // Space above 'More from the collection'
+    "moreHeadPaddingBottom": "16px",                           // Space between 'More from the collection' and the line under it
+    "overviewShadowColor": "#72726E",                          // Colour of the soft shade rising from the collection row into the overview
+    "overviewShadow": 0.03,                                    // Strength of that shade (0 = none)
+    "overviewShadowReach": "62px",                             // How far up into the overview it reaches
     "moreSize": "10.5px",                                      // 'More from the collection' / 'Back to portfolio' text size
     "moreSpacing": ".11em",                                    // Their letter spacing
     "moreColor": "#3A3938",                                    // Their colour
     "moreHoverColor": "#3A4E8C",                               // Their colour on hover
     "moreArrowColor": "#9A9892",                               // Colour of the little arrow next to 'More from the collection'
-    "relatedCellPadding": "14px",                              // Space inside each related tile (tile colours, outline and tray come from the gallery settings)
+    "relatedColumns": 4,                                       // How many related domains sit in a row (phones always show 3)
+    "relatedLine": { "style": "dotted", "width": "1px", "color": "#C6C6B79E" },// Line under 'More from the collection'   [style: solid / dotted / dashed / none]
+    "relatedBackground": "#F3F2EE",                            // Background of the related row
+    "relatedPaddingTop": "22px",                               // Space above the related tiles
+    "relatedPaddingBottom": "22px",                            // Space under the related tiles
+    "relatedSidePadding": "18px",                              // Space left and right of the related tiles
+    "relatedTileGap": "14px",                                  // Space between related tiles
+    "relatedTileBackground": "#F3F2EE",                        // Related tile colour
+    "relatedTileBorder": { "style": "solid", "width": "0.5px", "color": "#F3F2EE" },// Related tile outline   [style: solid / dotted / dashed / none]
+    "relatedTileRadius": "4px",                                // Related tile corner roundness
+    "relatedHoverContrast": 0.82,                              // Logo contrast on hover (1 = full colour, lower = softer)
+    "relatedHoverBrightness": 1.15,                            // Logo brightness on hover (1 = as is, higher = lighter)
+    "relatedCellPadding": "14px",                              // Space inside each related tile, above the logo and at the sides
     "relatedTopTrim": "-26px",                                 // Less space above the related logos (negative = less; the empty space in the logo is cropped, logos keep their size)
     "relatedLogoAreaPadding": "6% 12% 3%",                     // Space around the logo in a related cell: top, left+right, bottom
-    "relatedLogoScale": 1,                                     // MASTER: resize the 3 related logos (1 = as set in gallery-desktop.json)
-    "relatedLogoX": "0%",                                      // MASTER: move the 3 related logos right (+) or left (-)
-    "relatedLogoY": "0%",                                      // MASTER: move the 3 related logos down (+) or up (-)
-    "relatedNameSize": "15px",                                 // Related domain name text size
-    "relatedNamePadding": "9px 1px 17px",                      // Space around the related domain name: top, sides, bottom (more top = name lower, more bottom = name higher)
+    "relatedLogoScale": 1.2,                                   // MASTER: resize the related logos (1 = as set in gallery-desktop.json)
+    "relatedLogoX": "0%",                                      // MASTER: move the related logos right (+) or left (-)
+    "relatedLogoY": "0%",                                      // MASTER: move the related logos down (+) or up (-)
+    "relatedNameSize": "14px",                                 // Related domain name text size
+    "relatedNamePadding": "9px 1px 10px",                      // Space around the related domain name: top, sides, bottom (more top = name lower, more bottom = name higher)
     "relatedNameColor": "#1A1A18",                             // Related domain name colour
     "relatedExtColor": "#9A9892",                              // Colour of .com / .si
     // depth: soft shadow, light and glow (a strength of 0 switches it off)
