@@ -102,7 +102,7 @@ img{max-width:100%}
 .g-tab.is-on::before{opacity:1}
 .g-tab.is-on:hover{color:var(--t-gallery-tab-color)}
 .g-tab:focus-visible{outline:1px solid var(--t-colors-text);outline-offset:3px}
-.g-count{font-weight:400;letter-spacing:.04em;color:var(--t-gallery-tab-count-color);transition:color .2s ease}
+.g-count{font-weight:var(--t-gallery-tab-count-weight);letter-spacing:.04em;color:var(--t-gallery-tab-count-color);transition:color .2s ease}
 
 /* ===== gallery: desktop grid (3 columns of tiles on a grey tray; the tray also holds the tabs) ===== */
 .d-frame:has(.dg){overflow-x:clip;background-color:var(--t-gallery-tray-background);background-image:radial-gradient(ellipse var(--t-gallery-tray-sheen-size) calc(var(--t-gallery-tray-sheen-size) * 1.4) at var(--t-gallery-tray-sheen-x) var(--t-gallery-tray-sheen-y),color-mix(in srgb,var(--t-gallery-tray-sheen-color) calc(var(--t-gallery-tray-sheen-strength) * 100%),transparent),transparent 70%)}
