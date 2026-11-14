@@ -63,10 +63,11 @@
     "logoX": "0px",                                            // Move logo right (+) or left (-)
     "logoY": "3px",                                            // Move logo down (+) or up (-)
     "shadowColor": "#373737",                                  // Colour of the soft shadow under the top bar (every page)
-    "shadow": 0.115,                                           // Strength of that shadow
+    "shadow": 0.08,                                            // Strength of that shadow
     "shadowBlur": "11px",                                      // Softness of that shadow
     "shadowY": "5px",                                          // How far down it reaches
     "shadowSpread": "-8px",                                    // Pulls it in from the sides (more negative = narrower)
+    "line": { "style": "solid", "width": "0.5px", "color": "#CFCEC5A8" },// Hairline under the top bar (every page)   [style: solid / dotted / dashed / none]
     "burgerColor": "#253A79",                                  // Burger icon colour
     "menuBackground": "#F3F2EE",                               // Menu panel background
     "menuSize": "21px",                                        // Menu link text size
@@ -118,7 +119,7 @@
   // ──────────────────────────────────────────────────────────────────────
   "landing": {
     "heroPaddingTop": "35px",                                  // Space above the headline
-    "heroPaddingBottom": "50px",                               // Space under the button
+    "heroPaddingBottom": "66px",                               // Space under the button
     "heroPaddingX": "21px",                                    // Space left and right
     "heroBackground": "#F3F2EE",                               // Background colour of the hero (headline) section
     "heroSheenColor": "#DDDDD2",                               // Colour of the soft radial shade on the hero
@@ -126,7 +127,7 @@
     "heroSheenSize": "77%",                                    // Its size
     "heroSheenX": "17%",                                       // Its centre, left (0%) to right (100%)
     "heroSheenY": "25%",                                       // Its centre, top (0%) to bottom (100%)
-    "heroLine": { "style": "solid", "width": "0.5px", "color": "#CBCBC38F" },// Line between the hero and the domains band   [style: solid / dotted / dashed / none]
+    "heroLine": { "style": "solid", "width": "0.5px", "color": "#C7C6BF8C" },// Line between the hero and the domains band   [style: solid / dotted / dashed / none]
     "headlineSize": "46px",                                    // Headline size
     "headlineLineHeight": 1.2,                                 // Headline line spacing
     "headlineColor": "#1E1E1C",                                // Headline colour
@@ -154,10 +155,10 @@
     "marqueeSheen": 0.55,                                      // Its strength (0 = flat)
     "marqueeSheenSize": "101%",                                // Its size
     "marqueeSheenX": "38%",                                    // Its centre, left (0%) to right (100%)
-    "marqueeSheenY": "7%",                                     // Its centre, top (0%) to bottom (100%)
-    "marqueeShadowUp": 0.075,                                  // Strength of the band's shadow up into the hero
-    "marqueeShadowDown": 0.06,                                 // Strength of the band's shadow down into the questions
-    "marqueeLine": { "style": "solid", "width": "0.5px", "color": "#CBCBC38E" },// Line under the domains band   [style: solid / dotted / dashed / none]
+    "marqueeSheenY": "55%",                                    // Its centre, top (0%) to bottom (100%)
+    "marqueeShadowUp": 0.06,                                   // Strength of the band's shadow up into the hero
+    "marqueeShadowDown": 0.065,                                // Strength of the band's shadow down into the questions
+    "marqueeLine": { "style": "solid", "width": "0.5px", "color": "#C7C6BF8C" },// Line under the domains band   [style: solid / dotted / dashed / none]
     "marqueeShadowY": "9px",                                   // How far the band's shadow reaches up and down
     "marqueeShadowBlur": "29px",                               // How soft the shadow under the band is
     "marqueeShadowSpread": "-11px",                            // Shadow spread under the band (negative = narrower)
@@ -184,7 +185,7 @@
     "marqueeNameSize": "13px",                                 // Domain name text size
     "marqueeNameColor": "#4A4A45",                             // Domain name colour
     "marqueeExtColor": "#8C8B84",                              // Colour of .com / .si
-    "faqPaddingTop": "55px",                                   // Space above 'ACQUIRING A DOMAIN'
+    "faqPaddingTop": "66px",                                   // Space above 'ACQUIRING A DOMAIN'
     "faqBackground": "#F3F2EE",                                // Colour of the questions section
     "faqSheenColor": "#DDDDD2",                                // Colour of the soft radial shade on that section
     "faqSheen": 0.16,                                          // Its strength (0 = flat)
@@ -192,8 +193,10 @@
     "faqSheenX": "16%",                                        // Its centre, left (0%) to right (100%)
     "faqSheenY": "20%",                                        // Its centre, top (0%) to bottom (100%)
     "faqListGap": "26px",                                      // Space between that label and the first question
-    "faqSideMargin": "12px",                                   // Space left and right of the questions
-    "faqItemGap": "16px",                                      // Space between questions
+    "faqSideMargin": "16px",                                   // Space left and right of the questions
+    "faqItemGap": "13px",                                      // Space between questions
+    "faqTextPadding": "11px",                                  // Space inside each question box, left and right of the text
+    "faqDivider": { "style": "solid", "width": "0.5px", "color": "#D6D6D2A6" },// Short line between questions (runs from the numbers to the plus signs)   [style: solid / dotted / dashed / none]
     "faqQuestionSize": "10.5px",                               // Question text size
     "faqQuestionColor": "#1E1E1C",                             // Question colour
     "faqOpenFill": "#E6E5DDC9",                                // Background of the open question
