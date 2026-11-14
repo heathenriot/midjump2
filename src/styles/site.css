@@ -309,11 +309,15 @@ textarea.mj-input{height:var(--p-contact-textarea-height)}
 .faq.is-open .faq-ai p{opacity:1;transition:opacity .45s ease .15s}
 .l-m .l-end{flex:0 0 auto;min-height:var(--p-landing-bottom-space)}
 /* TRIAL (only with ?try in the address): one warm ground for nav, hero and questions; firmer intro; band tried lighter */
-.mj-try{--try-bg:#F3F0EA;--try-sc:#4A4844;--try-s:7%;--try-lc:#E7E5E5;--try-l:54%;--try-turn:90%;--try-iw:400;--try-ic:#1E1E1C;--try-nav:#F3F0EA;--try-navfx:1;--try-band:#F6F4EF;--try-bandsh:0.55;--try-card:#FBFAF7}
+.mj-try{--try-bg:#F3F0EA;--try-sc:#4A4844;--try-s:7%;--try-lc:#E7E5E5;--try-l:54%;--try-turn:90%;--try-iw:400;--try-ic:#1E1E1C;--try-nav:#F3F0EA;--try-navfx:1;--try-band:#FFFCF9;--try-bandsh:0.55;--try-card:#FBFAF7;--try-tint:#E8E2D4;--try-tints:25%;--try-edgec:#8A8576;--try-edge:6%;--try-edgew:30%;--try-lw:#FBFAF7;--try-lwf:30%;--try-ofill:#E6E1D5C9;--try-oborder:#B7B2A4}
 .mj-try .l-m .l-hero,.mj-try .l-m .l-qa{background-color:var(--try-bg);background-image:linear-gradient(to right,color-mix(in srgb,var(--try-sc) var(--try-s),transparent),transparent var(--try-turn),color-mix(in srgb,var(--try-lc) var(--try-l),transparent))}
 .mj-try .mj-header{background-color:var(--try-nav);background-image:linear-gradient(to right,color-mix(in srgb,var(--try-sc) calc(var(--try-s) * var(--try-navfx)),transparent),transparent var(--try-turn),color-mix(in srgb,var(--try-lc) calc(var(--try-l) * var(--try-navfx)),transparent))}
 .mj-try .l-m .l-hero p{font-weight:var(--try-iw);color:var(--try-ic)}
-.mj-try .l-m .l-band{background-color:var(--try-band);--p-landing-marquee-sheen:var(--try-bandsh);--p-landing-marquee-card-background:var(--try-card)}
+.mj-try .l-m .l-band{--p-landing-marquee-sheen:var(--try-bandsh);--p-landing-marquee-card-background:var(--try-card);background-color:var(--try-band);background-image:linear-gradient(to bottom,color-mix(in srgb,var(--try-edgec) var(--try-edge),transparent),transparent var(--try-edgew),transparent calc(100% - var(--try-edgew)),color-mix(in srgb,var(--try-edgec) var(--try-edge),transparent)),radial-gradient(ellipse var(--p-landing-marquee-sheen-size) calc(var(--p-landing-marquee-sheen-size) * 1.4) at var(--p-landing-marquee-sheen-x) var(--p-landing-marquee-sheen-y),color-mix(in srgb,var(--p-landing-marquee-sheen-color) calc(var(--p-landing-marquee-sheen) * 100%),transparent),transparent 70%),linear-gradient(color-mix(in srgb,var(--try-tint) var(--try-tints),transparent),color-mix(in srgb,var(--try-tint) var(--try-tints),transparent))}
+.mj-try .l-m .mq-logo{position:relative}
+.mj-try .l-m .mq-logo::before{content:'';position:absolute;inset:0;background:var(--try-lw);-webkit-mask-image:radial-gradient(closest-side,#000 calc(100% - var(--try-lwf)),transparent);mask-image:radial-gradient(closest-side,#000 calc(100% - var(--try-lwf)),transparent)}
+.mj-try .l-m .mq-logo img{position:relative}
+.mj-try .l-m .faq.is-open{background:var(--try-ofill);box-shadow:inset 0 0 0 var(--p-landing-faq-open-border-width) var(--try-oborder)}
 }
 @media (prefers-reduced-motion:reduce){.mq-track{animation:none !important}.mj-hero-btn,.mj-cta,.faq,.faq-a,.faq-ic,.faq-ic::before,.faq-ic::after,.faq-ai p,.faq-qt,.faq-n{transition:none !important}}
 @media (prefers-reduced-motion:reduce){.mq-hint{display:block;margin:-34px 0 24px;text-align:center;font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--t-colors-muted-text)}.l-m .mq-hint{margin:-20px 0 14px}}
