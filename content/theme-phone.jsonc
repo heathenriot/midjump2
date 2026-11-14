@@ -34,6 +34,16 @@
     "page": "#F3F2EE",                                         // Page background
     "text": "#1E1E1C",                                         // Main dark text
     "titleBand": "#EDECE6",                                    // Tinted band behind page titles and the home hero
+    "titleBandSheenColor": "#DDDDD2",                          // Colour of the soft radial shade on that band
+    "titleBandSheen": 0.09,                                    // Its strength (0 = flat)
+    "titleBandSheenSize": "62%",                               // Its size
+    "titleBandSheenX": "16%",                                  // Its centre, left (0%) to right (100%)
+    "titleBandSheenY": "60%",                                  // Its centre, top (0%) to bottom (100%)
+    "titleBandShadowColor": "#1A1A18",                         // Colour of the shadow the band casts below it
+    "titleBandShadow": 0.09,                                   // Strength of that shadow
+    "titleBandShadowBlur": "10px",                             // Softness of that shadow
+    "titleBandShadowY": "6px",                                 // How far down it reaches
+    "titleBandShadowSpread": "-6px",                           // Pulls it in from the sides
     "navy": "#253A79",                                         // Navy used on buttons, burger icon and menu
     "accent": "#254F99",                                       // Blue used for focus outlines and highlights
     "mutedText": "#807E78",                                    // Grey for .com / .si endings and small numbers
@@ -51,7 +61,12 @@
     "sidePadding": "20px",                                     // Space left of the logo and right of the burger
     "logoHeight": "50px",                                      // Logo size
     "logoX": "0px",                                            // Move logo right (+) or left (-)
-    "logoY": "1px",                                            // Move logo down (+) or up (-)
+    "logoY": "3px",                                            // Move logo down (+) or up (-)
+    "shadowColor": "#373737",                                  // Colour of the soft shadow under the top bar (every page)
+    "shadow": 0.115,                                           // Strength of that shadow
+    "shadowBlur": "11px",                                      // Softness of that shadow
+    "shadowY": "5px",                                          // How far down it reaches
+    "shadowSpread": "-8px",                                    // Pulls it in from the sides (more negative = narrower)
     "burgerColor": "#253A79",                                  // Burger icon colour
     "menuBackground": "#F3F2EE",                               // Menu panel background
     "menuSize": "21px",                                        // Menu link text size
@@ -209,23 +224,35 @@
     "viewerBackground": "#F8F7F4",                             // Background behind the logo viewer
     "viewerLine": { "style": "solid", "width": ".5px", "color": "rgba(70,70,70,.10)" }, // Hairline under the viewer   [style: solid / dotted / dashed / none]
     "viewerPaddingTop": "6px",                                 // Space above the viewer
-    "viewerHeight": "200px",                                   // Height of the viewer
-    "logoMaxHeight": "168px",                                  // Tallest a logo can be
+    "viewerHeight": "186px",                                   // Height of the viewer
+    "logoMaxHeight": "162px",                                  // Tallest a logo can be
     "logoSidePadding": "28px",                                 // Space left and right of a logo
     "logoScale": 1,                                            // MASTER: resize every logo in the viewer (1 = as set per domain)
     "logoX": "0%",                                             // MASTER: move every viewer logo right (+) or left (-)
     "logoY": "0%",                                             // MASTER: move every viewer logo down (+) or up (-)
+    "logoLift": "21px",                                        // Lifts every viewer logo up by this much (evens the space above the logo and below the arrows)
     "arrowSize": "44px",                                       // Size of the arrow buttons' clickable area
     "arrowScale": 1,                                           // Size of the arrow icon itself (1 = normal)
     "arrowGap": "12px",                                        // Space between the two arrows
-    "arrowY": "-20px",                                         // Move arrows down (+) or up (-)
+    "arrowY": "-48px",                                         // Move arrows down (+) or up (-)
+    "arrowBottomSpace": "8px",                                 // Space under the arrows
     "arrowColor": "#192C60",                                   // Arrow colour
     "arrowDisabledColor": "#BDBDB2",                           // Arrow colour when it can't be used
     "viewerPaddingBottom": "36px",                             // Space between the viewer and the acquisition card
     "acquisitionSideMargin": "20px",                           // Space left and right of the acquisition card
-    "acquisitionBackground": "#E6E5DE",                        // Acquisition card colour
-    "acquisitionBorder": { "style": "solid", "width": "1px", "color": "rgba(30,29,28,.25)" }, // Acquisition card outline   [style: solid / dotted / dashed / none]
-    "acquisitionRadius": "3px",                                // Acquisition card corner roundness
+    "acquisitionBackground": "#ECEBE5",                        // Acquisition card colour
+    "acquisitionBorder": { "style": "solid", "width": "0.5px", "color": "#C6C6B7" },// Acquisition card outline   [style: solid / dotted / dashed / none]
+    "acquisitionRadius": "4px",                                // Acquisition card corner roundness
+    "acquisitionSheenColor": "#D2D2CCE2",                      // Colour of the soft radial shade on the card
+    "acquisitionSheen": 0.45,                                  // Its strength (0 = flat)
+    "acquisitionSheenSize": "132%",                            // Its size
+    "acquisitionSheenX": "11%",                                // Its centre, left (0%) to right (100%)
+    "acquisitionSheenY": "71%",                                // Its centre, top (0%) to bottom (100%)
+    "acquisitionShadowColor": "#253A79",                       // Colour of the soft shadow under the card
+    "acquisitionShadow": 0.08,                                 // Strength of that shadow
+    "acquisitionShadowBlur": "25px",                           // Softness of that shadow
+    "acquisitionShadowY": "3px",                               // How far down it sits
+    "acquisitionShadowSpread": "-6px",                         // Pulls it in from the sides
     "acquisitionPaddingTop": "34px",                           // Space inside the card, above its label
     "acquisitionPaddingBottom": "26px",                        // Space inside the card, under the buttons
     "acquisitionPaddingX": "20px",                             // Space inside the card, left and right
@@ -237,7 +264,17 @@
     "acquisitionBottomSpace": "36px",                          // Space under the card
     "labelSize": "12px",                                       // Size of the 'AVAILABLE FOR ACQUISITION' / 'ABOUT THE DOMAIN' labels
     "labelSpacing": ".14em",                                   // Their letter spacing
-    "fieldLine": { "style": "solid", "width": "1px", "color": "#C3C3B3" }, // Line under each field   [style: solid / dotted / dashed / none]
+    "fieldBoxFill": 0.42,                                      // Fill of the field boxes: see-through white over the card (0 = card colour, 1 = white)
+    "fieldBoxBorder": { "style": "solid", "width": "0.5px", "color": "#D6D5CC" },// Outline of each field box   [style: solid / dotted / dashed / none]
+    "fieldBoxRadius": "5px",                                   // Field box corner roundness
+    "fieldBoxGap": "8px",                                      // Space between the field boxes
+    "fieldBoxPaddingX": "14px",                                // Space between the box edge and the text
+    "fieldBoxPaddingY": "11px",                                // Space above and below the text (box height)
+    "fieldBoxGlowColor": "#6D6C64",                            // Colour of the soft glow around the boxes
+    "fieldBoxGlow": 0.06,                                      // Strength of that glow
+    "fieldBoxGlowBlur": "3px",                                 // Softness of that glow
+    "fieldBoxFocusColor": "#253A79",                           // Box outline colour while typing
+    "fieldBoxFocusGlow": 0.05,                                 // Glow strength while typing
     "inputSize": "16px",                                       // Text size inside fields
     "inputColor": "#1E1E1C",                                   // Text colour inside fields
     "placeholderColor": "#6A6962",                             // Colour of the hint text ('Name', 'Email', 'Message')
@@ -248,21 +285,50 @@
     "atomFill": "#253A79",                                     // 'View on Atom.com' button colour
     "atomHoverFill": "#3A4E8C",                                // 'View on Atom.com' colour while pressed
     "atomTextColor": "#F3F2EE",                                // 'View on Atom.com' text colour
-    "sendFill": "#536FB0",                                     // 'Send inquiry' button colour
-    "sendHoverFill": "#44609E",                                // 'Send inquiry' colour while pressed
-    "sendTextColor": "#F3F2EE",                                // 'Send inquiry' text colour
+    "atomSheen": 0.12,                                         // Strength of the light gradient on 'View on Atom.com'
+    "atomSheenAngle": 180,                                     // Its direction (180 = light from the top)
+    "atomEdge": 0.18,                                          // Thin highlight along its top edge
+    "atomGlow": 0.09,                                          // Strength of the navy glow under it
+    "buttonShadowBlur": "4px",                                 // Softness of the shadow under both buttons
+    "buttonShadowY": "2px",                                    // How far below the buttons it sits
+    "sendFill": "#D2D1C2",                                     // 'Send inquiry' button colour
+    "sendHoverFill": "#3A4E8CCE",                              // 'Send inquiry' colour while pressed
+    "sendTextColor": "#1A1A18",                                // 'Send inquiry' text colour
+    "sendPressedTextColor": "#E9E8E7",                         // 'Send inquiry' text colour while pressed
+    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#A4A291" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
+    "sendSheenColor": "#A6A696",                               // Colour of the light gradient on 'Send inquiry'
+    "sendSheen": 0.13,                                         // Its strength
+    "sendSheenAngle": 95,                                      // Its direction (90 = from the left, 180 = from the top)
+    "sendSpot": 0.1,                                           // Strength of the soft light spot on it
+    "sendSpotSize": "23%",                                     // Size of that spot
+    "sendSpotX": "33%",                                        // Its centre, left (0%) to right (100%)
+    "sendSpotY": "21%",                                        // Its centre, top (0%) to bottom (100%)
+    "sendEdge": 0.24,                                          // Thin highlight along its top edge
+    "sendShadowColor": "#727169",                              // Colour of the shadow under it
+    "sendShadow": 0.135,                                       // Strength of that shadow
     "aboutSideMargin": "20px",                                 // Space left and right of the overview
     "aboutLine": { "style": "solid", "width": "1px", "color": "#E6E6E1" }, // Line above 'About the domain'   [style: solid / dotted / dashed / none]
     "aboutPaddingTop": "34px",                                 // Space above 'About the domain'
-    "aboutPaddingBottom": "36px",                              // Space under the overview
+    "aboutPaddingBottom": "34px",                              // Space under the overview
+    "aboutDivider": { "style": "dotted", "width": "1px", "color": "#D9D9D6AC" },// Dotted line under the overview, above 'More from the collection'   [style: solid / dotted / dashed / none]
     "aboutSize": "15px",                                       // Overview text size
     "aboutLineHeight": 1.6,                                    // Overview line spacing
     "aboutColor": "#1E1E1C",                                   // Overview colour
-    "moreHeadPaddingTop": "64px",                              // Space above 'More from the collection'
+    "moreHeadPaddingTop": "34px",                              // Space between that dotted line and 'More from the collection'
     "moreHeadPaddingBottom": "20px",                           // Space under it
     "moreSize": "11px",                                        // 'More from the collection' text size
     "moreColor": "#3A3938",                                    // Its colour
-    "relatedLine": { "style": "solid", "width": "1px", "color": "#E6E6E1" }, // Lines between the related domains   [style: solid / dotted / dashed / none]
+    "relatedBackground": "#EDECE6",                            // Colour behind the related rows (same as the title band)
+    "relatedSheenColor": "#DDDDD2",                            // Colour of the soft radial shade on the related rows
+    "relatedSheen": 0.09,                                      // Its strength (0 = flat)
+    "relatedSheenSize": "62%",                                 // Its size
+    "relatedSheenX": "16%",                                    // Its centre, left (0%) to right (100%)
+    "relatedSheenY": "60%",                                    // Its centre, top (0%) to bottom (100%)
+    "overviewShadowColor": "#1C1C1BEE",                        // Colour of the soft shade rising from the related rows over the label
+    "overviewShadow": 0.045,                                   // Its strength (0 = none)
+    "overviewShadowReach": "22px",                             // How far up it reaches
+    "relatedLine": { "style": "solid", "width": "1px", "color": "#E2E2DB" },// Lines between the related domains   [style: solid / dotted / dashed / none]
+    "relatedTopLineColor": "#E2E2DB",                          // Colour of the line above the first related row
     "relatedLogoWidth": "106px",                               // Width of each related logo
     "relatedGap": "16px",                                      // Space between logo and name
     "relatedPressedFill": "#FAF9F6",                           // Row colour while pressed
@@ -272,8 +338,7 @@
     "relatedNameSize": "14px",                                 // Related domain name text size
     "relatedNameColor": "#1A1A18",                             // Related domain name colour
     "relatedExtColor": "#807E78",                              // Colour of .com / .si
-    "relatedChevronColor": "#9A9892",                          // Colour of the little arrow at the end of each row
-    "bottomSpace": "30px"                                      // Space under the last element
+    "relatedChevronColor": "#9A9892"                           // Colour of the little arrow at the end of each row
   },
 
   // ──────────────────────────────────────────────────────────────────────
@@ -289,22 +354,11 @@
     "introLineHeight": 1.6,                                    // Intro line spacing
     "introColor": "#1E1E1C",                                   // Intro colour
     "introGap": "26px",                                        // Space between intro and form
-    "fieldGap": "15px",                                        // Space between fields
-    "fieldLine": { "style": "solid", "width": "1px", "color": "#C3C3B3" }, // Line under each field   [style: solid / dotted / dashed / none]
     "inputSize": "16px",                                       // Text size inside fields
-    "inputPaddingTop": "10px",                                 // Space above the text in a field
-    "inputPaddingBottom": "14px",                              // Space under the text in a field
     "inputColor": "#1E1E1C",                                   // Text colour inside fields
     "placeholderColor": "#6A6962",                             // Colour of the hint text ('First name')
     "textareaHeight": "96px",                                  // Height of the message box
     "buttonGap": "20px",                                       // Space between the fields and the button
-    "buttonHeight": "40px",                                    // Button height
-    "buttonPaddingX": "26px",                                  // Button width (space left and right of the text)
-    "buttonRadius": "5px",                                     // Button corner roundness
-    "buttonTextSize": "15px",                                  // Button text size
-    "buttonTextColor": "#F3F2EE",                              // Button text colour
-    "buttonFill": "#536FB0",                                   // Button colour
-    "buttonPressedFill": "#44609E",                            // Button colour while pressed
     "successTitleSize": "22px",                                // 'Message received' size
     "successTextSize": "15px",                                 // 'Thank you' text size
     "errorColor": "#8A2C1F"                                    // Colour of the error message
