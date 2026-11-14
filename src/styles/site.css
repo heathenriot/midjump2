@@ -308,6 +308,10 @@ textarea.mj-input{height:var(--p-contact-textarea-height)}
 .faq-ai p{margin:0;padding:9px var(--p-landing-faq-text-padding) 12px;font-size:var(--p-landing-faq-answer-size);font-weight:400;line-height:var(--p-landing-faq-answer-line-height);color:var(--p-landing-faq-answer-color);opacity:0;transition:opacity .26s ease}
 .faq.is-open .faq-ai p{opacity:1;transition:opacity .45s ease .15s}
 .l-m .l-end{flex:0 0 auto;min-height:var(--p-landing-bottom-space)}
+/* TRIAL (only with ?try in the address): one deeper, warmer ground for the hero and the questions, firmer intro text */
+.mj-try{--try-bg:#EBE9E2;--try-sc:#C9C7BC;--try-s:8%;--try-lc:#F6F5F1;--try-l:15%;--try-turn:55%;--try-iw:400;--try-ic:#1E1E1C}
+.mj-try .l-m .l-hero,.mj-try .l-m .l-qa{background-color:var(--try-bg);background-image:linear-gradient(to right,color-mix(in srgb,var(--try-sc) var(--try-s),transparent),transparent var(--try-turn),color-mix(in srgb,var(--try-lc) var(--try-l),transparent))}
+.mj-try .l-m .l-hero p{font-weight:var(--try-iw);color:var(--try-ic)}
 }
 @media (prefers-reduced-motion:reduce){.mq-track{animation:none !important}.mj-hero-btn,.mj-cta,.faq,.faq-a,.faq-ic,.faq-ic::before,.faq-ic::after,.faq-ai p,.faq-qt,.faq-n{transition:none !important}}
 @media (prefers-reduced-motion:reduce){.mq-hint{display:block;margin:-34px 0 24px;text-align:center;font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--t-colors-muted-text)}.l-m .mq-hint{margin:-20px 0 14px}}
