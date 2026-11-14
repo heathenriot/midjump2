@@ -1,14 +1,16 @@
+import fs from "node:fs";
 // Home page (/). Its words live in content/landing.json.
 import { esc } from "../lib/util.js";
 import { marquee, landingText } from "../lib/data.js";
 import { theme } from "../lib/theme.js";
 import { layout } from "../lib/layout.js";
 
+const hasAlpha = (logo) => fs.existsSync(new URL(`../../content/svg-alpha/${logo.replace(/\.svg$/, ".png")}`, import.meta.url));
 const mqItems = (kind) => [0, 1].map((copy) => marquee.map(({ d, domain: slug, logo, width: ink, desktop, phone }) => {
   const t = (kind === "d" ? desktop : phone) || {};
   const fx = [["s", t.scale, 1], ["x", t.x, "0%"], ["y", t.y, "0%"]].filter(([, v, def]) => v !== undefined && String(v) !== String(def)).map(([k, v]) => `--${k}:${v}`).join(";");
   const slot = "";
-  return `<a href="/domains/${slug}" class="mq-item"${slot}${copy ? ' aria-hidden="true" tabindex="-1"' : ""}><span class="mq-logo"><img src="/assets/svg/${logo}" alt=""${fx ? ` style="${fx}"` : ""} loading="lazy" decoding="async"></span><span class="mq-name">${esc(d.base)}<span class="mq-ext">${esc(d.ext)}</span></span></a>`;
+  return `<a href="/domains/${slug}" class="mq-item"${slot}${copy ? ' aria-hidden="true" tabindex="-1"' : ""}><span class="mq-logo"><img src="/assets/svg/${logo}" alt=""${fx ? ` style="${fx}"` : ""} loading="lazy" decoding="async">${kind === "m" && hasAlpha(logo) ? `<img class="mq-a" src="/assets/svg-alpha/${logo.replace(/\.svg$/, ".png")}" alt=""${fx ? ` style="${fx}"` : ""} loading="lazy" decoding="async">` : ""}</span><span class="mq-name">${esc(d.base)}<span class="mq-ext">${esc(d.ext)}</span></span></a>`;
 }).join("")).join("");
 const arrow = `<svg viewBox="0 0 242.333 242.333" aria-hidden="true"><path d="M162 38 L78 121.2 L162 204.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>`;
 const T = landingText;
