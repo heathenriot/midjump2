@@ -318,21 +318,19 @@
     "atomGlow": 0.09,                                          // Strength of the navy glow under it
     "buttonShadowBlur": "4px",                                 // Softness of the shadow under both buttons
     "buttonShadowY": "2px",                                    // How far below the buttons it sits
-    "sendFill": "#D2D1C2",                                     // 'Send inquiry' button colour
+    "sendFill": "#D0CDC1",                                     // 'Send inquiry' button colour
     "sendHoverFill": "#3A4E8CCE",                              // 'Send inquiry' colour while pressed
     "sendTextColor": "#1A1A18",                                // 'Send inquiry' text colour
     "sendPressedTextColor": "#E9E8E7",                         // 'Send inquiry' text colour while pressed
-    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#A4A291" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
-    "sendSheenColor": "#A6A696",                               // Colour of the light gradient on 'Send inquiry'
-    "sendSheen": 0.13,                                         // Its strength
-    "sendSheenAngle": 95,                                      // Its direction (90 = from the left, 180 = from the top)
-    "sendSpot": 0.1,                                           // Strength of the soft light spot on it
-    "sendSpotSize": "23%",                                     // Size of that spot
-    "sendSpotX": "33%",                                        // Its centre, left (0%) to right (100%)
-    "sendSpotY": "21%",                                        // Its centre, top (0%) to bottom (100%)
-    "sendEdge": 0.24,                                          // Thin highlight along its top edge
+    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#B3B2A8" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
+    "sendSheenColor": "#FFFFFF",                               // Colour of the light gradient on 'Send inquiry'
+    "sendSheen": 0.14,                                         // Its strength
+    "sendSheenAngle": 180,                                     // Its direction (90 = from the left, 180 = from the top)
+    "sendEdge": 0.23,                                          // Thin highlight along its top edge
     "sendShadowColor": "#727169",                              // Colour of the shadow under it
-    "sendShadow": 0.135,                                       // Strength of that shadow
+    "sendShadow": 0.06,                                        // Strength of that shadow
+    "sendShadowBlur": "5px",                                   // Softness of that shadow
+    "sendShadowY": "1px",                                      // How far below it sits
     "aboutSideMargin": "20px",                                 // Space left and right of the overview
     "aboutLine": { "style": "solid", "width": "1px", "color": "#E6E6E1" }, // Line above 'About the domain'   [style: solid / dotted / dashed / none]
     "aboutPaddingTop": "34px",                                 // Space above 'About the domain'
