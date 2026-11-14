@@ -35,7 +35,7 @@ export const landing = () => {
 <a href="/domains" class="mj-cta mj-fade mj-d2"><span>${esc(T.buttonLabel)}</span>${arrow}</a></section>
 <section class="l-band" aria-labelledby="mq-label-m"><h2 id="mq-label-m" class="row-label">${esc(T.scrollerLabel)}</h2>
 <p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
-<div class="mq-vp" data-secs="${theme.phone.landing.marqueeSeconds}"><div class="mq-track">${mqItems("m")}</div></div></section>
+<div class="mq-box"><div class="mq-vp" data-secs="${theme.phone.landing.marqueeSeconds}"><div class="mq-track">${mqItems("m")}</div></div></div></section>
 <section class="l-qa" aria-labelledby="qa-label-m"><h2 id="qa-label-m" class="row-label">${esc(T.faqLabel)}</h2>
 <div class="faq-list">${T.faq.map(({ q, qPhone, a }, i) => { const n = num(i); return `<div class="faq"><button type="button" class="faq-q" aria-expanded="false"><span class="faq-qt"><span class="faq-n" aria-hidden="true">${n}</span><span>${esc(qPhone || q)}</span></span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-ai"><p>${esc(a)}</p></div></div></div>`; }).join("")}</div>
 <div class="l-end" aria-hidden="true"></div></section>

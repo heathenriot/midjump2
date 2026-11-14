@@ -51,7 +51,7 @@ ${ogImage ? `<meta property="og:image" content="${site.url}${ogImage}"><meta nam
 <link rel="apple-touch-icon" href="/assets/svg/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/FinlandicaText-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
-<script>/* preview: add ?try to the address to see the look being tested */if(/[?&]try\b/.test(location.search))document.documentElement.classList.add("mj-try","mj-card")</script>
+<script>/* preview: add ?try to the address to see the look being tested */if(/[?&]try\b/.test(location.search))document.documentElement.classList.add("mj-try","mj-lout")</script>
 ${extraHead}
 </head>
 <body>
