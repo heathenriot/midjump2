@@ -309,7 +309,7 @@ textarea.mj-input{height:var(--p-contact-textarea-height)}
 .faq.is-open .faq-ai p{opacity:1;transition:opacity .45s ease .15s}
 .l-m .l-end{flex:0 0 auto;min-height:var(--p-landing-bottom-space)}
 /* TRIAL (only with ?try in the address): one warm ground for nav, hero and questions; firmer intro; band tried lighter */
-.mj-try{--try-bg:#F3F0EA;--try-sc:#4A4844;--try-s:7%;--try-lc:#E7E5E5;--try-l:54%;--try-turn:90%;--try-iw:400;--try-ic:#1E1E1C;--try-nav:#F3F0EA;--try-navfx:1;--try-band:#FFFCF9;--try-bandsh:0.55;--try-card:#FBFAF7;--try-tint:#EFE9DD;--try-tints:11%;--try-edgec:#CCC9C6;--try-edge:11.5%;--try-edgew:5%;--try-lw:#FBFAF7;--try-lwf:30%;--try-ofill:#F7F3EAC9;--try-oborder:#948E85;--try-clearfill:transparent}
+.mj-try{--try-bg:#F3F0EA;--try-sc:#4A4844;--try-s:7%;--try-lc:#E7E5E5;--try-l:54%;--try-turn:90%;--try-iw:400;--try-ic:#1E1E1C;--try-nav:#F3F0EA;--try-navfx:1;--try-band:#FFFCF9;--try-bandsh:0.55;--try-card:#FBFAF7;--try-tint:#C5C4C4;--try-tints:11%;--try-edgec:#CCC9C6;--try-edge:11.5%;--try-edgew:5%;--try-lw:#FBFAF7;--try-lwf:30%;--try-ofill:#F7F3EAC9;--try-oborder:#948E85;--try-clearfill:transparent;--try-cbw:0.5px;--try-cbc:#D5D4D2D1;--try-cr:4px;--try-ce:0;--try-cic:#8A8576;--try-ci:0%;--try-cib:12px;--try-cy:2px;--try-cb:10px;--try-csc:#1A1A18;--try-cs:1.5%}
 .mj-try .l-m .l-hero,.mj-try .l-m .l-qa{background-color:var(--try-bg);background-image:linear-gradient(to right,color-mix(in srgb,var(--try-sc) var(--try-s),transparent),transparent var(--try-turn),color-mix(in srgb,var(--try-lc) var(--try-l),transparent))}
 .mj-try .mj-header{background-color:var(--try-nav);background-image:linear-gradient(to right,color-mix(in srgb,var(--try-sc) calc(var(--try-s) * var(--try-navfx)),transparent),transparent var(--try-turn),color-mix(in srgb,var(--try-lc) calc(var(--try-l) * var(--try-navfx)),transparent))}
 .mj-try .l-m .l-hero p{font-weight:var(--try-iw);color:var(--try-ic)}
@@ -317,6 +317,7 @@ textarea.mj-input{height:var(--p-contact-textarea-height)}
 .mj-try .l-m .mq-logo{position:relative}
 .mj-try .l-m .mq-logo::before{content:'';position:absolute;inset:0;background:var(--try-lw);-webkit-mask-image:radial-gradient(closest-side,#000 calc(100% - var(--try-lwf)),transparent);mask-image:radial-gradient(closest-side,#000 calc(100% - var(--try-lwf)),transparent)}
 .mj-try .l-m .mq-logo img{position:relative}
+.mj-try .l-m .mq-item{border:var(--try-cbw) solid var(--try-cbc);border-radius:var(--try-cr);box-shadow:inset 0 1px 0 rgba(255,255,255,var(--try-ce)),inset 0 0 var(--try-cib) color-mix(in srgb,var(--try-cic) var(--try-ci),transparent),0 var(--try-cy) var(--try-cb) color-mix(in srgb,var(--try-csc) var(--try-cs),transparent)}
 .l-m .mq-logo .mq-a{display:none}
 .mj-try.mj-clear .l-m .mq-logo img:not(.mq-a){display:none}
 .mj-try.mj-clear .l-m .mq-logo .mq-a{display:block;mix-blend-mode:normal}
