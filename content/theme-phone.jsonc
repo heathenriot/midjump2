@@ -214,22 +214,45 @@
     "tabsLine": { "style": "solid", "width": ".5px", "color": "rgba(70,70,70,.10)" }, // Hairline under the tab bar   [style: solid / dotted / dashed / none]
     "tabsPaddingTop": "16px",                                  // Space above the tabs
     "tabsPaddingBottom": "14px",                               // Space under the tabs
-    "tabsGap": "22px",                                         // Space between tabs
+    "tabsSidePadding": "14px",                                 // Space at the left and right ends of the tab row
+    "tabsMinGap": "11px",                                      // Smallest gap between tabs (all tabs always fit on one line and spread evenly)
+    "tabsMaxWidth": "400px",                                   // Widest the tab row spreads on big phones
     "tabSize": "10.5px",                                       // Tab text size
     "tabSpacing": ".12em",                                     // Space between letters of tabs
     "tabColor": "#8E8C85",                                     // Tab colour
     "tabActiveColor": "#253A79",                               // Selected tab colour
-    "gridLine": { "style": "solid", "width": "1px", "color": "#DEDDD7" }, // Lines between gallery cells   [style: solid / dotted / dashed / none]
-    "cellPadding": "10px",                                     // Space inside each cell, around the logo
-    "cellPressedFill": "#FAF9F6",                              // Cell background while pressed
-    "logoAreaPadding": "6% 10% 3%",                            // Space around the logo inside the cell: top, left+right, bottom
-    "masterLogoScale": 1.08,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
+    "listBackground": "#EBEAE5",                               // Background behind the cards
+    "listShadeColor": "#C9C7BC",                               // Soft shade on the left side of that background
+    "listShade": 0.08,                                         // Strength of the left shade (0-1)
+    "listLightColor": "#F6F5F1",                               // Soft light on the right side
+    "listLight": 0.15,                                         // Strength of the right light (0-1)
+    "listShadeTurn": "55%",                                    // Where the left shade turns into the right light (same all the way down the list)
+    "listPaddingTop": "22px",                                  // Space between the tabs and the first card
+    "listSidePadding": "32px",                                 // Space from the screen edges to the cards
+    "cardGap": "14px",                                         // Space between cards
+    "cardMaxWidth": "320px",                                   // Widest a card gets (wider phones just get more margin)
+    "twoColumnGap": "12px",                                    // Gap between the 2 columns on very wide screens (480px+, i.e. foldables)
+    "cardBackground": "#F7F6F4",                               // Card colour
+    "cardBorder": { "style": "solid", "width": "0.5px", "color": "#C9C8BE" },// Card border   [style: solid / dotted / dashed / none]
+    "cardRadius": "4px",                                       // Card corner rounding
+    "cardShadowColor": "#1A1A18",                              // Card shadow colour
+    "cardShadow": 0.03,                                        // Card shadow strength (0-1)
+    "cardShadowBlur": "2px",                                   // Card shadow softness
+    "cardShadowY": "2px",                                      // How far the card shadow drops
+    "cardPressedFill": "#FAFAF8",                              // Card colour while pressed
+    "cardPressedBorder": "#253A79",                            // Card border colour while pressed
+    "cardPaddingTop": "8px",                                   // Space inside the card above the logo
+    "logoAreaWidth": "240px",                                  // Logo area width (fixed: logos are the same size on every phone)
+    "logoAreaHeight": "106px",                                 // Logo area height
+    "logoAreaPadding": "15px",                                 // Breathing room around the logo inside its area
+    "masterLogoScale": 1.55,                                   // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
     "masterLogoX": "0%",                                       // MASTER: move ALL gallery logos right (+) or left (-)
     "masterLogoY": "0%",                                       // MASTER: move ALL gallery logos down (+) or up (-)
-    "nameSize": "13.5px",                                      // Domain name text size
-    "namePadding": "8px 1px 14px",                             // Space around the name: top, sides, bottom
+    "nameSize": "13px",                                        // Domain name text size
+    "namePaddingTop": "15px",                                  // Space between the logo and the name
+    "namePaddingBottom": "9px",                                // Space under the name
     "nameColor": "#1A1A18",                                    // Domain name colour
-    "extColor": "#807E78",                                     // Colour of .com / .si
+    "extColor": "#8C8B84",                                     // Colour of .com / .si
     "dimmedLogoOpacity": 0.14,                                 // How faded non-matching logos get when filtering
     "dimmedNameOpacity": 0.28,                                 // How faded non-matching names get when filtering
     "backToTopColor": "#8E8C85"                                // 'Back to top' colour
