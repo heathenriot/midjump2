@@ -1,5 +1,5 @@
 {
-  "_help": "Text on the home page. Each 'lines' list is one paragraph broken into lines (the line breaks are intentional).",
+  "_help": "Text on the home page. Each 'lines' list is one paragraph broken into lines (the line breaks are intentional). FAQ: one list for desktop and phone; 'qPhone' is an optional shorter question for phones (leave it out to use 'q' on both).",
   "title": "Midjump | Digital Identities. Built for distinction.",
   "description": "Midjump is a collection of signature domain names, curated for startups, enterprises, and emerging ventures.",
   "headlineDesktop": [
@@ -22,32 +22,19 @@
   "buttonLabel": "Explore the portfolio",
   "scrollerLabel": "Selected domains",
   "faqLabel": "Acquiring a domain",
-  "faqDesktop": [
+  "faq": [
     {
       "q": "How does the purchase process work?",
-      "a": "Purchases are completed through Atom.com's escrow service, which handles both payment and domain transfer. For multi-domain acquisitions or custom arrangements, transactions can be facilitated through Escrow.com."
-    },
-    {
-      "q": "Are the logo concepts included?",
-      "a": "Each domain is presented with custom logo concepts, which are available to buyers on request."
-    },
-    {
-      "q": "Do you offer payment plans?",
-      "a": "Payment plans are available for select domains and are facilitated through Atom.com. Contact Midjump with the domain of interest and your preferred payment timeline."
-    }
-  ],
-  "faqPhone": [
-    {
-      "q": "How does purchasing work?",
-      "a": "Payment and domain transfer are handled through Atom.com's escrow service. Multi-domain or custom deals can go through Escrow.com."
+      "qPhone": "How does purchasing work?",
+      "a": "Purchases can be completed through Atom.com's escrow service, which handles payment and domain transfer. Alternatively, contact Midjump to arrange a direct transaction through Escrow.com, including multi-domain acquisitions or custom arrangements."
     },
     {
       "q": "Are logo concepts included?",
-      "a": "Each domain comes with custom logo concepts, available to buyers on request."
+      "a": "Yes, each domain includes custom logo concepts, available to the buyer upon request."
     },
     {
-      "q": "Are payment plans available?",
-      "a": "For select domains, through Atom.com. Contact Midjump with the domain and your preferred timeline."
+      "q": "Do you offer payment plans?",
+      "a": "Yes, payment plans are arranged through Atom.com for select domains. Please contact Midjump with the domain you're interested in and your preferred payment timeline."
     }
   ]
 }
