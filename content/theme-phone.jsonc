@@ -311,7 +311,7 @@
     "viewerPaddingBottom": "36px",                             // Space between the viewer and the acquisition card
     "acquisitionSideMargin": "20px",                           // Space left and right of the acquisition card
     "acquisitionBackground": "#E9E5DD",                        // Acquisition card colour
-    "acquisitionBorder": { "style": "solid", "width": "0.5px", "color": "#9C978B" },// Acquisition card outline   [style: solid / dotted / dashed / none]
+    "acquisitionBorder": { "style": "solid", "width": "1px", "color": "#9C978B" },// Acquisition card outline   [style: solid / dotted / dashed / none]
     "acquisitionRadius": "4px",                                // Acquisition card corner roundness
     "acquisitionSheenColor": "#D6D0C2E2",                      // Colour of the soft radial shade on the card
     "acquisitionSheen": 0.44,                                  // Its strength (0 = flat)
@@ -365,7 +365,7 @@
     "sendHoverFill": "#3A4E8CCE",                              // 'Send inquiry' colour while pressed
     "sendTextColor": "#1A1A18",                                // 'Send inquiry' text colour
     "sendPressedTextColor": "#E9E8E7",                         // 'Send inquiry' text colour while pressed
-    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#9C978B" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
+    "sendBorder": { "style": "solid", "width": "1px", "color": "#9C978B" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
     "sendSheenColor": "#FFFFFF",                               // Colour of the light gradient on 'Send inquiry'
     "sendSheen": 0.1,                                          // Its strength
     "sendSheenAngle": 180,                                     // Its direction (90 = from the left, 180 = from the top)
