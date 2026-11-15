@@ -33,19 +33,19 @@
   "colors": {
     "page": "#F3F0EA",                                         // Page background (warm ground)
     "ground": "#F3F0EA",                                       // Warm page ground (nav, landing hero and questions; shared across pages)
-    "groundShadeColor": "#4A4844",                             // Soft shade that runs across the ground from the left
+    "groundShadeColor": "#4C463E",                             // Soft shade that runs across the ground from the left
     "groundShade": "7%",                                       // Its strength
     "groundShadeTurn": "90%",                                  // How far across the width the shade fades out
     "groundLightColor": "#E7E5E5",                             // Optional tint at the far right edge
     "groundLight": "0%",                                       // Its strength (0% = off)
     "text": "#1E1E1C",                                         // Main dark text
-    "titleBand": "#F6F4EF",                                    // Band behind page titles (a touch lighter than the top bar, with the same left-to-right shading)
+    "titleBand": "#F7F4EE",                                    // Band behind page titles (a touch lighter than the top bar, with the same left-to-right shading)
     "titleBandSheenColor": "#FFFFFF",                          // Colour of the soft radial shade on that band
     "titleBandSheen": 0,                                       // Its strength (0 = flat)
     "titleBandSheenSize": "62%",                               // Its size
     "titleBandSheenX": "16%",                                  // Its centre, left (0%) to right (100%)
     "titleBandSheenY": "60%",                                  // Its centre, top (0%) to bottom (100%)
-    "titleBandShadowColor": "#1A1A18",                         // Colour of the shadow the band casts below it
+    "titleBandShadowColor": "#26221D",                         // Colour of the shadow the band casts below it
     "titleBandShadow": 0.09,                                   // Strength of that shadow
     "titleBandShadowBlur": "10px",                             // Softness of that shadow
     "titleBandShadowY": "4px",                                 // How far down it reaches
@@ -228,10 +228,8 @@
   // Per-domain logo size/position lives in content/gallery-phone.json. The 'master' settings move/scale ALL logos together.
   // ──────────────────────────────────────────────────────────────────────
   "gallery": {
-    "tabsBackground": "#F8F7F4",                               // Background of the tab bar
-    "tabsLine": { "style": "solid", "width": ".5px", "color": "rgba(70,70,70,.10)" }, // Hairline under the tab bar   [style: solid / dotted / dashed / none]
-    "tabsPaddingTop": "16px",                                  // Space above the tabs
-    "tabsPaddingBottom": "14px",                               // Space under the tabs
+    "tabsPaddingTop": "30px",                                  // Space between the title band and the tabs
+    "tabsPaddingBottom": "0px",                                // Space under the tabs (the gap to the cards is listPaddingTop)
     "tabsSidePadding": "14px",                                 // Space at the left and right ends of the tab row
     "tabsMinGap": "11px",                                      // Smallest gap between tabs (all tabs always fit on one line and spread evenly)
     "tabsMaxWidth": "400px",                                   // Widest the tab row spreads on big phones
@@ -239,25 +237,20 @@
     "tabSpacing": ".12em",                                     // Space between letters of tabs
     "tabColor": "#8E8C85",                                     // Tab colour
     "tabActiveColor": "#253A79",                               // Selected tab colour
-    "listBackground": "#EBEAE5",                               // Background behind the cards
-    "listShadeColor": "#C9C7BC",                               // Soft shade on the left side of that background
-    "listShade": 0.08,                                         // Strength of the left shade (0-1)
-    "listLightColor": "#F6F5F1",                               // Soft light on the right side
-    "listLight": 0.15,                                         // Strength of the right light (0-1)
-    "listShadeTurn": "55%",                                    // Where the left shade turns into the right light (same all the way down the list)
-    "listPaddingTop": "22px",                                  // Space between the tabs and the first card
+    "listGroundShading": 0.8,                                  // Strength of the shared warm background's left-to-right shading behind the tabs and cards (1 = same as the landing page)
+    "listPaddingTop": "35px",                                  // Space between the tabs and the first card
     "listSidePadding": "32px",                                 // Space from the screen edges to the cards
     "cardGap": "14px",                                         // Space between cards
     "cardMaxWidth": "320px",                                   // Widest a card gets (wider phones just get more margin)
     "twoColumnGap": "12px",                                    // Gap between the 2 columns on very wide screens (480px+, i.e. foldables)
-    "cardBackground": "#F7F6F4",                               // Card colour
-    "cardBorder": { "style": "solid", "width": "0.5px", "color": "#C9C8BE" },// Card border   [style: solid / dotted / dashed / none]
+    "cardBackground": "#FFFCF9",                               // Card colour
+    "cardBorder": { "style": "solid", "width": "1px", "color": "#A49E94B9" },// Card border   [style: solid / dotted / dashed / none]
     "cardRadius": "4px",                                       // Card corner rounding
     "cardShadowColor": "#1A1A18",                              // Card shadow colour
     "cardShadow": 0.03,                                        // Card shadow strength (0-1)
-    "cardShadowBlur": "2px",                                   // Card shadow softness
+    "cardShadowBlur": "6px",                                   // Card shadow softness
     "cardShadowY": "2px",                                      // How far the card shadow drops
-    "cardPressedFill": "#FAFAF8",                              // Card colour while pressed
+    "cardPressedFill": "#FAF8F3",                              // Card colour while pressed
     "cardPressedBorder": "#253A79",                            // Card border colour while pressed
     "cardPaddingTop": "8px",                                   // Space inside the card above the logo
     "logoAreaWidth": "240px",                                  // Logo area width (fixed: logos are the same size on every phone)
