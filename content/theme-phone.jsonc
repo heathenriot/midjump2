@@ -48,7 +48,7 @@
     "titleBandShadowColor": "#1A1A18",                         // Colour of the shadow the band casts below it
     "titleBandShadow": 0.09,                                   // Strength of that shadow
     "titleBandShadowBlur": "10px",                             // Softness of that shadow
-    "titleBandShadowY": "6px",                                 // How far down it reaches
+    "titleBandShadowY": "4px",                                 // How far down it reaches
     "titleBandShadowSpread": "-6px",                           // Pulls it in from the sides
     "navy": "#253A79",                                         // Navy used on buttons, burger icon and menu
     "accent": "#254F99",                                       // Blue used for focus outlines and highlights
@@ -76,8 +76,8 @@
     "line": { "style": "solid", "width": "0.5px", "color": "#CFCEC5A8" },// Hairline under the top bar (every page)   [style: solid / dotted / dashed / none]
     "background": "#F3F0EA",                                   // Top bar colour
     "groundShading": 1,                                        // How much of the ground's left-to-right shading the top bar gets (0-1)
-    "pageShadow": 0.08,                                        // Strength of the top bar's shadow on every page except the landing
-    "pageLine": { "style": "solid", "width": "0.5px", "color": "#CFCEC5A8" },// Hairline under the top bar on every page except the landing   [style: solid / dotted / dashed / none]
+    "pageShadow": 0.09,                                        // Strength of the top bar's shadow on every page except the landing
+    "pageLine": { "style": "solid", "width": "0.5px", "color": "#C9C5BABE" },// Hairline under the top bar on every page except the landing   [style: solid / dotted / dashed / none]
     "burgerColor": "#253A79",                                  // Burger icon colour
     "menuBackground": "#F3F0EA",                               // Menu panel background (warm ground, with the same left-to-right shading as the top bar)
     "menuSize": "21px",                                        // Menu link text size
@@ -286,7 +286,7 @@
     "namePaddingTop": "30px",                                  // Space above the domain name
     "namePaddingBottom": "22px",                               // Space under the domain name
     "namePaddingX": "40px",                                    // Space left and right of the name
-    "nameLine": { "style": "solid", "width": ".5px", "color": "rgba(113,112,112,.09)" }, // Hairline under the name band   [style: solid / dotted / dashed / none]
+    "nameLine": { "style": "solid", "width": "0.5px", "color": "#C9C5BABE" },// Hairline under the name band   [style: solid / dotted / dashed / none]
     "nameSize": "23px",                                        // Domain name size
     "nameWeight": 600,                                         // Domain name boldness
     "nameColor": "#1E1E1C",                                    // Domain name colour
@@ -311,7 +311,7 @@
     "viewerPaddingBottom": "36px",                             // Space between the viewer and the acquisition card
     "acquisitionSideMargin": "20px",                           // Space left and right of the acquisition card
     "acquisitionBackground": "#E9E5DD",                        // Acquisition card colour
-    "acquisitionBorder": { "style": "solid", "width": "0.5px", "color": "#807C72" },// Acquisition card outline   [style: solid / dotted / dashed / none]
+    "acquisitionBorder": { "style": "solid", "width": "0.5px", "color": "#9C978B" },// Acquisition card outline   [style: solid / dotted / dashed / none]
     "acquisitionRadius": "4px",                                // Acquisition card corner roundness
     "acquisitionSheenColor": "#D6D0C2E2",                      // Colour of the soft radial shade on the card
     "acquisitionSheen": 0.44,                                  // Its strength (0 = flat)
@@ -365,7 +365,7 @@
     "sendHoverFill": "#3A4E8CCE",                              // 'Send inquiry' colour while pressed
     "sendTextColor": "#1A1A18",                                // 'Send inquiry' text colour
     "sendPressedTextColor": "#E9E8E7",                         // 'Send inquiry' text colour while pressed
-    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#807C72" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
+    "sendBorder": { "style": "solid", "width": "0.5px", "color": "#9C978B" },// 'Send inquiry' outline   [style: solid / dotted / dashed / none]
     "sendSheenColor": "#FFFFFF",                               // Colour of the light gradient on 'Send inquiry'
     "sendSheen": 0.1,                                          // Its strength
     "sendSheenAngle": 180,                                     // Its direction (90 = from the left, 180 = from the top)
