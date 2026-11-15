@@ -77,7 +77,7 @@
     "background": "#F3F0EA",                                   // Top bar colour
     "groundShading": 1,                                        // How much of the ground's left-to-right shading the top bar gets (0-1)
     "burgerColor": "#253A79",                                  // Burger icon colour
-    "menuBackground": "#F3F2EE",                               // Menu panel background
+    "menuBackground": "#F3F0EA",                               // Menu panel background (warm ground, with the same left-to-right shading as the top bar)
     "menuSize": "21px",                                        // Menu link text size
     "menuColor": "#253A79",                                    // Menu link colour
     "menuPressedColor": "#254F99",                             // Menu link colour while pressed

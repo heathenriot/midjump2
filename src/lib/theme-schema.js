@@ -492,7 +492,7 @@ export const PHONE = [
   ["header", "background", "color", "#F3F0EA", "Top bar colour"],
   ["header", "groundShading", "num", 1, "How much of the ground's left-to-right shading the top bar gets (0-1)"],
   ["header", "burgerColor", "color", "#253A79", "Burger icon colour"],
-  ["header", "menuBackground", "color", "#F3F2EE", "Menu panel background"],
+  ["header", "menuBackground", "color", "#F3F0EA", "Menu panel background (warm ground, with the same left-to-right shading as the top bar)"],
   ["header", "menuSize", "size", "21px", "Menu link text size"],
   ["header", "menuColor", "color", "#253A79", "Menu link colour"],
   ["header", "menuPressedColor", "color", "#254F99", "Menu link colour while pressed"],
