@@ -18,7 +18,7 @@ export const contact = () => {
 <label class="mj-field"><input class="mj-input" type="text" name="lastName" placeholder="Last name" aria-label="Last name" autocomplete="family-name" required></label>
 <label class="mj-field"><input class="mj-input" type="email" name="email" placeholder="Email address" aria-label="Email address" autocomplete="email" required></label>
 <label class="mj-field"><textarea class="mj-input" name="message" rows="4" placeholder="Enter your message" aria-label="Message" required></textarea></label>
-<div class="c-actions"><button type="submit" class="mj-send"><span>Send inquiry</span><svg class="mj-chev" viewBox="0 0 242.333 242.333" aria-hidden="true"><path d="M80 38 L164 121.2 L80 204.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+<div class="c-actions"><button type="submit" class="mj-send"><span>Send inquiry</span></button></div>
 <p class="mj-err" role="alert" hidden>Something went wrong. Please email ${site.email} instead.</p>
 </form>
 <div class="mj-note" role="status" aria-live="polite"><p class="t">Message received.</p><p class="s">Thank you for your inquiry.</p><button type="button" class="mj-again">Send another</button></div>

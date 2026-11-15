@@ -220,8 +220,8 @@
     "titleColor": "#1A1A18",                                   // Page title colour
     "titlePaddingTop": "40px",                                 // Space above the title
     "titlePaddingBottom": "32px",                              // Space under the title
-    "tabsPaddingTop": "25px",                                  // Space above the filter tabs
-    "tabsPaddingBottom": "25px",                               // Space between the filter tabs and the first row of tiles
+    "tabsPaddingTop": "34px",                                  // Space above the filter tabs
+    "tabsPaddingBottom": "32px",                               // Space between the filter tabs and the first row of tiles
     "tabsGap": "30px",                                         // Space between tabs
     "tabSize": "11px",                                         // Tab text size
     "tabSpacing": ".12em",                                     // Space between letters of tabs
@@ -233,25 +233,30 @@
     "tabChevronSize": "5.25px",                                // Size of that arrow
     "tabChevronY": "-0.5px",                                   // Moves that arrow up (-) or down (+)
     "tabChevronGap": "8px",                                    // Space between that arrow and the tab name
-    "trayBackground": "#ECEBE5",                               // The grey tray behind the tabs and tiles
+    "trayBackground": "#EEEDE5",                               // The grey tray behind the tabs and tiles
     "traySheenColor": "#D2D2C3",                               // Colour of the soft radial shade across the tray
-    "traySheenStrength": 0.3,                                  // Its strength (0 = none)
+    "traySheenStrength": 0,                                    // Its strength (0 = none)
     "traySheenSize": "95%",                                    // Its size
     "traySheenX": "23%",                                       // Where its centre sits, left (0%) to right (100%)
     "traySheenY": "31%",                                       // Where its centre sits, top (0%) to bottom (100%)
+    "trayShadeColor": "#B9B6AA",                               // Colour of the left-to-right shading across the whole tray (same top to bottom)
+    "trayShade": 0.22,                                         // Strength of the shade on the left (0-1)
+    "trayShadeTurn": "90%",                                    // Where the left shade fades out
+    "trayLightColor": "#E6E5DF",                               // Colour at the far right edge (a touch darker than the tray, so the tiles sit in a softly framed centre)
+    "trayLight": 0.47,                                         // Strength at the far right edge (0-1)
     "traySidePadding": "18px",                                 // Space between the tray edges and the tiles
     "trayBottomPadding": "40px",                               // Space under the last row of tiles
     "tileGap": "14px",                                         // Space between tiles
     "tileBackground": "#F8F8F4",                               // Tile colour (also the related tiles on domain pages)
     "tileBorder": { "style": "solid", "width": "0.5px", "color": "#C6C6B7" }, // Tile outline   [style: solid / dotted / dashed / none]
     "tileRadius": "4px",                                       // Tile corner roundness
-    "tileShadow": 0.015,                                       // Strength of the faint shadow under each tile (0 = flat)
+    "tileShadow": 0.02,                                        // Strength of the faint shadow under each tile (0 = flat)
     "tileHoverBackground": "#FAFAF8",                          // Tile colour on hover
     "tileHoverBorderColor": "#667292",                         // Tile outline colour on hover
     "tileHoverShadow": 0.05,                                   // Strength of the shadow under a tile on hover
     "cellPadding": "14px",                                     // Space inside each tile, around the logo
     "logoAreaPadding": "6% 12% 3%",                            // Space around the logo inside the cell: top, left+right, bottom
-    "masterLogoScale": 1.04,                                      // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
+    "masterLogoScale": 1.17,                                   // MASTER: resize ALL gallery logos at once (1 = as set per domain, 1.1 = 10% bigger)
     "masterLogoX": "0%",                                       // MASTER: move ALL gallery logos right (+) or left (-)
     "masterLogoY": "0%",                                       // MASTER: move ALL gallery logos down (+) or up (-)
     "nameSize": "15px",                                        // Domain name text size
@@ -416,18 +421,6 @@
     "titlePaddingBottom": "32px",                              // Space under the title
     "formPaddingTop": "44px",                                  // Space above the intro text (inside the form band)
     "formPaddingBottom": "48px",                               // Space under the button (the form band ends there)
-    "formBackground": "#ECEBE5",                               // Colour of the band the form sits in (same as the acquisition card)
-    "formSheenColor": "#DDDDD2",                               // Colour of the soft radial shade across that band
-    "formSheenStrength": 0.45,                                 // Its strength (0 = none)
-    "formSheenSize": "132%",                                   // Its size
-    "formSheenX": "11%",                                       // Where its centre sits, left (0%) to right (100%)
-    "formSheenY": "71%",                                       // Where its centre sits, top (0%) to bottom (100%)
-    "formShadowColor": "#253A79",                              // Colour of the soft shadow the band casts above and below
-    "formShadowUp": 0.08,                                      // Strength of that shadow above the band
-    "formShadowDown": 0.08,                                    // Strength of that shadow below the band
-    "formShadowBlur": "25px",                                  // Softness of that shadow
-    "formShadowDistance": "3px",                               // How far it reaches up and down
-    "formShadowSpread": "-11px",                               // Pulls the shadow in from the sides (more negative = narrower)
     "formWidth": "505px",                                      // Width of the intro text and form
     "introSize": "16.5px",                                     // Intro text size
     "introWeight": 300,                                        // Intro boldness
@@ -435,14 +428,6 @@
     "introColor": "#1E1E1C",                                   // Intro colour
     "introGap": "36px",                                        // Space between intro and the form
     "fieldGap": "8px",                                         // Space between fields
-    "fieldBoxFill": 0.42,                                      // Fill of the field boxes: see-through white over the band (0 = band colour, 1 = white)
-    "fieldBoxBorder": { "style": "solid", "width": "0.5px", "color": "#D6D5CC" },// Outline of each field box   [style: solid / dotted / dashed / none]
-    "fieldBoxRadius": "5px",                                   // Field box corner roundness
-    "fieldBoxGlowColor": "#6D6C64",                            // Colour of the soft glow around the field boxes
-    "fieldBoxGlow": 0.06,                                      // Strength of that glow (0 = none)
-    "fieldBoxGlowBlur": "3px",                                 // Softness of that glow
-    "fieldBoxFocusColor": "#253A79",                           // Field box outline colour while typing
-    "fieldBoxFocusGlow": 0.05,                                 // Glow strength while typing
     "inputSize": "15px",                                       // Text size inside fields
     "inputPaddingTop": "11px",                                 // Space above the text in a field
     "inputPaddingBottom": "11px",                              // Space under the text in a field
