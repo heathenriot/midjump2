@@ -153,7 +153,8 @@
     "buttonGlowY": "2px",                                      // How far below the button it sits
     "labelSize": "12.5px",                                     // Size of 'SELECTED DOMAINS' / 'ACQUIRING A DOMAIN'
     "labelSpacing": ".06em",                                   // Their letter spacing
-    "marqueeBackground": "#FFFCF9",                            // Background of the scrolling-logos band
+    "marqueeBackground": "#F3F0EA",                            // Band colour (same warm ground as the page; the cards carry the brightness)
+    "marqueeGroundShading": 1,                                 // How much of the page's left-to-right shading the band gets (0-1; 1 = same as the page)
     "marqueeSheenColor": "#D4D1C5E2",                          // Colour of the soft radial shade on the band (behind the cards)
     "marqueeSheen": 0.24,                                      // Its strength (0 = flat)
     "marqueeSheenSize": "58%",                                 // Its size
@@ -165,7 +166,7 @@
     "marqueeSheen2X": "84%",                                   // Its centre, left to right
     "marqueeSheen2Y": "5%",                                    // Its centre, top to bottom
     "marqueeTint": "#C8C5BC",                                  // Tint over the whole band
-    "marqueeTintStrength": "6%",                               // Its strength
+    "marqueeTintStrength": "0%",                               // Its strength
     "marqueeEdgeShadeColor": "#E2E2E2",                        // Soft shade along the band's top and bottom edges
     "marqueeEdgeShade": "11.5%",                               // Its strength
     "marqueeEdgeShadeReach": "5%",                             // How far it reaches in
@@ -193,7 +194,7 @@
     "marqueeLogoWidth": "164px",                               // Room each logo takes (width)
     "marqueeLogoHeight": "108px",                              // Room each logo takes (height)
     "marqueeItemGap": "5px",                                   // Space left and right of each card
-    "marqueeCardBackground": "#FFFFFF00",                      // Card colour behind each logo (00 at the end = see-through: the logos sit on the band)
+    "marqueeCardBackground": "#FFFCF9",                        // Card colour behind each logo
     "marqueeCardBorder": { "style": "solid", "width": "0.5px", "color": "#A49E94" },// Card border (width 0px = none)   [style: solid / dotted / dashed / none]
     "marqueeCardRadius": "4px",                                // Card corner roundness
     "marqueeCardPaddingTop": "8px",                            // Space above the logo inside a card
