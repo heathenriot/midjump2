@@ -129,7 +129,7 @@
     "heroPaddingTop": "35px",                                  // Space above the headline
     "heroPaddingBottom": "66px",                               // Space under the button
     "heroPaddingX": "21px",                                    // Space left and right
-    "heroLine": { "style": "solid", "width": "0.5px", "color": "#C7C6BF8C" },// Line between the hero and the domains band   [style: solid / dotted / dashed / none]
+    "heroLine": { "style": "solid", "width": "0.5px", "color": "#C7C6BFBD" },// Line between the hero and the domains band   [style: solid / dotted / dashed / none]
     "headlineSize": "46px",                                    // Headline size
     "headlineLineHeight": 1.2,                                 // Headline line spacing
     "headlineColor": "#1E1E1C",                                // Headline colour
@@ -154,30 +154,30 @@
     "labelSize": "12.5px",                                     // Size of 'SELECTED DOMAINS' / 'ACQUIRING A DOMAIN'
     "labelSpacing": ".06em",                                   // Their letter spacing
     "marqueeBackground": "#F3F0EA",                            // Band colour (same warm ground as the page; the cards carry the brightness)
-    "marqueeGroundShading": 1,                                 // How much of the page's left-to-right shading the band gets (0-1; 1 = same as the page)
+    "marqueeGroundShading": 0.65,                              // How much of the page's left-to-right shading the band gets (0-1; 1 = same as the page)
     "marqueeSheenColor": "#D4D1C5E2",                          // Colour of the soft radial shade on the band (behind the cards)
     "marqueeSheen": 0.24,                                      // Its strength (0 = flat)
     "marqueeSheenSize": "58%",                                 // Its size
     "marqueeSheenX": "21%",                                    // Its centre, left (0%) to right (100%)
     "marqueeSheenY": "58%",                                    // Its centre, top (0%) to bottom (100%)
     "marqueeSheen2Color": "#8A8576",                           // Second soft shade on the band (can be dark)
-    "marqueeSheen2": "10%",                                    // Its strength (0% = off)
+    "marqueeSheen2": "9%",                                     // Its strength (0% = off)
     "marqueeSheen2Size": "104%",                               // Its size
     "marqueeSheen2X": "84%",                                   // Its centre, left to right
-    "marqueeSheen2Y": "5%",                                    // Its centre, top to bottom
+    "marqueeSheen2Y": "24%",                                   // Its centre, top to bottom
     "marqueeTint": "#C8C5BC",                                  // Tint over the whole band
     "marqueeTintStrength": "0%",                               // Its strength
     "marqueeEdgeShadeColor": "#E2E2E2",                        // Soft shade along the band's top and bottom edges
-    "marqueeEdgeShade": "11.5%",                               // Its strength
+    "marqueeEdgeShade": "0%",                                  // Its strength
     "marqueeEdgeShadeReach": "5%",                             // How far it reaches in
     "marqueeInnerShadowColor": "#8A8576",                      // Shadows falling into the band from above and below
-    "marqueeInnerShadowTop": "4%",                             // Strength from the hero (top edge)
-    "marqueeInnerShadowBottom": "11.5%",                       // Strength from the questions (bottom edge)
-    "marqueeInnerShadowBlur": "19px",                          // Their softness
-    "marqueeInnerShadowReach": "13px",                         // How far they reach in
+    "marqueeInnerShadowTop": "0%",                             // Strength from the hero (top edge)
+    "marqueeInnerShadowBottom": "0%",                          // Strength from the questions (bottom edge)
+    "marqueeInnerShadowBlur": "0px",                           // Their softness
+    "marqueeInnerShadowReach": "0px",                          // How far they reach in
     "marqueeShadowUp": 0.06,                                   // Strength of the band's shadow up into the hero
     "marqueeShadowDown": 0.065,                                // Strength of the band's shadow down into the questions
-    "marqueeLine": { "style": "solid", "width": "0.5px", "color": "#C7C6BF8C" },// Line under the domains band   [style: solid / dotted / dashed / none]
+    "marqueeLine": { "style": "solid", "width": "0.5px", "color": "#C7C6BFBC" },// Line under the domains band   [style: solid / dotted / dashed / none]
     "marqueeShadowY": "9px",                                   // How far the band's shadow reaches up and down
     "marqueeShadowBlur": "29px",                               // How soft the shadow under the band is
     "marqueeShadowSpread": "-11px",                            // Shadow spread under the band (negative = narrower)
