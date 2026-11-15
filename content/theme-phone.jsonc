@@ -32,6 +32,12 @@
   // ──────────────────────────────────────────────────────────────────────
   "colors": {
     "page": "#F3F2EE",                                         // Page background
+    "ground": "#F3F0EA",                                       // Warm page ground (nav, landing hero and questions; shared across pages)
+    "groundShadeColor": "#4A4844",                             // Soft shade that runs across the ground from the left
+    "groundShade": "7%",                                       // Its strength
+    "groundShadeTurn": "90%",                                  // How far across the width the shade fades out
+    "groundLightColor": "#E7E5E5",                             // Optional tint at the far right edge
+    "groundLight": "0%",                                       // Its strength (0% = off)
     "text": "#1E1E1C",                                         // Main dark text
     "titleBand": "#EDECE6",                                    // Tinted band behind page titles and the home hero
     "titleBandSheenColor": "#DDDDD2",                          // Colour of the soft radial shade on that band
@@ -68,6 +74,8 @@
     "shadowY": "5px",                                          // How far down it reaches
     "shadowSpread": "-8px",                                    // Pulls it in from the sides (more negative = narrower)
     "line": { "style": "solid", "width": "0.5px", "color": "#CFCEC5A8" },// Hairline under the top bar (every page)   [style: solid / dotted / dashed / none]
+    "background": "#F3F0EA",                                   // Top bar colour
+    "groundShading": 1,                                        // How much of the ground's left-to-right shading the top bar gets (0-1)
     "burgerColor": "#253A79",                                  // Burger icon colour
     "menuBackground": "#F3F2EE",                               // Menu panel background
     "menuSize": "21px",                                        // Menu link text size
@@ -121,18 +129,13 @@
     "heroPaddingTop": "35px",                                  // Space above the headline
     "heroPaddingBottom": "66px",                               // Space under the button
     "heroPaddingX": "21px",                                    // Space left and right
-    "heroBackground": "#F3F2EE",                               // Background colour of the hero (headline) section
-    "heroSheenColor": "#DDDDD2",                               // Colour of the soft radial shade on the hero
-    "heroSheen": 0.29,                                         // Its strength (0 = flat)
-    "heroSheenSize": "77%",                                    // Its size
-    "heroSheenX": "17%",                                       // Its centre, left (0%) to right (100%)
-    "heroSheenY": "25%",                                       // Its centre, top (0%) to bottom (100%)
     "heroLine": { "style": "solid", "width": "0.5px", "color": "#C7C6BF8C" },// Line between the hero and the domains band   [style: solid / dotted / dashed / none]
     "headlineSize": "46px",                                    // Headline size
     "headlineLineHeight": 1.2,                                 // Headline line spacing
     "headlineColor": "#1E1E1C",                                // Headline colour
     "introGap": "24px",                                        // Space between headline and paragraph
     "introSize": "18px",                                       // Paragraph text size
+    "introWeight": 400,                                        // Paragraph boldness (300 light, 400 regular)
     "introColor": "#1E1E1C",                                   // Paragraph colour
     "buttonGap": "52px",                                       // Space between paragraph and button
     "buttonWidth": "190px",                                    // Button width
@@ -150,12 +153,27 @@
     "buttonGlowY": "2px",                                      // How far below the button it sits
     "labelSize": "12.5px",                                     // Size of 'SELECTED DOMAINS' / 'ACQUIRING A DOMAIN'
     "labelSpacing": ".06em",                                   // Their letter spacing
-    "marqueeBackground": "#EDECE6",                            // Background of the scrolling-logos band
+    "marqueeBackground": "#FFFCF9",                            // Background of the scrolling-logos band
     "marqueeSheenColor": "#D4D1C5E2",                          // Colour of the soft radial shade on the band (behind the cards)
-    "marqueeSheen": 0.55,                                      // Its strength (0 = flat)
-    "marqueeSheenSize": "101%",                                // Its size
-    "marqueeSheenX": "38%",                                    // Its centre, left (0%) to right (100%)
-    "marqueeSheenY": "55%",                                    // Its centre, top (0%) to bottom (100%)
+    "marqueeSheen": 0.24,                                      // Its strength (0 = flat)
+    "marqueeSheenSize": "58%",                                 // Its size
+    "marqueeSheenX": "21%",                                    // Its centre, left (0%) to right (100%)
+    "marqueeSheenY": "58%",                                    // Its centre, top (0%) to bottom (100%)
+    "marqueeSheen2Color": "#8A8576",                           // Second soft shade on the band (can be dark)
+    "marqueeSheen2": "10%",                                    // Its strength (0% = off)
+    "marqueeSheen2Size": "104%",                               // Its size
+    "marqueeSheen2X": "84%",                                   // Its centre, left to right
+    "marqueeSheen2Y": "5%",                                    // Its centre, top to bottom
+    "marqueeTint": "#C8C5BC",                                  // Tint over the whole band
+    "marqueeTintStrength": "6%",                               // Its strength
+    "marqueeEdgeShadeColor": "#E2E2E2",                        // Soft shade along the band's top and bottom edges
+    "marqueeEdgeShade": "11.5%",                               // Its strength
+    "marqueeEdgeShadeReach": "5%",                             // How far it reaches in
+    "marqueeInnerShadowColor": "#8A8576",                      // Shadows falling into the band from above and below
+    "marqueeInnerShadowTop": "4%",                             // Strength from the hero (top edge)
+    "marqueeInnerShadowBottom": "11.5%",                       // Strength from the questions (bottom edge)
+    "marqueeInnerShadowBlur": "19px",                          // Their softness
+    "marqueeInnerShadowReach": "13px",                         // How far they reach in
     "marqueeShadowUp": 0.06,                                   // Strength of the band's shadow up into the hero
     "marqueeShadowDown": 0.065,                                // Strength of the band's shadow down into the questions
     "marqueeLine": { "style": "solid", "width": "0.5px", "color": "#C7C6BF8C" },// Line under the domains band   [style: solid / dotted / dashed / none]
@@ -163,9 +181,11 @@
     "marqueeShadowBlur": "29px",                               // How soft the shadow under the band is
     "marqueeShadowSpread": "-11px",                            // Shadow spread under the band (negative = narrower)
     "marqueeShadowColor": "#1A1A18",                           // Colour of the band's shadow
-    "marqueePaddingTop": "27px",                               // Space above 'SELECTED DOMAINS'
-    "marqueeLabelGap": "24px",                                 // Space between the label and the logos
-    "marqueePaddingBottom": "30px",                            // Space under the logos
+    "marqueePaddingTop": "0px",                                // Space above 'SELECTED DOMAINS' (the label sits on the page, above the band)
+    "marqueeLabelGap": "18px",                                 // Space between the label and the band
+    "marqueePaddingBottom": "0px",                             // Space under the band
+    "marqueeBoxPaddingTop": "24px",                            // Space inside the band above the logo cards
+    "marqueeBoxPaddingBottom": "24px",                         // Space inside the band below the logo cards
     "marqueeSideInset": "12px",                                // Space left and right of the scrolling area
     "marqueeFade": "36px",                                     // Width of the soft fade at both ends
     "marqueeFadeCurve": 0.75,                                  // How quickly cards appear inside the fade (low = stay hidden longer)
@@ -173,25 +193,19 @@
     "marqueeLogoWidth": "164px",                               // Room each logo takes (width)
     "marqueeLogoHeight": "108px",                              // Room each logo takes (height)
     "marqueeItemGap": "5px",                                   // Space left and right of each card
-    "marqueeCardBackground": "#F2F1ED",                        // Card colour behind each logo
-    "marqueeCardBorder": { "style": "solid", "width": "0.5px", "color": "#D5D4D2D1" },// Card border (width 0px = none)   [style: solid / dotted / dashed / none]
+    "marqueeCardBackground": "#FFFFFF00",                      // Card colour behind each logo (00 at the end = see-through: the logos sit on the band)
+    "marqueeCardBorder": { "style": "solid", "width": "0.5px", "color": "#A49E94" },// Card border (width 0px = none)   [style: solid / dotted / dashed / none]
     "marqueeCardRadius": "4px",                                // Card corner roundness
     "marqueeCardPaddingTop": "8px",                            // Space above the logo inside a card
     "marqueeCardPaddingX": "10px",                             // Space left and right of the logo inside a card
     "marqueeCardPaddingBottom": "4px",                         // Space under the domain name inside a card
     "marqueeCardShadowY": "2px",                               // How far the card shadow drops
-    "marqueeCardShadowBlur": "10px",                           // How soft the card shadow is
-    "marqueeCardShadowColor": "#1A1A1804",                     // Card shadow colour (the last 2 digits set its strength)
+    "marqueeCardShadowBlur": "8px",                            // How soft the card shadow is
+    "marqueeCardShadowColor": "#1A1A1806",                     // Card shadow colour (the last 2 digits set its strength)
     "marqueeNameSize": "13px",                                 // Domain name text size
     "marqueeNameColor": "#4A4A45",                             // Domain name colour
     "marqueeExtColor": "#8C8B84",                              // Colour of .com / .si
     "faqPaddingTop": "66px",                                   // Space above 'ACQUIRING A DOMAIN'
-    "faqBackground": "#F3F2EE",                                // Colour of the questions section
-    "faqSheenColor": "#DDDDD2",                                // Colour of the soft radial shade on that section
-    "faqSheen": 0.16,                                          // Its strength (0 = flat)
-    "faqSheenSize": "120%",                                    // Its size
-    "faqSheenX": "16%",                                        // Its centre, left (0%) to right (100%)
-    "faqSheenY": "20%",                                        // Its centre, top (0%) to bottom (100%)
     "faqListGap": "26px",                                      // Space between that label and the first question
     "faqSideMargin": "16px",                                   // Space left and right of the questions
     "faqItemGap": "13px",                                      // Space between questions
@@ -199,8 +213,8 @@
     "faqDivider": { "style": "solid", "width": "0.5px", "color": "#D6D6D2A6" },// Short line between questions (runs from the numbers to the plus signs)   [style: solid / dotted / dashed / none]
     "faqQuestionSize": "10.5px",                               // Question text size
     "faqQuestionColor": "#1E1E1C",                             // Question colour
-    "faqOpenFill": "#E6E5DDC9",                                // Background of the open question
-    "faqOpenBorder": { "style": "solid", "width": "0.5px", "color": "#B3B2A8" },// Outline round the open question   [style: solid / dotted / dashed / none]
+    "faqOpenFill": "#EFEBE2",                                  // Background of the open question
+    "faqOpenBorder": { "style": "solid", "width": "0.5px", "color": "#CFCABC" },// Outline round the open question   [style: solid / dotted / dashed / none]
     "faqOpenColor": "#253A79",                                 // Colour the open question's title fades to
     "faqAnswerSize": "13px",                                   // Answer text size
     "faqAnswerLineHeight": 1.6,                                // Answer line spacing
