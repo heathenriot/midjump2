@@ -45,7 +45,7 @@ ${noindex ? '<meta name="robots" content="noindex">' : ""}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Midjump">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${site.url}${urlPath}">
 ${ogImage ? `<meta property="og:image" content="${site.url}${ogImage}"><meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
-<meta name="theme-color" content="#F3F2EE">
+<meta name="theme-color" content="#F3F0EA">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/svg/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/svg/apple-touch-icon.png">

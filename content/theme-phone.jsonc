@@ -31,7 +31,7 @@
   // The main colours.
   // ──────────────────────────────────────────────────────────────────────
   "colors": {
-    "page": "#F3F2EE",                                         // Page background
+    "page": "#F3F0EA",                                         // Page background (warm ground)
     "ground": "#F3F0EA",                                       // Warm page ground (nav, landing hero and questions; shared across pages)
     "groundShadeColor": "#4A4844",                             // Soft shade that runs across the ground from the left
     "groundShade": "7%",                                       // Its strength
@@ -39,7 +39,7 @@
     "groundLightColor": "#E7E5E5",                             // Optional tint at the far right edge
     "groundLight": "0%",                                       // Its strength (0% = off)
     "text": "#1E1E1C",                                         // Main dark text
-    "titleBand": "#EDECE6",                                    // Tinted band behind page titles and the home hero
+    "titleBand": "#F3F0EA",                                    // Band behind page titles (now the warm ground, with its left-to-right shading)
     "titleBandSheenColor": "#DDDDD2",                          // Colour of the soft radial shade on that band
     "titleBandSheen": 0.09,                                    // Its strength (0 = flat)
     "titleBandSheenSize": "62%",                               // Its size

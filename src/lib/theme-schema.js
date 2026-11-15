@@ -451,7 +451,7 @@ export const PHONE = [
   ["fonts", "menu", "font", "Questrial", "The burger menu links"],
 
   // ---------- colours
-  ["colors", "page", "color", "#F3F2EE", "Page background"],
+  ["colors", "page", "color", "#F3F0EA", "Page background (warm ground)"],
   ["colors", "ground", "color", "#F3F0EA", "Warm page ground (nav, landing hero and questions; shared across pages)"],
   ["colors", "groundShadeColor", "color", "#4A4844", "Soft shade that runs across the ground from the left"],
   ["colors", "groundShade", "size", "7%", "Its strength"],
@@ -459,7 +459,7 @@ export const PHONE = [
   ["colors", "groundLightColor", "color", "#E7E5E5", "Optional tint at the far right edge"],
   ["colors", "groundLight", "size", "0%", "Its strength (0% = off)"],
   ["colors", "text", "color", "#1E1E1C", "Main dark text"],
-  ["colors", "titleBand", "color", "#EDECE6", "Tinted band behind page titles and the home hero"],
+  ["colors", "titleBand", "color", "#F3F0EA", "Band behind page titles (now the warm ground, with its left-to-right shading)"],
   ["colors", "titleBandSheenColor", "color", "#DDDDD2", "Colour of the soft radial shade on that band"],
   ["colors", "titleBandSheen", "num", 0.09, "Its strength (0 = flat)"],
   ["colors", "titleBandSheenSize", "size", "62%", "Its size"],
