@@ -491,6 +491,8 @@ export const PHONE = [
   ["header", "line", "line", L("solid", "0.5px", "#CFCEC5A8"), "Hairline under the top bar (every page)"],
   ["header", "background", "color", "#F3F0EA", "Top bar colour"],
   ["header", "groundShading", "num", 1, "How much of the ground's left-to-right shading the top bar gets (0-1)"],
+  ["header", "pageShadow", "num", 0.08, "Strength of the top bar's shadow on every page except the landing"],
+  ["header", "pageLine", "line", L("solid", "0.5px", "#CFCEC5A8"), "Hairline under the top bar on every page except the landing"],
   ["header", "burgerColor", "color", "#253A79", "Burger icon colour"],
   ["header", "menuBackground", "color", "#F3F0EA", "Menu panel background (warm ground, with the same left-to-right shading as the top bar)"],
   ["header", "menuSize", "size", "21px", "Menu link text size"],
