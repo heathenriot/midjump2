@@ -77,7 +77,7 @@
     "background": "#F3F0EA",                                   // Top bar colour
     "groundShading": 1,                                        // How much of the ground's left-to-right shading the top bar gets (0-1)
     "pageShadow": 0.09,                                        // Strength of the top bar's shadow on every page except the landing
-    "pageLine": { "style": "solid", "width": "0.5px", "color": "#B5B0A4" },// Hairline under the top bar on every page except the landing   [style: solid / dotted / dashed / none]
+    "pageLine": { "style": "solid", "width": "0.5px", "color": "#A29C8DE6" },// Hairline under the top bar on every page except the landing   [style: solid / dotted / dashed / none]
     "burgerColor": "#253A79",                                  // Burger icon colour
     "menuBackground": "#F3F0EA",                               // Menu panel background (warm ground, with the same left-to-right shading as the top bar)
     "menuSize": "21px",                                        // Menu link text size
@@ -286,7 +286,7 @@
     "namePaddingTop": "30px",                                  // Space above the domain name
     "namePaddingBottom": "22px",                               // Space under the domain name
     "namePaddingX": "40px",                                    // Space left and right of the name
-    "nameLine": { "style": "solid", "width": "0.5px", "color": "#B5B0A4" },// Hairline under the name band   [style: solid / dotted / dashed / none]
+    "nameLine": { "style": "solid", "width": "0.5px", "color": "#A29C8DE7" },// Hairline under the name band   [style: solid / dotted / dashed / none]
     "nameSize": "23px",                                        // Domain name size
     "nameWeight": 600,                                         // Domain name boldness
     "nameColor": "#1E1E1C",                                    // Domain name colour
@@ -335,7 +335,7 @@
     "labelSize": "12px",                                       // Size of the 'AVAILABLE FOR ACQUISITION' / 'ABOUT THE DOMAIN' labels
     "labelSpacing": ".14em",                                   // Their letter spacing
     "fieldBoxFill": 0.42,                                      // Fill of the field boxes: see-through white over the card (0 = card colour, 1 = white)
-    "fieldBoxBorder": { "style": "solid", "width": "0.5px", "color": "#8F8A7F" },// Outline of each field box   [style: solid / dotted / dashed / none]
+    "fieldBoxBorder": { "style": "solid", "width": "0.5px", "color": "#A9A396" },// Outline of each field box   [style: solid / dotted / dashed / none]
     "fieldBoxRadius": "5px",                                   // Field box corner roundness
     "fieldBoxGap": "8px",                                      // Space between the field boxes
     "fieldBoxPaddingX": "14px",                                // Space between the box edge and the text
@@ -396,7 +396,7 @@
     "overviewShadow": 0.035,                                   // Its strength (0 = none)
     "overviewShadowReach": "22px",                             // How far up it reaches
     "relatedLine": { "style": "solid", "width": "1px", "color": "#DCD7CC" },// Lines between the related domains   [style: solid / dotted / dashed / none]
-    "relatedTopLineColor": "#DCD7CC",                          // Colour of the line above the first related row
+    "relatedTopLineColor": "#D5CEC3",                          // Colour of the line above the first related row
     "relatedLogoWidth": "106px",                               // Width of each related logo
     "relatedGap": "16px",                                      // Space between logo and name
     "relatedPressedFill": "#FAF8F3",                           // Row colour while pressed
