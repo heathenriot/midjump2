@@ -1,0 +1,12 @@
+# Build notes (Midjump re-skin)
+- Domain pages: SECOND carousel logo scale is relative to the viewer shape; on D3 it was set so the 2nd logo is ~6% narrower than the 1st (factor 0.84 in that card). Re-calibrate per viewer at build.
+- Active nav link: NO special styling at all (user nixed it) — plain like other nav links; underline only on hover. Apply site-wide.
+- Logo: content/svg/logo-v4.svg (main: +15%, round d/p with ring thinning matched to m/u), logo-v4-light.svg (+10%, light-on-navy), logo-v4-rounded-dots.svg (backup), logo-v4-previous.svg (pre round-d/p).
+- Gallery order: order.txt ; optical boosts: boost.json
+- Contact h1: extra letter-spacing r→t (0.02em) and t→f (0.025em) in 'Portfolio'. Carry into build.
+- Contact form states (D4): Sending (spinner + "Sending…"), Success (in-card swap: check ring, "Message received.", "Thank you for your inquiry.", "Send another" link; or toast variant), Error (soft red notice with mailto). Apply same states to the domain-page inquiry card (D3).
+- No domain prefill on /contact (domain pages have their own inquiry form).
+- (Superseded by DESKTOP-SPEC.md) Type scale: page H1 48px Questrial 600 (landing hero 56px); section H2 30px Questrial 600 on ALL pages (landing headings were 34/400).
+- Landing acquiring cards: "Refined" copy (Choose your route / Pay with protection / Take ownership). Payment plans: available on all Atom listings, can also be requested.
+- Nav band + hero backdrop: kept on all pages, see DESKTOP-SPEC.md.
+- Hero headline: optional SVG outline (content/graphics/hero-heading.svg, Questrial + 1.75px stroke ≈ Chrome synthetic bold). Keep real <h1> text visually hidden for SEO/accessibility.
