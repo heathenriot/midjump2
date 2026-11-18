@@ -6,11 +6,11 @@ https://claude.ai/artifact/VpXRvrXf11DcDpA4f7vd5t), boards under `project/`:
 
 | Board | Page | Status |
 |---|---|---|
-| `D-Landing.dc.html` | Landing | approved, lock pending |
-| `D-Collection.dc.html` | Domain collection (gallery) | approved |
-| `D-Domain.dc.html` | Domain page (built on Triaged.si) | approved |
-| `D-Contact.dc.html` | Contact | approved |
-| `*-Locked.dc.html` | Reference copies | to be refreshed after the heading decision |
+| `D-Landing.dc.html` | Landing | locked |
+| `D-Collection.dc.html` | Domain collection (gallery) | locked |
+| `D-Domain.dc.html` | Domain page (built on Triaged.si) | locked |
+| `D-Contact.dc.html` | Contact | locked |
+| `*-Locked.dc.html` | Frozen reference copies, 2026-11-18 | final desktop |
 
 The canvas is the source of truth for anything not written here. This file is the list of values to
 carry into `content/theme-desktop.jsonc` / `site.css` when the re-skin is built. It supersedes the
@@ -21,7 +21,7 @@ Rule from the owner: **all copy, SVGs and content stay as they are** unless list
 ## Global
 
 - Page background `#F2F3F5`. Text `#1A1A18`. Links `#15263E`, hover `#4A5B78` (faded navy, not blue), fade 0.3s.
-- Column 1080px (+48px side padding each side). Section spacing 112px (landing currently 104 on canvas; use 112 everywhere unless told otherwise).
+- Column 1080px (+48px side padding each side). Section spacing 104px on every page (landing: 88px between the hero border and the first section).
 - Fonts: Finlandica Text (body, 300/400/500), Questrial (headings, single weight, "semibold" is synthetic), Plus Jakarta Sans (nav links, footer email).
 - Text selection: `#15263E` bg / `#F9F8F6` text; on navy surfaces `#E6EAF2` / `#0A0F1D`.
 
@@ -44,8 +44,9 @@ Rule from the owner: **all copy, SVGs and content stay as they are** unless list
 ### Type scale
 - Page H1: Questrial 600 (synthetic), 48px, letter-spacing .1px. Landing hero H1 56px / line-height 1.2.
 - Landing hero headline is rendered as an SVG outline (`content/graphics/hero-heading.svg`, Questrial 56px + 1.75 stroke ≈ Chrome synthetic bold) with the real `<h1>` text visually hidden. Left nudge 0.1px.
-- **Section H2 (pending decision):** currently Questrial Regular 33px with a 0.35px `-webkit-text-stroke` (paint-order stroke fill) on all pages. Fallback if rejected: Questrial 600, 30–33px on all pages.
-- Card titles: Questrial 600 (19px in navy step cards, 22px About/Ideal cards, 26px buy-card label).
+- **Section H2:** Questrial Regular (400) 33px with a 0.35px `-webkit-text-stroke: currentColor; paint-order: stroke fill`, on all pages.
+- **Card titles:** same treatment (400 + 0.35px stroke) at their own sizes: 19px acquiring/step cards, 22px About/Ideal cards, 26px buy-card label (stroke tinted rgba(244,246,250,.85) under its sheen), contact success title.
+- Page titles (H1) stay Questrial 600 (synthetic).
 
 ### Footer
 - `#0c1121` with a radial glow top-right `rgba(58,96,178,.28)`; bottom glow 0. Mark 30px at .9 opacity.
