@@ -1,0 +1,334 @@
+{
+ "_note": "Per-logo [fileWidth, fileHeight, inkCentreX, inkCentreY] in px, from alpha>10 bounding boxes of the gallery PNGs. Used by the phone one-column gallery layout.",
+ "logos": {
+  "Optronical": [
+   700,
+   504,
+   347.0,
+   264.5
+  ],
+  "Enforcing": [
+   750,
+   450,
+   375.0,
+   244.0
+  ],
+  "Guardrailed": [
+   750,
+   450,
+   371.5,
+   247.0
+  ],
+  "CrossModality": [
+   750,
+   450,
+   378.5,
+   240.0
+  ],
+  "Anthropize": [
+   700,
+   504,
+   349.5,
+   284.0
+  ],
+  "CoTaught": [
+   700,
+   504,
+   346.5,
+   270.0
+  ],
+  "Nephele": [
+   700,
+   504,
+   350.5,
+   261.5
+  ],
+  "Reinforcing": [
+   750,
+   450,
+   386.5,
+   252.0
+  ],
+  "DetectionLayer": [
+   750,
+   450,
+   375.0,
+   242.5
+  ],
+  "Triaged": [
+   750,
+   450,
+   372.0,
+   240.0
+  ],
+  "Webveyor": [
+   750,
+   450,
+   379.5,
+   238.0
+  ],
+  "FlexiToken": [
+   750,
+   450,
+   371.0,
+   247.5
+  ],
+  "BroughtIn": [
+   750,
+   450,
+   379.5,
+   249.0
+  ],
+  "Modulated": [
+   750,
+   450,
+   389.5,
+   238.5
+  ],
+  "Multitemporal": [
+   700,
+   504,
+   352.0,
+   265.0
+  ],
+  "CoTrained": [
+   700,
+   504,
+   348.5,
+   262.5
+  ],
+  "Cloudveyor": [
+   700,
+   504,
+   348.5,
+   279.0
+  ],
+  "Deductional": [
+   700,
+   504,
+   353.5,
+   242.5
+  ],
+  "Precognic": [
+   700,
+   504,
+   354.5,
+   273.0
+  ],
+  "Encodably": [
+   700,
+   504,
+   350.0,
+   265.0
+  ],
+  "Taxonomic": [
+   750,
+   450,
+   380.0,
+   236.5
+  ],
+  "Distroless": [
+   700,
+   504,
+   354.0,
+   262.0
+  ],
+  "CloudIndexing": [
+   700,
+   504,
+   346.5,
+   277.5
+  ],
+  "Replaceably": [
+   700,
+   504,
+   351.5,
+   270.5
+  ],
+  "Descriptional": [
+   700,
+   504,
+   350.0,
+   262.0
+  ],
+  "Quadrants": [
+   750,
+   450,
+   376.0,
+   239.5
+  ],
+  "OutScrub": [
+   700,
+   504,
+   353.5,
+   266.5
+  ],
+  "HitPrompt": [
+   700,
+   504,
+   349.0,
+   259.5
+  ],
+  "CloudAider": [
+   700,
+   504,
+   349.5,
+   269.0
+  ],
+  "BioDefensive": [
+   700,
+   504,
+   349.5,
+   246.5
+  ],
+  "StakeETF": [
+   750,
+   450,
+   378.5,
+   243.0
+  ],
+  "Distributional": [
+   750,
+   450,
+   380.0,
+   233.5
+  ],
+  "Asynchronic": [
+   700,
+   504,
+   356.5,
+   287.5
+  ],
+  "Prognostical": [
+   700,
+   504,
+   350.0,
+   263.0
+  ],
+  "PromptAider": [
+   700,
+   504,
+   358.0,
+   275.5
+  ],
+  "Sektoral": [
+   700,
+   504,
+   349.5,
+   265.5
+  ],
+  "Intelsynth": [
+   700,
+   504,
+   358.0,
+   274.0
+  ],
+  "CrossTemporal": [
+   750,
+   450,
+   375.0,
+   241.5
+  ],
+  "AgenticAider": [
+   700,
+   504,
+   347.0,
+   289.5
+  ],
+  "Throughlane": [
+   700,
+   504,
+   362.5,
+   269.0
+  ],
+  "Configurably": [
+   700,
+   504,
+   354.5,
+   278.0
+  ],
+  "Sanctional": [
+   700,
+   504,
+   353.0,
+   256.0
+  ],
+  "eHustles": [
+   700,
+   504,
+   347.0,
+   294.5
+  ],
+  "GenoFold": [
+   700,
+   504,
+   345.0,
+   301.0
+  ],
+  "Reinventional": [
+   700,
+   504,
+   357.0,
+   260.0
+  ],
+  "DEXtreasury": [
+   750,
+   450,
+   385.0,
+   238.0
+  ],
+  "Anormality": [
+   700,
+   504,
+   350.0,
+   271.0
+  ],
+  "Netveyor": [
+   700,
+   504,
+   367.5,
+   280.5
+  ],
+  "Causational": [
+   700,
+   504,
+   347.5,
+   263.5
+  ]
+ },
+ "phoneOneColNudges": {
+  "_note": "Extra offsets in % of plate width, [x, y]; positive y = down. Scaled together by phOneColFixes (1).",
+  "Anthropize": [
+   0,
+   1.1
+  ],
+  "HitPrompt": [
+   0,
+   0.9
+  ],
+  "CloudAider": [
+   0,
+   0.9
+  ],
+  "Throughlane": [
+   0,
+   0.7
+  ],
+  "Sanctional": [
+   0,
+   0.7
+  ],
+  "eHustles": [
+   -0.7,
+   -4.6
+  ],
+  "GenoFold": [
+   0,
+   -5.2
+  ],
+  "Cloudveyor": [
+   0,
+   -2.4
+  ]
+ }
+}

@@ -16,6 +16,8 @@ The canvas is the source of truth for anything not written here. This file is th
 carry into `content/theme-desktop.jsonc` / `site.css` when the re-skin is built. It supersedes the
 older "Midjump Redesign Directions" canvas named in `HANDOFF.md`.
 
+Contact copy updated 2026-11-20 (new intro, step 1 "directly"); see `PHONE-SPEC.md` › Copy changes.
+
 Rule from the owner: **all copy, SVGs and content stay as they are** unless listed under "Copy changes".
 
 ## Global

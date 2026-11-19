@@ -1,6 +1,7 @@
 # Midjump rebuild: handoff note for a fresh Claude session
 
 > **Update 2026-11-18:** the desktop re-skin is designed on a new canvas; see `design/DESKTOP-SPEC.md` first.
+> **Update 2026-11-20:** all four phone layouts are locked too; see `design/PHONE-SPEC.md`. Tablet is next.
 
 Written 2026-11-13 by the previous session. Read this first, then `HOW-TO.md` and `README.md`. This file is about *how we work*; those two are about *how the site works*.
 

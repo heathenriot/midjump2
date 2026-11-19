@@ -10,3 +10,14 @@
 - Landing acquiring cards: "Refined" copy (Choose your route / Pay with protection / Take ownership). Payment plans: available on all Atom listings, can also be requested.
 - Nav band + hero backdrop: kept on all pages, see DESKTOP-SPEC.md.
 - Hero headline: optional SVG outline (content/graphics/hero-heading.svg, Questrial + 1.75px stroke ≈ Chrome synthetic bold). Keep real <h1> text visually hidden for SEO/accessibility.
+
+## Phone (see design/PHONE-SPEC.md)
+- Category tags on domain pages link to /collection filtered by that category (desktop + phone).
+- Domain-page logo carousel: add touch swipe on phone (not built on the canvas; arrows + dots only there).
+- P1 marquee: pause off-screen / tab hidden / dragging / reduced motion; drag threshold 40 px.
+- P2 back-to-top: show only on upward scroll past 1200 px.
+- Sticky header everywhere on phone; blur on header::before so the dropdown blurs too.
+- html/body overflow-x: clip on phone (decorative layers bleed past the column).
+- Old landing card markup sits in a hidden div on P1 and inert props remain on several boards (e.g. leftover
+  one-column logo formula on P2, `_d` keys in contact introText props): drop them in the build.
+- P1 keeps desktop props nested under `$desktop` only because of the canvas Tweaks limit; irrelevant for the build.
