@@ -49,7 +49,7 @@ each board's list (sections "Tablet", "Tablet spacing", "Hero graphic", "Tablet:
 
 - Hero = landing snapshot, tuned: blur 16, zoom 1, anchor 100% / 100%, move (−10, −150); extra fade behind the
   cards from 250 px over 200 px.
-- Portrait 3 per row, landscape 4. Unselected pills: fill `#fafafa6e`, border `#a3adbd`, soft shadow.
+- Portrait 3 per row, landscape 4. Unselected pills: fill `#F5F6F8` (matches desktop, 2026-11-20), border `#a3adbd`, soft shadow.
 - Blurred silk + white glows behind the card list (silk .31, glow .5), cards have a faint resting shadow.
 - Floating back-to-top (44 px, 24 px right / 28 px bottom), shown only on upward scroll past 1200 px.
 

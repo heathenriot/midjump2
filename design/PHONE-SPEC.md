@@ -55,7 +55,7 @@ and the key numbers. On P1 the desktop props are nested under `$desktop` to stay
 - Title "Domain Collection" 40 px at 44 px from the header, with a 1-per-row / 2-per-row switch on the right.
   **Default: one card per row.**
 - Category pills wrap onto two rows (no sideways scroll). First pill reads **"All Domains"** (so a filtered view is
-  never mistaken for the whole portfolio). Inactive pills: border `#a3adbd`, fill `#fafafa70`, soft shadow.
+  never mistaken for the whole portfolio). Inactive pills: border `#a3adbd`, fill `#F5F6F8` (matches desktop, 2026-11-20), soft shadow.
 - Filter mode **Hide others** (dimming makes no sense in one column).
 - Faint stretched silk + white glows behind the card list (opacity .31, blur 54, width 220 %, length 1600 px).
 - **One-column cards:** 16:9 plates (old site shape). Logo sizing follows the desktop gallery exactly, scaled to the
