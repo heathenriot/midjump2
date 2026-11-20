@@ -21,3 +21,9 @@
 - Old landing card markup sits in a hidden div on P1 and inert props remain on several boards (e.g. leftover
   one-column logo formula on P2, `_d` keys in contact introText props): drop them in the build.
 - P1 keeps desktop props nested under `$desktop` only because of the canvas Tweaks limit; irrelevant for the build.
+
+## Tablet (see design/TABLET-SPEC.md)
+- Breakpoints: phone <=640, tablet 641-1024 (portrait fixes <=900), desktop >=1025.
+- Hero silk fades belong on the clipping box, not the image (so transforms never expose edges).
+- T2 back-to-top: same scroll-up-only logic as P2.
+- Contact toasts: icon/close `flex: none` everywhere.

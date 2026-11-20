@@ -11,7 +11,7 @@ Snapshot of the approved phone design, 2026-11-20. Same canvas as the desktop
 | `P-Contact.dc.html` | Contact (P4) | locked |
 | `P-*-Locked.dc.html` | Frozen reference copies | final phone |
 
-Boards are 390 px wide. Phone rules live in `@media (max-width:600px)` on top of the locked desktop page, so
+Boards are 390 px wide; build the phone cutoff at 640 px (tablet starts at 641, see `TABLET-SPEC.md`). Phone rules live in `@media (max-width:600px)` on top of the locked desktop page, so
 everything not listed here inherits from `DESKTOP-SPEC.md`. **Exact slider values are the `default`s in each board's
 `data-props`** (the Tweaks panel writes the owner's choices there); this file records the structure, the decisions
 and the key numbers. On P1 the desktop props are nested under `$desktop` to stay under the panel's 127-prop limit.

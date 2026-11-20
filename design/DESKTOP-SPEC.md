@@ -18,6 +18,8 @@ older "Midjump Redesign Directions" canvas named in `HANDOFF.md`.
 
 Contact copy updated 2026-11-20 (new intro, step 1 "directly"); see `PHONE-SPEC.md` › Copy changes.
 
+Domain page 2026-11-20: buy-card icon removed; domain extension in the title lightened to `#8A9099` (see `TABLET-SPEC.md`).
+
 Rule from the owner: **all copy, SVGs and content stay as they are** unless listed under "Copy changes".
 
 ## Global
