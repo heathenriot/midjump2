@@ -98,3 +98,31 @@ Rule from the owner: **all copy, SVGs and content stay as they are** unless list
 
 ## Next
 Phone layouts, then tablet, then the build into `src/` + theme files.
+
+## Desktop refinements, 2026-11-20 (after the phone and tablet passes)
+
+Re-locked boards: `D-Landing-Locked`, `D-Domain-Locked`. Exact values are the `data-props` defaults.
+
+**Shared across desktop pages**
+- Hero silk now has full controls (blur, zoom, move X/Y, rotate, anchor X/Y) and its edge fades sit on the clipping
+  box instead of the image, so transforms never expose a hard edge.
+- Cards get a faint resting shadow: `0 1px 2px rgba(12,24,54,.05), 0 8px 16px -12px rgba(12,24,54,.22)`
+  (landing selected names; domain-page related cards at 55% strength).
+- Category pills / tags: unselected fill `#F5F6F8` (a hair lighter than the page `#F2F3F5`).
+
+**Landing (D1)**
+- Hero silk: opacity .45, brightness .98, contrast .92, blur 6.5 px, zoom 1, anchor 88% / 60%, no move/rotate,
+  fades top 0 / bottom 25% / left 39% / right 21%.
+- Subheading: Finlandica Light + 0.25 px text-stroke ("light + fine stroke"), also on tablet.
+- FAQ 1 answer split into two paragraphs (10 px apart); second reads "Alternatively, you can contact Midjump to
+  arrange a direct transaction through Escrow.com, including multi-domain acquisitions or custom arrangements."
+  (all devices).
+
+**Domain page (D3)**
+- Same hero silk snapshot as D1 behind the header (the page keeps its extra fade before the carousel).
+- Second logo concept ~6% larger (still smaller than the first) and nudged 2.5% lower.
+- Buy card: +4 px padding and ~2 px more at each internal break (heading, fields, divider).
+- Related ("More from") cards: resting shadow at 55%. Tags filled `#F5F6F8`.
+
+**Gallery (D2)** — in progress: D1 hero snapshot behind the header, textured silk + glows behind the cards,
+resting card shadow, pill fill `#F5F6F8`. Not re-locked yet.
