@@ -1,26 +1,13 @@
 // Home page (/). Its words live in content/landing.json; card logo placement in content/logo-fit.json.
-import { esc, readJson } from "../lib/util.js";
+import { esc } from "../lib/util.js";
+import { card as baseCard } from "../lib/cards.js";
 import { domains, landingText as T } from "../lib/data.js";
 import { layout2 } from "../lib/layout2.js";
 
-const fit = readJson("content/logo-fit.json");
 const bySlug = Object.fromEntries(domains.map((d) => [d.slug, d]));
 for (const s of T.selected) if (!bySlug[s]) throw new Error(`content/landing.json "selected" lists "${s}" but there's no content/domains/${s}.json. Check the spelling.`);
 const picks = T.selected.map((s) => bySlug[s]);
-
-// Logo transform on the card plate (same formula as the design canvas).
-export const logoTf = (d) => {
-  const [S, k, o] = fit[d.base] || [1.15, 0.15, 1];
-  const s = S * o;
-  const y = ((0.18571 - s * k) / 0.66) * 100;
-  return `translate(0%, ${y.toFixed(2)}%) scale(${s.toFixed(4)})`;
-};
-
-// A domain card: logo plate + name. The second (colour) image is used by the navy-tint-at-rest look on desktop.
-export const card = (d, { hidden = false } = {}) => {
-  const tf = logoTf(d), src = d.galleryLogo.replace("/assets/svg/", "/assets/logo-alpha/").replace(/\.svg$/, ".png");
-  return `<a href="/domains/${d.slug}" class="pol"${hidden ? ' aria-hidden="true" tabindex="-1"' : ""}><span class="pol-plate"><img src="${src}" alt="${hidden ? "" : esc(d.name) + " logo"}" style="transform:${tf}" loading="lazy" decoding="async"><img class="cimg" src="${src}" alt="" aria-hidden="true" style="transform:${tf}" loading="lazy" decoding="async"></span><span class="pol-name">${esc(d.base)}<span>${esc(d.ext)}</span></span></a>`;
-};
+const card = (d, o = {}) => baseCard(d, { tint: true, ...o });
 
 const num = (i) => String(i + 1).padStart(2, "0");
 const [l1, l2] = T.headline;

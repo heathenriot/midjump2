@@ -34,4 +34,7 @@
 - Nav label is now "Domain Collection" (site.json), matching the boards; old pages pick it up too.
 - Phone slider: two sets of four, 3.5 s dwell, 0.7 s slide, swipe threshold 40 px, pauses off-screen/hidden/dragging;
   reduced motion shows the plain 2-column grid instead.
-- Next: gallery (D2/T2/P2), domain page (D3/T3/P3), contact (D4/T4/P4). Fit values for all 49 logos come from D2's CARDS list.
+- Gallery built from D2/T2/P2: desktop + tablet dim other categories (0.2), phone hides them; phone defaults to one card per row
+  (16:9 plate, logo placed by its ink box) with a 1/2-per-row switch; back-to-top on tablet + phone (scroll-up only, after 1200 px).
+  Layered logo SVGs (several stacked images, multiply blend) are drawn with headless Chrome by tools/make-logo-alpha.py.
+- Next: domain page (D3/T3/P3), then contact (D4/T4/P4).

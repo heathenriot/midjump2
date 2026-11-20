@@ -3,5 +3,8 @@
   "title": "Domain Collection | Midjump",
   "description": "Premium, brandable domain names for AI, cloud, security, data and ventures, each presented with custom logo concepts.",
   "heading": "Domain Collection",
-  "categories": ["AI", "Cloud", "Security", "Data", "Ventures"]
+  "categories": ["AI", "Cloud", "Security", "Data", "Ventures"],
+  "_order": "Order of the cards, left to right, row by row (domain file names without .json). Every domain must appear exactly once.",
+  "order": ["optronical", "enforcing", "guardrailed", "crossmodality", "anthropize", "cotaught", "nephele", "reinforcing", "detectionlayer", "triaged", "webveyor", "flexitoken", "broughtin", "modulated", "multitemporal", "cotrained", "cloudveyor", "deductional", "precognic", "encodably", "taxonomic", "distroless", "cloudindexing", "replaceably", "descriptional", "quadrants", "outscrub", "hitprompt", "cloudaider", "biodefensive", "stakeetf", "distributional", "asynchronic", "prognostical", "promptaider", "sektoral", "intelsynth", "crosstemporal", "agenticaider", "throughlane", "configurably", "sanctional", "ehustles", "genofold", "reinventional", "dextreasury", "anormality", "netveyor", "causational"],
+  "allLabelPhone": "All Domains"
 }

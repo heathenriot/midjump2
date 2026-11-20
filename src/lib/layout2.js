@@ -18,6 +18,12 @@ export const header2 = (active) => `
 <nav class="pmm" id="pmm" aria-label="Site">${navLinks(active)}</nav>
 </header>`;
 
+// The landing silk, repeated faintly behind the top of inner pages (gallery, domain, contact).
+export const backdrop = `<div class="bd" aria-hidden="true"><div class="wrap"><div class="bd-box"><img class="bd-img" src="/assets/graphics/silk.jpg" alt=""></div></div></div>`;
+
+// Round "back to top" button (tablet + phone; shows when scrolling back up after 1200px).
+export const backToTop = `<button type="button" class="ptop" aria-label="Back to top"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3.5"/><path d="M3.5 7.5 8 3l4.5 4.5"/></svg></button>`;
+
 export const escrowMark = `<span class="esc" role="img" aria-label="Escrow.com"></span>`;
 
 export const footer2 = `

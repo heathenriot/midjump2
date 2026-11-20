@@ -30,6 +30,41 @@
     });
   });
 
+  /* ---------- gallery: category tabs (dim others; phones hide them), 1/2 per row on phones ---------- */
+  var grid = document.querySelector(".gal-grid");
+  if (grid) {
+    var tabs = document.querySelectorAll(".tab[data-cat]"), cardsEls = grid.querySelectorAll(".pol");
+    var pick = function (cat, push) {
+      var hit = false;
+      tabs.forEach(function (t) { var on = t.dataset.cat === cat; if (on) hit = true; t.classList.toggle("on", on); t.setAttribute("aria-selected", on ? "true" : "false"); });
+      if (!hit) return pick("All", push);
+      cardsEls.forEach(function (c) { c.classList.toggle("dim", cat !== "All" && c.dataset.cats.split("|").indexOf(cat) < 0); });
+      if (push && history.replaceState) history.replaceState(null, "", cat === "All" ? location.pathname : "?category=" + encodeURIComponent(cat));
+    };
+    tabs.forEach(function (t) { t.addEventListener("click", function () { pick(t.dataset.cat, true); }); });
+    var q = new URLSearchParams(location.search).get("category");
+    if (q) { var m = [].filter.call(tabs, function (t) { return t.dataset.cat.toLowerCase() === q.toLowerCase(); })[0]; if (m) pick(m.dataset.cat, false); }
+    document.querySelectorAll(".pvs button").forEach(function (b, i, all) {
+      b.addEventListener("click", function () {
+        all.forEach(function (x) { x.classList.toggle("on", x === b); x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        grid.classList.toggle("v1", b.dataset.vw === "1");
+      });
+    });
+  }
+
+  /* ---------- back to top (tablet + phone): shows when scrolling back up after 1200px ---------- */
+  var top = document.querySelector(".ptop");
+  if (top) {
+    var lastY = window.scrollY, shown = false;
+    window.addEventListener("scroll", function () {
+      var y = window.scrollY, up = y < lastY - 3, down = y > lastY + 3;
+      if (up || down) lastY = y;
+      var s = y > 1200 && (up ? true : down ? false : shown);
+      if (s !== shown) { shown = s; top.classList.toggle("show", s); }
+    }, { passive: true });
+    top.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: reduced.matches ? "auto" : "smooth" }); });
+  }
+
   /* ---------- phone slider: two sets of four, auto-advance, swipe, dots ---------- */
   var vp = document.querySelector(".mqv");
   if (vp) {

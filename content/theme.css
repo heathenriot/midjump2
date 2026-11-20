@@ -34,6 +34,19 @@
   --silk-fade-left: 39%;
   --silk-fade-right: 21%;
 
+  /* the same silk, faint, behind the top of inner pages (gallery, domain, contact) */
+  --bd-opacity: .45;
+  --bd-brightness: .98;
+  --bd-blur: 6.5px;
+  --bd-zoom: 1;
+  --bd-x: 88%;
+  --bd-y: 60%;
+  --bd-move-x: 0px;
+  --bd-move-y: 0px;
+  --bd-fade-bottom: 25%;
+  --bd-fade-left: 39%;
+  --bd-fade-right: 21%;
+
   /* cards */
   --card-shadow: 0 1px 2px rgba(12,24,54,.05), 0 8px 16px -12px rgba(12,24,54,.22);
   --card-hover-border: #7a89a8;
@@ -59,6 +72,16 @@
     --silk-fade-bottom: 40%;
     --silk-fade-left: 60%;
     --silk-fade-right: 44%;
+    --bd-opacity: .4;
+    --bd-brightness: .9;
+    --bd-blur: 16px;
+    --bd-x: 100%;
+    --bd-y: 100%;
+    --bd-move-x: -10px;
+    --bd-move-y: -150px;
+    --bd-fade-bottom: 40%;
+    --bd-fade-left: 60%;
+    --bd-fade-right: 44%;
   }
 }
 
@@ -77,5 +100,11 @@
     --silk-fade-bottom: 46%;
     --silk-fade-left: 37%;
     --silk-fade-right: 0%;
+    --bd-opacity: .7;
+    --bd-brightness: 1.03;
+    --bd-blur: 12px;
+    --bd-zoom: 1.4;
+    --bd-x: 100%;
+    --bd-y: 34%;
   }
 }
