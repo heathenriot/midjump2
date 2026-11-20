@@ -133,5 +133,13 @@ Re-locked boards: `D-Landing-Locked`, `D-Domain-Locked`, `D-Contact-Locked`. Exa
 **Applied on phone and tablet too:** landing subheading and contact intro in Light + 0.25 px stroke
 (contact intro `#1E1E1C`); navy card top glow .18 on the domain-page buy card and the contact form card.
 
-**Gallery (D2)** — in progress: D1 hero snapshot behind the header, textured silk + glows behind the cards,
-resting card shadow, pill fill `#F5F6F8`. Not re-locked yet.
+**Gallery (D2)** — locked 2026-11-20 (`D-Collection-Locked.dc.html`).
+- Hero snapshot behind the header, same values as D1: opacity .45, brightness .98, contrast .92, blur 6.5px,
+  zoom 1, anchor 88% / 60%, no move/rotate; box fades top 0 / bottom 25% / left 39% / right 21%.
+- Textured background under the cards (`section[aria-label="Domains"]`): the hero silk image tiled
+  vertically (`repeat-y`), multiply blend, contrast .9 — silk opacity .39, blur 114px, width 295%,
+  tile length 1050px, X 70%, Y 0, brightness 1; fade in 190px at the top, fade out 160px at the bottom.
+  Four soft white glows on top (alternating right/left at 12%, 38%, 64%, 88% down), strength .5.
+- Resting card shadow: `0 1px 2px rgba(12,24,54,.05), 0 8px 16px -12px rgba(12,24,54,.22)` (strength 1);
+  hover shadow unchanged.
+- Unselected filter pills filled `#F5F6F8` (selected stays navy `#092247`).
