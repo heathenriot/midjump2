@@ -101,7 +101,7 @@ Phone layouts, then tablet, then the build into `src/` + theme files.
 
 ## Desktop refinements, 2026-11-20 (after the phone and tablet passes)
 
-Re-locked boards: `D-Landing-Locked`, `D-Domain-Locked`. Exact values are the `data-props` defaults.
+Re-locked boards: `D-Landing-Locked`, `D-Domain-Locked`, `D-Contact-Locked`. Exact values are the `data-props` defaults.
 
 **Shared across desktop pages**
 - Hero silk now has full controls (blur, zoom, move X/Y, rotate, anchor X/Y) and its edge fades sit on the clipping
@@ -123,6 +123,15 @@ Re-locked boards: `D-Landing-Locked`, `D-Domain-Locked`. Exact values are the `d
 - Second logo concept ~6% larger (still smaller than the first) and nudged 2.5% lower.
 - Buy card: +4 px padding and ~2 px more at each internal break (heading, fields, divider).
 - Related ("More from") cards: resting shadow at 55%. Tags filled `#F5F6F8`.
+
+**Contact (D4)**
+- Landing hero silk snapshot behind the header (same values as D1); the old left-column silk is off.
+- Form card top glow .18 (was .32), same as the domain-page buy card.
+- Intro: Finlandica Light + 0.25 px stroke, colour `#1E1E1C`, 19 px (matches the landing subheading weight).
+- Step numbers match the landing acquiring cards: Questrial 21 px, `#7F8BA6`, letter-spacing .04em.
+
+**Applied on phone and tablet too:** landing subheading and contact intro in Light + 0.25 px stroke
+(contact intro `#1E1E1C`); navy card top glow .18 on the domain-page buy card and the contact form card.
 
 **Gallery (D2)** — in progress: D1 hero snapshot behind the header, textured silk + glows behind the cards,
 resting card shadow, pill fill `#F5F6F8`. Not re-locked yet.
