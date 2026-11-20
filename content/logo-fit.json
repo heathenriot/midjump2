@@ -1,0 +1,11 @@
+{
+  "_help": "How each logo sits on its card plate (from the design canvas). [size, inkOffset, opticalBoost]: size scales the logo, inkOffset centres its ink vertically, opticalBoost (1 = none) makes light logos a touch bigger. Missing logos use [1.15, 0.15, 1].",
+  "Anthropize": [1.0296, 0.20954, 1.065],
+  "Enforcing": [1.2051, 0.14592, 1.0],
+  "Nephele": [1.2285, 0.15526, 1.0],
+  "Reinforcing": [1.2285, 0.14491, 1.0],
+  "Guardrailed": [1.1583, 0.14389, 1.0],
+  "Triaged": [1.1115, 0.14693, 1.0],
+  "CrossModality": [1.2285, 0.14491, 1.0],
+  "Modulated": [1.2636, 0.14693, 1.0]
+}

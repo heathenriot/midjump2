@@ -27,3 +27,11 @@
 - Hero silk fades belong on the clipping box, not the image (so transforms never expose edges).
 - T2 back-to-top: same scroll-up-only logic as P2.
 - Contact toasts: icon/close `flex: none` everywhere.
+
+## Build progress (2026-11-21)
+- Landing built from D1/T1/P1 (locked boards resolved with their saved slider values). Content: `content/landing.json`
+  (headline, intro, selected cards, steps, FAQ with answers as paragraph lists and optional phone questions).
+- Nav label is now "Domain Collection" (site.json), matching the boards; old pages pick it up too.
+- Phone slider: two sets of four, 3.5 s dwell, 0.7 s slide, swipe threshold 40 px, pauses off-screen/hidden/dragging;
+  reduced motion shows the plain 2-column grid instead.
+- Next: gallery (D2/T2/P2), domain page (D3/T3/P3), contact (D4/T4/P4). Fit values for all 49 logos come from D2's CARDS list.

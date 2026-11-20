@@ -1,46 +1,75 @@
-import fs from "node:fs";
-// Home page (/). Its words live in content/landing.json.
-import { esc } from "../lib/util.js";
-import { marquee, landingText } from "../lib/data.js";
-import { theme } from "../lib/theme.js";
-import { layout } from "../lib/layout.js";
+// Home page (/). Its words live in content/landing.json; card logo placement in content/logo-fit.json.
+import { esc, readJson } from "../lib/util.js";
+import { domains, landingText as T } from "../lib/data.js";
+import { layout2 } from "../lib/layout2.js";
 
-const hasAlpha = (logo) => fs.existsSync(new URL(`../../content/svg-alpha/${logo.replace(/\.svg$/, ".png")}`, import.meta.url));
-const mqItems = (kind) => [0, 1].map((copy) => marquee.map(({ d, domain: slug, logo, width: ink, desktop, phone }) => {
-  const t = (kind === "d" ? desktop : phone) || {};
-  const fx = [["s", t.scale, 1], ["x", t.x, "0%"], ["y", t.y, "0%"]].filter(([, v, def]) => v !== undefined && String(v) !== String(def)).map(([k, v]) => `--${k}:${v}`).join(";");
-  const slot = "";
-  return `<a href="/domains/${slug}" class="mq-item"${slot}${copy ? ' aria-hidden="true" tabindex="-1"' : ""}><span class="mq-logo"><img src="/assets/svg/${logo}" alt=""${fx ? ` style="${fx}"` : ""} loading="lazy" decoding="async">${kind === "m" && hasAlpha(logo) ? `<img class="mq-a" src="/assets/svg-alpha/${logo.replace(/\.svg$/, ".png")}" alt=""${fx ? ` style="${fx}"` : ""} loading="lazy" decoding="async">` : ""}</span><span class="mq-name">${esc(d.base)}<span class="mq-ext">${esc(d.ext)}</span></span></a>`;
-}).join("")).join("");
-const arrow = `<svg viewBox="0 0 242.333 242.333" aria-hidden="true"><path d="M162 38 L78 121.2 L162 204.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>`;
-const T = landingText;
-const br = (a) => a.map(esc).join("<br>");
-const num = (i) => String(i + 1).padStart(2, "0");
-export const landing = () => {
-  const body = `
-<div class="c-frame d-only l-d">
-<section class="l-hero"><h1 class="mj-fade">${br(T.headlineDesktop)}</h1>
-<p class="mj-fade mj-d1">${br(T.introDesktop)}</p>
-<div class="mj-fade mj-d2 l-cta"><a href="/domains" class="mj-hero-btn">${esc(T.buttonLabel)}${arrow}</a></div></section>
-<section class="l-band" aria-labelledby="mq-label-d"><h2 id="mq-label-d" class="mj-row-label">${esc(T.scrollerLabel)}</h2>
-<p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
-<div class="mq"><div class="mq-vp" data-secs="${theme.desktop.landing.marqueeSeconds}"><div class="mq-track">${mqItems("d")}</div></div></div></section>
-<section class="l-qa" aria-labelledby="qa-label-d"><h2 id="qa-label-d" class="mj-row-label">${esc(T.faqLabel)}</h2>
-<div class="faq-list">${T.faq.map(({ q, a }, i) => { const n = num(i); return `<div class="faq"><button type="button" class="faq-q" id="faq-d-q${i}" aria-expanded="false" aria-controls="faq-d-a${i}"><span class="faq-n" aria-hidden="true">${n}</span><span class="faq-qt">${esc(q)}</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-a" id="faq-d-a${i}" role="region" aria-labelledby="faq-d-q${i}"><div class="faq-ai"><p>${esc(a)}</p></div></div></div>`; }).join("")}</div>
-<div class="l-end" aria-hidden="true"></div></section>
-</div>
-<div class="m-only l-m">
-<section class="l-hero"><h1 class="mj-fade">${br(T.headlinePhone)}</h1>
-<p class="mj-fade mj-d1">${br(T.introPhone)}</p>
-<a href="/domains" class="mj-cta mj-fade mj-d2"><span>${esc(T.buttonLabel)}</span>${arrow}</a></section>
-<section class="l-band" aria-labelledby="mq-label-m"><h2 id="mq-label-m" class="row-label">${esc(T.scrollerLabel)}</h2>
-<p class="mq-hint" aria-hidden="true">&lsaquo;&ensp;Drag to browse&ensp;&rsaquo;</p>
-<div class="mq-box"><div class="mq-vp" data-secs="${theme.phone.landing.marqueeSeconds}"><div class="mq-track">${mqItems("m")}</div></div></div></section>
-<section class="l-qa" aria-labelledby="qa-label-m"><h2 id="qa-label-m" class="row-label">${esc(T.faqLabel)}</h2>
-<div class="faq-list">${T.faq.map(({ q, qPhone, a }, i) => { const n = num(i); return `<div class="faq"><button type="button" class="faq-q" aria-expanded="false"><span class="faq-qt"><span class="faq-n" aria-hidden="true">${n}</span><span>${esc(qPhone || q)}</span></span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-ai"><p>${esc(a)}</p></div></div></div>`; }).join("")}</div>
-<div class="l-end" aria-hidden="true"></div></section>
-</div>`;
-  return layout({ title: T.title, description: T.description, urlPath: "/", body, active: "" });
+const fit = readJson("content/logo-fit.json");
+const bySlug = Object.fromEntries(domains.map((d) => [d.slug, d]));
+for (const s of T.selected) if (!bySlug[s]) throw new Error(`content/landing.json "selected" lists "${s}" but there's no content/domains/${s}.json. Check the spelling.`);
+const picks = T.selected.map((s) => bySlug[s]);
+
+// Logo transform on the card plate (same formula as the design canvas).
+export const logoTf = (d) => {
+  const [S, k, o] = fit[d.base] || [1.15, 0.15, 1];
+  const s = S * o;
+  const y = ((0.18571 - s * k) / 0.66) * 100;
+  return `translate(0%, ${y.toFixed(2)}%) scale(${s.toFixed(4)})`;
 };
 
+// A domain card: logo plate + name. The second (colour) image is used by the navy-tint-at-rest look on desktop.
+export const card = (d, { hidden = false } = {}) => {
+  const tf = logoTf(d), src = d.galleryLogo.replace("/assets/svg/", "/assets/logo-alpha/").replace(/\.svg$/, ".png");
+  return `<a href="/domains/${d.slug}" class="pol"${hidden ? ' aria-hidden="true" tabindex="-1"' : ""}><span class="pol-plate"><img src="${src}" alt="${hidden ? "" : esc(d.name) + " logo"}" style="transform:${tf}" loading="lazy" decoding="async"><img class="cimg" src="${src}" alt="" aria-hidden="true" style="transform:${tf}" loading="lazy" decoding="async"></span><span class="pol-name">${esc(d.base)}<span>${esc(d.ext)}</span></span></a>`;
+};
 
+const num = (i) => String(i + 1).padStart(2, "0");
+const [l1, l2] = T.headline;
+const words = (line, a, b) => { const p = line.split(" "); const h = Math.ceil(p.length / 2); return `<span class="w${a}">${esc(p.slice(0, h).join(" "))}</span> <span class="w${b}">${esc(p.slice(h).join(" "))}</span>`; };
+
+// Phone slider: two sets of four (2 x 2), filled column by column, plus a copy of the first set for a seamless loop.
+const colm = (a) => [a[0], a[2], a[1], a[3]];
+const setA = colm(picks.slice(0, 4)), setB = colm(picks.slice(4, 8));
+
+export const landing = () => {
+  const body = `
+<section class="hero">
+<div class="wrap"><div class="hero-box">
+<span class="hero-line" aria-hidden="true"></span>
+<div class="hero-art" aria-hidden="true"><img class="heroimg" src="/assets/graphics/silk.jpg" alt="" fetchpriority="high"></div>
+<div class="hero-txt">
+<h1 class="hh"><span class="hh-live"><span class="hl1">${words(l1, 1, 2)}</span><br><span class="hl2">${words(l2, 3, 4)}</span></span><img class="hh-svg" src="/assets/graphics/hero-heading.svg" alt="" aria-hidden="true"><span class="hh-svgp" aria-hidden="true">${[1, 2, 3, 4].map((i) => `<img class="l${i}" src="/assets/graphics/phone/hero-phone-L${i}-1.44.svg" alt="">`).join("")}</span></h1>
+<p class="hero-sub">${T.intro.map(esc).join('<span class="fsp"> </span><br>')}</p>
+<a href="/domains" class="cta">${esc(T.buttonLabel)}</a>
+</div></div></div>
+</section>
+
+<section class="sel" aria-labelledby="sel">
+<div class="wrap">
+<div class="sec-head">
+<h2 id="sel" class="sh2">${esc(T.selectedHeading).replace(/ (the collection)$/, '<br class="sbr"> $1')}</h2>
+<a href="/domains" class="vfc">${esc(T.viewAll)}<span class="vfc-a" aria-hidden="true"> →</span></a>
+</div>
+<div class="g4 sel-grid">${picks.map((d) => card(d)).join("")}</div>
+<div class="mqv"><div class="g4">${[...setA, ...setB].map((d) => card(d)).join("")}${setA.map((d) => card(d, { hidden: true })).join("")}</div></div>
+<div class="mqd">${[0, 1].map((i) => `<button type="button"${i ? "" : ' class="on"'} aria-label="Show set ${i + 1}"></button>`).join("")}</div>
+</div>
+</section>
+
+<section class="acq-sec" aria-labelledby="how">
+<div class="wrap"><div class="navy">
+<div class="navy-head">
+<h2 id="how" class="sh2">${esc(T.acquiringHeading)}</h2>
+<div class="tbox"><span class="tlab">${esc(T.securedThrough)}</span><span class="tlogos"><span class="atm" role="img" aria-label="Atom.com"></span><span class="tdiv" aria-hidden="true"></span><span class="esc2" role="img" aria-label="Escrow.com"></span></span></div>
+</div>
+<div class="g3 acq">${T.steps.map((s, i) => `<div><span>${num(i)}</span><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></div>`).join("")}</div>
+</div></div>
+</section>
+
+<section class="qa-sec" aria-labelledby="qa">
+<div class="wrap"><div class="split">
+<h2 id="qa" class="sh2">${T.faqHeading.map(esc).reduce((acc, w, i) => acc + (i ? `<span class="fsp"> </span><br class="${i === 1 ? "fb1" : "fb2"}">` : "") + w, "")}</h2>
+<div class="faql">${T.faq.map(({ q, qPhone, a }, i) => `<div class="faq"><button type="button" class="faq-q" id="faq-q${i}" aria-expanded="false" aria-controls="faq-a${i}"><span class="faq-n">${num(i)}</span><span class="qt">${qPhone ? `<span class="qd">${esc(q)}</span><span class="qm">${esc(qPhone)}</span>` : esc(q)}</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-a" id="faq-a${i}" role="region" aria-labelledby="faq-q${i}"><div class="faq-ai">${(Array.isArray(a) ? a : [a]).map((p) => `<p>${esc(p)}</p>`).join("")}</div></div></div>`).join("")}</div>
+</div></div>
+</section>`;
+  return layout2({ title: T.title, description: T.description, urlPath: "/", body, page: "home" });
+};

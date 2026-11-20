@@ -21,7 +21,7 @@ const newest = (dir) => { let m = 0; for (const e of fs.readdirSync(dir, { withF
 const watched = ["content", "src", "build.js"].map((p) => path.join(root, p));
 const stamp = () => Math.max(...watched.map((p) => (fs.statSync(p).isDirectory() ? newest(p) : fs.statSync(p).mtimeMs)));
 
-const types = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".woff2": "font/woff2", ".xml": "application/xml", ".txt": "text/plain" };
+const types = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".woff2": "font/woff2", ".xml": "application/xml", ".txt": "text/plain", ".png": "image/png", ".jpg": "image/jpeg", ".ico": "image/x-icon" };
 const reload = `<script>(function(){var v;setInterval(function(){fetch("/__v").then(function(r){return r.text()}).then(function(t){if(v&&t!==v)location.reload();v=t}).catch(function(){})},800)})()</script>`;
 
 http.createServer((req, res) => {

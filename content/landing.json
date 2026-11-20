@@ -1,40 +1,45 @@
 {
-  "_help": "Text on the home page. Each 'lines' list is one paragraph broken into lines (the line breaks are intentional). FAQ: one list for desktop and phone; 'qPhone' is an optional shorter question for phones (leave it out to use 'q' on both).",
+  "_help": "Text on the home page. Each list of lines is one paragraph broken into lines (the line breaks are intentional on desktop; phones join them). FAQ answers are lists of paragraphs. 'qPhone' is an optional shorter question for phones (leave it out to use 'q' everywhere).",
   "title": "Midjump | Digital Identities. Built for distinction.",
   "description": "Midjump is a collection of signature domain names, curated for startups, enterprises, and emerging ventures.",
-  "headlineDesktop": [
-    "Digital Identities.",
-    "Built for distinction."
-  ],
-  "headlinePhone": [
-    "Digital",
-    "Identities.",
-    "Built for",
-    "distinction."
-  ],
-  "introDesktop": [
+  "headline": ["Digital Identities.", "Built for distinction."],
+  "intro": [
     "Midjump is a collection of signature domain names,",
     "curated for startups, enterprises, and emerging ventures."
   ],
-  "introPhone": [
-    "Midjump is a collection of signature domain names, curated for startups, enterprises, and emerging ventures."
-  ],
   "buttonLabel": "Explore the portfolio",
-  "scrollerLabel": "Selected domains",
-  "faqLabel": "Acquiring a domain",
+
+  "selectedHeading": "Selected names from the collection",
+  "viewAll": "View all",
+  "_selected": "The eight cards under the hero, in this order (domain file names without .json). On phones they slide as two sets of four.",
+  "selected": ["anthropize", "enforcing", "nephele", "reinforcing", "guardrailed", "triaged", "crossmodality", "modulated"],
+
+  "acquiringHeading": "Acquiring a domain",
+  "securedThrough": "Secured through",
+  "steps": [
+    { "title": "Choose your route", "text": "Purchase instantly through the domain’s listing on Atom.com, or send Midjump an inquiry to arrange a direct sale." },
+    { "title": "Pay with protection", "text": "Funds are held by Atom.com or Escrow.com until the transfer is complete. Payment plans are available through Atom.com." },
+    { "title": "Take ownership", "text": "Once the transfer completes, the domain moves to your registrar account, ready to build on." }
+  ],
+
+  "faqHeading": ["Frequently", "Asked", "Questions"],
   "faq": [
     {
       "q": "How does the purchase process work?",
       "qPhone": "How does purchasing work?",
-      "a": "Purchases can be completed through Atom.com's escrow service, which handles payment and domain transfer. Alternatively, contact Midjump to arrange a direct transaction through Escrow.com, including multi-domain acquisitions or custom arrangements."
+      "a": [
+        "Purchases can be completed through Atom.com's escrow service, which handles payment and domain transfer.",
+        "Alternatively, you can contact Midjump to arrange a direct transaction through Escrow.com, including multi-domain acquisitions or custom arrangements."
+      ]
     },
     {
       "q": "Are logo concepts included?",
-      "a": "Yes, each domain includes custom logo concepts, available to the buyer upon request."
+      "a": ["Yes, each domain includes custom logo concepts, available to the buyer upon request."]
     },
     {
       "q": "Do you offer payment plans?",
-      "a": "Yes, payment plans are arranged through Atom.com. Please contact Midjump with the domain you’re interested in and your preferred payment timeline."
+      "qPhone": "Are payment plans available?",
+      "a": ["Yes, payment plans are arranged through Atom.com. Please contact Midjump with the domain you’re interested in and your preferred payment timeline."]
     }
   ]
 }

@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Midjump look: the main values of the new design, in one place.
+   Change a value, save, rebuild (node build.js). Everything else lives in src/styles/v2.css.
+   Sizes: desktop >= 1025px, tablet 641-1024px, phone <= 640px.
+   ========================================================================== */
+
+:root {
+  /* colours */
+  --page-bg: #F2F3F5;          /* page background */
+  --text: #1A1A18;             /* body text */
+  --ink: #15263E;              /* links, nav, selection */
+  --ink-hover: #4A5B78;        /* link hover (faded navy) */
+  --navy: #141C36;             /* buttons, acquiring card */
+  --muted: #565C64;            /* FAQ numbers / answers, domain extensions */
+  --footer-bg: #0c1121;
+
+  /* layout */
+  --column: 1080px;            /* content width (plus side padding) */
+  --side: 48px;                /* side padding */
+  --section-gap: 104px;        /* space between sections */
+
+  /* hero silk graphic (desktop) */
+  --silk-opacity: .45;
+  --silk-brightness: .98;
+  --silk-contrast: .92;
+  --silk-blur: 6.5px;
+  --silk-zoom: 1;
+  --silk-x: 88%;               /* which part of the picture is anchored */
+  --silk-y: 60%;
+  --silk-move-x: 0px;
+  --silk-move-y: 0px;
+  --silk-fade-top: 0%;
+  --silk-fade-bottom: 25%;
+  --silk-fade-left: 39%;
+  --silk-fade-right: 21%;
+
+  /* cards */
+  --card-shadow: 0 1px 2px rgba(12,24,54,.05), 0 8px 16px -12px rgba(12,24,54,.22);
+  --card-hover-border: #7a89a8;
+  --logo-size: .93;
+
+  /* acquiring card glow (top right) */
+  --navy-glow: .3;
+}
+
+/* tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  :root {
+    --side: 32px;
+    --section-gap: 88px;
+    --silk-opacity: .4;
+    --silk-brightness: .9;
+    --silk-blur: 5.5px;
+    --silk-zoom: 1.3;
+    --silk-x: 100%;
+    --silk-y: 28%;
+    --silk-move-x: 5px;
+    --silk-move-y: -140px;
+    --silk-fade-bottom: 40%;
+    --silk-fade-left: 60%;
+    --silk-fade-right: 44%;
+  }
+}
+
+/* phone */
+@media (max-width: 640px) {
+  :root {
+    --side: 20px;
+    --section-gap: 72px;
+    --silk-opacity: .3;
+    --silk-brightness: 1.03;
+    --silk-blur: 8.5px;
+    --silk-zoom: 1.5;
+    --silk-x: 88%;
+    --silk-y: 51%;
+    --silk-fade-top: 0%;
+    --silk-fade-bottom: 46%;
+    --silk-fade-left: 37%;
+    --silk-fade-right: 0%;
+  }
+}

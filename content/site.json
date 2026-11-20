@@ -5,7 +5,7 @@
   "email": "hello@midjump.com",
   "formKey": "13657328-3220-44e4-b42f-0f0e138bd0b6",
   "menu": [
-    { "link": "/domains", "label": "Domain Portfolio" },
+    { "link": "/domains", "label": "Domain Collection" },
     { "link": "/contact", "label": "Contact" }
   ],
   "footerTagDesktop": ["Curated digital identities,", "secured through"],
