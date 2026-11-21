@@ -3,9 +3,9 @@
 > **Update 2026-11-18:** the desktop re-skin is designed on a new canvas; see `design/DESKTOP-SPEC.md` first.
 > **Update 2026-11-20:** all four phone layouts are locked too; see `design/PHONE-SPEC.md`. Tablet (641–1024) is locked as well; see `design/TABLET-SPEC.md`. Breakpoints: phone ≤640, tablet 641–1024, desktop ≥1025.
 
-> **Update 2026-11-21: building the re-skin into the site, page by page.** Done: **landing** and **gallery** (all three sizes). New-design pages use
+> **Update 2026-11-21: building the re-skin into the site, page by page.** Done: **landing**, **gallery** and **domain pages** (all three sizes); contact is next. New-design pages use
 > `src/lib/layout2.js` (header with phone menu, footer), `/assets/v2.css` = `content/theme.css` (the short list of values to tune:
-> colours, column, section gap, hero silk per size, card shadow) + `src/styles/v2.css` (everything else, with tablet/phone rules next to
+> colours, column, section gap, hero silk per size, card shadow) + `src/styles/v2.css` + `src/styles/v2-domain.css` (domain page, generated from the D3/T3/P3 boards by `tools/gen-domain-css.py`, then hand-edited below its "hand-written" line) (everything else, with tablet/phone rules next to
 > each part), and `src/js/v2.js` (phone menu, FAQ, phone card slider). Card logos use `content/logo-alpha/*.png` (gallery logos with the
 > white made transparent; regenerate with `python3 tools/make-logo-alpha.py`) placed by `content/logo-fit.json`. Gallery order lives in `content/gallery.json` → `order` (the old `gallery-desktop.json` / `gallery-phone.json` are only still read by the old domain pages and can go once those are rebuilt). Gallery links accept `?category=AI` etc. Design images live in
 > `content/graphics/` (silk.jpg, mesh.png, escrow-mask.png, mark.svg, hero headline SVGs). Pages not yet rebuilt still use the old

@@ -52,6 +52,50 @@
     });
   }
 
+  /* ---------- domain page: logo concept carousel (arrows, dots, swipe) ---------- */
+  document.querySelectorAll(".dpg .stage").forEach(function (st) {
+    var track = st.querySelector(".track"), slides = st.querySelectorAll(".slide"), dots = st.querySelectorAll(".dot"), n = slides.length, i = 0;
+    if (n < 2) return;
+    var show = function (k, dx) {
+      i = (k + n) % n;
+      track.style.transform = "translateX(calc(" + (-i * 100) + "% + " + (dx || 0) + "px))";
+      slides.forEach(function (s, j) { s.classList.toggle("off", j !== i); });
+      dots.forEach(function (d, j) { d.classList.toggle("on", j === i); });
+    };
+    st.querySelectorAll(".arr.pv").forEach(function (b) { b.addEventListener("click", function () { show(i - 1); }); });
+    st.querySelectorAll(".arr.nx").forEach(function (b) { b.addEventListener("click", function () { show(i + 1); }); });
+    dots.forEach(function (d, j) { d.addEventListener("click", function () { show(j); }); });
+    var plate = st.querySelector(".plate"), drag = null;
+    plate.style.touchAction = "pan-y";
+    plate.addEventListener("pointerdown", function (e) { drag = { x: e.clientX, dx: 0 }; track.style.transition = "none"; try { plate.setPointerCapture(e.pointerId); } catch (_) {} });
+    plate.addEventListener("pointermove", function (e) { if (!drag) return; drag.dx = e.clientX - drag.x; show(i, drag.dx * 0.9); });
+    var end = function () { if (!drag) return; var dx = drag.dx; drag = null; track.style.transition = ""; if (dx < -40) show(i + 1); else if (dx > 40) show(i - 1); else show(i); };
+    plate.addEventListener("pointerup", end); plate.addEventListener("pointercancel", end);
+  });
+
+  /* ---------- inquiry forms (Web3Forms; the access key is a public client key by design) ---------- */
+  document.querySelectorAll("form[data-key]").forEach(function (f) {
+    var card = f.parentElement, ok = card.querySelector(".fok"), err = f.querySelector(".ferr"), extra = card.querySelectorAll(".ndiv,.trust");
+    var domain = f.getAttribute("data-domain") || "";
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = {}; new FormData(f).forEach(function (v, k) { data[k] = v; });
+      if (data.botcheck) return;
+      delete data.botcheck;
+      data.access_key = f.getAttribute("data-key");
+      data.subject = domain ? "Inquiry (" + domain + ")" : "Inquiry: Contact Page";
+      data.from_name = "Midjump — " + (domain ? "Domain Inquiry" : "Contact Form");
+      if (domain) data.domain = domain;
+      err.hidden = true; f.classList.add("sending");
+      fetch("https://api.web3forms.com/submit", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); f.reset(); f.hidden = true; if (ok) ok.hidden = false; })
+        .catch(function () { err.hidden = false; })
+        .then(function () { f.classList.remove("sending"); });
+    });
+    var again = ok && ok.querySelector(".fok-again");
+    if (again) again.addEventListener("click", function () { ok.hidden = true; f.hidden = false; });
+  });
+
   /* ---------- back to top (tablet + phone): shows when scrolling back up after 1200px ---------- */
   var top = document.querySelector(".ptop");
   if (top) {

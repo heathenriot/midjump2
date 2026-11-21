@@ -37,4 +37,10 @@
 - Gallery built from D2/T2/P2: desktop + tablet dim other categories (0.2), phone hides them; phone defaults to one card per row
   (16:9 plate, logo placed by its ink box) with a 1/2-per-row switch; back-to-top on tablet + phone (scroll-up only, after 1200 px).
   Layered logo SVGs (several stacked images, multiply blend) are drawn with headless Chrome by tools/make-logo-alpha.py.
-- Next: domain page (D3/T3/P3), then contact (D4/T4/P4).
+- Domain pages built from D3/T3/P3. Carousel logos use content/logo-alpha (all logo concepts now have transparent copies);
+  each logo's y/scale come from the domain's carouselTweaks, then per size: desktop x1.14 (logos after the first x0.84x1.15,
+  +2.5% lower), tablet x1.14 (later logos x1.07), phone x1.14 (later logos x0.9x1.12). Calibrated on Triaged.si; check other
+  domains by eye. Inquiry form: Web3Forms, in-card "Message received." state. Tags + "More from the collection" link to
+  /domains?category=…. Phone: related cards use the tile + caption style; About/Ideal text 14px, titles 16.5px, buy-card
+  sentence 14px (universal phone card sizes); tags filled #F5F6F8 like the gallery pills.
+- Next: contact (D4/T4/P4).
