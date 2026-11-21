@@ -61,6 +61,9 @@
   --tile-name-gap: 10px;
   --tile-row-gap: 18px;
 
+  /* phone: domain extension on cards (.com, .si…), a touch lighter than desktop's --muted; passes 4.5:1 contrast */
+  --ext-phone: #686E75;
+
   /* phone gallery, one per row: grey logo tile inside a light card with a soft glow (placed differently on each card) */
   --card1-bg: color-mix(in srgb, #fafbfc, #FFFFFF 20%);
   --card1-border: #ECEEF1;

@@ -422,3 +422,6 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
 @media (max-width:640px) and (prefers-reduced-motion:reduce){
   .sel-grid{row-gap:var(--tile-row-gap) !important}
 }
+@media (max-width:640px){
+  .pol-name span{color:var(--ext-phone)}
+}
