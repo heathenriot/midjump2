@@ -52,7 +52,7 @@ ${noindex ? '<meta name="robots" content="noindex">' : ""}
 ${ogImage ? `<meta property="og:image" content="${site.url}${ogImage}"><meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
 <meta name="theme-color" content="#F2F3F5">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/svg/favicon-32.png">
+<link rel="icon" type="image/svg+xml" href="/assets/svg/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/svg/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/FinlandicaText-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/Questrial-Regular.woff2" as="font" type="font/woff2" crossorigin>
