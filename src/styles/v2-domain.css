@@ -259,6 +259,12 @@
 @media (max-width:640px){
   .dpg .slide img{transform:translateY(var(--py)) scale(var(--ps))}
   .dpg .navy{display:block}
+  /* domain name: smaller, and scales with the screen so the longest names (DetectionLayer.com) fit at ~320px */
+  .dpg #dname{font-size:min(36px,9.3vw) !important}
+  /* "Available for acquisition" on one line down to ~320px */
+  .dpg .navy .nl{font-size:21.5px !important}
+  /* Atom | Escrow proof row: same sizes as the landing acquiring card */
+  .dpg .trust{--ah:11.5px;--e2h:15px;--tg:9px;--tdh:11px}
   /* tags match the gallery pills */
   .dpg .tag{background:#F5F6F8 !important}
   /* universal phone card text (same as the landing acquiring card) */

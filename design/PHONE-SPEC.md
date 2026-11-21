@@ -113,4 +113,6 @@ and the key numbers. On P1 the desktop props are nested under `$desktop` to stay
 - Universal phone rules from here on: the stronger hero silk (opacity up, blur 6) on every phone page; acquiring-card sizes
   (title 16.5px, text 14px) also for the domain page's acquiring, About and Ideal-for cards and the contact card + step cards;
   the footer is shared by every page.
-- Card domain extensions on phone: `#686E75` (lighter than desktop `#565C64`; 4.97:1 on cards, 4.64:1 on the page).
+- Card domain extensions on phone: `#8A9099`, matching the domain page title extension.
+- Domain page (phone): title `min(36px, 9.3vw)` so DetectionLayer.com fits at ~320px; "Available for acquisition" 21.5px
+  (one line down to ~320px); Atom | Escrow proof row uses the landing card sizes (Atom 11.5px, Escrow 15px, gap 9px, divider 11px).
