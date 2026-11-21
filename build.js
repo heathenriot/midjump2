@@ -23,7 +23,7 @@ fs.copyFileSync(path.join(root, "src/js/site.js"), path.join(dist, "assets/site.
 // new design (2026 re-skin): graphics, stylesheet (theme + v2.css) and script
 copyDir(path.join(root, "content/graphics"), path.join(dist, "assets/graphics"));
 copyDir(path.join(root, "content/logo-alpha"), path.join(dist, "assets/logo-alpha"));   // gallery logos with transparent backgrounds (tools/make-logo-alpha.py)
-fs.writeFileSync(path.join(dist, "assets/v2.css"), fs.readFileSync(path.join(root, "content/theme.css"), "utf8") + "\n" + fs.readFileSync(path.join(root, "src/styles/v2.css"), "utf8") + "\n" + fs.readFileSync(path.join(root, "src/styles/v2-domain.css"), "utf8"));
+fs.writeFileSync(path.join(dist, "assets/v2.css"), fs.readFileSync(path.join(root, "content/theme.css"), "utf8") + "\n" + fs.readFileSync(path.join(root, "src/styles/v2.css"), "utf8") + "\n" + fs.readFileSync(path.join(root, "src/styles/v2-domain.css"), "utf8") + "\n" + fs.readFileSync(path.join(root, "src/styles/v2-contact.css"), "utf8"));
 fs.copyFileSync(path.join(root, "src/js/v2.js"), path.join(dist, "assets/v2.js"));
 
 write("domains/index.html", gallery());

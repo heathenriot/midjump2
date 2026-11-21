@@ -86,12 +86,21 @@
       data.subject = domain ? "Inquiry (" + domain + ")" : "Inquiry: Contact Page";
       data.from_name = "Midjump — " + (domain ? "Domain Inquiry" : "Contact Form");
       if (domain) data.domain = domain;
-      err.hidden = true; f.classList.add("sending");
+      var toastOk = document.querySelector(".c-ok"), toastErr = card.querySelector(".toast.err");
+      if (err) err.hidden = true;
+      if (toastErr) toastErr.hidden = true;
+      f.classList.remove("failed"); f.classList.add("sending");
       fetch("https://api.web3forms.com/submit", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); f.reset(); f.hidden = true; if (ok) ok.hidden = false; })
-        .catch(function () { err.hidden = false; })
+        .then(function (r) {
+          if (!r.ok) throw new Error(r.status);
+          f.reset();
+          if (ok) { f.hidden = true; ok.hidden = false; }                       // domain page: thank-you inside the card
+          if (toastOk) { toastOk.hidden = false; clearTimeout(f._t); f._t = setTimeout(function () { toastOk.hidden = true; }, 7000); } // contact: toast
+        })
+        .catch(function () { if (err) err.hidden = false; if (toastErr) { toastErr.hidden = false; f.classList.add("failed"); } })
         .then(function () { f.classList.remove("sending"); });
     });
+    document.querySelectorAll(".toast-x").forEach(function (x) { x.addEventListener("click", function () { x.closest(".toast").hidden = true; f.classList.remove("failed"); }); });
     var again = ok && ok.querySelector(".fok-again");
     if (again) again.addEventListener("click", function () { ok.hidden = true; f.hidden = false; });
   });

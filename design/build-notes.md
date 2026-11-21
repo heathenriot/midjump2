@@ -43,4 +43,6 @@
   domains by eye. Inquiry form: Web3Forms, in-card "Message received." state. Tags + "More from the collection" link to
   /domains?category=…. Phone: related cards use the tile + caption style; About/Ideal text 14px, titles 16.5px, buy-card
   sentence 14px (universal phone card sizes); tags filled #F5F6F8 like the gallery pills.
-- Next: contact (D4/T4/P4).
+- Contact built from D4/T4/P4 (words in content/contact.json). Desktop: own backdrop values (silk turned 8deg, x1.7), no silk
+  column; tablet: original backdrop + silk in the left column; phone: shared phone backdrop, no silk column, step titles 16.5px /
+  text 14px. Success = toast top-right ("Message received."), failure = soft red toast under the button + "Try again".

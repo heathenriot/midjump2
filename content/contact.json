@@ -1,7 +1,15 @@
 {
-  "_help": "Text on the Contact page.",
+  "_help": "Text on the Contact page. 'heading' is the page title; the small letter-spacing tweaks inside 'Portfolio' are applied automatically.",
   "title": "Contact Midjump | Portfolio Inquiries",
   "description": "Inquire about acquiring a Midjump domain, or ask for portfolio details. Purchases are secured through Escrow.com.",
   "heading": "Portfolio Inquiries",
-  "intro": "For acquisition inquiries or portfolio details, please use the form below and specify the domains of interest."
+  "intro": "Interested in a name from the collection, or have a question about the portfolio? Send us a message and we'll get back to you.",
+  "fields": { "name": "Name", "email": "Email address", "domains": "Domain(s) of interest", "message": "Enter your message" },
+  "button": "Send inquiry",
+  "stepsHeading": "What happens next",
+  "steps": [
+    { "title": "Share your inquiry", "text": "Tell us which names you have in mind, along with any questions about them. Once it reaches us, we review the details and reply to you directly." },
+    { "title": "We settle the terms together", "text": "We confirm the terms with you and arrange the purchase the way you prefer: directly through Escrow.com, or through the domain’s listing on Atom.com." },
+    { "title": "Protected transfer of ownership", "text": "Your payment stays protected until the domain is registered in your name. Escrow.com and Atom.com both release funds to the seller only once the transfer is complete." }
+  ]
 }
