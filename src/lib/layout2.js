@@ -46,7 +46,7 @@ export const siteLd = () => ld({ "@graph": [
   { "@type": "WebSite", "@id": site.url + "/#site", name: "Midjump", url: site.url + "/", publisher: { "@id": site.url + "/#org" } }
 ] });
 
-export const layout2 = ({ title, description, urlPath, body, active = "", page = "", noindex, extraHead = "", ogImage }) => `<!doctype html>
+export const layout2 = ({ title, description, urlPath, body, active = "", page = "", noindex, extraHead = "", ogImage = "/assets/og/site.jpg" }) => `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -57,7 +57,7 @@ export const layout2 = ({ title, description, urlPath, body, active = "", page =
 ${noindex ? '<meta name="robots" content="noindex">' : ""}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Midjump">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${site.url}${urlPath}">
-${ogImage ? `<meta property="og:image" content="${site.url}${ogImage}"><meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
+${ogImage ? `<meta property="og:image" content="${site.url}${ogImage}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${esc(title)}"><meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
 <meta name="theme-color" content="#F2F3F5">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/svg+xml" href="/assets/svg/favicon.svg">

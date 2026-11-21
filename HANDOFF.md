@@ -32,6 +32,8 @@ Written 2026-11-21. **The re-skin design is finished and built.** The next phase
 - **Script:** `src/js/v2.js` (phone menu, FAQ, gallery tabs and 1/2-per-row switch, domain carousel, Web3Forms forms, phone slider, back-to-top).
 - **Logos on cards:** `content/logo-alpha/*.png` (white made transparent, rebuilt by `tools/make-logo-alpha.py`), positioned by `content/logo-fit.json`.
 - **Graphics:** `content/graphics/`. Silk, mesh, Escrow mask, mark, and the hero headline SVGs (`phone/hero-phone-L1..L4-1.44.svg`). Desktop also uses those four pieces, joined in two rows at the font's natural word spacing.
+- **Sharing images** (link previews): `content/og/site.jpg` + one `content/og/<slug>.jpg` per domain, 1200×630, made by `tools/make-og.py` from the site's fonts and gallery logos. After adding a domain or changing a gallery logo: `node build.js && python3 tools/make-og.py && node build.js`.
+- **Old Pages projects:** `midjump1.pages.dev` (the previous live site) is kept as a fallback; its repo `heathenriot/midjump1` has `functions/_middleware.js` sending the `.pages.dev` address to midjump.com. The older `midjump` Pages project was deleted.
 - **Favicons:** `content/svg/favicon.svg` switches navy/light with the browser's theme. `favicon.ico`, `favicon-32.png` and `apple-touch-icon.png` are navy-tile fallbacks.
 - **Old, unused system** (safe to delete in a clean-up pass, offered but never requested): `src/lib/layout.js`, `src/styles/site.css`, `src/js/site.js`, `src/lib/theme*.js`, `content/theme-*.jsonc`, `content/gallery-desktop.json`, `gallery-phone.json`, `marquee.json`.
 

@@ -102,5 +102,5 @@ ${ideal ? `<section class="tc ti-line" aria-labelledby="ideal-h"><h3 id="ideal-h
 </div></section>
 </div></div>
 `;
-  return layout2({ title: `${d.name} | Premium Domain for Sale | Midjump`, description: desc, urlPath: `/domains/${d.slug}`, body, active: "/domains", page: "domain", extraHead: breadcrumbs([["Home", "/"], ["Domain Collection", "/domains"], [d.name, `/domains/${d.slug}`]]) });
+  return layout2({ title: `${d.name} | Premium Domain for Sale | Midjump`, description: desc, urlPath: `/domains/${d.slug}`, body, active: "/domains", page: "domain", ogImage: `/assets/og/${d.slug}.jpg`, extraHead: breadcrumbs([["Home", "/"], ["Domain Collection", "/domains"], [d.name, `/domains/${d.slug}`]]) });
 };
