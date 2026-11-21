@@ -129,7 +129,7 @@
   .cpg .duo{gap:var(--pdg) !important}
   .cpg .lcol{min-height:0 !important}
   .cpg .silk{display:var(--psk) !important;min-height:140px !important;flex:none !important;height:160px;margin-left:-20px !important;margin-right:-20px}
-  .cpg .navy{padding:var(--pnp) !important}
+  .cpg .navy{padding:28px var(--pnp) 30px !important}
   .cpg .inp{font-size:16px !important}
   .cpg .btn{height:50px !important}
   .cpg .toast{top:calc(var(--phh) + 12px) !important;left:16px !important;right:16px !important;font-size:14.5px !important}
