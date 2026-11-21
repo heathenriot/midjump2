@@ -425,3 +425,18 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
 @media (max-width:640px){
   .pol-name span{color:var(--ext-phone)}
 }
+
+/* ---------- phone: acquiring section without the outer navy card ----------
+   navy heading + proof row on the page, three navy step cards that share one glow */
+@media (max-width:640px){
+  .acq-sec .navy{background:transparent;border:0;box-shadow:none;padding:0;overflow:visible;border-radius:0}
+  .acq-sec #how{margin:0 0 24px !important;color:var(--navy)}
+  .acq-sec .g3{gap:12px;position:relative;isolation:isolate}
+  .acq-sec .acq > div{background:var(--navy);border:1px solid rgba(255,255,255,.06);box-shadow:0 18px 36px -20px rgba(9,14,30,.3)}
+  .acq-sec .g3::after{content:'';position:absolute;inset:0;z-index:5;pointer-events:none;border-radius:16px;mix-blend-mode:screen;
+    background:radial-gradient(ellipse 95% 38% at 90% -4%,rgba(58,96,178,calc(var(--navy-glow) * 1.4)),transparent 70%),radial-gradient(ellipse 85% 30% at 34% 104%,rgba(28,118,138,calc(.18 * 1.4)),transparent 70%)}
+  .acq-sec .tbox{margin:26px 0 0;color:var(--navy);--tlc:var(--navy)}
+  .acq-sec .tbox::before{margin-bottom:22px;background:linear-gradient(to right,transparent 0%,color-mix(in srgb,var(--navy) 18%,transparent) 18%,color-mix(in srgb,var(--navy) 18%,transparent) 82%,transparent 100%)}
+  .acq-sec .tlab{background-image:none;-webkit-text-fill-color:currentColor;color:var(--navy);opacity:.85}
+  .acq-sec .tdiv{background:color-mix(in srgb,var(--navy) 35%,transparent)}
+}
