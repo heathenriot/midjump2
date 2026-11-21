@@ -2,10 +2,10 @@
 import { esc } from "../lib/util.js";
 import { card as baseCard } from "../lib/cards.js";
 import { domains, landingText as T } from "../lib/data.js";
-import { layout2 } from "../lib/layout2.js";
+import { layout2, siteLd } from "../lib/layout2.js";
 
 const bySlug = Object.fromEntries(domains.map((d) => [d.slug, d]));
-for (const s of T.selected) if (!bySlug[s]) throw new Error(`content/landing.json "selected" lists "${s}" but there's no content/domains/${s}.json. Check the spelling.`);
+for (const s of [...T.selected, ...(T.selectedPhone || [])]) if (!bySlug[s]) throw new Error(`content/landing.json "selected" lists "${s}" but there's no content/domains/${s}.json. Check the spelling.`);
 const picks = T.selected.map((s) => bySlug[s]);
 const card = (d, o = {}) => baseCard(d, { tint: true, ...o });
 
@@ -15,7 +15,8 @@ const words = (line, a, b) => { const p = line.split(" "); const h = Math.ceil(p
 
 // Phone slider: two sets of four (2 x 2), filled column by column, plus a copy of the first set for a seamless loop.
 const colm = (a) => [a[0], a[2], a[1], a[3]];
-const setA = colm(picks.slice(0, 4)), setB = colm(picks.slice(4, 8));
+const phonePicks = T.selectedPhone ? T.selectedPhone.map((s) => bySlug[s]) : picks;
+const setA = colm(phonePicks.slice(0, 4)), setB = colm(phonePicks.slice(4, 8));
 
 export const landing = () => {
   const body = `
@@ -58,5 +59,5 @@ export const landing = () => {
 <div class="faql">${T.faq.map(({ q, qPhone, a }, i) => `<div class="faq"><button type="button" class="faq-q" id="faq-q${i}" aria-expanded="false" aria-controls="faq-a${i}"><span class="faq-n">${num(i)}</span><span class="qt">${qPhone ? `<span class="qd">${esc(q)}</span><span class="qm">${esc(qPhone)}</span>` : esc(q)}</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-a" id="faq-a${i}" role="region" aria-labelledby="faq-q${i}"><div class="faq-ai">${(Array.isArray(a) ? a : [a]).map((p) => `<p>${esc(p)}</p>`).join("")}</div></div></div>`).join("")}</div>
 </div></div>
 </section>`;
-  return layout2({ title: T.title, description: T.description, urlPath: "/", body, page: "home" });
+  return layout2({ title: T.title, description: T.description, urlPath: "/", body, page: "home", extraHead: siteLd() });
 };

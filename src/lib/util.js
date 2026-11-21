@@ -6,6 +6,9 @@ export const root = path.resolve(path.dirname(new URL(import.meta.url).pathname)
 export const dist = path.join(root, "dist");
 
 export const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+// Copy text: *word* becomes italic. plain() strips the asterisks (for meta tags).
+export const escEm = (s) => esc(s).replace(/\*([^*]+)\*/g, "<em>$1</em>");
+export const plain = (s) => String(s).replace(/\*([^*]+)\*/g, "$1");
 export const write = (rel, data) => { const f = path.join(dist, rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, data); };
 export const copyDir = (a, b) => { fs.mkdirSync(b, { recursive: true }); for (const e of fs.readdirSync(a, { withFileTypes: true })) e.isDirectory() ? copyDir(path.join(a, e.name), path.join(b, e.name)) : fs.copyFileSync(path.join(a, e.name), path.join(b, e.name)); };
 export const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(root, rel), "utf8"));

@@ -1,8 +1,8 @@
 // One page per domain (/domains/<name>). Also decides the "More from the collection" picks.
 // Words: content/domains/<name>.json (overview[0] = About, overview[1] = Ideal for). Look: src/styles/v2-domain.css.
-import { esc } from "../lib/util.js";
+import { esc, escEm, plain } from "../lib/util.js";
 import { domains, site } from "../lib/data.js";
-import { layout2, backdrop } from "../lib/layout2.js";
+import { layout2, backdrop, breadcrumbs } from "../lib/layout2.js";
 import { card } from "../lib/cards.js";
 import { iconAbout, iconIdeal } from "../lib/domain-icons.js";
 
@@ -47,7 +47,7 @@ export const domainPage = (d) => {
   const dots = d.logos.map((_, k) => `<button type="button" class="dot${k ? "" : " on"}" aria-label="Show logo concept ${k + 1}"></button>`).join("");
   const [about = "", ideal = ""] = d.overview;
   const rel = picks[d.slug].map((r) => card(r)).join("");
-  const desc = trim(`${d.name} is available for acquisition. ${firstSentences(ideal || about, 120)}`, 158);
+  const desc = trim(`${d.name} is a premium domain name available for acquisition. ${firstSentences(plain(ideal || about), 120)}`, 158);
 
   const body = `
 ${backdrop}
@@ -71,8 +71,8 @@ ${backdrop}
 <div class="ovl-arrs"><button type="button" class="arr sm pv" aria-label="Previous logo concept">${chevL}</button><button type="button" class="arr sm nx" aria-label="Next logo concept">${chevR}</button></div>
 </div>
 </div>
-<section class="tc" aria-labelledby="about-h"><h2 id="about-h" class="tl"><span class="ti" aria-hidden="true">${iconAbout}</span>About the domain</h2><p class="tp">${esc(about)}</p></section>
-${ideal ? `<section class="tc ti-line" aria-labelledby="ideal-h"><h3 id="ideal-h" class="tl"><span class="ti" aria-hidden="true">${iconIdeal}</span>Ideal for</h3><p class="tp">${esc(ideal)}</p></section>` : ""}
+<section class="tc" aria-labelledby="about-h"><h2 id="about-h" class="tl"><span class="ti" aria-hidden="true">${iconAbout}</span>About the domain</h2><p class="tp">${escEm(about)}</p></section>
+${ideal ? `<section class="tc ti-line" aria-labelledby="ideal-h"><h3 id="ideal-h" class="tl"><span class="ti" aria-hidden="true">${iconIdeal}</span>Ideal for</h3><p class="tp">${escEm(ideal)}</p></section>` : ""}
 </div>
 <div class="pdv" aria-hidden="true"></div>
 <section class="navy lfx-static" aria-labelledby="acq-h">
@@ -102,5 +102,5 @@ ${ideal ? `<section class="tc ti-line" aria-labelledby="ideal-h"><h3 id="ideal-h
 </div></section>
 </div></div>
 `;
-  return layout2({ title: `${d.name} | Premium Domain | Midjump`, description: desc, urlPath: `/domains/${d.slug}`, body, active: "/domains", page: "domain" });
+  return layout2({ title: `${d.name} | Premium Domain for Sale | Midjump`, description: desc, urlPath: `/domains/${d.slug}`, body, active: "/domains", page: "domain", extraHead: breadcrumbs([["Home", "/"], ["Domain Collection", "/domains"], [d.name, `/domains/${d.slug}`]]) });
 };

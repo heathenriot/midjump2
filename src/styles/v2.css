@@ -466,6 +466,17 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
   .acq-sec .acq > div:nth-child(3){background-position:100% 0,100% 0,0 0,100% 0}
 }
 
+/* 404 page */
+.nf{min-height:58vh}
+.nf .wrap{padding-top:calc(var(--section-gap) * .9);padding-bottom:calc(var(--section-gap) * 1.4)}
+.v2 .nf-p{margin:20px 0 36px;font-size:17px;line-height:1.6;color:var(--text);max-width:520px}
+@media (max-width:640px){.nf .pg-h1{font-size:34px !important}.v2 .nf-p{font-size:15.5px;margin:14px 0 30px}}
+
+/* acquiring heading + "Secured through" sit on the light page (phone, desktop): use the page's selection colours, not the navy card's */
+@media (max-width:640px),(min-width:1025px){
+  .v2 .acq-sec .navy-head ::selection,.v2 .acq-sec .tbox ::selection{background:var(--ink);color:#F9F8F6;-webkit-text-fill-color:#F9F8F6}
+}
+
 /* ---------- desktop hero: two-line headline (phone lettering, pieces joined at the font's own word spacing),
    subheading as a wrapping text box, hero bottom line and everything below pulled up over the silk ---------- */
 .hh-svgp .hr{display:block}

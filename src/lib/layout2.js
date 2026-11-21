@@ -38,6 +38,14 @@ export const footer2 = `
 </div>
 </footer>`;
 
+/* Structured data (JSON-LD) for search engines. */
+const ld = (o) => `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", ...o }).replace(/</g, "\\u003c")}</script>`;
+export const breadcrumbs = (items) => ld({ "@type": "BreadcrumbList", itemListElement: items.map(([name, p], i) => ({ "@type": "ListItem", position: i + 1, name, item: site.url + p })) });
+export const siteLd = () => ld({ "@graph": [
+  { "@type": "Organization", "@id": site.url + "/#org", name: "Midjump", url: site.url + "/", logo: site.url + "/assets/svg/apple-touch-icon.png", email: site.email },
+  { "@type": "WebSite", "@id": site.url + "/#site", name: "Midjump", url: site.url + "/", publisher: { "@id": site.url + "/#org" } }
+] });
+
 export const layout2 = ({ title, description, urlPath, body, active = "", page = "", noindex, extraHead = "", ogImage }) => `<!doctype html>
 <html lang="en">
 <head>

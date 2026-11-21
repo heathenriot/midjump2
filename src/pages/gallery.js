@@ -1,7 +1,7 @@
 // Domain Collection page (/domains). Words + card order: content/gallery.json. Logo placement: content/logo-fit.json.
 import { esc, readJson } from "../lib/util.js";
 import { domains, galleryText as G, CATEGORIES } from "../lib/data.js";
-import { layout2, backdrop, backToTop } from "../lib/layout2.js";
+import { layout2, backdrop, backToTop, breadcrumbs } from "../lib/layout2.js";
 import { logoTf, logoSrc, fitOf } from "../lib/cards.js";
 
 const bySlug = Object.fromEntries(domains.map((d) => [d.slug, d]));
@@ -54,5 +54,5 @@ ${backdrop}
 <div class="wrap"><div class="g4 gal-grid v1">${cards.map(card).join("")}</div></div>
 </section>
 ${backToTop}`;
-  return layout2({ title: G.title, description: G.description, urlPath: "/domains", body, active: "/domains", page: "gallery" });
+  return layout2({ title: G.title, description: G.description, urlPath: "/domains", body, active: "/domains", page: "gallery", extraHead: breadcrumbs([["Home", "/"], [G.heading, "/domains"]]) });
 };

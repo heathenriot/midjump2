@@ -13,6 +13,8 @@
   "viewAll": "View all",
   "_selected": "The eight cards under the hero, in this order (domain file names without .json). On phones they slide as two sets of four.",
   "selected": ["anthropize", "enforcing", "nephele", "reinforcing", "guardrailed", "triaged", "crossmodality", "modulated"],
+  "_selectedPhone": "Optional: a different order for the phone slider (first four = set 1, last four = set 2). Leave it out to use 'selected'.",
+  "selectedPhone": ["anthropize", "guardrailed", "nephele", "reinforcing", "enforcing", "triaged", "crossmodality", "modulated"],
 
   "acquiringHeading": "Acquiring a domain",
   "securedThrough": "Secured through",
@@ -39,7 +41,7 @@
     {
       "q": "Do you offer payment plans?",
       "qPhone": "Are payment plans available?",
-      "a": ["Yes, payment plans are arranged through Atom.com. Please contact Midjump with the domain you’re interested in and your preferred payment timeline."]
+      "a": ["Yes, payment plans are available through Atom.com on fixed terms. Contact Midjump with the domain you’re interested in to receive the plan options."]
     }
   ]
 }
