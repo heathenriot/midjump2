@@ -32,7 +32,7 @@
   --silk-fade-top: 0%;
   --silk-fade-bottom: 25%;
   --silk-fade-left: 39%;
-  --silk-fade-right: 21%;
+  --silk-fade-right: 35%;
 
   /* the same silk, faint, behind the top of inner pages (gallery, domain, contact) */
   --bd-opacity: .45;
