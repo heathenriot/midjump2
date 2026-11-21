@@ -373,8 +373,9 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
   .pvs button{width:36px;height:36px;display:grid;place-items:center;border:0;background:transparent;color:#AEB6C4;cursor:pointer;padding:0;transition:color .25s ease;-webkit-tap-highlight-color:transparent}
   .pvs button.on{color:var(--ink)}
   .pvs svg{width:18px;height:18px;display:block}
-  .tabs{margin-top:24px;gap:8px}
-  .tab{flex:none;min-height:36px;padding:0 14px;font-size:14px;gap:6px}
+  .tabs{margin-top:24px;gap:8px 6px}
+  .tab{flex:none;min-height:35px;padding:0 11px;font-size:13.5px;gap:6px}
+  .tab .ct{font-size:13px}
   .tab:not(.on){border-color:#a3adbd;box-shadow:0 1px 2px rgba(12,24,54,.034),0 4px 10px -7px rgba(12,24,54,.136)}
   .tab:not(.on):hover{border-color:#5A6A85}
   .tl-d{display:none}
@@ -389,7 +390,9 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
   .g4.gal-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--tile-row-gap) 10px}
   /* one per row (default): wide plate, logo placed by its ink box */
   .g4.gal-grid.v1{grid-template-columns:minmax(0,1fr);gap:18px}
-  .v2 .gal-grid.v1 .pol{padding:9px 9px 0;border-radius:12px}
+  .v2 .gal-grid.v1 .pol{padding:9px 9px 0;border-radius:12px;border-color:var(--card1-border);
+    background:radial-gradient(ellipse var(--card1-glow-size) calc(var(--card1-glow-size) * .75) at var(--gx) var(--gy),color-mix(in srgb,var(--card1-glow-color) calc(var(--card1-glow) * var(--ga) * 100%),transparent),transparent 70%),var(--card1-bg)}
+  .gal-grid.v1 .pol-plate{background:var(--tile1-bg);border-radius:var(--tile1-radius);box-shadow:var(--tile1-shadow);outline:var(--tile1-border-width) solid var(--tile1-border);outline-offset:calc(-1 * var(--tile1-border-width))}
   .gal-grid.v1 .pol-name{padding:13px 6px 15px;font-size:16px}
   .v1 .pol-plate{aspect-ratio:16/9}
   .v1 .pol-plate img{position:absolute;grid-area:auto;left:50%;top:50%;width:var(--w1);height:auto;max-width:none;margin:calc(var(--my1) + 5.5px) 0 0 var(--mx1);object-fit:fill;scale:none;transform:translate(-50%,-50%) !important}
@@ -403,16 +406,17 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
    ========================================================================== */
 @media (max-width:640px){
   .v2 .mqv .pol,.v2 .gal-grid:not(.v1) .pol,.v2 .mqv .pol:hover,.v2 .gal-grid:not(.v1) .pol:hover{background:transparent;border:0;padding:0;border-radius:0;box-shadow:none;transform:none}
-  .mqv .pol-plate,.gal-grid:not(.v1) .pol-plate{background:var(--tile-bg);border-radius:11px;box-shadow:var(--tile-shadow);transition:transform .35s ease}
-  .mqv .pol-plate::after,.gal-grid:not(.v1) .pol-plate::after{content:'';position:absolute;inset:0;z-index:2;border-radius:inherit;padding:var(--tile-border-width);background:var(--tile-border);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;transition:background-color .3s ease}
+  .mqv .pol-plate,.gal-grid:not(.v1) .pol-plate{background:var(--tile-bg);border-radius:11px;box-shadow:var(--tile-shadow)}
+  /* inset outline: snapped to whole pixels, so it is even on every side, and it never changes the logo size */
+  .mqv .pol-plate,.gal-grid:not(.v1) .pol-plate{outline:var(--tile-border-width) solid var(--tile-border);outline-offset:calc(-1 * var(--tile-border-width));transition:transform .35s ease,outline-color .3s ease}
   .mqv .pol:hover .pol-plate,.mqv .pol:active .pol-plate,.gal-grid:not(.v1) .pol:hover .pol-plate,.gal-grid:not(.v1) .pol:active .pol-plate{transform:translateY(-1px)}
-  .mqv .pol:hover .pol-plate::after,.mqv .pol:active .pol-plate::after,.gal-grid:not(.v1) .pol:hover .pol-plate::after,.gal-grid:not(.v1) .pol:active .pol-plate::after{background:var(--card-hover-border)}
+  .mqv .pol:hover .pol-plate,.mqv .pol:active .pol-plate,.gal-grid:not(.v1) .pol:hover .pol-plate,.gal-grid:not(.v1) .pol:active .pol-plate{outline-color:var(--card-hover-border)}
   .mqv .pol-name,.gal-grid:not(.v1) .pol-name{padding:var(--tile-name-gap) 2px 0;font-size:var(--tile-name-size);text-align:center;white-space:nowrap}
   .mqv .g4{row-gap:var(--tile-row-gap)}
   /* reduced-motion fallback grid on the landing uses the same tiles */
   .v2 .sel-grid .pol,.v2 .sel-grid .pol:hover{background:transparent;border:0;padding:0;border-radius:0;box-shadow:none;transform:none}
   .sel-grid .pol-plate{background:var(--tile-bg);border-radius:11px;box-shadow:var(--tile-shadow)}
-  .sel-grid .pol-plate::after{content:'';position:absolute;inset:0;z-index:2;border-radius:inherit;padding:var(--tile-border-width);background:var(--tile-border);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+  .sel-grid .pol-plate{outline:var(--tile-border-width) solid var(--tile-border);outline-offset:calc(-1 * var(--tile-border-width))}
   .sel-grid .pol-name{padding:var(--tile-name-gap) 2px 0;font-size:var(--tile-name-size);text-align:center;white-space:nowrap}
 }
 @media (max-width:640px) and (prefers-reduced-motion:reduce){

@@ -61,6 +61,18 @@
   --tile-name-gap: 10px;
   --tile-row-gap: 18px;
 
+  /* phone gallery, one per row: grey logo tile inside a light card with a soft glow (placed differently on each card) */
+  --card1-bg: color-mix(in srgb, #fafbfc, #FFFFFF 20%);
+  --card1-border: #ECEEF1;
+  --card1-glow-color: #cfd5dda8;
+  --card1-glow: .55;
+  --card1-glow-size: 105%;
+  --tile1-bg: #EEEFF2;
+  --tile1-border: #CFD5DD;
+  --tile1-border-width: 1.5px;
+  --tile1-shadow: 0 1px 2px rgba(12,24,54,.025), 0 8px 16px -12px rgba(12,24,54,.11);
+  --tile1-radius: 8px;
+
   /* acquiring card glow (top right) */
   --navy-glow: .3;
 }
@@ -111,7 +123,7 @@
     --silk-fade-right: 0%;
     --bd-opacity: .7;
     --bd-brightness: 1.03;
-    --bd-blur: 12px;
+    --bd-blur: 6px;
     --bd-zoom: 1.4;
     --bd-x: 100%;
     --bd-y: 34%;

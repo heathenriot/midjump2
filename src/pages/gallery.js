@@ -25,9 +25,15 @@ const oneCol = (d) => {
   return `--w1:${(W * K * 100).toFixed(3)}%;--mx1:${fx[0].toFixed(3)}%;--my1:${(my * 100).toFixed(3)}%`;
 };
 
+// Phone, one per row: each card's soft glow sits in its own spot, worked out from the domain name
+// (so it never changes between visits). Change GLOW_SEED to reshuffle them all.
+const GLOW_SEED = 1;
+const rnd = (s) => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return ((h >>> 0) % 10000) / 10000; };
+const glow = (d) => { const r = (k) => rnd(d.base + "|" + GLOW_SEED + "|" + k); return `--gx:${Math.round(r("x") * 100)}%;--gy:${Math.round(-25 + r("y") * 150)}%;--ga:${(0.45 + r("a") * 0.55).toFixed(2)}`; };
+
 const card = (d) => {
   const tf = logoTf(d), src = logoSrc(d), one = oneCol(d);
-  return `<a href="/domains/${d.slug}" class="pol" data-cats="${esc(d.categories.join("|"))}"><span class="pol-plate"><img src="${src}" alt="${esc(d.name)} logo" style="transform:${tf};${one}" loading="lazy" decoding="async"></span><span class="pol-name">${esc(d.base)}<span>${esc(d.ext)}</span></span></a>`;
+  return `<a href="/domains/${d.slug}" class="pol" style="${glow(d)}" data-cats="${esc(d.categories.join("|"))}"><span class="pol-plate"><img src="${src}" alt="${esc(d.name)} logo" style="transform:${tf};${one}" loading="lazy" decoding="async"></span><span class="pol-name">${esc(d.base)}<span>${esc(d.ext)}</span></span></a>`;
 };
 
 const icon1 = `<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="2.5" y="2.5" width="13" height="5.5" rx="1.2"/><rect x="2.5" y="10" width="13" height="5.5" rx="1.2"/></svg>`;
