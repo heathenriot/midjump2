@@ -96,3 +96,12 @@ and the key numbers. On P1 the desktop props are nested under `$desktop` to stay
   Send us a message and we'll get back to you."
 - Contact step 1 ends "…we review the details and reply to you **directly**." (was "personally").
 - Collection: first pill "All Domains" (phone).
+
+## Phone refinements, 2026-11-21 (checked on a Samsung A54: Chrome zoom makes it lay out at ~330px)
+- Two-per-row cards (landing slider, gallery 2-per-row) became **tile + caption**: a light tile `#FAFBFC` holding the logo,
+  1.25px border `#cfd5ddbd` drawn as a ring on top (thickness never shrinks the logo), resting shadow at 0.65,
+  name underneath, centred, 13.5px, 10px gap; 18px between rows. Gallery one-per-row cards unchanged.
+- Hero silk opacity 0.5 (was 0.3), blur 6px (was 8.5). Section headings 24.5px (was 26).
+- Acquiring card: step titles 16.5px, text 14px.
+- Footer: tag 15.5px, Escrow mark 19px nudged up 0.25px (its capitals match the tag's lowercase height, baseline aligned);
+  divider fades out 248 → 283px.

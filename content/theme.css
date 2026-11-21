@@ -52,6 +52,15 @@
   --card-hover-border: #7a89a8;
   --logo-size: .93;
 
+  /* phone: two-per-row cards are a tile (logo) with the name underneath */
+  --tile-bg: #FAFBFC;
+  --tile-border: #cfd5ddbd;
+  --tile-border-width: 1.25px;
+  --tile-shadow: 0 1px 2px rgba(12,24,54,.0325), 0 8px 16px -12px rgba(12,24,54,.143);
+  --tile-name-size: 13.5px;
+  --tile-name-gap: 10px;
+  --tile-row-gap: 18px;
+
   /* acquiring card glow (top right) */
   --navy-glow: .3;
 }
@@ -90,9 +99,9 @@
   :root {
     --side: 20px;
     --section-gap: 72px;
-    --silk-opacity: .3;
+    --silk-opacity: .5;
     --silk-brightness: 1.03;
-    --silk-blur: 8.5px;
+    --silk-blur: 6px;
     --silk-zoom: 1.5;
     --silk-x: 88%;
     --silk-y: 51%;

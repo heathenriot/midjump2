@@ -88,11 +88,12 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
 @media (max-width:640px){
   .foot .wrap{padding:44px 20px 28px}
   .v2 .fmail{font-size:23px}
-  .foot-tag{font-size:16.5px;--eh:20.5px}
+  .foot-tag{font-size:15.5px;--eh:19px}
+  .foot-tag .esc{transform:translateY(-.25px)}
   .foot-bar{margin-top:17px;gap:10px 22px}
   .foot-copy{order:3;flex-basis:100%;margin-top:4px;color:#7f8ba6}
   .v2 .foot-bar .fl{color:#dde3ee}
-  .foot-bar-line{background:linear-gradient(to right,#2E3A5C 0,#2E3A5C 248px,transparent 368px)}
+  .foot-bar-line{background:linear-gradient(to right,#2E3A5C 0,#2E3A5C 248px,transparent 283px)}
 }
 
 /* ---------- shared: domain card ---------- */
@@ -251,7 +252,7 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
   .hero .cta{margin-top:52px;height:46px;width:212px;padding:0 4px;font-size:15px;letter-spacing:0}
 
   /* headings */
-  .sh2{font-size:26px;line-height:1.2}
+  .sh2{font-size:24.5px;line-height:1.2}
 
   /* selected names: two sets of four that slide */
   .sel .wrap{padding-top:56px}
@@ -259,8 +260,6 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
   .sec-head{flex-direction:column;align-items:flex-start;flex-wrap:nowrap;gap:10px}
   .v2 .sel .vfc{font-size:14.5px;margin:0;white-space:nowrap}
   .sel-grid{display:none}
-  .v2 .sel .pol{padding:7px 7px 0;border-radius:11px}
-  .sel .pol-name{padding:11px 4px 13px;font-size:14px}
   .mqv{display:block;overflow:hidden;touch-action:pan-y;cursor:grab;margin:-4px -2px 0;padding:4px 2px 6px;-webkit-user-select:none;user-select:none}
   .mqv:active{cursor:grabbing}
   .mqv .g4{grid-template-columns:none;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:calc(50% - 5px);gap:10px;transition:transform .7s cubic-bezier(.45,.05,.25,1);will-change:transform}
@@ -279,8 +278,8 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
   .tlab{opacity:.75}
   .acq > div{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:12px;align-items:baseline;padding:18px;background:linear-gradient(#232d4e,color-mix(in srgb,#232d4e 82%,#141C36)) padding-box,linear-gradient(165deg,#4A5680,#2C3659 45%,#253052) border-box}
   .acq > div > span{font-size:13.5px;margin:0;letter-spacing:.02em;color:#c9d0df7d}
-  .acq h3{font-size:17px;margin:0 !important;color:#f9f6ea}
-  .acq p{grid-column:1 / -1;margin-top:9px;font-size:15px;line-height:1.45;color:#c8d0e4}
+  .acq h3{font-size:16.5px;margin:0 !important;color:#f9f6ea}
+  .acq p{grid-column:1 / -1;margin-top:9px;font-size:14px;line-height:1.45;color:#c8d0e4}
 
   /* FAQ */
   .split{grid-template-columns:minmax(0,1fr);gap:20px}
@@ -387,14 +386,35 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
   /* phone hides non-matching cards instead of dimming them */
   .v2 .gal-grid .pol.dim{display:none}
   /* two per row */
-  .g4.gal-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .v2 .gal-grid .pol{padding:7px 7px 0;border-radius:11px}
-  .gal-grid .pol-name{padding:11px 4px 13px;font-size:13.5px}
-  .v2 .gal-grid .pol:active{transform:translateY(-1px);border-color:var(--card-hover-border)}
+  .g4.gal-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--tile-row-gap) 10px}
   /* one per row (default): wide plate, logo placed by its ink box */
   .g4.gal-grid.v1{grid-template-columns:minmax(0,1fr);gap:18px}
   .v2 .gal-grid.v1 .pol{padding:9px 9px 0;border-radius:12px}
   .gal-grid.v1 .pol-name{padding:13px 6px 15px;font-size:16px}
   .v1 .pol-plate{aspect-ratio:16/9}
   .v1 .pol-plate img{position:absolute;grid-area:auto;left:50%;top:50%;width:var(--w1);height:auto;max-width:none;margin:calc(var(--my1) + 5.5px) 0 0 var(--mx1);object-fit:fill;scale:none;transform:translate(-50%,-50%) !important}
+}
+
+/* ==========================================================================
+   PHONE: two-per-row cards (landing slider, gallery 2-per-row) are a light tile
+   holding the logo, with the name centred underneath, so long names get the full
+   column width. The border is drawn as a ring on top, so its thickness never
+   changes the logo size.
+   ========================================================================== */
+@media (max-width:640px){
+  .v2 .mqv .pol,.v2 .gal-grid:not(.v1) .pol,.v2 .mqv .pol:hover,.v2 .gal-grid:not(.v1) .pol:hover{background:transparent;border:0;padding:0;border-radius:0;box-shadow:none;transform:none}
+  .mqv .pol-plate,.gal-grid:not(.v1) .pol-plate{background:var(--tile-bg);border-radius:11px;box-shadow:var(--tile-shadow);transition:transform .35s ease}
+  .mqv .pol-plate::after,.gal-grid:not(.v1) .pol-plate::after{content:'';position:absolute;inset:0;z-index:2;border-radius:inherit;padding:var(--tile-border-width);background:var(--tile-border);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;transition:background-color .3s ease}
+  .mqv .pol:hover .pol-plate,.mqv .pol:active .pol-plate,.gal-grid:not(.v1) .pol:hover .pol-plate,.gal-grid:not(.v1) .pol:active .pol-plate{transform:translateY(-1px)}
+  .mqv .pol:hover .pol-plate::after,.mqv .pol:active .pol-plate::after,.gal-grid:not(.v1) .pol:hover .pol-plate::after,.gal-grid:not(.v1) .pol:active .pol-plate::after{background:var(--card-hover-border)}
+  .mqv .pol-name,.gal-grid:not(.v1) .pol-name{padding:var(--tile-name-gap) 2px 0;font-size:var(--tile-name-size);text-align:center;white-space:nowrap}
+  .mqv .g4{row-gap:var(--tile-row-gap)}
+  /* reduced-motion fallback grid on the landing uses the same tiles */
+  .v2 .sel-grid .pol,.v2 .sel-grid .pol:hover{background:transparent;border:0;padding:0;border-radius:0;box-shadow:none;transform:none}
+  .sel-grid .pol-plate{background:var(--tile-bg);border-radius:11px;box-shadow:var(--tile-shadow)}
+  .sel-grid .pol-plate::after{content:'';position:absolute;inset:0;z-index:2;border-radius:inherit;padding:var(--tile-border-width);background:var(--tile-border);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+  .sel-grid .pol-name{padding:var(--tile-name-gap) 2px 0;font-size:var(--tile-name-size);text-align:center;white-space:nowrap}
+}
+@media (max-width:640px) and (prefers-reduced-motion:reduce){
+  .sel-grid{row-gap:var(--tile-row-gap) !important}
 }
