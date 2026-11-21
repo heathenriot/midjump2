@@ -1,126 +1,77 @@
-# Midjump rebuild: handoff note for a fresh Claude session
+# Midjump: handoff note for a fresh Claude session
 
-> **Update 2026-11-18:** the desktop re-skin is designed on a new canvas; see `design/DESKTOP-SPEC.md` first.
-> **Update 2026-11-20:** all four phone layouts are locked too; see `design/PHONE-SPEC.md`. Tablet (641–1024) is locked as well; see `design/TABLET-SPEC.md`. Breakpoints: phone ≤640, tablet 641–1024, desktop ≥1025.
+Written 2026-11-21. **The re-skin design is finished and built.** The next phase is fine-tuning the page *content* (copy, domain descriptions, SEO text), with occasional small design touch-ups.
 
-> **Update 2026-11-21: building the re-skin into the site, page by page.** All four pages are on the new design (landing, gallery, domain pages, contact; all three sizes). The old `layout.js`, `site.css`, `site.js` and the theme-settings system are no longer used by any page and can be removed in a clean-up pass. New-design pages use
-> `src/lib/layout2.js` (header with phone menu, footer), `/assets/v2.css` = `content/theme.css` (the short list of values to tune:
-> colours, column, section gap, hero silk per size, card shadow) + `src/styles/v2.css` + `src/styles/v2-domain.css` / `v2-contact.css` (domain / contact pages, generated from the D3/T3/P3 boards by `tools/gen-domain-css.py`, then hand-edited below its "hand-written" line) (everything else, with tablet/phone rules next to
-> each part), and `src/js/v2.js` (phone menu, FAQ, phone card slider). Card logos use `content/logo-alpha/*.png` (gallery logos with the
-> white made transparent; regenerate with `python3 tools/make-logo-alpha.py`) placed by `content/logo-fit.json`. Gallery order lives in `content/gallery.json` → `order` (the old `gallery-desktop.json` / `gallery-phone.json` are only still read by the old domain pages and can go once those are rebuilt). Gallery links accept `?category=AI` etc. Design images live in
-> `content/graphics/` (silk.jpg, mesh.png, escrow-mask.png, mark.svg, hero headline SVGs). Pages not yet rebuilt still use the old
-> `layout.js` + theme system. Breakpoints in code: phone <=640, tablet 641-1024, desktop >=1025.
+## 1. The project
 
-Written 2026-11-13 by the previous session. Read this first, then `HOW-TO.md` and `README.md`. This file is about *how we work*; those two are about *how the site works*.
-
-## 1. The project in one paragraph
-
-Redesign and rebuild **midjump.com**, a portfolio site for a collection of ~49 premium brandable domain names (each has logos, a description and an acquisition inquiry). The owner is **heathenriot** (GitHub), tweaks by eye, in small steps, and is very particular about pixels, colours and spacing.
-
-- **Design canvas:** artifact "Midjump Redesign Directions", slug `f53def6c-81f1-4be9-9998-5b7ee22b985f`, https://claude.ai/artifact/XHSm5TGQUnGNKVenMWGxdL. Boards are `.dc.html` files under `project/`. It is the design source of truth: the user tweaks things there first, then we port to code.
-- **Code rebuild:** https://github.com/heathenriot/midjump2 (public, branch `main`). Working dir `/home/claude/midjump2`.
+- **What:** midjump.com, a portfolio of ~49 premium brandable domain names. Each domain has logos, an About / Ideal-for description and an inquiry form.
+- **Owner:** heathenriot. Tweaks by eye in small steps, very particular about pixels and spacing.
+- **Repo:** https://github.com/heathenriot/midjump2, branch `main`. Push straight to `main`, no PRs.
+  - Attach it with `add_repo` (owner `heathenriot`, repo `midjump2`, access push) and clone it.
 - **Test site:** https://midjump2.heathenriot.workers.dev (Cloudflare Workers).
-- **Live site:** midjump.com is the OLD site and is **untouched** until a later, reversible cut-over. The user sometimes screenshots the old site to show a target (e.g. "this tall"); treat it as a reference, not as a bug.
-- **Old code, for reference only:** private repos `heathenriot/midjump1` (newest) and `heathenriot/midjump`. Attach with `mcp__claude-code-remote__add_repo`, clone to `/home/claude/midjump1`. Use it to check "how did the old version do X" (that is how we found the old `::selection` colour and `user-select:none` behaviour).
-- **Claude Project "midjump"** holds docs `claude/rebuild-status.md`, `claude/portfolio-tiers.md`, `claude/redesign-decisions.md`. They are **stale** (nothing about logo, favicon, marquee, FAQ, colour changes). Offer to refresh them; don't trust them over the code.
+  - **Pushes don't auto-deploy.** After every push, remind the user to create a new deployment in Cloudflare.
+- **Live site:** midjump.com is still the OLD site. It switches over later, reversibly.
+- **Commits:** a short subject, then the attribution trailers given in the current session's system reminder.
 
-## 2. How the repo works
+## 2. How the site is built
 
-Static site generator, no framework. `node build.js` writes `dist/`. `node preview.js` serves it locally with rebuild. Deploy = `npx wrangler deploy` (Cloudflare). **Pushes do NOT auto-deploy** (the Cloudflare GitHub app isn't installed), so after every push remind the user to create a new deployment in the Cloudflare dashboard (Deployments → Create deployment). The user will eventually download the repo zip and edit in VS Code.
+`node build.js` writes `dist/`. `node preview.js` serves it locally.
 
-```
-content/              EVERYTHING the owner edits (JSON, no code)
-  site.json landing.json contact.json gallery.json marquee.json
-  gallery-desktop.json gallery-phone.json     order + logo size/position
-  theme-desktop.jsonc theme-phone.jsonc       the LOOK (colours, sizes, gaps, lines)
-  domains/*.json      one file per domain (+ _template.json)
-  svg/                every logo
-src/
-  lib/theme-schema.js  list of every theme setting: [section,key,type,default,description]
-  lib/theme.js         validates the jsonc against the schema (typos -> "did you mean")
-  lib/data.js layout.js util.js
-  pages/               landing.js domain.js gallery.js contact.js (HTML as template strings)
-  styles/site.css      the ONE stylesheet; reads only CSS variables
-  js/site.js           FAQ accordion, gallery, viewer behaviour
-  fonts/               Finlandica Text, Questrial, Plus Jakarta Sans
-```
+- **Breakpoints:** phone ≤640px, tablet 641–1024px, desktop ≥1025px.
+- **Page frame:** `src/lib/layout2.js` (header, phone menu, footer, favicons).
+- **Pages:** `src/pages/` (`landing.js`, `gallery.js`, `domain.js`, `contact.js`). The HTML is template strings.
+- **Styles:** `/assets/v2.css`, built from four files in this order:
+  1. `content/theme.css`: the main values (colours, column, section gap, hero silk per size, card and tile variables).
+  2. `src/styles/v2.css`: shared styles, landing and gallery.
+  3. `src/styles/v2-domain.css`: domain pages.
+  4. `src/styles/v2-contact.css`: contact page.
+  - Tablet and phone rules sit next to each part, in `@media` blocks.
+  - The domain and contact files were generated from the boards (`tools/gen-*.py`), then hand-edited below their "hand-written" line. Edit them by hand now; don't re-run the generators.
+- **Script:** `src/js/v2.js` (phone menu, FAQ, gallery tabs and 1/2-per-row switch, domain carousel, Web3Forms forms, phone slider, back-to-top).
+- **Logos on cards:** `content/logo-alpha/*.png` (white made transparent, rebuilt by `tools/make-logo-alpha.py`), positioned by `content/logo-fit.json`.
+- **Graphics:** `content/graphics/`. Silk, mesh, Escrow mask, mark, and the hero headline SVGs (`phone/hero-phone-L1..L4-1.44.svg`). Desktop also uses those four pieces, joined in two rows at the font's natural word spacing.
+- **Favicons:** `content/svg/favicon.svg` switches navy/light with the browser's theme. `favicon.ico`, `favicon-32.png` and `apple-touch-icon.png` are navy-tile fallbacks.
+- **Old, unused system** (safe to delete in a clean-up pass, offered but never requested): `src/lib/layout.js`, `src/styles/site.css`, `src/js/site.js`, `src/lib/theme*.js`, `content/theme-*.jsonc`, `content/gallery-desktop.json`, `gallery-phone.json`, `marquee.json`.
 
-### The theme system (most important thing to understand)
-- `site.css` contains **no hard-coded design values**. Every value is a CSS var generated from the theme files via the schema.
-- Desktop vars: `--t-<section>-<key-in-kebab-case>` (e.g. `domain.viewerHeight` → `--t-domain-viewer-height`). Phone vars: `--p-…`. Types: `color size num font line case`. A `line` setting also emits `-width/-style/-color`.
-- **To add a setting you must touch 3 places, keeping defaults identical:** `src/lib/theme-schema.js` (the desktop list near the top, the phone list further down; the same `[section,key]` appears once in each), the matching `.jsonc` (with a `//` comment), and `site.css` using the var. Removing a setting: remove from all three, or validation fails on unknown keys.
-- COLOR validation accepts hex and rgba.
+## 3. Where the words live (the content phase)
 
-### Responsive model
-- **Desktop layout also serves tablets.** Phone is ≤ 639px: markup uses `.d-only` / `.m-only` (and `.l-d` / `.l-m` on landing); phone-only CSS lives inside `@media (max-width:639px)` and reads `--p-*` vars.
-- Phone and desktop are tuned **independently**. Always ask or state which one a change applies to; if the user says "mobile" or "desktop" only touch that one. When ambiguous, pick the sensible one, say which, and offer the other.
+All copy is JSON under `content/`.
+- `site.json`: email, Web3Forms key, menu labels, footer tagline.
+- `landing.json`: title and description (SEO), headline, intro, button, Selected heading and slugs, "View all", acquiring heading, "Secured through", the 3 steps, FAQ (questions can have a short phone version `qm`; answers are arrays of paragraphs).
+- `gallery.json`: title, description, heading, category labels, "All" for phone, display `order`.
+- `contact.json`: title, description, heading, intro, field placeholders, button, steps heading, steps.
+- `domains/<slug>.json`, one per domain (see `_template.json`): `name`, `atomName` (the Atom.com link), `categories`, `logos`, and `overview`, where `overview[0]` is "About the domain" and `overview[1]` is "Ideal for".
+  - The page's meta description is built from the first ~120 characters of Ideal for (falling back to About).
 
-## 3. How we iterate (the loop)
+**Length matters:** long FAQ answers, step text and domain descriptions change card heights. The phone (the user tests on a Samsung A54 at about 320–330px CSS) is the tightest case. Check the wrapping after copy changes.
 
-1. The user sends a short, casual request, often several items and often a screenshot ("shave some space under the buttons", "FAQ fonts smaller"). Nudges are usually 1-5px; "very slightly" means ~1-3%.
-2. Make the change through the **theme settings first** (schema + jsonc + css), not by hard-coding.
-3. `node build.js`, then **verify** (see §5). Never claim a visual result you haven't measured or looked at; say "I haven't looked at it in a browser" when you haven't.
-4. Commit and push straight to `main` (no PRs). Confirm the push with `git ls-remote origin refs/heads/main` equal to `git rev-parse HEAD` (the checkout has no tracking info, so `git status` can't tell you).
-5. Reply in 2-4 short sentences: what changed, the commit, "create a new Cloudflare deployment", and a one-line offer if there's a natural next step. No recaps of steps. The user reads on a phone.
+## 4. Design boards (only if a design revision is needed)
 
-### Commit format
-Short imperative subject, then a blank line and these two trailers:
-```
-Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
-Claude-Session: https://claude.ai/code/session_<current session id>
-```
-(Use the session URL given in the current session's system reminder, not the one from this note.)
+- **Canvas artifact** "Domain portfolio — landing page mockup": slug `e96297bb-48c8-42de-8fbb-eefc7c042cd3`, https://claude.ai/artifact/VpXRvrXf11DcDpA4f7vd5t. Backup copy: slug `150703a3-f0b3-49c5-9fe8-ce2ed3eaf938`.
+- **Boards:** D1–D4 desktop, T1–T4 tablet (portrait and landscape), P1–P4 phone, each with a `-Locked` reference copy. **D-Hero** is a small desktop hero test board; its values are what's live now.
+- **Boards vs site:** the boards were the design source, but the site has moved past some of them:
+  - **Landing acquiring section:** no outer navy card on desktop or phone, with step cards on the page. Desktop has one glow and one border sheen across all three cards. The phone layout is on P1 (Phone: acquiring layout); the desktop version was built straight into the site.
+  - **Desktop hero:** taken from D-Hero.
+  - **Contact phone card padding:** 28/30px top and bottom.
+  - Trust the code over the boards.
+- **Canvas gotchas:**
+  - The user's open tab autosaves every ~10s. Always re-read a board right before editing it, and expect 409s.
+  - Write the `data-props` JSON with `&quot;` escapes and **raw** Unicode, never `°`-style escapes.
+  - Prefer one `{{hole}}` per CSS variable.
+  - Keep a board under 127 props; the Tweaks panel shows no more.
+  - **D-Landing's sliders stopped responding** after edits and were restored to a pre-edit copy. The cause was never found. For new experiments, make a **small new board** (like D-Hero) instead of editing the big ones.
 
-### Opinions
-The user often asks "what do you think?" (e.g. should the More link stay, should a hover turn navy). Give a short honest recommendation with the reason, then do what they decide. They are fine with "leave it as is".
+## 5. Working with this user
 
-## 4. Canvas (Design type) workflow
-- Edit via `mcp__claude-artifacts__edit_version` with `path` (e.g. `project/L-Final.dc.html`), `base_version` = the live version, exact `old_text`/`new_text`.
-- The user's open tab **auto-saves new versions every few seconds**: call `get_artifact` right before every edit. A 409 means the version moved (response includes `live`); a 422 "old_text not found" usually means the user changed saved defaults inside `data-props`: re-read that line and retry.
-- `data-props` is an HTML attribute with `&quot;` escapes. Tweak editors: enum (options), range (min/max/step/unit), boolean, color, each with a `section`. Style holes `{{prop}}` work inside interpolated `style="--var: {{x}}; …"` strings.
-- After publishing, tell the user to reload their canvas tab (stale code in an open tab made sliders look dead once).
-- Don't render or screenshot the canvas unless asked; say "I haven't looked at the board".
-- Boards: `L-Final.dc.html` (desktop landing, has the FAQ accordion), `L-MobileF.dc.html` (phone landing, finalised), tablet boards `L-TabletF` / `L-TabletFL` still have the OLD process list (offered, never requested).
-- Typical use: user wants to *play* with a design, so build it with tweak controls, let them settle values, then port the final values to the theme files.
+- Casual lowercase messages, several asks per message, often with a screenshot. Read for intent.
+- Nudges are usually 0.5–5px. Be concrete: px before → after, and which file or variable, so they can tune it themselves later.
+- Say which size(s) a change affects (phone/tablet/desktop). If they say "mobile", touch only phone.
+- They ask "what's your take?" a lot. Give a short honest recommendation with the reason, then do what they decide.
+- They like sliders on boards for visual decisions. For copy, just edit the JSON.
+- **Verify with headless Chrome** (`google-chrome --headless --no-sandbox --hide-scrollbars --window-size=W,H --screenshot=…` against `python3 -m http.server` in `dist`). Never claim you checked something you didn't look at.
+- Untested: a real successful form send (contact page and a domain page). Ask the user to try one.
+- Final replies: short. What changed, the commit, "create a new Cloudflare deployment".
 
-## 5. Verification tooling (recreate in /tmp if missing; /tmp may not survive)
+## 6. Detailed specs, if ever needed
 
-Headless Chrome (`google-chrome --headless --no-sandbox`). Two gotchas: a headless window can't go below ~500px wide, so **real phone widths must be measured inside an `<iframe style="width:390px">`** served from the `dist` root (CSS paths are absolute `/assets/...`); and `pkill` prints "Terminated" (harmless).
-
-`/tmp/shot1.sh dist outdir port width page…` screenshots (window 1440×7000, or 390×9000 for phone; crop with PIL afterwards, pages are mostly blank below content):
-```bash
-#!/bin/bash
-D=$1; O=$2; P=$3; w=$4; shift 4; mkdir -p $O
-(cd $D && python3 -m http.server $P >/dev/null 2>&1 &) ; sleep 1
-for pg in "$@"; do
-  n=$(echo "$pg" | tr '/?=' '___'); [ -z "$n" ] && n=home
-  h=7000; [ $w = 390 ] && h=9000
-  google-chrome --headless --no-sandbox --hide-scrollbars --window-size=$w,$h --virtual-time-budget=4000 --screenshot=$O/${n}_$w.png "http://localhost:$P/$pg" >/dev/null 2>&1
-done
-pkill -f "http.server $P"
-```
-`/tmp/measure.sh distdir port width page selector` prints an element's height: copy `dist` to /tmp/mm, inject a `<script>` before `</body>` that appends `<pre id=H>` with `getBoundingClientRect().height` of the selector on load, serve it, `--dump-dom`, grep the `<pre id="H">` text.
-
-Handy test pages: `domains/agenticaider` (a domain page), `` (home), `collection`, `contact`. Useful selectors: `.dm-view` (viewer section incl. arrows), `.dm-viewer`, `.dm-sent`, `.dm-acq`.
-
-## 6. Design decisions already made (don't relitigate)
-- **Colour:** brand navy `#253A79` everywhere on desktop and phone (logo, nav links, arrows, atom logo, FAQ open state, selection highlight). Hover navy `#3A4E8C`. "Send inquiry" buttons use a lighter blue `#536FB0` (hover `#44609E`), text `#F3F2EE`, so the two buttons are distinct but both blue.
-- **Selection / interaction:** `::selection` navy with `#F9F8F6` text (settings `colors.selectionBackground/selectionText`, desktop and phone). Buttons, links, images, logos, marquee cards, gallery tabs, related cards and FAQ rows are `user-select:none`; images not draggable.
-- **Fields:** dotted underline turns **solid, same colour** on focus (no blue).
-- **Gallery:** active category label turns navy, no dot underneath. Logo scale: desktop `masterLogoScale` 1.04, phone 1.08. Related ("More from the collection") thumbnails are greyscale at rest on **desktop only**, full colour on hover.
-- **Domain page:** "Back to portfolio" links were removed (nav has Portfolio). "More from the collection" is centred and a real link on desktop and phone. Desktop viewer height 229px (the whole viewer section ≈324px, matched to a screenshot of the old site). Phone acquisition sentence is different text ("Purchase securely via Atom.com, or contact Midjump to arrange a direct transaction through Escrow.com.") at 14px so it holds three lines at ~320px (the owner's Samsung A21).
-- **Landing:** desktop CTA stays quiet (cream, outline fades on hover) with the arrow turning navy on hover (`landing.buttonHoverChevronColor`). Desktop and tablet FAQ is an accordion (single-open, starts closed, number column / question / plus-minus, open row fill `#ECEBE5`, open question navy, active number black, ring around the icon only when open). Phone FAQ is a separate, smaller accordion (question 10.5px, answer 13px).
-- **Phone marquee:** logos sit on cards (`#F3F2EE`, 1.5px `#F8F8F7` border, soft shadow), band `#EDECE6`, hero `#F3F2EE`, card names `#1E1E1C`.
-- **Headings:** page titles on non-landing pages were shrunk (desktop gallery/contact 38px, domain name 42px; phone 23px) with rebalanced padding; phone nav height 87.5px.
-- **Logos:** `content/svg/logo3.svg` (desktop) is the phone artwork in navy with the original viewBox `0 0 1388.4 541.5`; `logo-phone.svg` unchanged.
-
-## 7. Current state and open items
-- Latest pushed commit at time of writing: `708cd18` (phone acquisition padding 26px + smaller phone FAQ text). Everything the user asked for has been pushed. Nothing is pending from them.
-- Offered but **not requested** (don't do unasked): tablet canvas boards still need the new FAQ; refresh the Project docs and `HOW-TO.md` for the logo/favicon/marquee/FAQ/colour changes; per-domain share images, schema.org markup, `/about` redirect, SVG optimisation (~6 MB total), Web3Forms key restriction, installing the Cloudflare GitHub app so pushes auto-deploy, a real-phone check, and the final reversible cut-over of midjump.com.
-- The user said "FAQ q&a fonts smaller" without saying which; I did the phone one. If they come back saying it's still big, ask about desktop/tablet.
-
-## 8. Style of working with this user
-- Casual lowercase messages, many small asks per message, frequently typos; read for intent.
-- They check on a real phone (Samsung A21, narrow) and on desktop; narrow-width wrapping matters.
-- Be concrete about numbers (px before/after, setting names) and name the file/setting so they can tune it themselves later in VS Code.
-- Be honest about what was and wasn't verified. Offer, don't push, extra work.
+`design/DESKTOP-SPEC.md`, `TABLET-SPEC.md`, `PHONE-SPEC.md` and `build-notes.md`. They describe the locked boards; the code is newer where they differ.
