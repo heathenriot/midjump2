@@ -33,6 +33,9 @@ for (const d of domains) write(`domains/${d.slug}/index.html`, domainPage(d));
 write("index.html", landing());
 write("404.html", notFound());
 // The workers.dev test copy must not be indexed (the canonical tags already point at midjump.com).
+// Old site (heathenriot/midjump) addresses that no longer exist: retired domains and the About page. 301 = permanent.
+const retired = ["gameplayclips", "parleravec", "parleravecfr", "playrepo"];
+write("_redirects", ["/about / 301", ...retired.map((s) => `/domains/${s} /domains 301`)].join("\n") + "\n");
 write("_headers", `https://midjump2.heathenriot.workers.dev/*\n  X-Robots-Tag: noindex\n`);
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${["/", "/domains", "/contact", ...domains.map((d) => "/domains/" + d.slug)].map((u) => `<url><loc>${site.url}${u}</loc></url>`).join("\n")}\n</urlset>\n`);
 write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);

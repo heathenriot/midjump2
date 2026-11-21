@@ -1,5 +1,13 @@
 {
   "name": "midjump2",
   "compatibility_date": "2026-11-01",
-  "assets": { "directory": "./dist", "not_found_handling": "404-page" }
+  // Runs only for addresses with no matching page (capital-letter redirects + 404). See src/worker/index.js.
+  "main": "src/worker/index.js",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Pages live at /domains/anthropize (no trailing slash), matching the canonical tags and the old site's links.
+    // /domains/anthropize/ redirects to /domains/anthropize.
+    "html_handling": "drop-trailing-slash"
+  }
 }

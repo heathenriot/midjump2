@@ -10,7 +10,9 @@ Written 2026-11-21. **The re-skin design is finished and built.** The next phase
   - Attach it with `add_repo` (owner `heathenriot`, repo `midjump2`, access push) and clone it.
 - **Test site:** https://midjump2.heathenriot.workers.dev (Cloudflare Workers).
   - **Pushes don't auto-deploy.** After every push, remind the user to create a new deployment in Cloudflare.
-- **Live site:** midjump.com is still the OLD site. It switches over later, reversibly.
+- **Live site:** midjump.com is still the OLD site (repo `heathenriot/midjump`, a React/Vite app). It switches over later, reversibly.
+  - **Switch-over is prepared:** old domain links used capitals (`/domains/CloudIndexing`); `src/worker/index.js` 301s any capitalised address to lowercase and serves the 404 page for unknown ones. `dist/_redirects` (from `build.js`) sends `/about` → `/` and the 4 retired domains (gameplayclips, parleravec, parleravecfr, playrepo) → `/domains`. `wrangler.jsonc` uses `html_handling: drop-trailing-slash` so pages live at `/domains/<slug>` like the canonicals. Tested with `npx wrangler@4 dev --local`.
+  - `dist/_headers` adds `X-Robots-Tag: noindex` on the workers.dev host only.
 - **Commits:** a short subject, then the attribution trailers given in the current session's system reminder.
 
 ## 2. How the site is built
