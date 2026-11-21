@@ -24,7 +24,7 @@ export const landing = () => {
 <span class="hero-line" aria-hidden="true"></span>
 <div class="hero-art" aria-hidden="true"><img class="heroimg" src="/assets/graphics/silk.jpg" alt="" fetchpriority="high"></div>
 <div class="hero-txt">
-<h1 class="hh"><span class="hh-live"><span class="hl1">${words(l1, 1, 2)}</span><br><span class="hl2">${words(l2, 3, 4)}</span></span><img class="hh-svg" src="/assets/graphics/hero-heading.svg" alt="" aria-hidden="true"><span class="hh-svgp" aria-hidden="true">${[1, 2, 3, 4].map((i) => `<img class="l${i}" src="/assets/graphics/phone/hero-phone-L${i}-1.44.svg" alt="">`).join("")}</span></h1>
+<h1 class="hh"><span class="hh-live"><span class="hl1">${words(l1, 1, 2)}</span><br><span class="hl2">${words(l2, 3, 4)}</span></span><img class="hh-svg" src="/assets/graphics/hero-heading.svg" alt="" aria-hidden="true"><span class="hh-svgp" aria-hidden="true">${[[1, 2], [3, 4]].map((r, k) => `<span class="hr hr${k + 1}">${r.map((i) => `<img class="l${i}" src="/assets/graphics/phone/hero-phone-L${i}-1.44.svg" alt="">`).join("")}</span>`).join("")}</span></h1>
 <p class="hero-sub">${T.intro.map(esc).join('<span class="fsp"> </span><br>')}</p>
 <a href="/domains" class="cta">${esc(T.buttonLabel)}</a>
 </div></div></div>

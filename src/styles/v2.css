@@ -466,16 +466,27 @@ body.v2{margin:0;background:var(--page-bg);color:var(--text);font-family:'Finlan
   .acq-sec .acq > div:nth-child(3){background-position:100% 0,100% 0,0 0,100% 0}
 }
 
-/* ---------- desktop hero: four-line column (same lettering as the phone), centred in the hero ---------- */
+/* ---------- desktop hero: two-line headline (phone lettering, pieces joined at the font's own word spacing),
+   subheading as a wrapping text box, hero bottom line and everything below pulled up over the silk ---------- */
+.hh-svgp .hr{display:block}
 @media (min-width:1025px){
   .hero-box{height:650px}
-  .hero-txt{position:absolute;left:0;top:0;bottom:0;padding-top:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+  .hero-txt{padding-top:72px}
   .hh{margin-left:-2px !important}
   .hh-svg{display:none}
   .hh-svgp{display:block}
-  .hh-svgp img{display:block;height:93.6px;width:auto}
-  .hh-svgp .l2{margin-top:-4.2px}
-  .hh-svgp .l4{margin-top:-15.3px}
-  .hero-sub{font-size:23px;line-height:1.28;margin:36px 0 0 -1.5px !important}
+  .hh-svgp .hr{display:flex;align-items:flex-start}
+  .hh-svgp .hr1{gap:15.53px}   /* 71px * 10.06/46: natural "Digital Identities." spacing */
+  .hh-svgp .hr2{gap:12.13px}   /* 71px * 7.86/46: natural "for distinction." spacing */
+  .hh-svgp img{display:block;height:85.2px;width:auto}
+  .hero-sub{font-size:23px;line-height:1.28;max-width:480px;margin:36px 0 0 -1.5px !important}
+  .hero-sub br{display:none}
+  .hero-sub .fsp{display:inline}
   .hero .cta{margin-top:48px}
+  /* extra eased fade that ends at the (pulled-up) bottom line */
+  .hero-art{
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 var(--silk-fade-top),#000 calc(100% - var(--silk-fade-bottom)),transparent 100%),linear-gradient(to right,transparent 0%,#000 var(--silk-fade-left),#000 calc(100% - var(--silk-fade-right)),transparent 100%),linear-gradient(to top,transparent 0px,transparent -43px,rgba(0,0,0,.12) 25.1px,rgba(0,0,0,.45) 93.2px,rgba(0,0,0,.82) 150px,#000 184px);
+    mask-image:linear-gradient(to bottom,transparent 0%,#000 var(--silk-fade-top),#000 calc(100% - var(--silk-fade-bottom)),transparent 100%),linear-gradient(to right,transparent 0%,#000 var(--silk-fade-left),#000 calc(100% - var(--silk-fade-right)),transparent 100%),linear-gradient(to top,transparent 0px,transparent -43px,rgba(0,0,0,.12) 25.1px,rgba(0,0,0,.45) 93.2px,rgba(0,0,0,.82) 150px,#000 184px)}
+  .hero-line{bottom:77px}
+  .sel{margin-top:-77px}
 }
