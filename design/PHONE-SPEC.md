@@ -105,8 +105,8 @@ and the key numbers. On P1 the desktop props are nested under `$desktop` to stay
 - Acquiring card: step titles 16.5px, text 14px.
 - Footer: tag 15.5px, Escrow mark 19px nudged up 0.25px (its capitals match the tag's lowercase height, baseline aligned);
   divider fades out 248 → 283px.
-- Gallery (phone): first pill "All"; pills 35px tall, 11px side padding, label 13.5px, count 13px, 6px apart (8px between rows),
-  so the tags fit on two lines at ~330px. One-per-row cards: grey logo tile `#EEEFF2` (1.5px `#CFD5DD` border, radius 8,
+- Gallery (phone): first pill "All"; pills 35px tall, 10px side padding, label 13.5px, count 12px (5px from the label), 6px apart (8px between rows),
+  so the tags fit on two lines down to ~316px. One-per-row cards: grey logo tile `#EEEFF2` (1.5px `#CFD5DD` border, radius 8,
   shadow 0.5) inside a light card (`#fafbfc` lightened 20%, border `#ECEEF1`) with a soft glow `#cfd5dda8` at 0.55, size 105%,
   placed per card from the domain name (seed 1). Backdrop silk blur 6px.
 - Tile borders are inset outlines (pixel-snapped, even on all sides) rather than a drawn ring.
